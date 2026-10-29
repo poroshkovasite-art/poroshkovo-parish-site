@@ -37,7 +37,11 @@ try{
   for(const width of [320,390,430]){
    await page.setViewportSize({width,height:844});await page.goto(`${base}/${lang}/`);await ready(page);await screenshot(page,`${lang}-home-${width}`,true);await page.evaluate(()=>window.scrollTo(0,0));await screenshot(page,`${lang}-home-first-screen-${width}`);await page.locator('.header').screenshot({path:path.join(audit,`portal-${tag}-${lang}-header-${width}.png`)});
    assert.ok(await page.locator('.language-switch a,.language-current,.menu-toggle').evaluateAll(es=>es.every(e=>{const r=e.getBoundingClientRect();return r.width>=44&&r.height>=44;})),'44px header touch areas');
-   const rects=await page.locator('.brand,.language-switch,.menu-toggle').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {left:r.left,right:r.right};}));assert.ok(rects[0].right<=rects[1].left&&rects[1].right<=rects[2].left,'Header controls do not overlap');
+   const rects=await page.locator('.brand,.language-switch,.menu-toggle').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom};}));
+   for(let a=0;a<rects.length;a++)for(let b=a+1;b<rects.length;b++){
+    const x=rects[a],y=rects[b];
+    assert.ok(x.right<=y.left+.5||y.right<=x.left+.5||x.bottom<=y.top+.5||y.bottom<=x.top+.5,'Header controls must remain separate in either header arrangement');
+   }
    await page.locator('.menu-toggle').click();await page.locator('.nav-group summary').nth(1).click();await screenshot(page,`${lang}-menu-${width}`);assert.ok(await page.locator('#navigation').evaluate(e=>e.getBoundingClientRect().right<=innerWidth&&e.getBoundingClientRect().bottom<=innerHeight));
    await page.locator('.nav-group summary').nth(2).click();assert.equal(await page.locator('.nav-group[open]').count(),1);await page.keyboard.press('Escape');await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
    await page.locator('.menu-toggle').click();await page.locator('#navigation > a').last().click();assert.ok(page.url().includes('/contacts/'));assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');

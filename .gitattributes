@@ -1,0 +1,4 @@
+# Keep published text assets byte-identical on Windows and Cloudflare/Linux.
+*.css text eol=lf
+*.js text eol=lf
+*.svg text eol=lf
