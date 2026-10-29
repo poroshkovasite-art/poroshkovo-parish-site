@@ -11,3 +11,7 @@
 /* Parish media: preserve full supplied compositions and seal proportions. */
 .brand-logo{width:60px;height:60px;object-fit:contain;flex-shrink:0}.page-photos{margin-top:55px}.section-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}.section-photo-grid.single-photo{max-width:650px;grid-template-columns:1fr}.parish-photo{min-width:0;background:var(--white);border:1px solid var(--line);align-self:start}.parish-photo figcaption{padding:15px 18px 18px}.parish-photo figcaption strong{display:block;font-size:14px;color:var(--ink);font-weight:550}.parish-photo figcaption span{display:block;margin-top:5px;font-size:11px;color:var(--muted)}.gallery-grid{align-items:start}.hero-image{min-width:0}.hero-image figcaption{font-size:13px}.lightbox img{width:100%;height:75dvh;object-fit:contain}
 @media(max-width:620px){.brand-logo{width:44px;height:44px}.section-photo-grid{grid-template-columns:1fr}.page-photos{margin-top:35px}}
+
+.footer .footer-logo-link{display:inline-block;padding:0}.footer-logo{width:72px;height:72px;margin-bottom:18px}
+
+.contact-links{display:flex;flex-wrap:wrap;gap:8px 16px;margin:15px 0 22px}.contact-links a,.footer .contact-links a{display:inline-flex;align-items:center;min-height:44px;padding:7px 10px;border:1px solid var(--line);text-decoration:none;color:var(--accent);font-size:13px}.contact-links .phone-link{font-weight:600}.contact-links a:hover{background:var(--white)}

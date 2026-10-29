@@ -316,12 +316,12 @@
       "en": "Contact and visiting"
     },
     "description": {
-      "uk": "Парафія святих Кирила і Мефодія, село Порошково, Закарпаття. Адреса храму, контакти та точна карта очікують підтвердження.",
-      "en": "Saints Cyril and Methodius parish, Poroshkovo, Zakarpattia, Ukraine. The church’s visiting address, contacts and map pin await confirmation."
+      "uk": "Контакти парафії святих Кирила і Мефодія в Порошкові: телефон +380 50 432 19 69, Viber і WhatsApp.",
+      "en": "Contact Saints Cyril and Methodius parish in Poroshkovo: +380 50 432 19 69, Viber and WhatsApp."
     },
     "intro": {
-      "uk": "Наша парафія — у селі Порошково на Закарпатті. Для першого візиту потрібні підтверджені адреса храму та час богослужіння.",
-      "en": "Our parish is in the village of Poroshkovo in Zakarpattia, Ukraine. For a first visit, please check the confirmed church address and service time."
+      "uk": "Наша парафія — у селі Порошково на Закарпатті. Зателефонуйте або напишіть у Viber чи WhatsApp, щоб зв’язатися з парафією.",
+      "en": "Our parish is in Poroshkovo, Zakarpattia, Ukraine. Call or use Viber or WhatsApp to get in touch with the parish."
     },
     "blocks": [
       {
@@ -330,8 +330,8 @@
           "en": "Planning a visit"
         },
         "text": {
-          "uk": "Точну адресу для відвідувачів, телефон і пошту буде додано після погодження парафією. Позначка на карті та маршрут з’являться разом із підтвердженою геолокацією храму.",
-          "en": "The visiting address, telephone number and email will be added after parish approval. A map pin and directions will be provided once the church’s exact location has been confirmed."
+          "uk": "Контактний номер парафії: +380 50 432 19 69; доступні також Viber і WhatsApp. Точну адресу для відвідувачів і позначку храму на карті буде додано після підтвердження.",
+          "en": "The parish contact number is +380 50 432 19 69, also available on Viber and WhatsApp. The visiting address and church map pin will be added after confirmation."
         }
       },
       {

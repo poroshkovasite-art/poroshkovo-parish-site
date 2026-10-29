@@ -22,15 +22,16 @@ try{
   assert.equal(await page.locator('.hero-image img').getAttribute('alt'),photos[0].alt[lang]);
   assert.equal(await page.locator('.hero-image img').getAttribute('title'),photos[0].title[lang]);
   assert.equal(await page.locator('.brand').getAttribute('href'),`/${lang}/`);
-  const logo=await page.locator('.brand-logo').evaluate(e=>({width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height,naturalWidth:e.naturalWidth,naturalHeight:e.naturalHeight,sourceWidth:Number(/logo-(\d+)/.exec(e.currentSrc)[1]),currentSrc:e.currentSrc}));
+  const logo=await page.locator('.header .brand-logo').evaluate(e=>({width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height,naturalWidth:e.naturalWidth,naturalHeight:e.naturalHeight,sourceWidth:Number(/logo-(\d+)/.exec(e.currentSrc)[1]),currentSrc:e.currentSrc}));
   assert.ok(logo.width>=40&&logo.width<=64&&logo.width===logo.height);assert.ok(logo.sourceWidth>=logo.width*2,'Retina source');assert.equal(logo.naturalWidth,logo.naturalHeight);
-  assert.equal(await page.locator('.brand-logo').getAttribute('alt'),brand.header_alt[lang]);
-  assert.equal(await page.locator('.brand-mark').count(),0);
+  assert.equal(await page.locator('.header .brand-logo').getAttribute('alt'),brand.header_alt[lang]);
+  assert.equal(await page.locator('.brand-mark').count(),0);assert.equal(await page.locator('.footer-logo-link').getAttribute('href'),`/${lang}/`);assert.ok(await page.locator('.footer-logo').evaluate(i=>i.complete&&i.naturalWidth>0));
+  assert.equal(await page.locator('.footer .phone-link').getAttribute('href'),'tel:+380504321969');assert.equal(await page.locator('.footer a[href^="https://wa.me/"]').getAttribute('href'),'https://wa.me/380504321969');assert.equal(await page.locator('.footer a[href^="viber:"]').getAttribute('href'),'viber://chat?number=%2B380504321969');
   const head=await page.locator('link[rel="icon"]').evaluateAll(elements=>elements.map(e=>e.href));assert.ok(head.length>=3&&head.every(h=>h.includes('?v=')&&!h.includes('.svg')));
   const manifestResponse=await fetch(new URL(await page.locator('link[rel="manifest"]').getAttribute('href'),base));assert.equal(manifestResponse.status,200);assert.equal((await manifestResponse.json()).start_url,`/${lang}/`);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   report.headerChecks.push({lang,width,colorScheme,logo,hero:'PASS',faviconVersioning:'PASS'});
-  if([390,1440].includes(width)){await page.locator('.header').screenshot({path:path.join(audit,`media-${tag}-${lang}-header-${width}-${colorScheme}.png`)});if(colorScheme==='light')await page.locator('.hero').screenshot({path:path.join(audit,`media-${tag}-${lang}-hero-${width}.png`)});}
+  if([390,1440].includes(width)){await page.locator('.header').screenshot({path:path.join(audit,`media-${tag}-${lang}-header-${width}-${colorScheme}.png`)});if(colorScheme==='light'){await page.locator('.hero').screenshot({path:path.join(audit,`media-${tag}-${lang}-hero-${width}.png`)});await page.locator('.footer').screenshot({path:path.join(audit,`media-${tag}-${lang}-footer-${width}.png`)});}}
   await context.close();
  }
  const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'}),page=await context.newPage();

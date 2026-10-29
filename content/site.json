@@ -16,10 +16,18 @@
   "contact": {
     "verification_status": "needs_confirmation",
     "address": null,
-    "phone": null,
+    "phone": "+380504321969",
     "email": null,
     "map_url": null,
-    "embed_url": null
+    "embed_url": null,
+    "phone_display": "+380 50 432 19 69",
+    "phone_verification_status": "confirmed",
+    "phone_confirmed_on": "2026-10-29",
+    "phone_source": "Explicit owner-provided public contact in this conversation",
+    "messengers": {
+      "viber": true,
+      "whatsapp": true
+    }
   },
   "donations": {
     "verification_status": "needs_confirmation",

@@ -6,10 +6,10 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),out=p
 const files=fs.readdirSync(out,{recursive:true}).filter(f=>fs.statSync(path.join(out,f)).isFile()).map(f=>f.replaceAll('\\','/'));
 let pages=0,links=0;
 const titles=new Set(),descriptions=new Set();
-const googleFile='google696019cf5de45d47.html',googleContent=`google-site-verification: ${googleFile}`;
+const googleFiles=['google696019cf5de45d47.html','googled4db93a6e7198af5.html'];
 for(const file of files.filter(f=>f.endsWith('.html'))){
  const html=fs.readFileSync(path.join(out,file),'utf8');
- if(file===googleFile){assert.equal(html.trim(),googleContent);continue;}
+ if(googleFiles.includes(file)){assert.equal(html.trim(),`google-site-verification: ${file}`);continue;}
  pages++;
  assert.match(html,/<html lang="(uk|en)">/);assert.match(html,/<title>[^<]+<\/title>/);
  assert.ok(!/isf-center-website|google-site-verification|NAU|УГКЦ|ПЦУ|Lorem ipsum|undefined|TODO/i.test(html),`Foreign or placeholder content: ${file}`);
@@ -24,7 +24,7 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
   assert.ok(!/26100236|Центральна,? 94/.test(html),`Unconfirmed legal details leaked: ${file}`);
  }
  for(const match of html.matchAll(/(?:href|src|data-full)="([^"<>]+)"/g)){
-  const ref=match[1];if(/^(https?:|mailto:|tel:|data:)/.test(ref))continue;
+  const ref=match[1];if(/^(https?:|mailto:|tel:|viber:|data:)/.test(ref))continue;
   const address=new URL(ref,'http://localhost:4173/'+file.replaceAll('\\','/'));let target=decodeURIComponent(address.pathname).slice(1);if(target.endsWith('/'))target+='index.html';
   assert.ok(fs.existsSync(path.join(out,target)),`Broken internal reference ${file} -> ${ref}`);
   if(address.hash)assert.ok(fs.readFileSync(path.join(out,target),'utf8').includes(`id="${address.hash.slice(1)}"`),`Broken fragment ${ref}`);links++;
@@ -34,9 +34,8 @@ for(const f of ['robots.txt','sitemap.xml','favicon.ico','assets/favicon.ico','a
 const ico=fs.readFileSync(path.join(out,'favicon.ico'));assert.equal(ico.readUInt16LE(2),1);assert.equal(ico.readUInt16LE(4),3);assert.deepEqual([0,1,2].map(i=>ico[6+i*16]),[16,32,48]);
 for(const [name,size] of [['favicon-16x16.png',16],['favicon-32x32.png',32],['apple-touch-icon.png',180],['icon-192.png',192],['icon-512.png',512]]){const bytes=fs.readFileSync(path.join(out,'assets',name));assert.equal(bytes.readUInt32BE(16),size);assert.equal(bytes.readUInt32BE(20),size);}
 for(const lang of ['uk','en']){const manifest=JSON.parse(fs.readFileSync(path.join(out,lang,'site.webmanifest')));assert.equal(manifest.start_url,`/${lang}/`);for(const icon of manifest.icons)assert.ok(fs.existsSync(path.join(out,new URL(icon.src,'https://local.test').pathname.slice(1))));}
-assert.deepEqual(files.filter(f=>/^google.*\.html$/.test(f)),[googleFile],'Only the owner-provided verification file');
-assert.equal(fs.readFileSync(path.join(out,'verification/google696019cf5de45d47.txt'),'utf8').trim(),googleContent);
-assert.ok(fs.readFileSync(path.join(out,'_redirects'),'utf8').includes(`/${googleFile} /verification/google696019cf5de45d47.txt 200`));
+assert.deepEqual(files.filter(f=>/^google.*\.html$/.test(f)).sort(),googleFiles.slice().sort(),'Only the owner-authorized verification files');
+for(const file of googleFiles){const textFile='verification/'+file.replace('.html','.txt');assert.equal(fs.readFileSync(path.join(out,textFile),'utf8').trim(),`google-site-verification: ${file}`);assert.ok(fs.readFileSync(path.join(out,'_redirects'),'utf8').includes(`/${file} /${textFile} 200`));}
 const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json')));
 for(const route of routes)assert.ok(routes.includes(route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/')),'Every page has a counterpart');
 for(const h of JSON.parse(fs.readFileSync(path.join(root,'content/history.json'))))assert.ok(h.source_url&&h.extracted_on&&h.verification_status,'Fact provenance');

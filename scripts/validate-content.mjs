@@ -29,4 +29,5 @@ export function validateContent({site,pages,photos,news,schedule}) {
   if(c.embed_url)assert.ok(c.embed_url.startsWith('https://www.google.com/maps/embed'),'Approved map embed host');
   if(c.map_url)assert.ok(c.map_url.startsWith('https://'),'Secure route URL');
  }
+ if(site.contact.phone_verification_status==='confirmed')assert.match(site.contact.phone,/^\+[1-9]\d{7,14}$/,'Confirmed international contact number');
 }
