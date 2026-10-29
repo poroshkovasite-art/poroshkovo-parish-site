@@ -10,8 +10,12 @@ export function validateContent({site,pages,photos,news,schedule}) {
  for(const p of photos.filter(p=>p.publication_status==='approved'&&p.rights_confirmed)){
   assert.match(p.id,/^[a-z0-9-]+$/);assert.ok(!ids.has(p.id),'Unique photo ID');ids.add(p.id);
   assert.ok(p.credit&&bilingual(p.alt)&&bilingual(p.caption)&&p.width>0&&p.height>0,'Photo rights, alt and dimensions');
-  assert.ok(p.widths.includes(960)&&p.widths.every(w=>Number.isInteger(w)&&w>0&&w<=p.width),'Responsive widths must be real and include the default 960px variant');
+  assert.ok(p.widths.includes(Math.min(960,p.width))&&p.widths.every(w=>Number.isInteger(w)&&w>0&&w<=p.width),'Responsive widths must include the native/default size without upscaling');
   if(p.contains_children)assert.equal(p.consents_confirmed,true,'Publication requires owner confirmation of necessary child-photo consents');
+  if(p.variants){
+   assert.ok(p.caption_overlay?.uk,'Approved Ukrainian overlay title');
+   if(p.processing.generative_processing)assert.ok(['church-exterior','bell-tower'].includes(p.id)&&p.processing.user_authorized_sky_edit===true,'Only the two expressly approved sky edits may use generative processing');
+  }
  }
  const slugs=new Set();
  if(site.hero_photo_id)assert.ok(photos.some(p=>p.id===site.hero_photo_id&&p.publication_status==='approved'&&p.rights_confirmed),'Hero must reference an approved photo');

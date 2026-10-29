@@ -2,12 +2,12 @@
   {
     "id": "divine-liturgy",
     "title": {
-      "uk": "Божественна Літургія",
-      "en": "Divine Liturgy"
+      "uk": "Божественна Літургія у нашому храмі",
+      "en": "Divine Liturgy in our church"
     },
     "caption": {
-      "uk": "Божественна Літургія",
-      "en": "Divine Liturgy"
+      "uk": "Божественна Літургія у нашому храмі",
+      "en": "Divine Liturgy in our church"
     },
     "alt": {
       "uk": "Священник звершує Божественну Літургію біля престолу",
@@ -23,14 +23,13 @@
       "gallery",
       "services"
     ],
-    "width": 1122,
-    "height": 1402,
+    "width": 959,
+    "height": 960,
     "widths": [
       480,
       640,
       768,
-      960,
-      1122
+      959
     ],
     "publication_status": "approved",
     "rights_confirmed": true,
@@ -42,27 +41,70 @@
       "en": "Provided for the parish website"
     },
     "author": null,
-    "original_file": "c334541b-9f9e-48d1-9b28-86b0a87fde36.png",
-    "original_sha256": "42bb28e65f98189d66b97b6718ac6d39f483e68112bba7b209e0724429cdcf96",
+    "original_file": "278573868_1425839301226641_3539423572968669265_n.jpg",
+    "original_sha256": "391b4a310a87b2fc562633cdb5a3570b4c04113b89c2f834873e30abbea22e15",
     "source_url": null,
     "extracted_on": "2026-10-29",
     "verification_status": "user_supplied_scene_and_publication_authorized",
     "captured_on": null,
     "description": {
-      "uk": "Священник біля престолу та чаші під час Божественної Літургії.",
-      "en": "A priest at the altar beside the chalice during the Divine Liturgy."
+      "uk": "Молитовне серце нашої парафії — Божественна Літургія, у якій громада єднається з Христом у Слові та Євхаристії.",
+      "en": "The Divine Liturgy is the prayerful heart of our parish, where the community is united with Christ in the Word and the Eucharist."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
+    "caption_overlay": {
+      "uk": "Божественна Літургія"
+    },
+    "source_dimensions": {
+      "width": 959,
+      "height": 960
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "divine-liturgy-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "divine-liturgy-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "previous_reference_file": "c334541b-9f9e-48d1-9b28-86b0a87fde36.png",
+    "processing": {
+      "decoder": "owner-supplied original raster",
+      "gamma": 0.94,
+      "color_factor": 1.025,
+      "contrast_factor": 1.015,
+      "unsharp_mask": {
+        "radius": 0.55,
+        "percent": 35,
+        "threshold": 4
+      },
+      "crop": false,
+      "crop_box": [
+        0,
+        0,
+        959,
+        960
+      ],
+      "crop_reason": null,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "parish-community-children",
     "title": {
-      "uk": "Парафіяльна спільнота і діти",
-      "en": "Parish community and children"
+      "uk": "Діти та парафіяльна спільнота",
+      "en": "Children and the parish community"
     },
     "caption": {
-      "uk": "Парафіяльна спільнота і діти",
-      "en": "Parish community and children"
+      "uk": "Діти та парафіяльна спільнота",
+      "en": "Children and the parish community"
     },
     "alt": {
       "uk": "Діти та парафіяни в храмі перед іконостасом",
@@ -78,7 +120,7 @@
       "gallery"
     ],
     "width": 1086,
-    "height": 1448,
+    "height": 1352,
     "widths": [
       480,
       640,
@@ -103,21 +145,63 @@
     "verification_status": "user_supplied_scene_and_publication_authorized",
     "captured_on": null,
     "description": {
-      "uk": "Діти та парафіяни перед іконостасом. Спільна фотографія у просторі рідного храму.",
-      "en": "Children and parishioners before the iconostasis, together in their parish church."
+      "uk": "Діти є живою частиною нашої громади та зростають у вірі разом із парафією.",
+      "en": "Children are a living part of our parish community and grow in faith together with the Church."
     },
     "consents_confirmed": true,
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
+    "caption_overlay": {
+      "uk": "Діти у парафії"
+    },
+    "source_dimensions": {
+      "width": 1086,
+      "height": 1448
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "parish-community-children-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "parish-community-children-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "processing": {
+      "decoder": "owner-supplied original raster",
+      "gamma": 0.94,
+      "color_factor": 1.025,
+      "contrast_factor": 1.015,
+      "unsharp_mask": {
+        "radius": 0.55,
+        "percent": 35,
+        "threshold": 4
+      },
+      "crop": true,
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1352
+      ],
+      "crop_reason": "remove pre-existing graphic caption footer only",
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "easter-blessing",
     "title": {
-      "uk": "Великоднє благословення",
-      "en": "Easter blessing"
+      "uk": "Великоднє благословення біля храму",
+      "en": "Easter blessing outside the church"
     },
     "caption": {
-      "uk": "Великоднє благословення",
-      "en": "Easter blessing"
+      "uk": "Великоднє благословення біля храму",
+      "en": "Easter blessing outside the church"
     },
     "alt": {
       "uk": "Священник благословляє вірних на Великдень біля храму",
@@ -133,7 +217,7 @@
       "gallery"
     ],
     "width": 1122,
-    "height": 1402,
+    "height": 1274,
     "widths": [
       480,
       640,
@@ -158,21 +242,63 @@
     "verification_status": "user_supplied_scene_and_publication_authorized",
     "captured_on": null,
     "description": {
-      "uk": "Священник благословляє вірних на Великдень біля храму. У кадрі — радість спільної зустрічі.",
-      "en": "A priest blesses the faithful at Easter outside the church, in a moment of shared celebration."
+      "uk": "Свято Христового Воскресіння єднає парафіян у спільній радості, молитві та благословенні.",
+      "en": "The feast of Christ’s Resurrection unites parishioners in shared joy, prayer and blessing."
     },
     "consents_confirmed": true,
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
+    "caption_overlay": {
+      "uk": "Великоднє благословення"
+    },
+    "source_dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "easter-blessing-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "easter-blessing-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "processing": {
+      "decoder": "owner-supplied original raster",
+      "gamma": 0.97,
+      "color_factor": 1.025,
+      "contrast_factor": 1.015,
+      "unsharp_mask": {
+        "radius": 0.55,
+        "percent": 35,
+        "threshold": 4
+      },
+      "crop": true,
+      "crop_box": [
+        0,
+        0,
+        1122,
+        1274
+      ],
+      "crop_reason": "remove pre-existing graphic caption footer only",
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "parish-winter-outing",
     "title": {
-      "uk": "Парафіяльний відпочинок узимку",
-      "en": "Parish winter outing"
+      "uk": "Парафіяльний відпочинок і єдність",
+      "en": "Parish recreation and unity"
     },
     "caption": {
-      "uk": "Парафіяльний відпочинок узимку",
-      "en": "Parish winter outing"
+      "uk": "Парафіяльний відпочинок і єдність",
+      "en": "Parish recreation and unity"
     },
     "alt": {
       "uk": "Парафіяльна спільнота під час зимового відпочинку",
@@ -213,21 +339,63 @@
     "verification_status": "user_supplied_scene_and_publication_authorized",
     "captured_on": null,
     "description": {
-      "uk": "Парафіяльна спільнота разом на засніженому схилі з тюбінгами.",
-      "en": "The parish community together on a snowy tubing slope."
+      "uk": "Спільний відпочинок допомагає зміцнювати дружбу, довіру та єдність у парафіяльній спільноті.",
+      "en": "Shared recreation strengthens friendship, trust and unity within the parish community."
     },
     "consents_confirmed": true,
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
+    "caption_overlay": {
+      "uk": "Спільний відпочинок"
+    },
+    "source_dimensions": {
+      "width": 1672,
+      "height": 941
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "parish-winter-outing-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "parish-winter-outing-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": false,
+        "status": "local_proof_only_source_needed"
+      }
+    },
+    "processing": {
+      "decoder": "owner-supplied original raster",
+      "gamma": 0.97,
+      "color_factor": 1.015,
+      "contrast_factor": 1.015,
+      "unsharp_mask": {
+        "radius": 0.55,
+        "percent": 35,
+        "threshold": 4
+      },
+      "crop": false,
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "crop_reason": null,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "embedded_caption_in_enhanced": true
   },
   {
     "id": "church-exterior",
     "title": {
-      "uk": "Наш парафіяльний храм у Порошкові",
-      "en": "Our parish church in Poroshkovo"
+      "uk": "Храм святих Кирила і Мефодія",
+      "en": "Church of Saints Cyril and Methodius"
     },
     "caption": {
-      "uk": "Наш парафіяльний храм у Порошкові",
-      "en": "Our parish church in Poroshkovo"
+      "uk": "Храм святих Кирила і Мефодія",
+      "en": "Church of Saints Cyril and Methodius"
     },
     "alt": {
       "uk": "Храм парафії святих Кирила і Мефодія в Порошкові",
@@ -242,14 +410,14 @@
       "about",
       "gallery"
     ],
-    "width": 7360,
-    "height": 4912,
+    "width": 1535,
+    "height": 1025,
     "widths": [
       480,
       640,
       768,
       960,
-      1920
+      1535
     ],
     "publication_status": "approved",
     "rights_confirmed": true,
@@ -269,27 +437,68 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.985,
+      "gamma": 1.0,
       "color_factor": 1.025,
+      "contrast_factor": 1.015,
+      "unsharp_mask": {
+        "radius": 0.55,
+        "percent": 35,
+        "threshold": 4
+      },
       "crop": false,
-      "generative_processing": false,
-      "metadata_removed": true
+      "crop_box": [
+        0,
+        0,
+        7360,
+        4912
+      ],
+      "crop_reason": null,
+      "generative_processing": true,
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "user_authorized_sky_edit": true,
+      "generative_scope": "Owner-approved blue sky and clouds, with matching color and light; architecture and composition visually checked",
+      "edited_master": "church-exterior-approved-sky.png",
+      "edited_master_sha256": "9a7005df6108caa2aee2e45c29a495ff4a78b45e5725ddc6327957fedb2bf0e5",
+      "tool": "built-in image_gen",
+      "approval": "Owner approved the displayed church and bell-tower edits in conversation, 2026-10-29",
+      "final_style_version": "2026-10-29-approved-v1"
     },
     "description": {
-      "uk": "Сучасний храм святих Кирила і Мефодія з центральним куполом та блакитним дахом. На передньому плані — огорожа й зелені насадження парафіяльного подвір’я.",
-      "en": "The present church of Saints Cyril and Methodius, with its central dome and blue roof. A fence and planting frame the parish grounds."
+      "uk": "Парафіяльний храм у Порошкові є місцем молитви, духовного зростання та зустрічі громади.",
+      "en": "Our parish church in Poroshkovo is a place of prayer, spiritual growth and community gathering."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Owner-approved blue sky/cloud edit and natural color enhancement. Original NEF preserved unchanged; architecture visually compared. Responsive clean and captioned versions.",
+    "caption_overlay": {
+      "uk": "Наш храм"
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "church-exterior-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "church-exterior-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "bell-tower",
     "title": {
-      "uk": "Дзвіниця парафіяльного храму",
-      "en": "The parish bell tower"
+      "uk": "Дзвіниця нашого храму",
+      "en": "Our church bell tower"
     },
     "caption": {
-      "uk": "Дзвіниця парафіяльного храму",
-      "en": "The parish bell tower"
+      "uk": "Дзвіниця нашого храму",
+      "en": "Our church bell tower"
     },
     "alt": {
       "uk": "Дзвіниця на території парафії",
@@ -305,14 +514,14 @@
       "gallery",
       "history"
     ],
-    "width": 7360,
-    "height": 4912,
+    "width": 1535,
+    "height": 1025,
     "widths": [
       480,
       640,
       768,
       960,
-      1920
+      1535
     ],
     "publication_status": "approved",
     "rights_confirmed": true,
@@ -332,17 +541,58 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.98,
+      "gamma": 1.0,
       "color_factor": 1.025,
+      "contrast_factor": 1.015,
+      "unsharp_mask": {
+        "radius": 0.55,
+        "percent": 35,
+        "threshold": 4
+      },
       "crop": false,
-      "generative_processing": false,
-      "metadata_removed": true
+      "crop_box": [
+        0,
+        0,
+        7360,
+        4912
+      ],
+      "crop_reason": null,
+      "generative_processing": true,
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "user_authorized_sky_edit": true,
+      "generative_scope": "Owner-approved blue sky and clouds, with matching color and light; architecture and composition visually checked",
+      "edited_master": "bell-tower-approved-sky.png",
+      "edited_master_sha256": "071c425c0bd14716a0e0f74607f72be6f3ea67aff7f700bfc8d72a9cb469e431",
+      "tool": "built-in image_gen",
+      "approval": "Owner approved the displayed church and bell-tower edits in conversation, 2026-10-29",
+      "final_style_version": "2026-10-29-approved-v1"
     },
     "description": {
-      "uk": "Дзвіниця на території парафії — ще один впізнаваний образ нашого храмового подвір’я.",
-      "en": "The bell tower stands in the parish grounds, forming another recognisable part of the church setting."
+      "uk": "Дзвіниця є впізнаваною частиною нашої парафії та нагадує про поклик до молитви.",
+      "en": "The bell tower is a recognizable part of our parish and a reminder of the call to prayer."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Owner-approved blue sky/cloud edit and natural color enhancement. Original NEF preserved unchanged; architecture visually compared. Responsive clean and captioned versions.",
+    "caption_overlay": {
+      "uk": "Дзвіниця парафії"
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "bell-tower-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "bell-tower-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "prayer-at-crucifix",
@@ -394,27 +644,62 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.94,
-      "color_factor": 1.025,
+      "gamma": 0.82,
+      "color_factor": 1.055,
+      "contrast_factor": 1.035,
+      "unsharp_mask": {
+        "radius": 0.65,
+        "percent": 45,
+        "threshold": 3
+      },
       "crop": false,
+      "crop_box": [
+        0,
+        0,
+        7360,
+        4912
+      ],
+      "crop_reason": null,
       "generative_processing": false,
-      "metadata_removed": true
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "final_style_version": "2026-10-29-approved-v1"
     },
     "description": {
-      "uk": "Вірні зібралися на молитву біля розп’яття у храмі. Спільна молитва єднає людей у тиші церковного простору.",
-      "en": "The faithful gather in prayer before the crucifix inside the church. Shared prayer brings people together in the quiet of this sacred space."
+      "uk": "Молитва є основою життя нашої парафії та джерелом духовної сили для громади.",
+      "en": "Prayer is the foundation of our parish life and the source of spiritual strength for the community."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
+    "caption_overlay": {
+      "uk": "Молитовне життя"
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "prayer-at-crucifix-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "prayer-at-crucifix-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "iconostasis",
     "title": {
-      "uk": "Іконостас — духовна окраса нашого храму",
-      "en": "The iconostasis of our church"
+      "uk": "Іконостас — духовна окраса храму",
+      "en": "The iconostasis — a treasure of our church"
     },
     "caption": {
-      "uk": "Іконостас — духовна окраса нашого храму",
-      "en": "The iconostasis of our church"
+      "uk": "Іконостас — духовна окраса храму",
+      "en": "The iconostasis — a treasure of our church"
     },
     "alt": {
       "uk": "Іконостас у храмі парафії",
@@ -456,26 +741,61 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.94,
-      "color_factor": 1.025,
+      "gamma": 0.72,
+      "color_factor": 1.07,
+      "contrast_factor": 1.045,
+      "unsharp_mask": {
+        "radius": 0.65,
+        "percent": 55,
+        "threshold": 3
+      },
       "crop": false,
+      "crop_box": [
+        0,
+        0,
+        7360,
+        4912
+      ],
+      "crop_reason": null,
       "generative_processing": false,
-      "metadata_removed": true
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "final_style_version": "2026-10-29-approved-v1"
     },
     "description": {
-      "uk": "Ікони та різьблені деталі іконостаса у парафіяльному храмі. Фотографія дає змогу уважніше роздивитися його композицію.",
-      "en": "Icons and carved details of the parish church’s iconostasis. The photograph offers a closer look at its composition."
+      "uk": "Іконостас є видимим знаком краси східної християнської традиції та молитви нашої Церкви.",
+      "en": "The iconostasis reflects the beauty of the Eastern Christian tradition and the prayer of our Church."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
+    "caption_overlay": {
+      "uk": "Іконостас храму"
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "iconostasis-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "iconostasis-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "parish-prayer-on-church-steps",
     "title": {
-      "uk": "Спільнота біля рідного храму",
+      "uk": "Наша громада біля рідного храму",
       "en": "Our community by the parish church"
     },
     "caption": {
-      "uk": "Спільнота біля рідного храму",
+      "uk": "Наша громада біля рідного храму",
       "en": "Our community by the parish church"
     },
     "alt": {
@@ -518,27 +838,62 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.95,
-      "color_factor": 1.025,
+      "gamma": 0.89,
+      "color_factor": 1.05,
+      "contrast_factor": 1.035,
+      "unsharp_mask": {
+        "radius": 0.65,
+        "percent": 45,
+        "threshold": 3
+      },
       "crop": false,
+      "crop_box": [
+        0,
+        0,
+        7360,
+        4912
+      ],
+      "crop_reason": null,
       "generative_processing": false,
-      "metadata_removed": true
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "final_style_version": "2026-10-29-approved-v1"
     },
     "description": {
-      "uk": "Настоятель і парафіяни разом на сходах храму. Спільне фото зберігає образ живої парафіяльної громади.",
-      "en": "The parish priest and parishioners together on the church steps. Their shared photograph records the life of the parish community."
+      "uk": "Парафія — це люди, які разом моляться, підтримують одне одного та зростають у вірі.",
+      "en": "The parish is a community of people who pray together, support one another and grow in faith."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
+    "caption_overlay": {
+      "uk": "Парафіяльна спільнота"
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "parish-prayer-on-church-steps-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "parish-prayer-on-church-steps-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "embedded_caption_in_enhanced": false
   },
   {
     "id": "church-altar",
     "title": {
-      "uk": "Молитва і богослужіння в парафіяльному храмі",
-      "en": "Prayer and worship in our parish church"
+      "uk": "Молитовне життя у парафіяльному храмі",
+      "en": "Prayer in our parish church"
     },
     "caption": {
-      "uk": "Молитва і богослужіння в парафіяльному храмі",
-      "en": "Prayer and worship in our parish church"
+      "uk": "Молитовне життя у парафіяльному храмі",
+      "en": "Prayer in our parish church"
     },
     "alt": {
       "uk": "Престол у храмі парафії",
@@ -581,16 +936,51 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.95,
-      "color_factor": 1.025,
+      "gamma": 0.85,
+      "color_factor": 1.06,
+      "contrast_factor": 1.03,
+      "unsharp_mask": {
+        "radius": 0.65,
+        "percent": 45,
+        "threshold": 3
+      },
       "crop": false,
+      "crop_box": [
+        0,
+        0,
+        7360,
+        4912
+      ],
+      "crop_reason": null,
       "generative_processing": false,
-      "metadata_removed": true
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "final_style_version": "2026-10-29-approved-v1"
     },
     "description": {
-      "uk": "Престол і богослужбові предмети в інтер’єрі храму. Цей знімок показує простір, у якому звершується парафіяльна молитва.",
-      "en": "The altar and liturgical objects inside the church. This photograph shows the setting of the parish’s worship."
+      "uk": "У храмі парафіяни збираються на молитву, богослужіння та спільне переживання віри.",
+      "en": "In the church, parishioners gather for prayer, worship and the shared life of faith."
     },
-    "web_processing": "Responsive WebP with ordinary compression and scaling only; no generative edits or cropping."
+    "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
+    "caption_overlay": {
+      "uk": "Молитва у храмі"
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "church-altar-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "filename_pattern": "church-altar-captioned-{width}.webp",
+        "caption_language": "uk",
+        "available_on_site": true,
+        "status": "approved"
+      }
+    },
+    "embedded_caption_in_enhanced": false
   }
 ]

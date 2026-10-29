@@ -5,11 +5,14 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),base=process.env.MEDIA_BASE_URL||'http://localhost:4173',tag=base.startsWith('http://localhost')?'local':'production',audit=path.resolve(root,'../audit');
-const photos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))),brand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json'))),expectedHero='divine-liturgy';
+const photos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))),brand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json'))),expectedHero='church-exterior';
 const report={date:'2026-10-29',base,status:'RUNNING',hero:expectedHero,photoAssets:[],headerChecks:[],placements:[],icons:[],errors:[]},iconData={};
 fs.mkdirSync(audit,{recursive:true});
 const hash=b=>createHash('sha256').update(b).digest('hex');
+const historicalMap=JSON.parse(fs.readFileSync(path.join(root,'content/historical-map.json')));report.historicalMapAssets=[];
+for(const file of [...historicalMap.widths.map(w=>`assets/history/${historicalMap.id}-${w}.webp`),historicalMap.full_file.slice(1)]){const response=await fetch(`${base}/${file}`),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200);assert.equal(hash(bytes),hash(fs.readFileSync(path.join(root,'dist',file))));report.historicalMapAssets.push({file,status:response.status,exactMatch:true});}
 for(const p of photos)for(const width of p.widths){const file=`assets/photos/${p.id}-${width}.webp`,response=await fetch(`${base}/${file}`),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200);assert.equal(hash(bytes),hash(fs.readFileSync(path.join(root,'dist',file))));report.photoAssets.push({file,status:response.status,bytes:bytes.length,exactMatch:true});}
+for(const p of photos.filter(p=>p.variants?.captioned?.available_on_site))for(const width of p.widths){const file=`assets/photos/${p.id}-captioned-${width}.webp`,response=await fetch(`${base}/${file}`),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200);assert.equal(hash(bytes),hash(fs.readFileSync(path.join(root,'dist',file))));report.photoAssets.push({file,status:response.status,bytes:bytes.length,exactMatch:true});}
 for(const file of ['favicon.ico','assets/favicon-16x16.png','assets/favicon-32x32.png','assets/favicon-48x48.png','assets/apple-touch-icon.png','assets/icon-192.png','assets/icon-512.png','assets/brand/poroshkovo-parish-logo-256.png']){const response=await fetch(`${base}/${file}`),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200);assert.equal(hash(bytes),hash(fs.readFileSync(path.join(root,'dist',file))));report.icons.push({file,status:response.status,exactMatch:true});if(file.endsWith('.png'))iconData[file]='data:image/png;base64,'+bytes.toString('base64');}
 const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE}:{})});
 const ready=page=>page.evaluate(async()=>{await Promise.all([...document.images].filter(i=>i.hasAttribute('src')).map(i=>{i.loading='eager';return i.decode().catch(()=>{});}));});
@@ -19,8 +22,12 @@ try{
   page.on('pageerror',e=>report.errors.push(e.message));
   await page.goto(`${base}/${lang}/`);await ready(page);
   assert.equal(await page.locator('.hero-image img').getAttribute('data-image-id'),expectedHero);
-  assert.equal(await page.locator('.hero-image img').getAttribute('alt'),photos[0].alt[lang]);
-  assert.equal(await page.locator('.hero-image img').getAttribute('title'),photos[0].title[lang]);
+  assert.equal(await page.locator('.hero-image img').getAttribute('data-photo-variant'),'captioned');
+  assert.deepEqual(await page.locator('main').evaluate(e=>[e.querySelector('.hero'),e.querySelector('.history-teaser'),e.querySelector('[data-home-liturgy]')].map(n=>n.getBoundingClientRect().top)),await page.locator('main').evaluate(e=>[e.querySelector('.hero'),e.querySelector('.history-teaser'),e.querySelector('[data-home-liturgy]')].map(n=>n.getBoundingClientRect().top).sort((a,b)=>a-b)));
+  assert.equal(await page.locator('.history-teaser [data-historical-map]').count(),1);
+  assert.equal(await page.locator('[data-home-liturgy] img').getAttribute('data-image-id'),'divine-liturgy');
+  assert.equal(await page.locator('.hero-image img').getAttribute('alt'),photos.find(p=>p.id===expectedHero).alt[lang]);
+  assert.equal(await page.locator('.hero-image img').getAttribute('title'),photos.find(p=>p.id===expectedHero).title[lang]);
   assert.equal(await page.locator('.brand').getAttribute('href'),`/${lang}/`);
   const logo=await page.locator('.header .brand-logo').evaluate(e=>({width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height,naturalWidth:e.naturalWidth,naturalHeight:e.naturalHeight,sourceWidth:Number(/logo-(\d+)/.exec(e.currentSrc)[1]),currentSrc:e.currentSrc}));
   assert.ok(logo.width>=40&&logo.width<=64&&logo.width===logo.height);assert.ok(logo.sourceWidth>=logo.width*2,'Retina source');assert.equal(logo.naturalWidth,logo.naturalHeight);
@@ -31,16 +38,17 @@ try{
   const manifestResponse=await fetch(new URL(await page.locator('link[rel="manifest"]').getAttribute('href'),base));assert.equal(manifestResponse.status,200);assert.equal((await manifestResponse.json()).start_url,`/${lang}/`);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   report.headerChecks.push({lang,width,colorScheme,logo,hero:'PASS',faviconVersioning:'PASS'});
-  if([390,1440].includes(width)){await page.locator('.header').screenshot({path:path.join(audit,`media-${tag}-${lang}-header-${width}-${colorScheme}.png`)});if(colorScheme==='light'){await page.locator('.hero').screenshot({path:path.join(audit,`media-${tag}-${lang}-hero-${width}.png`)});await page.locator('.footer').screenshot({path:path.join(audit,`media-${tag}-${lang}-footer-${width}.png`)});}}
+  if([390,1440].includes(width)){await page.locator('.header').screenshot({path:path.join(audit,`media-${tag}-${lang}-header-${width}-${colorScheme}.png`)});if(colorScheme==='light'){await page.locator('.hero').screenshot({path:path.join(audit,`media-${tag}-${lang}-hero-${width}.png`)});await page.locator('.history-teaser').screenshot({path:path.join(audit,`media-${tag}-${lang}-history-map-${width}.png`)});await page.locator('[data-home-liturgy]').screenshot({path:path.join(audit,`media-${tag}-${lang}-liturgy-${width}.png`)});await page.locator('.footer').screenshot({path:path.join(audit,`media-${tag}-${lang}-footer-${width}.png`)});}}
   await context.close();
  }
  const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'}),page=await context.newPage();
  for(const lang of ['uk','en']){
   for(const slug of ['about','community','spiritual-life','gallery']){const ids=slug==='gallery'?photos.map(p=>p.id):photos.filter(p=>p.placements.includes(slug)).map(p=>p.id);
    await page.goto(`${base}/${lang}/${slug}/`);await ready(page);assert.deepEqual(await page.locator('[data-photo-id]').evaluateAll(es=>es.map(e=>e.dataset.photoId)),ids);
+   if(slug==='gallery')assert.ok(await page.locator('.photo-button img').evaluateAll(es=>es.every(i=>i.dataset.photoVariant==='enhanced')),'Gallery uses detail-friendly enhanced variants');
    const images=await page.locator('.photo-button img').evaluateAll(es=>es.map(e=>({id:e.dataset.imageId,ratio:e.getBoundingClientRect().width/e.getBoundingClientRect().height,natural:Number(e.getAttribute('width'))/Number(e.getAttribute('height')),complete:e.complete&&e.naturalWidth>0})));
-   for(const i of images)assert.ok(i.complete&&Math.abs(i.ratio-i.natural)<0.01,`Full uncropped frame: ${i.id}`);
-   report.placements.push({lang,slug,ids,fullFrames:true});
+   for(const i of images)assert.ok(i.complete&&Math.abs(i.ratio-i.natural)<0.01,`Declared image ratio without CSS cropping: ${i.id}`);
+   report.placements.push({lang,slug,ids,declaredRatiosPreserved:true,captionFooterCrops:photos.filter(p=>p.processing?.crop).map(p=>p.id)});
    if(lang==='uk')await page.screenshot({path:path.join(audit,`media-${tag}-${lang}-${slug}-desktop.png`),fullPage:true});
   }
   await page.locator('[data-photo-filter="worship"]').click();assert.equal(await page.locator('[data-photo-card]:visible').count(),photos.filter(p=>p.category==='worship').length);await page.locator('[data-photo-filter="community"]').click();assert.equal(await page.locator('[data-photo-card]:visible').count(),photos.filter(p=>p.category==='community').length);await page.locator('[data-photo-filter="all"]').click();

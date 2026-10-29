@@ -1,0 +1,49 @@
+{
+  "id": "zakarpattia-map-1921",
+  "title": {
+    "uk": "Закарпаття на карті 1921 року",
+    "en": "Zakarpattia on a 1921 map"
+  },
+  "alt": {
+    "uk": "Фрагмент історичної карти 1921 року з Ужгородом, Мукачевом та Підкарпатською Руссю",
+    "en": "Detail of a 1921 historical map showing Uzhhorod, Mukachevo and Subcarpathian Ruthenia"
+  },
+  "caption": {
+    "uk": "Фрагмент карти «Slovensko a Podkarpatská Rus», 1921. Історичні назви та межі збережено.",
+    "en": "Detail of “Slovensko a Podkarpatská Rus”, 1921. Historical names and boundaries are preserved."
+  },
+  "credit": {
+    "uk": "Джерело: Dějiny československé (1921), репринт 1991 · Wikimedia Commons · суспільне надбання.",
+    "en": "Source: Dějiny československé (1921), 1991 reprint · Wikimedia Commons · public domain."
+  },
+  "source_url": "https://commons.wikimedia.org/wiki/File:Slovensko_a_Podkarpatsk%C3%A1_Rus.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Slovensko_a_Podkarpatsk%C3%A1_Rus.jpg",
+  "author": "Unknown; faithful reproduction of the historical map",
+  "year": 1921,
+  "license": "Public Domain Mark 1.0 / PD-Art, as recorded by Wikimedia Commons",
+  "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "verified_on": "2026-10-29",
+  "verification_status": "source_date_subject_and_public_domain_notice_checked",
+  "original_file": "slovakia-subcarpathian-ruthenia-1921.jpg",
+  "original_sha256": "281d78eb2ab2e614cee31302f4c29f1d5b9bd852f01f9655a7eca57d177d6545",
+  "source_dimensions": {
+    "width": 3008,
+    "height": 1728
+  },
+  "crop_box": [
+    1720,
+    430,
+    3008,
+    1510
+  ],
+  "width": 1288,
+  "height": 1080,
+  "widths": [
+    480,
+    768,
+    960,
+    1288
+  ],
+  "full_file": "/assets/history/slovakia-subcarpathian-ruthenia-1921-full.webp",
+  "processing": "Crop to the Zakarpattia region and responsive WebP export only. No invented labels, altered boundaries, AI generation or artificial ageing."
+}
