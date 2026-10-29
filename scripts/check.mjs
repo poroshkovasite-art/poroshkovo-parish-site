@@ -39,6 +39,7 @@ for(const lang of ['uk','en']){const manifest=JSON.parse(fs.readFileSync(path.jo
 assert.deepEqual(files.filter(f=>/^google.*\.html$/.test(f)).sort(),googleFiles.slice().sort(),'Only the owner-authorized verification files');
 for(const file of googleFiles){const textFile='verification/'+file.replace('.html','.txt');assert.equal(fs.readFileSync(path.join(out,textFile),'utf8').trim(),`google-site-verification: ${file}`);assert.ok(fs.readFileSync(path.join(out,'_redirects'),'utf8').includes(`/${file} /${textFile} 200`));}
 const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json')));
+for(const lang of ['uk','en']){const xml=fs.readFileSync(path.join(out,lang,'sitemap.xml'),'utf8'),locations=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname);assert.deepEqual(locations,routes.filter(r=>r.startsWith(`/${lang}/`)),`Language sitemap is limited to its URL-prefix property: ${lang}`);}
 for(const route of routes)assert.ok(routes.includes(route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/')),'Every page has a counterpart');
 for(const h of JSON.parse(fs.readFileSync(path.join(root,'content/history.json'))))assert.ok(h.source_url&&h.extracted_on&&h.verification_status,'Fact provenance');
 console.log(JSON.stringify({status:'PASS',html_pages:pages,bilingual_content_routes:routes.length,internal_references:links,unique_titles:titles.size,unconfirmed_details_excluded:true},null,2));
