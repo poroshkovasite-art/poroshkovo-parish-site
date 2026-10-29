@@ -41,7 +41,7 @@ for(const file of googleFiles){const textFile='verification/'+file.replace('.htm
 const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json')));
 const map=JSON.parse(fs.readFileSync(path.join(root,'content/historical-map.json')));
 assert.ok(map.source_url&&map.license_url&&map.original_sha256&&map.verified_on,'Historical map provenance and rights');
-for(const lang of ['uk','en']){const html=fs.readFileSync(path.join(out,lang,'index.html'),'utf8');assert.match(html,/class="hero-image"><img data-image-id="church-exterior"/);assert.ok(html.indexOf('data-historical-map=')<html.indexOf('data-home-liturgy'),'Historical map precedes the Liturgy block');}
+for(const lang of ['uk','en']){const html=fs.readFileSync(path.join(out,lang,'index.html'),'utf8');assert.match(html,/class="hero-image"><img data-image-id="divine-liturgy"/);assert.ok(html.indexOf('data-historical-map=')<html.indexOf('data-home-liturgy'),'Historical map precedes the Liturgy block');}
 for(const lang of ['uk','en']){const xml=fs.readFileSync(path.join(out,lang,'sitemap.xml'),'utf8'),locations=[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname);assert.deepEqual(locations,routes.filter(r=>r.startsWith(`/${lang}/`)),`Language sitemap is limited to its URL-prefix property: ${lang}`);}
 for(const route of routes)assert.ok(routes.includes(route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/')),'Every page has a counterpart');
 for(const h of JSON.parse(fs.readFileSync(path.join(root,'content/history.json'))))assert.ok(h.source_url&&h.extracted_on&&h.verification_status,'Fact provenance');

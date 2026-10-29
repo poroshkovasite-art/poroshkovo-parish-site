@@ -49,3 +49,8 @@ scripts/worship.mjs связывает компактный верхний бл�
 Календарь: regularServices/annualParishEvents, регулярное расписание отдельным блоком и в выбранном дне без повторяющихся карточек в ленте; действующий план применяется с 29.10.2026 до обновления. 1 ноября — ежегодная местная традиция без времени/координат кладбища; ICS целого дня с RRULE. Неизвестные дни Великого поста и день еженедельной молитвы за воинов не назначены; церковная/епархиальная выборка 2026 не переносится на другие годы.
 
 Документ: docs/CONFIRMED_WORSHIP.md. Проверки: npm run test:schedule (12 контекстов, два часовых пояса), test:browser (288), test:portal, test:publication (180), test:media. Production выполняется через main/Cloudflare poroshkovo после локальных PASS; окончательные SHA/URL и состояние копии — D:\POROSHKOVO_PARISH_WORK\FINAL_REPORT.md и audit/current-release.json. Архив рабочего стола обновлять только после успешной проверки живого адреса. ISF/NAU не изменять.
+
+
+## Актуальный hero — последнее поручение владельца
+
+Восстановлено `content/site.json: hero_photo_id = divine-liturgy`: священник у чаши, UA и EN. Предыдущие заметки о church-exterior как hero больше не описывают текущий вариант. Все 93 файла фото, content/photos.json и остальные фото-разделы не менялись. Статическая проверка и media-qa закрепляют divine-liturgy. Отдельная проверка обеих главных на девяти ширинах: audit/hero-restored-*-verification.json.
