@@ -11,8 +11,10 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
  const html=fs.readFileSync(path.join(out,file),'utf8');
  if(googleFiles.includes(file)){assert.equal(html.trim(),`google-site-verification: ${file}`);continue;}
  pages++;
+ const verification=JSON.parse(fs.readFileSync(path.join(root,'content/site.json'))).google_site_verification;
+ if(verification){assert.deepEqual([...html.matchAll(/<meta name="google-site-verification" content="([^"]+)"/g)].map(m=>m[1]),[verification],`Exact owner verification meta: ${file}`);}
  assert.match(html,/<html lang="(uk|en)">/);assert.match(html,/<title>[^<]+<\/title>/);
- assert.ok(!/isf-center-website|google-site-verification|NAU|УГКЦ|ПЦУ|Lorem ipsum|undefined|TODO/i.test(html),`Foreign or placeholder content: ${file}`);
+ assert.ok(!/isf-center-website|NAU|УГКЦ|ПЦУ|Lorem ipsum|undefined|TODO/i.test(html),`Foreign or placeholder content: ${file}`);
  if(!['index.html','404.html'].includes(file)){
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,`One H1 in ${file}`);
   const title=html.match(/<title>(.*?)<\/title>/)[1],description=html.match(/<meta name="description" content="([^"]+)"/)[1];
