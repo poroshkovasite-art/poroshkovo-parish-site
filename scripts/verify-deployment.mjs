@@ -13,6 +13,7 @@ const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json'))),hash=b=>c
 const publishedPhotos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))).filter(p=>p.publication_status==='approved'&&p.rights_confirmed);
 const assets=['/assets/site.css','/assets/app.js','/favicon.ico','/assets/favicon.ico','/assets/favicon-16x16.png','/assets/favicon-32x32.png','/assets/apple-touch-icon.png','/assets/icon-192.png','/assets/icon-512.png','/assets/og-card.png','/robots.txt','/sitemap.xml','/uk/site.webmanifest','/en/site.webmanifest',...publishedPhotos.flatMap(p=>p.widths.map(w=>`/assets/photos/${p.id}-${w}.webp`)),...fs.readdirSync(path.join(out,'assets/brand')).filter(f=>f.endsWith('.png')).map(f=>`/assets/brand/${f}`)];
 const report={date:'2026-10-29',url:base,status:'RUNNING',http:[],layouts:[],accessibility:[],jsErrors:[],interactions:[]};
+assets.push('/google696019cf5de45d47.html','/verification/google696019cf5de45d47.txt');
 for(const route of [...routes,...assets]){
  const response=await fetch(base+route),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200,route);
  const local=fs.readFileSync(path.join(out,route.endsWith('/')?route.slice(1)+'index.html':route.slice(1)));
