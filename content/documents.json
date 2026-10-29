@@ -1,0 +1,172 @@
+{
+  "section_id": "documents",
+  "title": {
+    "uk": "Декрет про призначення настоятеля",
+    "en": "Decree appointing the parish priest"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "pastor-appointment",
+      "title": {
+        "uk": "Декрет про призначення настоятеля",
+        "en": "Decree appointing the parish priest"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "church",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "issued_on": null,
+      "issuer": {
+        "uk": "",
+        "en": ""
+      },
+      "public_file": null,
+      "publication_permission": false,
+      "privacy_reviewed": false,
+      "privacy_reviewed_on": null
+    },
+    {
+      "id": "eparchial-decree",
+      "title": {
+        "uk": "Єпархіальний декрет",
+        "en": "Eparchial decree"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "church",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "issued_on": null,
+      "issuer": {
+        "uk": "",
+        "en": ""
+      },
+      "public_file": null,
+      "publication_permission": false,
+      "privacy_reviewed": false,
+      "privacy_reviewed_on": null
+    },
+    {
+      "id": "church-status",
+      "title": {
+        "uk": "Церковний статус парафії",
+        "en": "The parish’s ecclesial status"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "church",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "issued_on": null,
+      "issuer": {
+        "uk": "",
+        "en": ""
+      },
+      "public_file": null,
+      "publication_permission": false,
+      "privacy_reviewed": false,
+      "privacy_reviewed_on": null
+    },
+    {
+      "id": "registration-extract",
+      "title": {
+        "uk": "Витяг про державну реєстрацію",
+        "en": "State registration extract"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "registration",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "issued_on": null,
+      "issuer": {
+        "uk": "",
+        "en": ""
+      },
+      "public_file": null,
+      "publication_permission": false,
+      "privacy_reviewed": false,
+      "privacy_reviewed_on": null
+    },
+    {
+      "id": "parish-statute",
+      "title": {
+        "uk": "Статут релігійної громади",
+        "en": "Statute of the religious community"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "registration",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "issued_on": null,
+      "issuer": {
+        "uk": "",
+        "en": ""
+      },
+      "public_file": null,
+      "publication_permission": false,
+      "privacy_reviewed": false,
+      "privacy_reviewed_on": null
+    },
+    {
+      "id": "project-report",
+      "title": {
+        "uk": "Офіційний звіт",
+        "en": "Official report"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "other",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "issued_on": null,
+      "issuer": {
+        "uk": "",
+        "en": ""
+      },
+      "public_file": null,
+      "publication_permission": false,
+      "privacy_reviewed": false,
+      "privacy_reviewed_on": null
+    }
+  ]
+}

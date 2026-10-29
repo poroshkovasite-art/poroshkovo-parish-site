@@ -11,6 +11,7 @@ export function validateContent({site,pages,photos,news,schedule}) {
   assert.match(p.id,/^[a-z0-9-]+$/);assert.ok(!ids.has(p.id),'Unique photo ID');ids.add(p.id);
   assert.ok(p.credit&&bilingual(p.alt)&&bilingual(p.caption)&&p.width>0&&p.height>0,'Photo rights, alt and dimensions');
   assert.ok(p.widths.includes(960)&&p.widths.every(w=>Number.isInteger(w)&&w>0&&w<=p.width),'Responsive widths must be real and include the default 960px variant');
+  if(p.contains_children)assert.equal(p.consents_confirmed,true,'Publication requires owner confirmation of necessary child-photo consents');
  }
  const slugs=new Set();
  if(site.hero_photo_id)assert.ok(photos.some(p=>p.id===site.hero_photo_id&&p.publication_status==='approved'&&p.rights_confirmed),'Hero must reference an approved photo');

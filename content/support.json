@@ -1,0 +1,92 @@
+{
+  "section_id": "support",
+  "title": {
+    "uk": "Підтримати життя парафії",
+    "en": "Support parish life"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "parish-needs",
+      "title": {
+        "uk": "Підтримати життя парафії",
+        "en": "Support parish life"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "parish",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "social-needs",
+      "title": {
+        "uk": "Допомогти соціальному служінню",
+        "en": "Support social ministry"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "social",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "youth-needs",
+      "title": {
+        "uk": "Підтримати дітей та молодь",
+        "en": "Support children and young people"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "youth",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "official-account",
+      "title": {
+        "uk": "Офіційний рахунок",
+        "en": "Official account"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "bank",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "recipient": null,
+      "iban": null,
+      "bank": null,
+      "swift": null,
+      "currency": null,
+      "payment_reference": null,
+      "financial_confirmation": false
+    }
+  ],
+  "reports": []
+}

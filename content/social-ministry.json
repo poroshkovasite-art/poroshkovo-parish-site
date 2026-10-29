@@ -1,0 +1,82 @@
+{
+  "section_id": "social-ministry",
+  "title": {
+    "uk": "Підтримка військових та їхніх родин",
+    "en": "Support for service members and their families"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "military-families",
+      "title": {
+        "uk": "Підтримка військових та їхніх родин",
+        "en": "Support for service members and their families"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "families",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "difficult-times",
+      "title": {
+        "uk": "Підтримка у складних обставинах",
+        "en": "Support in difficult circumstances"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "support",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "visiting-sick",
+      "title": {
+        "uk": "Відвідування хворих і літніх людей",
+        "en": "Visiting sick and older people"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "visiting",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "food-support",
+      "title": {
+        "uk": "Допомога потребуючим",
+        "en": "Helping people in need"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "food",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    }
+  ]
+}

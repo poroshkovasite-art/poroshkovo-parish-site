@@ -18,8 +18,8 @@
     "address": null,
     "phone": "+380504321969",
     "email": null,
-    "map_url": null,
-    "embed_url": null,
+    "map_url": "https://maps.app.goo.gl/C3U3LFnu9HUtSBBB9",
+    "embed_url": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2634.815455548004!2d22.752722999999996!3d48.67077199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDQwJzE0LjgiTiAyMsKwNDUnMDkuOCJF!5e0!3m2!1sru!2sua!4v1793268230933!5m2!1sru!2sua",
     "phone_display": "+380 50 432 19 69",
     "phone_verification_status": "confirmed",
     "phone_confirmed_on": "2026-10-29",
@@ -27,7 +27,16 @@
     "messengers": {
       "viber": true,
       "whatsapp": true
-    }
+    },
+    "coordinates": {
+      "latitude": 48.670772,
+      "longitude": 22.752723
+    },
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=48.670772%2C22.752723",
+    "location_verification_status": "owner_confirmed_exact_pin",
+    "location_verified_on": "2026-10-29",
+    "location_source": "https://maps.app.goo.gl/C3U3LFnu9HUtSBBB9",
+    "location_note": "Google Maps resolves to an unnamed coordinate pin, not a named business listing. Exact coordinates read from the supplied pin; satellite roof/grounds visually consistent with owner-supplied church photograph. Parish identity confirmed by owner, not independently named by Google."
   },
   "donations": {
     "verification_status": "needs_confirmation",

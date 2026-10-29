@@ -1,0 +1,22 @@
+{
+  "available_years": [
+    2026
+  ],
+  "timezone": "Europe/Kyiv",
+  "updated_on": "2026-10-29",
+  "coverage": {
+    "uk": "Вибрані перевірені дати 2026 року. Це не повний щоденний календар; для інших днів відкрийте офіційне джерело.",
+    "en": "Selected verified dates in 2026. This is not a complete daily calendar; consult the official source for other days."
+  },
+  "sources": {
+    "church": "https://mgce.uz.ua/tserkovnij-kalendar/",
+    "eparchy": "https://mgce.uz.ua/pastoralnij-kalendar/"
+  },
+  "paschal_anchors": {
+    "2026": {
+      "pascha": "2026-04-05",
+      "ascension": "2026-05-14",
+      "pentecost": "2026-05-24"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "section_id": "parish-activities",
+  "title": {
+    "uk": "Богослужіння",
+    "en": "Worship"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "worship",
+      "title": {
+        "uk": "Богослужіння",
+        "en": "Worship"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "worship",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "feasts",
+      "title": {
+        "uk": "Парафіяльні свята",
+        "en": "Parish feasts"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "feasts",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "catechesis",
+      "title": {
+        "uk": "Катехизація",
+        "en": "Catechesis"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "catechesis",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "camps",
+      "title": {
+        "uk": "Дитячі табори",
+        "en": "Children’s camps"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "camps",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "youth",
+      "title": {
+        "uk": "Молодіжні зустрічі",
+        "en": "Youth meetings"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "youth",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "pilgrimages",
+      "title": {
+        "uk": "Паломництва",
+        "en": "Pilgrimages"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "pilgrimages",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "prayer-groups",
+      "title": {
+        "uk": "Молитовні спільноти",
+        "en": "Prayer communities"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "prayer",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "cooperation",
+      "title": {
+        "uk": "Співпраця між парафіями",
+        "en": "Cooperation between parishes"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "cooperation",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "charity",
+      "title": {
+        "uk": "Благодійність",
+        "en": "Charity"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "charity",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "social",
+      "title": {
+        "uk": "Соціальне служіння",
+        "en": "Social ministry"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "social",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "outings",
+      "title": {
+        "uk": "Спільний відпочинок",
+        "en": "Shared outings"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "outings",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "section_id": "camps",
+  "title": {
+    "uk": "Літній дитячий табір",
+    "en": "Children’s summer camp"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "summer-camp",
+      "title": {
+        "uk": "Літній дитячий табір",
+        "en": "Children’s summer camp"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "camps",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "programme": {
+        "uk": "",
+        "en": ""
+      },
+      "organisers": [],
+      "start_date": null,
+      "end_date": null,
+      "contact_phone": null,
+      "consents_confirmed": false
+    }
+  ]
+}

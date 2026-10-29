@@ -1,12 +1,23 @@
 [
   {
+    "date": "1381",
+    "era": "village",
+    "category": "village",
+    "uk": "Перша документальна згадка про Порошково за довідкою сільради; також згадано альтернативний 1357 рік. Це не дата заснування парафії.",
+    "en": "The village council records Poroshkovo’s first documentary mention in 1381, also noting the alternative year 1357. This is not the founding date of the parish.",
+    "source_url": "https://t-remeta.gov.ua/istorichna-dovidka/poroshkovo",
+    "extracted_on": "2026-10-29",
+    "verification_status": "verified_primary_historical_source"
+  },
+  {
     "date": "1751",
     "era": "roots",
     "uk": "Згадка про дерев’яну церкву святого Миколая за о. Олексія Реберка.",
     "en": "A wooden church of Saint Nicholas is recorded during the ministry of Fr Oleksii Reberko.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "1762 · 1894",
@@ -15,7 +26,8 @@
     "en": "Two dates above the entrance of the old masonry church; their meaning needs further research.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "1949",
@@ -24,7 +36,8 @@
     "en": "The eparchial account records the sentencing of priest Ivan Ehreshi.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "church"
   },
   {
     "date": "1990-ті",
@@ -34,7 +47,8 @@
     "en": "The faithful attended church in Svaliavka and later gathered for prayer in homes.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "15.04.2002",
@@ -44,7 +58,8 @@
     "en": "The renewed community was founded.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "23.10.2003",
@@ -54,7 +69,8 @@
     "en": "A chapel in the former outpatient clinic was blessed.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "23.10.2004",
@@ -64,7 +80,8 @@
     "en": "Bishop Milan blessed the cornerstone of the new church.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "04.07.2008",
@@ -74,7 +91,8 @@
     "en": "Bishop Milan blessed the crosses for the dome.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "18.07.2009",
@@ -84,7 +102,8 @@
     "en": "The new church of Saints Cyril and Methodius was consecrated.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "02.04.2011",
@@ -94,7 +113,8 @@
     "en": "The cornerstone of the parish house and catechetical centre was blessed.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   },
   {
     "date": "18.07.2015",
@@ -104,6 +124,7 @@
     "en": "Bishop Milan blessed the completed parish house.",
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
-    "verification_status": "verified_primary_historical_source"
+    "verification_status": "verified_primary_historical_source",
+    "category": "parish"
   }
 ]

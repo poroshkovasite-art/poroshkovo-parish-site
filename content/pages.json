@@ -65,16 +65,16 @@
   },
   "history": {
     "title": {
-      "uk": "Історія храму",
-      "en": "The story of our church"
+      "uk": "Історія нашого краю та нашої Церкви",
+      "en": "The History of Our Land and Our Church"
     },
     "description": {
-      "uk": "Від згадки про церкву 1751 року до освячення нового храму 2009 року: хронологія греко-католицької громади Порошкова.",
-      "en": "From a church recorded in 1751 to the consecration of the new church in 2009: a sourced timeline of Poroshkovo’s Greek Catholic community."
+      "uk": "Від першої згадки Порошкова 1381 року до відродження греко-католицької громади та освячення сучасного храму: історія з офіційними джерелами.",
+      "en": "From the first recorded mention of Poroshkovo in 1381 to the renewed Greek Catholic community and its present church: a history grounded in official sources."
     },
     "intro": {
-      "uk": "Історія віри в селі давніша за сучасну будівлю. Важливо розрізняти давню церкву святого Миколая та новий храм святих Кирила і Мефодія.",
-      "en": "The story of faith in the village begins long before the present building. The historic church of Saint Nicholas and the new church of Saints Cyril and Methodius are distinct churches."
+      "uk": "Історія села і шлях парафії — різні, але пов’язані оповіді. Тут зібрано підтверджені віхи та пам’ять про людей, які зберігали віру.",
+      "en": "The village and the parish have distinct but connected stories. Here we bring together verified milestones and the memory of those who preserved the faith."
     },
     "blocks": [
       {
@@ -330,8 +330,8 @@
           "en": "Planning a visit"
         },
         "text": {
-          "uk": "Контактний номер парафії: +380 50 432 19 69; доступні також Viber і WhatsApp. Точну адресу для відвідувачів і позначку храму на карті буде додано після підтвердження.",
-          "en": "The parish contact number is +380 50 432 19 69, also available on Viber and WhatsApp. The visiting address and church map pin will be added after confirmation."
+          "uk": "Контактний номер парафії: +380 50 432 19 69; доступні також Viber і WhatsApp. Нижче розміщено точну булавку храму, підтверджену власником сайту.",
+          "en": "The parish contact number is +380 50 432 19 69, also available on Viber and WhatsApp. Below is the exact church pin confirmed by the website owner."
         }
       },
       {
@@ -372,8 +372,181 @@
   },
   "support": {
     "title": {
-      "uk": "Підтримати парафію",
-      "en": "Support the parish"
+      "uk": "Допомогти парафії",
+      "en": "Support our parish"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: допомогти парафії. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: support our parish. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "calendar": {
+    "title": {
+      "uk": "Календар",
+      "en": "Calendar"
+    },
+    "description": {
+      "uk": "Інтерактивний календар Порошкова: перевірені церковні дати, події Мукачівської єпархії та планер парафії.",
+      "en": "Poroshkovo’s interactive calendar: verified church dates, events in the Eparchy of Mukachevo and a parish planner."
+    },
+    "intro": {
+      "uk": "Ритм молитви та спільного життя. Оберіть день, щоб переглянути перевірені свята, читання та події.",
+      "en": "The rhythm of prayer and community life. Choose a day to explore verified feasts, readings and events."
+    },
+    "published": true
+  },
+  "resources": {
+    "title": {
+      "uk": "Духовні ресурси",
+      "en": "Spiritual resources"
+    },
+    "description": {
+      "uk": "Офіційні церковні джерела, календарі МГКЄ, Святе Письмо та Vatican News — корисні посилання для духовного життя.",
+      "en": "Official church sources, MGCE calendars, Holy Scripture and Vatican News: useful links for a life of faith."
+    },
+    "intro": {
+      "uk": "Для щоденної молитви, читання Святого Письма та знайомства з життям Церкви.",
+      "en": "For daily prayer, reading Holy Scripture and keeping in touch with the life of the Church."
+    },
+    "published": true
+  },
+  "documents": {
+    "title": {
+      "uk": "Офіційні документи",
+      "en": "Official documents"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: офіційні документи. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: official documents. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Офіційні документи парафії публікуються після перевірки та дозволу на відкритий доступ.",
+      "en": "Official parish documents are published after review and approval for public access."
+    },
+    "published": true
+  },
+  "pastor-message": {
+    "title": {
+      "uk": "Слово настоятеля",
+      "en": "A word from the parish priest"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: слово настоятеля. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: a word from the parish priest. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "sacraments": {
+    "title": {
+      "uk": "Святі Таїнства та духовна допомога",
+      "en": "Sacraments and pastoral care"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: святі таїнства та духовна допомога. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: sacraments and pastoral care. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "first-visit": {
+    "title": {
+      "uk": "Вперше у нашому храмі",
+      "en": "Your first visit"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: вперше у нашому храмі. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: your first visit. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Кілька простих орієнтирів для першого знайомства з нашою парафією.",
+      "en": "A few simple pointers to help you get to know our parish."
+    },
+    "published": true
+  },
+  "youth": {
+    "title": {
+      "uk": "Діти та молодь",
+      "en": "Children and young people"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: діти та молодь. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: children and young people. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "camps": {
+    "title": {
+      "uk": "Літні дитячі табори",
+      "en": "Children’s summer camps"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: літні дитячі табори. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: children’s summer camps. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "social-ministry": {
+    "title": {
+      "uk": "Соціальне служіння",
+      "en": "Social ministry"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: соціальне служіння. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: social ministry. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "parish-activities": {
+    "title": {
+      "uk": "Життя парафії",
+      "en": "Parish life"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: життя парафії. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: parish life. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
+    },
+    "published": false
+  },
+  "community-stories": {
+    "title": {
+      "uk": "Історії наших людей",
+      "en": "Stories of our people"
+    },
+    "description": {
+      "uk": "Розділ парафіяльного сайту Порошкова: історії наших людей. Перевірені матеріали та контакти.",
+      "en": "A section of the Poroshkovo parish website: stories of our people. Verified materials and parish contacts."
+    },
+    "intro": {
+      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
+      "en": "Verified materials about this area of parish life."
     },
     "published": false
   }

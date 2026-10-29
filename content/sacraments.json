@@ -1,0 +1,226 @@
+{
+  "section_id": "sacraments",
+  "title": {
+    "uk": "Хрещення",
+    "en": "Baptism"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "baptism",
+      "title": {
+        "uk": "Хрещення",
+        "en": "Baptism"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "sacrament",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "chrismation",
+      "title": {
+        "uk": "Миропомазання",
+        "en": "Chrismation"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "sacrament",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "eucharist",
+      "title": {
+        "uk": "Євхаристія",
+        "en": "Eucharist"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "sacrament",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "confession",
+      "title": {
+        "uk": "Сповідь",
+        "en": "Confession"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "sacrament",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "marriage",
+      "title": {
+        "uk": "Вінчання",
+        "en": "Marriage"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "sacrament",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "anointing",
+      "title": {
+        "uk": "Єлеопомазання",
+        "en": "Anointing of the Sick"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "sacrament",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "spiritual-conversation",
+      "title": {
+        "uk": "Духовна розмова",
+        "en": "A spiritual conversation"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "pastoral",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    },
+    {
+      "id": "prayer-sick",
+      "title": {
+        "uk": "Молитва за хворих",
+        "en": "Prayer for the sick"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "pastoral",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "explanation": {
+        "uk": "",
+        "en": ""
+      },
+      "how_to_contact": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "eparchy",
+    "icon": "church",
+    "url": "https://mgce.uz.ua/",
+    "title": {
+      "uk": "Мукачівська греко-католицька єпархія",
+      "en": "Greek Catholic Eparchy of Mukachevo"
+    },
+    "description": {
+      "uk": "Офіційний сайт єпархії: церковне життя, новини, документи та духовні події.",
+      "en": "The eparchy’s official website: church life, news, documents and spiritual events."
+    },
+    "verified_on": "2026-10-29"
+  },
+  {
+    "id": "church-calendar",
+    "icon": "calendar",
+    "url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+    "title": {
+      "uk": "Церковний календар МГКЄ",
+      "en": "MGCE Church Calendar"
+    },
+    "description": {
+      "uk": "Свята, пам’ять святих, пости та щоденні літургійні читання.",
+      "en": "Feasts, saints, fasts and daily liturgical readings."
+    },
+    "verified_on": "2026-10-29"
+  },
+  {
+    "id": "pastoral",
+    "icon": "people",
+    "url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+    "title": {
+      "uk": "Пасторальний календар МГКЄ",
+      "en": "MGCE Pastoral Calendar"
+    },
+    "description": {
+      "uk": "Паломництва, реколекції, зустрічі та події нашої єпархії.",
+      "en": "Pilgrimages, retreats, meetings and events in our eparchy."
+    },
+    "verified_on": "2026-10-29"
+  },
+  {
+    "id": "bible",
+    "icon": "book",
+    "url": "https://www.bible.com/uk",
+    "title": {
+      "uk": "Святе Письмо — читати Біблію",
+      "en": "Holy Scripture — read the Bible"
+    },
+    "description": {
+      "uk": "Читайте та слухайте Слово Боже українською мовою.",
+      "en": "Read and listen to the word of God in Ukrainian."
+    },
+    "verified_on": "2026-10-29"
+  },
+  {
+    "id": "vatican",
+    "icon": "dome",
+    "url": "https://www.vaticannews.va/uk.html",
+    "title": {
+      "uk": "Vatican News — українською",
+      "en": "Vatican News — in Ukrainian"
+    },
+    "description": {
+      "uk": "Новини Святого Престолу, Папи Римського та життя Вселенської Церкви.",
+      "en": "News from the Holy See, the Pope and the life of the universal Church."
+    },
+    "verified_on": "2026-10-29"
+  }
+]

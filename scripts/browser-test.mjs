@@ -23,7 +23,7 @@ try {
    await page.evaluate(async()=>{await Promise.all([...document.images].filter(i=>i.hasAttribute("src")).map(i=>{i.loading="eager";return i.decode().catch(()=>{});}));});
    const measured=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,brokenImages:[...document.images].filter(i=>i.getAttribute('src')&&(!i.complete||i.naturalWidth===0)).length,h1:document.querySelectorAll('h1').length,invalidRects:[...document.querySelectorAll('main h1,main h2,main p')].filter(e=>{if(e.closest('.carousel'))return false;const r=e.getBoundingClientRect();return r.width&&r.right>innerWidth+1}).map(e=>e.textContent.slice(0,50))}));
    results.push({width,route,...measured});if(measured.overflow||measured.brokenImages||measured.h1!==1||measured.invalidRects.length)failures.push({width,route,...measured});
-   const expected=route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/');assert.equal(await page.locator('.language').getAttribute('href'),expected);
+   const expected=route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/');assert.equal(new URL(await page.locator('.language').getAttribute('href'),'http://localhost:4173').pathname,expected);
   }
  }
  for(const lang of ['uk','en']){
@@ -36,7 +36,7 @@ try {
   await page.evaluate(()=>{document.activeElement.blur();window.scrollTo(0,0);});await page.screenshot({path:path.join(audit,`${lang}-home-mobile-390.png`),fullPage:true});
   await page.setViewportSize({width:1440,height:1000});await page.goto(`http://localhost:4173/${lang}/`);await page.screenshot({path:path.join(audit,`${lang}-home-desktop-1440.png`),fullPage:true});
   const accessibility=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();axe.push({route:`/${lang}/`,violations:accessibility.violations});
-  await page.goto(`http://localhost:4173/${lang}/history/`);await page.locator('[data-era="church"]').click();assert.equal(await page.locator('[data-timeline-item]:visible').count(),3);assert.equal(await page.locator('[data-timeline-count]').innerText(),'3');await page.locator('[data-era="all"]').click();assert.equal(await page.locator('[data-timeline-item]:visible').count(),11);
+  await page.goto(`http://localhost:4173/${lang}/history/`);await page.locator('[data-era="church"]').click();assert.equal(await page.locator('[data-timeline-item]:visible').count(),3);assert.equal(await page.locator('[data-timeline-count]').innerText(),'3');await page.locator('[data-era="all"]').click();assert.equal(await page.locator('[data-timeline-item]:visible').count(),12);
   await page.evaluate(()=>{document.activeElement.blur();window.scrollTo(0,0);});await page.screenshot({path:path.join(audit,`${lang}-history-desktop-1440.png`),fullPage:true});
   const a=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();axe.push({route:`/${lang}/history/`,violations:a.violations});
   await page.locator('.language').click();assert.ok(page.url().includes(`/${lang==='uk'?'en':'uk'}/history/`));
@@ -59,7 +59,7 @@ try {
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:340,y}]});for(const x of [290,240,190,140,90,45])await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
  await touch.waitForFunction(()=>document.querySelector('.carousel').scrollLeft>0);await touchContext.close();
  const response=await page.goto('http://localhost:4173/no-such-page/');assert.equal(response.status(),404);
- const report={date:'2026-10-29',status:failures.length||errors.length||axe.some(a=>a.violations.length)?'FAIL':'PASS',browser:'Chromium via Playwright',widths,route_checks:results.length,results,failures,errors,axe,interaction_checks:['mobile menu','group menu Escape and focus','page-preserving language switch','carousel buttons, keyboard and real touch swipe','timeline filters/count','isolated gallery filter/modal/keyboard/focus fixture','404 HTTP status'],limitations:['Ten owner-supplied photos and official logo included; dedicated media checks cover the live gallery.','Lighthouse score not measured.','Local preview audit; publication verified separately.']};
+ const report={date:'2026-10-29',status:failures.length||errors.length||axe.some(a=>a.violations.length)?'FAIL':'PASS',browser:'Chromium via Playwright',widths,route_checks:results.length,results,failures,errors,axe,interaction_checks:['mobile menu','group menu Escape and focus','page-preserving language switch','carousel buttons, keyboard and real touch swipe','timeline filters/count','isolated gallery filter/modal/keyboard/focus fixture','404 HTTP status'],limitations:['Ten owner-supplied photos and official logo included; dedicated media checks cover the live gallery.','Lighthouse is measured separately; see lighthouse reports.','Local preview audit; publication verified separately.']};
  fs.writeFileSync(path.join(audit,'browser-report.json'),JSON.stringify(report,null,2));
  console.log(JSON.stringify({...report,results:undefined,axe:axe.map(a=>({route:a.route,violations:a.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>n.target)}))}))},null,2));
  assert.equal(report.status,'PASS','Browser QA found issues; see audit/browser-report.json');

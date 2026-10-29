@@ -1,0 +1,155 @@
+{
+  "section_id": "community-stories",
+  "title": {
+    "uk": "Спогади про будівництво храму",
+    "en": "Memories of building the church"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "building-memories",
+      "title": {
+        "uk": "Спогади про будівництво храму",
+        "en": "Memories of building the church"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "memories",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "quote": {
+        "uk": "",
+        "en": ""
+      },
+      "body": {
+        "uk": "",
+        "en": ""
+      },
+      "author_name": null,
+      "author_permission": false,
+      "consents_confirmed": false
+    },
+    {
+      "id": "renewal-memories",
+      "title": {
+        "uk": "Відродження парафії",
+        "en": "The parish’s renewal"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "renewal",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "quote": {
+        "uk": "",
+        "en": ""
+      },
+      "body": {
+        "uk": "",
+        "en": ""
+      },
+      "author_name": null,
+      "author_permission": false,
+      "consents_confirmed": false
+    },
+    {
+      "id": "elder-memories",
+      "title": {
+        "uk": "Розповіді старших парафіян",
+        "en": "Memories of older parishioners"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "memories",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "quote": {
+        "uk": "",
+        "en": ""
+      },
+      "body": {
+        "uk": "",
+        "en": ""
+      },
+      "author_name": null,
+      "author_permission": false,
+      "consents_confirmed": false
+    },
+    {
+      "id": "family-faith",
+      "title": {
+        "uk": "Сімейна історія віри",
+        "en": "A family’s story of faith"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "family",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "quote": {
+        "uk": "",
+        "en": ""
+      },
+      "body": {
+        "uk": "",
+        "en": ""
+      },
+      "author_name": null,
+      "author_permission": false,
+      "consents_confirmed": false
+    },
+    {
+      "id": "volunteering",
+      "title": {
+        "uk": "Досвід волонтерського служіння",
+        "en": "A story of volunteering"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "volunteering",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "quote": {
+        "uk": "",
+        "en": ""
+      },
+      "body": {
+        "uk": "",
+        "en": ""
+      },
+      "author_name": null,
+      "author_permission": false,
+      "consents_confirmed": false
+    }
+  ]
+}

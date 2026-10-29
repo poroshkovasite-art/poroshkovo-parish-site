@@ -1,0 +1,1184 @@
+{
+  "year": 2026,
+  "category": "church",
+  "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+  "verified_on": "2026-10-29",
+  "status": "confirmed",
+  "coverage": "selected_verified_dates",
+  "update_method": "manual_source_review",
+  "year_basis": "Weekdays and Paschal cycle cross-checked against the explicitly dated 2026 pastoral calendar (Holy Thursday 2 April); source HTML has legacy tab IDs, not reliable year labels.",
+  "events": [
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-01-06",
+      "date": "2026-01-06",
+      "title": {
+        "uk": "Богоявлення Господнє",
+        "en": "Theophany of the Lord"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Тит 2:11–14; 3:4–7",
+          "en": "Titus 2:11–14; 3:4–7"
+        },
+        "gospel": {
+          "uk": "Мт 3:13–17",
+          "en": "Matthew 3:13–17"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-03-25",
+      "date": "2026-03-25",
+      "title": {
+        "uk": "Благовіщення Пресвятої Богородиці",
+        "en": "Annunciation to the Mother of God"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 2:11–18",
+          "en": "Hebrews 2:11–18"
+        },
+        "gospel": {
+          "uk": "Лк 1:24–38",
+          "en": "Luke 1:24–38"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-03-29",
+      "date": "2026-03-29",
+      "title": {
+        "uk": "Вхід Господній у Єрусалим",
+        "en": "Entry of the Lord into Jerusalem"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "Квітна неділя",
+        "en": "Palm Sunday"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Флп 4:4–9",
+          "en": "Philippians 4:4–9"
+        },
+        "gospel": {
+          "uk": "Ів 12:1–18",
+          "en": "John 12:1–18"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "fast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-04-03",
+      "date": "2026-04-03",
+      "title": {
+        "uk": "Велика п’ятниця",
+        "en": "Great and Holy Friday"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": {
+        "uk": "Строгий піст — прямо зазначено у джерелі",
+        "en": "Strict fast — explicitly stated in the source"
+      },
+      "readings": null
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-04-05",
+      "date": "2026-04-05",
+      "title": {
+        "uk": "Пасха — Воскресіння Христове",
+        "en": "Pascha — Resurrection of Christ"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Ді 1:1–8",
+          "en": "Acts 1:1–8"
+        },
+        "gospel": {
+          "uk": "Ів 1:1–17",
+          "en": "John 1:1–17"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-05-14",
+      "date": "2026-05-14",
+      "title": {
+        "uk": "Вознесіння Господнє",
+        "en": "Ascension of the Lord"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Ді 1:1–12",
+          "en": "Acts 1:1–12"
+        },
+        "gospel": {
+          "uk": "Лк 24:36–53",
+          "en": "Luke 24:36–53"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-05-24",
+      "date": "2026-05-24",
+      "title": {
+        "uk": "Зіслання Святого Духа",
+        "en": "Descent of the Holy Spirit"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "П’ятидесятниця",
+        "en": "Pentecost"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Ді 2:1–11",
+          "en": "Acts 2:1–11"
+        },
+        "gospel": {
+          "uk": "Ів 7:37–52; 8:12",
+          "en": "John 7:37–52; 8:12"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-05-26",
+      "date": "2026-05-26",
+      "title": {
+        "uk": "Пам’ять апостола Карпа",
+        "en": "Commemoration of the Apostle Carpus"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": {
+        "uk": "Загальниця — зазначено у джерелі",
+        "en": "Fast-free week — stated in the source"
+      },
+      "readings": {
+        "apostle": {
+          "uk": "Рм 1:1–7, 13–17",
+          "en": "Romans 1:1–7, 13–17"
+        },
+        "gospel": {
+          "uk": "Мт 4:25–5:13",
+          "en": "Matthew 4:25–5:13"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "fast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-06-01",
+      "date": "2026-06-01",
+      "title": {
+        "uk": "Початок Петрового посту",
+        "en": "Beginning of the Apostles’ Fast"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": {
+        "uk": "Початок посту перед святом апостолів Петра і Павла",
+        "en": "Beginning of the fast before Saints Peter and Paul"
+      },
+      "readings": {
+        "apostle": {
+          "uk": "Рм 2:28–3:18",
+          "en": "Romans 2:28–3:18"
+        },
+        "gospel": {
+          "uk": "Мт 6:31–34; 7:9–11",
+          "en": "Matthew 6:31–34; 7:9–11"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-01",
+      "date": "2026-10-01",
+      "title": {
+        "uk": "Покров Пресвятої Богородиці",
+        "en": "Protection of the Mother of God"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 9:1–7",
+          "en": "Hebrews 9:1–7"
+        },
+        "gospel": {
+          "uk": "Лк 10:38–42; 11:27–28",
+          "en": "Luke 10:38–42; 11:27–28"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-25",
+      "date": "2026-10-25",
+      "title": {
+        "uk": "Христос Цар",
+        "en": "Christ the King"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "22-га неділя після П’ятидесятниці · глас 5",
+        "en": "22nd Sunday after Pentecost · tone 5"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Кол 1:12–20",
+          "en": "Colossians 1:12–20"
+        },
+        "gospel": {
+          "uk": "Ів 18:33–37",
+          "en": "John 18:33–37"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-26",
+      "date": "2026-10-26",
+      "title": {
+        "uk": "Великомученик Димитрій",
+        "en": "Great Martyr Demetrius"
+      },
+      "saints": {
+        "uk": "Димитрій Мироточець",
+        "en": "Demetrius the Myrrh-streamer"
+      },
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "1 Сол 1:1–5",
+          "en": "1 Thessalonians 1:1–5"
+        },
+        "gospel": {
+          "uk": "Лк 10:22–24",
+          "en": "Luke 10:22–24"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-27",
+      "date": "2026-10-27",
+      "title": {
+        "uk": "Пам’ять мученика Нестора",
+        "en": "Commemoration of Martyr Nestor"
+      },
+      "saints": {
+        "uk": "Нестор, Капітоліна та Єротиїда",
+        "en": "Nestor, Capitolina and Eroteis"
+      },
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "1 Сол 1:6–10",
+          "en": "1 Thessalonians 1:6–10"
+        },
+        "gospel": {
+          "uk": "Лк 11:1–10",
+          "en": "Luke 11:1–10"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-28",
+      "date": "2026-10-28",
+      "title": {
+        "uk": "Пам’ять мучениці Параскеви",
+        "en": "Commemoration of Martyr Paraskeva"
+      },
+      "saints": {
+        "uk": "Параскева з Іконії, Терентій та Неоніла",
+        "en": "Paraskeva of Iconium, Terentius and Neonilla"
+      },
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "1 Сол 2:1–8",
+          "en": "1 Thessalonians 2:1–8"
+        },
+        "gospel": {
+          "uk": "Лк 11:9–13",
+          "en": "Luke 11:9–13"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-29",
+      "date": "2026-10-29",
+      "title": {
+        "uk": "Пам’ять Анастасії та Аврамія",
+        "en": "Commemoration of Anastasia and Abraham"
+      },
+      "saints": {
+        "uk": "Преподобномучениця Анастасія; преподобний Аврамій затворник",
+        "en": "Venerable Martyr Anastasia; Venerable Abraham the Recluse"
+      },
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "1 Сол 2:9–14",
+          "en": "1 Thessalonians 2:9–14"
+        },
+        "gospel": {
+          "uk": "Лк 11:14–23",
+          "en": "Luke 11:14–23"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-30",
+      "date": "2026-10-30",
+      "title": {
+        "uk": "Мученики Зиновій і Зиновія",
+        "en": "Martyrs Zenobius and Zenobia"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "1 Сол 2:14–19",
+          "en": "1 Thessalonians 2:14–19"
+        },
+        "gospel": {
+          "uk": "Лк 11:23–26",
+          "en": "Luke 11:23–26"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-10-31",
+      "date": "2026-10-31",
+      "title": {
+        "uk": "Блаженний Теодор Ромжа",
+        "en": "Blessed Theodore Romzha"
+      },
+      "saints": {
+        "uk": "Священномученик Теодор Ромжа",
+        "en": "Hieromartyr Theodore Romzha"
+      },
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 13:17–25",
+          "en": "Hebrews 13:17–25"
+        },
+        "gospel": {
+          "uk": "Лк 6:17–23",
+          "en": "Luke 6:17–23"
+        },
+        "context": {
+          "uk": "Читання святому",
+          "en": "Readings for the saint"
+        }
+      },
+      "context": {
+        "uk": "Читання святому",
+        "en": "Readings for the saint"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "sunday",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-01",
+      "date": "2026-11-01",
+      "title": {
+        "uk": "23-тя неділя після П’ятидесятниці",
+        "en": "23rd Sunday after Pentecost"
+      },
+      "saints": {
+        "uk": "Косма і Дам’ян та їхня мати Теодотія",
+        "en": "Cosmas and Damian and their mother Theodotia"
+      },
+      "liturgical": {
+        "uk": "Глас 6 · за місцевим звичаєм, поминання усопших",
+        "en": "Tone 6 · commemoration of the departed according to local custom"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Еф 2:4–10",
+          "en": "Ephesians 2:4–10"
+        },
+        "gospel": {
+          "uk": "Лк 8:26–39",
+          "en": "Luke 8:26–39"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-08",
+      "date": "2026-11-08",
+      "title": {
+        "uk": "Собор архистратига Михаїла",
+        "en": "Synaxis of the Archangel Michael"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "24-та неділя після П’ятидесятниці · глас 7",
+        "en": "24th Sunday after Pentecost · tone 7"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Еф 2:14–22",
+          "en": "Ephesians 2:14–22"
+        },
+        "gospel": {
+          "uk": "Лк 8:41–56",
+          "en": "Luke 8:41–56"
+        },
+        "context": {
+          "uk": "Недільні читання",
+          "en": "Sunday readings"
+        }
+      },
+      "context": {
+        "uk": "Недільні читання",
+        "en": "Sunday readings"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-12",
+      "date": "2026-11-12",
+      "title": {
+        "uk": "Священномученик Йосафат",
+        "en": "Hieromartyr Josaphat"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 4:14–5:10",
+          "en": "Hebrews 4:14–5:10"
+        },
+        "gospel": {
+          "uk": "Ів 10:9–16",
+          "en": "John 10:9–16"
+        },
+        "context": {
+          "uk": "Читання святому",
+          "en": "Readings for the saint"
+        }
+      },
+      "context": {
+        "uk": "Читання святому",
+        "en": "Readings for the saint"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-13",
+      "date": "2026-11-13",
+      "title": {
+        "uk": "Святитель Іван Золотоустий",
+        "en": "Saint John Chrysostom"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 7:26–8:2",
+          "en": "Hebrews 7:26–8:2"
+        },
+        "gospel": {
+          "uk": "Ів 10:9–16",
+          "en": "John 10:9–16"
+        },
+        "context": {
+          "uk": "Читання святому",
+          "en": "Readings for the saint"
+        }
+      },
+      "context": {
+        "uk": "Читання святому",
+        "en": "Readings for the saint"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "fast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-15",
+      "date": "2026-11-15",
+      "title": {
+        "uk": "Початок Різдвяного посту",
+        "en": "Beginning of the Nativity Fast"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "25-та неділя після П’ятидесятниці · глас 8",
+        "en": "25th Sunday after Pentecost · tone 8"
+      },
+      "fasting": {
+        "uk": "Початок Филипівки",
+        "en": "Beginning of the Nativity Fast"
+      },
+      "readings": {
+        "apostle": {
+          "uk": "Еф 4:1–6",
+          "en": "Ephesians 4:1–6"
+        },
+        "gospel": {
+          "uk": "Лк 10:25–37",
+          "en": "Luke 10:25–37"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-21",
+      "date": "2026-11-21",
+      "title": {
+        "uk": "Вхід у храм Пресвятої Богородиці",
+        "en": "Entry of the Mother of God into the Temple"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 9:1–7",
+          "en": "Hebrews 9:1–7"
+        },
+        "gospel": {
+          "uk": "Лк 10:38–42; 11:27–28",
+          "en": "Luke 10:38–42; 11:27–28"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "sunday",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-22",
+      "date": "2026-11-22",
+      "title": {
+        "uk": "26-та неділя після П’ятидесятниці",
+        "en": "26th Sunday after Pentecost"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "Глас 1",
+        "en": "Tone 1"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Еф 5:9–19",
+          "en": "Ephesians 5:9–19"
+        },
+        "gospel": {
+          "uk": "Лк 12:16–21",
+          "en": "Luke 12:16–21"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "sunday",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-29",
+      "date": "2026-11-29",
+      "title": {
+        "uk": "27-ма неділя після П’ятидесятниці",
+        "en": "27th Sunday after Pentecost"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "Глас 2",
+        "en": "Tone 2"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Еф 6:10–17",
+          "en": "Ephesians 6:10–17"
+        },
+        "gospel": {
+          "uk": "Лк 13:10–17",
+          "en": "Luke 13:10–17"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "saints",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-11-30",
+      "date": "2026-11-30",
+      "title": {
+        "uk": "Апостол Андрій Первозваний",
+        "en": "Apostle Andrew the First-called"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "1 Кор 4:9–16",
+          "en": "1 Corinthians 4:9–16"
+        },
+        "gospel": {
+          "uk": "Ів 1:35–51",
+          "en": "John 1:35–51"
+        },
+        "context": {
+          "uk": "Читання святому",
+          "en": "Readings for the saint"
+        }
+      },
+      "context": {
+        "uk": "Читання святому",
+        "en": "Readings for the saint"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-06",
+      "date": "2026-12-06",
+      "title": {
+        "uk": "Святитель Миколай",
+        "en": "Saint Nicholas"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "28-ма неділя після П’ятидесятниці · глас 3",
+        "en": "28th Sunday after Pentecost · tone 3"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Кол 1:12–18",
+          "en": "Colossians 1:12–18"
+        },
+        "gospel": {
+          "uk": "Лк 17:12–19",
+          "en": "Luke 17:12–19"
+        },
+        "context": {
+          "uk": "Недільні читання",
+          "en": "Sunday readings"
+        }
+      },
+      "context": {
+        "uk": "Недільні читання",
+        "en": "Sunday readings"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-09",
+      "date": "2026-12-09",
+      "title": {
+        "uk": "Зачаття святої Анни",
+        "en": "Conception by Saint Anne"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Гал 4:22–31",
+          "en": "Galatians 4:22–31"
+        },
+        "gospel": {
+          "uk": "Лк 8:16–21",
+          "en": "Luke 8:16–21"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "sunday",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-13",
+      "date": "2026-12-13",
+      "title": {
+        "uk": "Неділя святих Праотців",
+        "en": "Sunday of the Holy Forefathers"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "29-та неділя після П’ятидесятниці · глас 4",
+        "en": "29th Sunday after Pentecost · tone 4"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Кол 3:4–11",
+          "en": "Colossians 3:4–11"
+        },
+        "gospel": {
+          "uk": "Лк 14:16–24",
+          "en": "Luke 14:16–24"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "sunday",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-20",
+      "date": "2026-12-20",
+      "title": {
+        "uk": "Неділя перед Різдвом Христовим",
+        "en": "Sunday before the Nativity"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "Святих Отців · глас 5",
+        "en": "Holy Fathers · tone 5"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Євр 11:9–10, 17–23, 32–40",
+          "en": "Hebrews 11:9–10, 17–23, 32–40"
+        },
+        "gospel": {
+          "uk": "Мт 1:1–25",
+          "en": "Matthew 1:1–25"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "fast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-24",
+      "date": "2026-12-24",
+      "title": {
+        "uk": "Навечір’я Різдва Христового",
+        "en": "Eve of the Nativity"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": {
+        "uk": "Строгий піст — прямо зазначено у джерелі",
+        "en": "Strict fast — explicitly stated in the source"
+      },
+      "readings": {
+        "apostle": {
+          "uk": "Як 1:19–27",
+          "en": "James 1:19–27"
+        },
+        "gospel": {
+          "uk": "Мр 10:17–27",
+          "en": "Mark 10:17–27"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-25",
+      "date": "2026-12-25",
+      "title": {
+        "uk": "Різдво Христове",
+        "en": "Nativity of Christ"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Гал 4:4–7",
+          "en": "Galatians 4:4–7"
+        },
+        "gospel": {
+          "uk": "Мт 2:1–12",
+          "en": "Matthew 2:1–12"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "category": "sunday",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-27",
+      "date": "2026-12-27",
+      "title": {
+        "uk": "Неділя після Різдва Христового",
+        "en": "Sunday after the Nativity"
+      },
+      "saints": null,
+      "liturgical": {
+        "uk": "31-ша неділя після П’ятидесятниці · глас 6",
+        "en": "31st Sunday after Pentecost · tone 6"
+      },
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Гал 1:11–19",
+          "en": "Galatians 1:11–19"
+        },
+        "gospel": {
+          "uk": "Мт 2:13–23",
+          "en": "Matthew 2:13–23"
+        },
+        "context": {
+          "uk": "Читання неділі після Різдва",
+          "en": "Readings for the Sunday after the Nativity"
+        }
+      },
+      "context": {
+        "uk": "Читання неділі після Різдва",
+        "en": "Readings for the Sunday after the Nativity"
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/tserkovnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "church-2026-12-31",
+      "date": "2026-12-31",
+      "title": {
+        "uk": "Віддання Різдва Христового",
+        "en": "Leave-taking of the Nativity"
+      },
+      "saints": null,
+      "liturgical": null,
+      "fasting": null,
+      "readings": {
+        "apostle": {
+          "uk": "Еф 5:9–21",
+          "en": "Ephesians 5:9–21"
+        },
+        "gospel": {
+          "uk": "Лк 17:12–19",
+          "en": "Luke 17:12–19"
+        },
+        "context": {
+          "uk": "Читання дня",
+          "en": "Readings of the day"
+        }
+      }
+    }
+  ]
+}

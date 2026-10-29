@@ -1,0 +1,100 @@
+{
+  "section_id": "youth",
+  "title": {
+    "uk": "Дитячі катехитичні групи",
+    "en": "Children’s catechetical groups"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "children-catechesis",
+      "title": {
+        "uk": "Дитячі катехитичні групи",
+        "en": "Children’s catechetical groups"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "catechesis",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "sacrament-preparation",
+      "title": {
+        "uk": "Підготовка до Таїнств",
+        "en": "Preparation for the Sacraments"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "catechesis",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "youth-meetings",
+      "title": {
+        "uk": "Молодіжні зустрічі",
+        "en": "Youth meetings"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "youth",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "scripture-study",
+      "title": {
+        "uk": "Вивчення Святого Письма",
+        "en": "Studying Scripture"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "formation",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    },
+    {
+      "id": "youth-prayer",
+      "title": {
+        "uk": "Молитовні зустрічі",
+        "en": "Prayer gatherings"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "prayer",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "year": 2026,
+  "category": "eparchy",
+  "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+  "verified_on": "2026-10-29",
+  "status": "confirmed",
+  "coverage": "selected_verified_dates",
+  "update_method": "manual_source_review",
+  "events": [
+    {
+      "year": 2026,
+      "category": "family",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "family-year",
+      "date": "2026-01-11",
+      "end_date": "2026-01-11",
+      "title": {
+        "uk": "Відкриття Року родини",
+        "en": "Opening of the Year of the Family"
+      },
+      "location": {
+        "uk": "Ужок",
+        "en": "Uzhok"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "prayer",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "unity-week",
+      "date": "2026-01-18",
+      "end_date": "2026-01-25",
+      "title": {
+        "uk": "Тиждень молитов за єдність християн",
+        "en": "Week of Prayer for Christian Unity"
+      },
+      "location": null,
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "pilgrimage",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "family-pilgrimage",
+      "date": "2026-02-14",
+      "end_date": "2026-02-14",
+      "title": {
+        "uk": "Проща родин єпархії",
+        "en": "Eparchial pilgrimage for families"
+      },
+      "location": {
+        "uk": "Джублик",
+        "en": "Dzhublyk"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "prayer",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "lenten-prayer",
+      "date": "2026-03-08",
+      "end_date": "2026-03-08",
+      "title": {
+        "uk": "Хресна дорога Хрестопоклонної неділі",
+        "en": "Way of the Cross on the Sunday of the Cross"
+      },
+      "location": {
+        "uk": "Ужгород",
+        "en": "Uzhhorod"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "prayer",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "holy-thursday",
+      "date": "2026-04-02",
+      "end_date": "2026-04-02",
+      "title": {
+        "uk": "Страсний четвер у катедральному соборі",
+        "en": "Holy Thursday at the cathedral"
+      },
+      "location": {
+        "uk": "Ужгород, катедральний собор",
+        "en": "Uzhhorod, cathedral"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "pilgrimage",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "mariapocs",
+      "date": "2026-04-17",
+      "end_date": "2026-04-18",
+      "title": {
+        "uk": "Єпархіальне паломництво до Маріяповчі",
+        "en": "Eparchial pilgrimage to Máriapócs"
+      },
+      "location": {
+        "uk": "Маріяповч, Угорщина",
+        "en": "Máriapócs, Hungary"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "formation",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "union-conference",
+      "date": "2026-04-21",
+      "end_date": "2026-04-21",
+      "title": {
+        "uk": "Конференція про 380 років Ужгородської унії",
+        "en": "Conference on 380 years of the Union of Uzhhorod"
+      },
+      "location": {
+        "uk": "Берегово, Центр ім. Елемира Ортутая",
+        "en": "Berehove, Elemér Ortutay Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "pilgrimage",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "educators",
+      "date": "2026-05-02",
+      "end_date": "2026-05-02",
+      "title": {
+        "uk": "Єпархіальна проща освітян",
+        "en": "Eparchial pilgrimage for educators"
+      },
+      "location": {
+        "uk": "Білки",
+        "en": "Bilky"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "youth",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "youth-day",
+      "date": "2026-05-09",
+      "end_date": "2026-05-09",
+      "title": {
+        "uk": "День молоді",
+        "en": "Youth Day"
+      },
+      "location": {
+        "uk": "Доробратово",
+        "en": "Dorobratovo"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "family",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "family-meeting-autumn",
+      "date": "2026-10-09",
+      "end_date": "2026-10-11",
+      "title": {
+        "uk": "Зустріч родин, що виховують дітей з інвалідністю",
+        "en": "Meeting for families raising children with disabilities"
+      },
+      "location": {
+        "uk": "Анталовці, Пасторальний центр св. Івана Павла ІІ",
+        "en": "Antalovtsi, Saint John Paul II Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "priests-wives-antal",
+      "date": "2026-10-16",
+      "end_date": "2026-10-18",
+      "title": {
+        "uk": "Реколекції для дружин священників",
+        "en": "Retreat for priests’ wives"
+      },
+      "location": {
+        "uk": "Анталовці, Пасторальний центр св. Івана Павла ІІ",
+        "en": "Antalovtsi, Saint John Paul II Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "pilgrimage",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "romzha-berezovo",
+      "date": "2026-10-31",
+      "end_date": "2026-10-31",
+      "title": {
+        "uk": "Паломництво в день пам’яті бл. Теодора Ромжі",
+        "en": "Pilgrimage for Blessed Theodore Romzha"
+      },
+      "location": {
+        "uk": "Березово",
+        "en": "Berezovo"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "prayer",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "romzha-cathedral",
+      "date": "2026-10-31",
+      "end_date": "2026-10-31",
+      "title": {
+        "uk": "Пам’ять блаженного Теодора Ромжі",
+        "en": "Commemoration of Blessed Theodore Romzha"
+      },
+      "location": {
+        "uk": "Ужгород, катедральний собор",
+        "en": "Uzhhorod, cathedral"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "pilgrimage",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "religious-pilgrimage",
+      "date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "title": {
+        "uk": "Проща монашества",
+        "en": "Pilgrimage of consecrated persons"
+      },
+      "location": {
+        "uk": "Мукачево, монастир отців Василіян",
+        "en": "Mukachevo, Basilian monastery"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "youth",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "teen-retreat",
+      "date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "title": {
+        "uk": "Реколекції для підлітків 13–16 років",
+        "en": "Retreat for teenagers aged 13–16"
+      },
+      "location": {
+        "uk": "Анталовці, Пасторальний центр св. Івана Павла ІІ",
+        "en": "Antalovtsi, Saint John Paul II Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "youth",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "youth-retreat",
+      "date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "title": {
+        "uk": "Реколекції для молоді 17+",
+        "en": "Retreat for young people aged 17+"
+      },
+      "location": {
+        "uk": "Анталовці, Пасторальний центр св. Івана Павла ІІ",
+        "en": "Antalovtsi, Saint John Paul II Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "prayer",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "holodomor",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "title": {
+        "uk": "Молитовна пам’ять жертв Голодомору",
+        "en": "Prayer in remembrance of Holodomor victims"
+      },
+      "location": null,
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "feast",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "nicholas-dorobratovo",
+      "date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "title": {
+        "uk": "Празник святого Миколая",
+        "en": "Feast of Saint Nicholas"
+      },
+      "location": {
+        "uk": "Доробратово",
+        "en": "Dorobratovo"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "formation",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "premarital-second",
+      "date": "2026-12-11",
+      "end_date": "2026-12-13",
+      "title": {
+        "uk": "Передподружня зустріч для семінаристів та наречених",
+        "en": "Premarital formation for seminarians and their fiancées"
+      },
+      "location": {
+        "uk": "Анталовці, Пасторальний центр св. Івана Павла ІІ",
+        "en": "Antalovtsi, Saint John Paul II Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "youth",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "oasis-autumn",
+      "date": "2026-10-16",
+      "end_date": "2026-10-18",
+      "title": {
+        "uk": "Осіння зустріч «Оазис» для дітей 8–13 років",
+        "en": "Oasis autumn retreat for children aged 8–13"
+      },
+      "location": {
+        "uk": "Косівська Поляна, Реколекційний дім бл. Теодора Ромжі",
+        "en": "Kosivska Poliana, Blessed Theodore Romzha Retreat House"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "school-mary-autumn",
+      "date": "2026-10-23",
+      "end_date": "2026-10-25",
+      "title": {
+        "uk": "Осіння сесія «Школи Марії»",
+        "en": "School of Mary autumn session"
+      },
+      "location": {
+        "uk": "Косівська Поляна, Реколекційний дім бл. Теодора Ромжі",
+        "en": "Kosivska Poliana, Blessed Theodore Romzha Retreat House"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "priests-kos",
+      "date": "2026-11-09",
+      "end_date": "2026-11-12",
+      "title": {
+        "uk": "Реколекції для священників",
+        "en": "Retreat for priests"
+      },
+      "location": {
+        "uk": "Косівська Поляна, Реколекційний дім бл. Теодора Ромжі",
+        "en": "Kosivska Poliana, Blessed Theodore Romzha Retreat House"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "priests-wives-kos",
+      "date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "title": {
+        "uk": "Реколекції для дружин священників",
+        "en": "Retreat for priests’ wives"
+      },
+      "location": {
+        "uk": "Косівська Поляна, Реколекційний дім бл. Теодора Ромжі",
+        "en": "Kosivska Poliana, Blessed Theodore Romzha Retreat House"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "mothers-retreat",
+      "date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "title": {
+        "uk": "Реколекції спільноти «Матері в молитві»",
+        "en": "Retreat for Mothers in Prayer"
+      },
+      "location": {
+        "uk": "Косівська Поляна, Реколекційний дім бл. Теодора Ромжі",
+        "en": "Kosivska Poliana, Blessed Theodore Romzha Retreat House"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "priests-bilky",
+      "date": "2026-11-02",
+      "end_date": "2026-11-05",
+      "title": {
+        "uk": "Реколекції для священників",
+        "en": "Retreat for priests"
+      },
+      "location": {
+        "uk": "Білки, Молодіжно-пасторальний центр бл. Петра-Павла Ороса",
+        "en": "Bilky, Blessed Petro Pavlo Oros Youth Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    },
+    {
+      "year": 2026,
+      "category": "retreat",
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "verified_on": "2026-10-29",
+      "status": "confirmed",
+      "coverage": "selected_verified_dates",
+      "update_method": "manual_source_review",
+      "id": "priests-bilky-vyno",
+      "date": "2026-11-09",
+      "end_date": "2026-11-12",
+      "title": {
+        "uk": "Реколекції для священників Виноградівського деканату",
+        "en": "Retreat for priests of Vynohradiv deanery"
+      },
+      "location": {
+        "uk": "Білки, Молодіжно-пасторальний центр бл. Петра-Павла Ороса",
+        "en": "Bilky, Blessed Petro Pavlo Oros Youth Pastoral Centre"
+      },
+      "description": {
+        "uk": "Подія з офіційного пасторального плану МГКЄ на 2026 рік. Час і умови участі уточнюйте в організаторів.",
+        "en": "Listed in the official 2026 pastoral plan of the eparchy. Please confirm times and participation details with the organisers."
+      }
+    }
+  ],
+  "undated": [
+    {
+      "id": "november-youth",
+      "period": {
+        "uk": "Листопад 2026",
+        "en": "November 2026"
+      },
+      "title": {
+        "uk": "Передріздвяні зустрічі молоді по деканатах",
+        "en": "Pre-Christmas youth meetings in the deaneries"
+      },
+      "source_url": "https://mgce.uz.ua/pastoralnij-kalendar/",
+      "status": "date_pending",
+      "year": 2026,
+      "verified_on": "2026-10-29"
+    }
+  ]
+}

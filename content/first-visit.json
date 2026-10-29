@@ -1,0 +1,124 @@
+{
+  "section_id": "first-visit",
+  "title": {
+    "uk": "Ласкаво просимо",
+    "en": "Welcome"
+  },
+  "publication_status": "approved",
+  "records": [
+    {
+      "id": "welcome",
+      "title": {
+        "uk": "Ласкаво просимо",
+        "en": "Welcome"
+      },
+      "description": {
+        "uk": "Вітаємо у парафії святих Кирила і Мефодія. Якщо ви вперше у нашому храмі, можете заздалегідь зв’язатися з парафією та поставити запитання.",
+        "en": "Welcome to Saints Cyril and Methodius parish. If this is your first visit, you can contact the parish beforehand with any questions."
+      },
+      "category": "welcome",
+      "photos": [],
+      "date": null,
+      "source": "https://poroshkovo.pages.dev/uk/contacts/",
+      "verified_on": "2026-10-29",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "link_slug": "contacts"
+    },
+    {
+      "id": "liturgy",
+      "title": {
+        "uk": "Що таке Божественна Літургія",
+        "en": "The Divine Liturgy"
+      },
+      "description": {
+        "uk": "Божественна Літургія — євхаристійне богослужіння візантійської традиції. Більше про молитву нашої парафії — у розділі духовного життя.",
+        "en": "The Divine Liturgy is the Eucharistic worship of the Byzantine tradition. Explore the spiritual life section to learn about prayer in our parish."
+      },
+      "category": "worship",
+      "photos": [],
+      "date": null,
+      "source": "https://poroshkovo.pages.dev/uk/contacts/",
+      "verified_on": "2026-10-29",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "link_slug": "spiritual-life"
+    },
+    {
+      "id": "prepare",
+      "title": {
+        "uk": "Як підготуватися до відвідин",
+        "en": "Preparing for your visit"
+      },
+      "description": {
+        "uk": "Перед поїздкою уточніть години богослужінь за контактним номером. Для дороги скористайтеся підтвердженою булавкою храму на карті.",
+        "en": "Before travelling, confirm service times using the parish contact number. Use the confirmed church map pin to plan your route."
+      },
+      "category": "visit",
+      "photos": [],
+      "date": null,
+      "source": "https://poroshkovo.pages.dev/uk/contacts/",
+      "verified_on": "2026-10-29",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "link_slug": "contacts"
+    },
+    {
+      "id": "during-worship",
+      "title": {
+        "uk": "Під час богослужіння",
+        "en": "During worship"
+      },
+      "description": {
+        "uk": "Якщо щось незнайоме, спокійно спостерігайте за молитвою громади. Запитання про участь у богослужінні та Таїнствах можна обговорити зі священником.",
+        "en": "If something is unfamiliar, take time to observe the community’s prayer. You can discuss questions about worship and the Sacraments with the priest."
+      },
+      "category": "visit",
+      "photos": [],
+      "date": null,
+      "source": "https://poroshkovo.pages.dev/uk/contacts/",
+      "verified_on": "2026-10-29",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "link_slug": "contacts"
+    },
+    {
+      "id": "questions",
+      "title": {
+        "uk": "Маєте запитання?",
+        "en": "Have a question?"
+      },
+      "description": {
+        "uk": "Зателефонуйте до парафії або напишіть у Viber чи WhatsApp: +380 50 432 19 69.",
+        "en": "Call the parish or use Viber or WhatsApp: +380 50 432 19 69."
+      },
+      "category": "contact",
+      "photos": [],
+      "date": null,
+      "source": "https://poroshkovo.pages.dev/uk/contacts/",
+      "verified_on": "2026-10-29",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "link_slug": "contacts"
+    },
+    {
+      "id": "find-church",
+      "title": {
+        "uk": "Як знайти храм",
+        "en": "Finding the church"
+      },
+      "description": {
+        "uk": "Храм розташований у Порошкові на Закарпатті. Точна булавка й кнопки маршруту доступні на сторінці контактів.",
+        "en": "The church is in Poroshkovo, Zakarpattia. The exact pin and route links are available on the contact page."
+      },
+      "category": "map",
+      "photos": [],
+      "date": null,
+      "source": "https://poroshkovo.pages.dev/uk/contacts/",
+      "verified_on": "2026-10-29",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "link_slug": "contacts"
+    }
+  ]
+}

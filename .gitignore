@@ -1,5 +1,7 @@
 node_modules/
 dist/
+dist-editor/
+private-materials/
 .env*
 .wrangler/
 audit/

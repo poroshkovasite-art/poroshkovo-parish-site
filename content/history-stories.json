@@ -1,0 +1,117 @@
+[
+  {
+    "id": "land",
+    "icon": "mountains",
+    "period": {
+      "uk": "Закарпаття · 1646",
+      "en": "Zakarpattia · 1646"
+    },
+    "title": {
+      "uk": "Закарпаття — наш рідний край",
+      "en": "Zakarpattia — our homeland"
+    },
+    "text": {
+      "uk": "Закарпаття — карпатський край, де переплітаються мови, культури та духовні традиції. Важливою віхою церковної історії стала Ужгородська унія 24 квітня 1646 року: 63 священники візантійського обряду увійшли в єдність із Римським Престолом. Цю спадщину пам’ятає і наша парафія.",
+      "en": "Zakarpattia is a Carpathian region where languages, cultures and spiritual traditions meet. A landmark in its church history was the Union of Uzhhorod on 24 April 1646, when 63 priests of the Byzantine rite entered communion with the See of Rome. Our parish shares in this heritage."
+    },
+    "source_url": "https://www.vatican.va/content/john-paul-ii/en/homilies/1996/documents/hf_jp-ii_hom_19961027_anniversario-unione-uzhorod.html",
+    "source_label": {
+      "uk": "Святий Престол · про Ужгородську унію",
+      "en": "The Holy See · on the Union of Uzhhorod"
+    },
+    "photo_ids": [],
+    "visual_note": {
+      "uk": "Карпатський край · духовна спадщина",
+      "en": "Carpathian homeland · spiritual heritage"
+    },
+    "verified_on": "2026-10-29",
+    "verification_status": "verified_primary_historical_source"
+  },
+  {
+    "id": "village",
+    "icon": "pin",
+    "period": {
+      "uk": "1381 · перша згадка",
+      "en": "1381 · first recorded mention"
+    },
+    "title": {
+      "uk": "Порошково — село з давньою історією",
+      "en": "Poroshkovo — a village with a long history"
+    },
+    "text": {
+      "uk": "Історична довідка сільради називає 1381 рік першою документальною згадкою Порошкова та зауважує інше датування — 1357 рік. Походження назви від імені шолтеса Порошка є однією з версій, а не доведеним фактом. Історію села слід відрізняти від історії заснування парафії.",
+      "en": "The village council’s historical account gives 1381 as Poroshkovo’s first recorded mention, while also noting the alternative date of 1357. Derivation of the name from a village headman called Poroshko is one interpretation rather than an established fact. The village’s history is distinct from the foundation of the parish."
+    },
+    "source_url": "https://t-remeta.gov.ua/istorichna-dovidka/poroshkovo",
+    "source_label": {
+      "uk": "Тур’є-Реметівська сільська рада",
+      "en": "Turia Remety Village Council"
+    },
+    "photo_ids": [],
+    "visual_note": {
+      "uk": "Пам’ять села · офіційна історична довідка",
+      "en": "Village memory · official historical account"
+    },
+    "verified_on": "2026-10-29",
+    "verification_status": "verified_primary_historical_source"
+  },
+  {
+    "id": "faith",
+    "icon": "cross",
+    "period": {
+      "uk": "1751 · 1949 · 2002",
+      "en": "1751 · 1949 · 2002"
+    },
+    "title": {
+      "uk": "Греко-католицька віра крізь століття",
+      "en": "Greek Catholic faith through the centuries"
+    },
+    "text": {
+      "uk": "У 1751 році джерело згадує дерев’яну греко-католицьку церкву святого Миколая. У 1949 році священника Івана Егреші було засуджено. Відновлена громада веде свою історію від 15 квітня 2002 року — нової віхи після років випробувань.",
+      "en": "In 1751, the source records a wooden Greek Catholic church of Saint Nicholas. Priest Ivan Ehreshi was sentenced in 1949. The renewed community dates from 15 April 2002, a new chapter after years of hardship."
+    },
+    "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
+    "source_label": {
+      "uk": "Історична довідка МГКЄ",
+      "en": "Eparchial parish history"
+    },
+    "photo_ids": [],
+    "visual_note": {
+      "uk": "Давня церква святого Миколая · архівне фото ще не надано",
+      "en": "Historic church of Saint Nicholas · archival photograph not yet supplied"
+    },
+    "verified_on": "2026-10-29",
+    "verification_status": "verified_primary_historical_source"
+  },
+  {
+    "id": "renewal",
+    "icon": "church",
+    "period": {
+      "uk": "2003 — 2015",
+      "en": "2003 — 2015"
+    },
+    "title": {
+      "uk": "Новий храм — відродження парафії",
+      "en": "A new church — the renewal of the parish"
+    },
+    "text": {
+      "uk": "23 жовтня 2003 року громада отримала освячену каплицю в колишній амбулаторії. За рік владика Мілан освятив наріжний камінь нового храму; його освячення відбулося 18 липня 2009 року. Парафіяльний дім, розпочатий у 2011 році, освятили 18 липня 2015 року.",
+      "en": "On 23 October 2003, a chapel in the former outpatient clinic was blessed for the community. A year later Bishop Milan blessed the new church’s cornerstone; the church was consecrated on 18 July 2009. The parish house, begun in 2011, was blessed on 18 July 2015."
+    },
+    "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
+    "source_label": {
+      "uk": "Історична довідка МГКЄ",
+      "en": "Eparchial parish history"
+    },
+    "photo_ids": [
+      "church-exterior",
+      "bell-tower"
+    ],
+    "visual_note": {
+      "uk": "Сучасний храм і його дзвіниця",
+      "en": "The present church and its bell tower"
+    },
+    "verified_on": "2026-10-29",
+    "verification_status": "verified_primary_historical_source"
+  }
+]

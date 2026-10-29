@@ -1,0 +1,40 @@
+{
+  "section_id": "pastor-message",
+  "title": {
+    "uk": "Привітання настоятеля",
+    "en": "A welcome from the parish priest"
+  },
+  "publication_status": "draft",
+  "records": [
+    {
+      "id": "pastor-welcome",
+      "title": {
+        "uk": "Привітання настоятеля",
+        "en": "A welcome from the parish priest"
+      },
+      "description": {
+        "uk": "",
+        "en": ""
+      },
+      "category": "pastoral",
+      "photos": [],
+      "date": null,
+      "source": null,
+      "verified_on": null,
+      "verification_status": "needs_confirmation",
+      "publication_status": "draft",
+      "full_name": null,
+      "church_title": {
+        "uk": "",
+        "en": ""
+      },
+      "portrait_id": null,
+      "body": {
+        "uk": "",
+        "en": ""
+      },
+      "contact_phone": null,
+      "quote_permission": false
+    }
+  ]
+}
