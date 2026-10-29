@@ -1,6 +1,9 @@
+# poroshkovo-parish-site
+Official website of Saints Cyril and Methodius Greek Catholic Parish, Poroshkovo, Ukraine
+
 # Парафія святих Кирила і Мефодія · Порошково
 
-Самостоятельный статический сайт на украинском и английском. Рабочая папка: `D:\POROSHKOVO_PARISH_WORK\site`. Никакой связи с инфраструктурой ISF или NAU. По указанию владельца от 29.10.2026 публикация отложена до передачи материалов и доступов.
+Самостоятельный статический сайт на украинском и английском. Рабочая папка: `D:\POROSHKOVO_PARISH_WORK\site`. Никакой связи с инфраструктурой ISF или NAU. Репозиторий: `poroshkovasite-art/poroshkovo-parish-site`. Владелец разрешил публикацию существующего основания; фотографии и подтверждённые текущие сведения будут добавлены позже.
 
 ## Быстрый запуск
 
@@ -45,6 +48,6 @@ npm run test:browser
 
 ## SEO и публикация
 
-Локальная сборка намеренно имеет `noindex` и `robots.txt: Disallow: /`. Canonical/hreflang и sitemap используют только локальный адрес, пока новый реальный адрес не согласован. Уникальные заголовки, описания, OG, SVG favicon и языковые пары уже созданы.
+Локальная сборка (`npm run build`) намеренно имеет `noindex` и `robots.txt: Disallow: /`. Production-сборка (`npm run build:production`) включает индексацию и использует согласованный адрес `https://poroshkovo.pages.dev` в canonical/hreflang, sitemap и Open Graph. Уникальные заголовки, описания, SVG favicon и языковые пары созданы.
 
-Для будущего выпуска заполнить `content/site.json`: `production_url` — реальный новый HTTPS-адрес, `publication_approved: true` — только после согласования. Затем `node scripts/build.mjs --production` и проверки. Пока ничего не зарегистрировано и не опубликовано. См. `docs/DEPLOYMENT.md`.
+Параметры адреса и разрешение владельца записаны в `content/site.json`. Cloudflare Pages: проект строго `poroshkovo`, ветка `main`, build command `npm run build:production`, output directory `dist`, Node 22. Автоматический деплой настраивается через Git-интеграцию Cloudflare с этим репозиторием. Факт успешного выпуска подтверждается отдельным отчётом после проверки реального адреса. См. `docs/DEPLOYMENT.md`.
