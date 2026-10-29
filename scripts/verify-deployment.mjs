@@ -15,6 +15,7 @@ const assets=['/assets/site.css','/assets/app.js','/favicon.ico','/assets/favico
 const report={date:'2026-10-29',url:base,status:'RUNNING',http:[],layouts:[],accessibility:[],jsErrors:[],interactions:[]};
 assets.push('/assets/portal.css','/assets/calendar.js','/assets/calendar-core.js','/assets/calendar-labels.js');
 assets.push('/uk/sitemap.xml','/en/sitemap.xml');
+const headerBrand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json')));if(headerBrand.header_logo)assets.push(headerBrand.header_logo.file);
 const historicalMap=JSON.parse(fs.readFileSync(path.join(root,'content/historical-map.json')));
 assets.push(...historicalMap.widths.map(w=>`/assets/history/${historicalMap.id}-${w}.webp`),historicalMap.full_file);
 assets.push('/google696019cf5de45d47.html','/verification/google696019cf5de45d47.txt','/googled4db93a6e7198af5.html','/verification/googled4db93a6e7198af5.txt');

@@ -14,5 +14,22 @@
   "header_alt": {
     "uk": "Логотип парафії Порошково: святі Кирило і Мефодій",
     "en": "Poroshkovo parish logo: Saints Cyril and Methodius"
+  },
+  "header_logo": {
+    "id": "poroshkovo-parish-header-logo",
+    "file": "/assets/brand/poroshkovo-parish-header-logo.svg",
+    "width": 594,
+    "height": 268,
+    "source_crop_width": 594,
+    "source_sha256": "ecd09cd97ce363f3e0bda9b637aa4be5f9dc1d9e6450c6590442b628a9346d24",
+    "source_original": "poroshkovo-header-logo-owner-reference.png",
+    "received_on": "2026-10-29",
+    "status": "owner_selected_header_wordmark",
+    "processing": "Original source pixels embedded unchanged in SVG. Non-generative SVG chroma filters isolate the supplied charcoal/gold ink and make the neutral screenshot background transparent. Presentation clipping omits unrelated screenshot margins; no redrawing or reconstruction of saints, crosses or lettering.",
+    "colors": [
+      "charcoal",
+      "gold"
+    ],
+    "publication_authorization": "Explicit owner request to use this supplied design as the main logo in the upper-left site header."
   }
 }
