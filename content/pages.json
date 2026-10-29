@@ -1,91 +1,380 @@
 {
   "home": {
-    "title":{"uk":"Віра, що єднає покоління", "en":"A faith that unites generations"},
-    "description":{"uk":"Греко-католицька парафія святих Кирила і Мефодія в Порошкові: історія храму, молитва та життя спільноти.", "en":"Discover the Greek Catholic parish of Saints Cyril and Methodius in Poroshkovo: its church, history, prayer and community."},
-    "intro":{"uk":"Вітаємо у Порошкові — у спільноті Мукачівської греко-католицької єпархії. Тут розповідаємо про шлях нашого храму, візантійську традицію молитви та віру, яку передаємо дітям.", "en":"Welcome to Poroshkovo and to a community of the Greek Catholic Eparchy of Mukachevo. Discover the story of our church, the Byzantine tradition of prayer and the faith we share with the next generation."},
-    "published":true
+    "title": {
+      "uk": "Віра, що єднає покоління",
+      "en": "A faith that unites generations"
+    },
+    "description": {
+      "uk": "Греко-католицька парафія святих Кирила і Мефодія в Порошкові: історія храму, молитва та життя спільноти.",
+      "en": "Discover the Greek Catholic parish of Saints Cyril and Methodius in Poroshkovo: its church, history, prayer and community."
+    },
+    "intro": {
+      "uk": "Вітаємо у Порошкові — у спільноті Мукачівської греко-католицької єпархії. Тут розповідаємо про шлях нашого храму, візантійську традицію молитви та віру, яку передаємо дітям.",
+      "en": "Welcome to Poroshkovo and to a community of the Greek Catholic Eparchy of Mukachevo. Discover the story of our church, the Byzantine tradition of prayer and the faith we share with the next generation."
+    },
+    "published": true
   },
   "about": {
-    "title":{"uk":"Про парафію", "en":"Our parish"},
-    "description":{"uk":"Парафія святих рівноапостольних Кирила і Мефодія в Порошкові належить до Мукачівської греко-католицької єпархії.", "en":"Saints Cyril and Methodius parish in Poroshkovo belongs to the Greek Catholic Eparchy of Mukachevo and follows the Byzantine rite."},
-    "intro":{"uk":"Місцева парафія — це простір зустрічі з Богом і одне з одним. Наш храм носить ім’я святих рівноапостольних Кирила і Мефодія, просвітителів слов’ян.", "en":"A parish is a place to encounter God and one another. Our church is dedicated to Saints Cyril and Methodius, Equal to the Apostles and teachers of the Slavic peoples."},
-    "blocks":[
-      {"title":{"uk":"У візантійській традиції", "en":"In the Byzantine tradition"}, "text":{"uk":"Парафія в Порошкові належить до Мукачівської греко-католицької єпархії Католицької Церкви. Її церковне життя пов’язане з візантійським обрядом: літургією, співаною молитвою та шануванням ікон.", "en":"The parish in Poroshkovo belongs to the Greek Catholic Eparchy of Mukachevo within the Catholic Church. Its ecclesial life follows the Byzantine rite, with its liturgy, chanted prayer and veneration of icons."},"source":"directory"},
-      {"title":{"uk":"Храм і парафіяльний дім", "en":"Church and parish house"},"text":{"uk":"Історію нової громади позначають освячення храму 2009 року та парафіяльного дому 2015 року. Ці дві будівлі нагадують, що парафіяльне життя поєднує богослужіння, навчання віри й зустрічі людей.", "en":"Two milestones mark the renewed community: the church’s consecration in 2009 and the blessing of the parish house in 2015. Together, these places express the connection between worship, learning the faith and meeting one another."},"source":"eparchy"}
+    "title": {
+      "uk": "Про парафію",
+      "en": "Our parish"
+    },
+    "description": {
+      "uk": "Парафія святих рівноапостольних Кирила і Мефодія в Порошкові належить до Мукачівської греко-католицької єпархії.",
+      "en": "Saints Cyril and Methodius parish in Poroshkovo belongs to the Greek Catholic Eparchy of Mukachevo and follows the Byzantine rite."
+    },
+    "intro": {
+      "uk": "Місцева парафія — це простір зустрічі з Богом і одне з одним. Наш храм носить ім’я святих рівноапостольних Кирила і Мефодія, просвітителів слов’ян.",
+      "en": "A parish is a place to encounter God and one another. Our church is dedicated to Saints Cyril and Methodius, Equal to the Apostles and teachers of the Slavic peoples."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "У візантійській традиції",
+          "en": "In the Byzantine tradition"
+        },
+        "text": {
+          "uk": "Парафія в Порошкові належить до Мукачівської греко-католицької єпархії Католицької Церкви. Її церковне життя пов’язане з візантійським обрядом: літургією, співаною молитвою та шануванням ікон.",
+          "en": "The parish in Poroshkovo belongs to the Greek Catholic Eparchy of Mukachevo within the Catholic Church. Its ecclesial life follows the Byzantine rite, with its liturgy, chanted prayer and veneration of icons."
+        },
+        "source": "directory"
+      },
+      {
+        "title": {
+          "uk": "Храм і парафіяльний дім",
+          "en": "Church and parish house"
+        },
+        "text": {
+          "uk": "Історію нової громади позначають освячення храму 2009 року та парафіяльного дому 2015 року. Ці дві будівлі нагадують, що парафіяльне життя поєднує богослужіння, навчання віри й зустрічі людей.",
+          "en": "Two milestones mark the renewed community: the church’s consecration in 2009 and the blessing of the parish house in 2015. Together, these places express the connection between worship, learning the faith and meeting one another."
+        },
+        "source": "eparchy"
+      }
     ],
-    "published":true
+    "published": true,
+    "photo_intro": {
+      "title": {
+        "uk": "Наш храм і дзвіниця",
+        "en": "Our church and bell tower"
+      },
+      "text": {
+        "uk": "Храм та дзвіниця — місця, пов’язані з молитвою парафіяльної спільноти. На цих світлинах можна ближче роздивитися їхній вигляд.",
+        "en": "The church and bell tower are places associated with the prayer of the parish community. These photographs offer a closer look at them."
+      }
+    }
   },
   "history": {
-    "title":{"uk":"Історія храму", "en":"The story of our church"},
-    "description":{"uk":"Від згадки про церкву 1751 року до освячення нового храму 2009 року: хронологія греко-католицької громади Порошкова.", "en":"From a church recorded in 1751 to the consecration of the new church in 2009: a sourced timeline of Poroshkovo’s Greek Catholic community."},
-    "intro":{"uk":"Історія віри в селі давніша за сучасну будівлю. Важливо розрізняти давню церкву святого Миколая та новий храм святих Кирила і Мефодія.", "en":"The story of faith in the village begins long before the present building. The historic church of Saint Nicholas and the new church of Saints Cyril and Methodius are distinct churches."},
-    "blocks":[
-      {"title":{"uk":"Пам’ять про давню громаду", "en":"Remembering the earlier community"},"text":{"uk":"Епархіальна історія зберігає згадки про давню церкву, служителів і переслідування греко-католиків. Ця пам’ять допомагає побачити за датами людей, які берегли свою віру.", "en":"The eparchial account preserves the memory of the earlier church, its priests and the persecution of Greek Catholics. Behind its dates are people who continued to cherish their faith."},"source":"eparchy"},
-      {"title":{"uk":"Від каплиці до нового храму", "en":"From chapel to church"},"text":{"uk":"Оновлена громада отримала місце для молитви, а згодом розпочала будівництво храму. Цей шлях поєднав працю священників і вірних; його ключові дати зібрані нижче за епархіальною довідкою.", "en":"The renewed community first found a place for prayer and later began to build a church. Priests and faithful contributed to that journey; its main dates are set out below using the eparchial account."},"source":"eparchy"}
+    "title": {
+      "uk": "Історія храму",
+      "en": "The story of our church"
+    },
+    "description": {
+      "uk": "Від згадки про церкву 1751 року до освячення нового храму 2009 року: хронологія греко-католицької громади Порошкова.",
+      "en": "From a church recorded in 1751 to the consecration of the new church in 2009: a sourced timeline of Poroshkovo’s Greek Catholic community."
+    },
+    "intro": {
+      "uk": "Історія віри в селі давніша за сучасну будівлю. Важливо розрізняти давню церкву святого Миколая та новий храм святих Кирила і Мефодія.",
+      "en": "The story of faith in the village begins long before the present building. The historic church of Saint Nicholas and the new church of Saints Cyril and Methodius are distinct churches."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Пам’ять про давню громаду",
+          "en": "Remembering the earlier community"
+        },
+        "text": {
+          "uk": "Епархіальна історія зберігає згадки про давню церкву, служителів і переслідування греко-католиків. Ця пам’ять допомагає побачити за датами людей, які берегли свою віру.",
+          "en": "The eparchial account preserves the memory of the earlier church, its priests and the persecution of Greek Catholics. Behind its dates are people who continued to cherish their faith."
+        },
+        "source": "eparchy"
+      },
+      {
+        "title": {
+          "uk": "Від каплиці до нового храму",
+          "en": "From chapel to church"
+        },
+        "text": {
+          "uk": "Оновлена громада отримала місце для молитви, а згодом розпочала будівництво храму. Цей шлях поєднав працю священників і вірних; його ключові дати зібрані нижче за епархіальною довідкою.",
+          "en": "The renewed community first found a place for prayer and later began to build a church. Priests and faithful contributed to that journey; its main dates are set out below using the eparchial account."
+        },
+        "source": "eparchy"
+      }
     ],
-    "published":true
+    "published": true
   },
   "services": {
-    "title":{"uk":"Богослужіння", "en":"Worship and services"},
-    "description":{"uk":"Інформація про богослужіння парафії в Порошкові. Актуальний розклад та святкові зміни очікують підтвердження парафії.", "en":"Worship information for Saints Cyril and Methodius parish in Poroshkovo. Current service times and feast-day changes await parish confirmation."},
-    "intro":{"uk":"Спільна молитва збирає парафію навколо Христа. Перед поїздкою до храму важливо звірити час богослужіння, особливо у святкові дні.", "en":"Shared prayer gathers the parish around Christ. Please verify service times before travelling to church, especially on feast days."},
-    "blocks":[
-      {"title":{"uk":"Божественна Літургія", "en":"The Divine Liturgy"},"text":{"uk":"У центрі літургійного життя стоїть Євхаристія — подяка Богові та єднання з Христом. У молитві Церква слухає Боже слово й приносить Йому радості та потреби людей.", "en":"The Eucharist stands at the heart of liturgical life: thanksgiving to God and communion with Christ. In prayer, the Church listens to God’s word and brings before Him the joys and needs of the world."}},
-      {"title":{"uk":"Сповідь і духовна розмова", "en":"Confession and spiritual conversation"},"text":{"uk":"Для особистої зустрічі зі священником потрібна окрема домовленість. Підтверджений спосіб зв’язку й години сповіді буде оприлюднено після уточнення в парафії.", "en":"A personal meeting with a priest requires an individual arrangement. Confirmed contact details and confession times will be shared once the parish has provided them."}}
+    "title": {
+      "uk": "Богослужіння",
+      "en": "Worship and services"
+    },
+    "description": {
+      "uk": "Інформація про богослужіння парафії в Порошкові. Актуальний розклад та святкові зміни очікують підтвердження парафії.",
+      "en": "Worship information for Saints Cyril and Methodius parish in Poroshkovo. Current service times and feast-day changes await parish confirmation."
+    },
+    "intro": {
+      "uk": "Спільна молитва збирає парафію навколо Христа. Перед поїздкою до храму важливо звірити час богослужіння, особливо у святкові дні.",
+      "en": "Shared prayer gathers the parish around Christ. Please verify service times before travelling to church, especially on feast days."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Божественна Літургія",
+          "en": "The Divine Liturgy"
+        },
+        "text": {
+          "uk": "У центрі літургійного життя стоїть Євхаристія — подяка Богові та єднання з Христом. У молитві Церква слухає Боже слово й приносить Йому радості та потреби людей.",
+          "en": "The Eucharist stands at the heart of liturgical life: thanksgiving to God and communion with Christ. In prayer, the Church listens to God’s word and brings before Him the joys and needs of the world."
+        }
+      },
+      {
+        "title": {
+          "uk": "Сповідь і духовна розмова",
+          "en": "Confession and spiritual conversation"
+        },
+        "text": {
+          "uk": "Для особистої зустрічі зі священником потрібна окрема домовленість. Підтверджений спосіб зв’язку й години сповіді буде оприлюднено після уточнення в парафії.",
+          "en": "A personal meeting with a priest requires an individual arrangement. Confirmed contact details and confession times will be shared once the parish has provided them."
+        }
+      }
     ],
-    "published":true
+    "published": true
   },
   "spiritual-life": {
-    "title":{"uk":"Духовне життя", "en":"Life in faith"},
-    "description":{"uk":"Літургія, особиста молитва та свідчення святих Кирила і Мефодія у візантійській греко-католицькій традиції.", "en":"Liturgy, personal prayer and the witness of Saints Cyril and Methodius in the Byzantine Greek Catholic tradition."},
-    "intro":{"uk":"Віра зростає в молитві, уважності до Божого слова та любові до ближнього. Літургійна традиція допомагає поєднувати церковну молитву з повсякденним життям.", "en":"Faith grows through prayer, attention to God’s word and love of neighbour. The liturgical tradition helps connect the prayer of the Church with everyday life."},
-    "blocks":[
-      {"title":{"uk":"Молитва в храмі й удома", "en":"Prayer at church and at home"},"text":{"uk":"Спільна молитва навчає нас слухати й бути поруч. Особиста та родинна молитва продовжує цю зустріч удома — у вдячності, проханнях і тиші перед Богом.", "en":"Shared prayer teaches us to listen and to be present to one another. Personal and family prayer continues this encounter at home, in thanksgiving, petition and silence before God."}},
-      {"title":{"uk":"Ритм церковного року", "en":"The rhythm of the Church year"},"text":{"uk":"Свята й пости відкривають різні сторони євангельської історії. Актуальні дати парафіяльних свят і богослужінь слід звіряти з оголошеннями парафії після їх підтвердження.", "en":"Feasts and fasting seasons unfold different aspects of the Gospel story. Parish celebrations and service dates should be checked against parish announcements once these have been confirmed."}}
+    "title": {
+      "uk": "Духовне життя",
+      "en": "Life in faith"
+    },
+    "description": {
+      "uk": "Літургія, особиста молитва та свідчення святих Кирила і Мефодія у візантійській греко-католицькій традиції.",
+      "en": "Liturgy, personal prayer and the witness of Saints Cyril and Methodius in the Byzantine Greek Catholic tradition."
+    },
+    "intro": {
+      "uk": "Віра зростає в молитві, уважності до Божого слова та любові до ближнього. Літургійна традиція допомагає поєднувати церковну молитву з повсякденним життям.",
+      "en": "Faith grows through prayer, attention to God’s word and love of neighbour. The liturgical tradition helps connect the prayer of the Church with everyday life."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Молитва в храмі й удома",
+          "en": "Prayer at church and at home"
+        },
+        "text": {
+          "uk": "Спільна молитва навчає нас слухати й бути поруч. Особиста та родинна молитва продовжує цю зустріч удома — у вдячності, проханнях і тиші перед Богом.",
+          "en": "Shared prayer teaches us to listen and to be present to one another. Personal and family prayer continues this encounter at home, in thanksgiving, petition and silence before God."
+        }
+      },
+      {
+        "title": {
+          "uk": "Ритм церковного року",
+          "en": "The rhythm of the Church year"
+        },
+        "text": {
+          "uk": "Свята й пости відкривають різні сторони євангельської історії. Актуальні дати парафіяльних свят і богослужінь слід звіряти з оголошеннями парафії після їх підтвердження.",
+          "en": "Feasts and fasting seasons unfold different aspects of the Gospel story. Parish celebrations and service dates should be checked against parish announcements once these have been confirmed."
+        }
+      }
     ],
-    "published":true
+    "published": true,
+    "photo_intro": {
+      "title": {
+        "uk": "Молитва і простір храму",
+        "en": "Prayer and the church interior"
+      },
+      "text": {
+        "uk": "Молитва біля розп’яття, іконостас і престол відкривають різні сторони молитовного життя. Поруч — світлина великоднього благословення вірних біля храму.",
+        "en": "Prayer before the crucifix, the iconostasis and the altar show different aspects of the life of prayer. Alongside them is a photograph of the faithful receiving an Easter blessing outside the church."
+      }
+    }
   },
   "community": {
-    "title":{"uk":"Наша спільнота", "en":"Our community"},
-    "description":{"uk":"Знайомство з громадою Порошкова: наступність віри, парафіяльний дім, катехизація та спільна молитва.", "en":"Meet the community of Poroshkovo through its heritage of faith, parish house, catechesis and shared prayer."},
-    "intro":{"uk":"Парафія живе завдяки людям, які моляться, навчаються й підтримують одне одного. Її історія — це також історія спільної праці над храмом та парафіяльним домом.", "en":"A parish lives through people who pray, learn and support one another. Its story is also one of shared work in building a church and a parish house."},
-    "blocks":[
-      {"title":{"uk":"Місце зустрічі поколінь", "en":"A place where generations meet"},"text":{"uk":"Епархіальна довідка згадує приміщення для дітей та молоді в парафіяльному домі. Знайомство з вірою потребує часу для запитань, розмови й спільної молитви.", "en":"The eparchial history describes space for children and young people in the parish house. Learning the faith calls for time to ask questions, talk and pray together."},"source":"eparchy"},
-      {"title":{"uk":"Долучитися до життя парафії", "en":"Taking part in parish life"},"text":{"uk":"Першим кроком може стати знайомство з храмом та історією громади. Відомості про сьогоднішні зустрічі, служіння та можливості допомоги будуть додані після підтвердження парафією.", "en":"A first step can be getting to know the church and the community’s history. Details of present-day gatherings, ministries and opportunities to help will be added after parish confirmation."}}
+    "title": {
+      "uk": "Наша спільнота",
+      "en": "Our community"
+    },
+    "description": {
+      "uk": "Знайомство з громадою Порошкова: наступність віри, парафіяльний дім, катехизація та спільна молитва.",
+      "en": "Meet the community of Poroshkovo through its heritage of faith, parish house, catechesis and shared prayer."
+    },
+    "intro": {
+      "uk": "Парафія живе завдяки людям, які моляться, навчаються й підтримують одне одного. Її історія — це також історія спільної праці над храмом та парафіяльним домом.",
+      "en": "A parish lives through people who pray, learn and support one another. Its story is also one of shared work in building a church and a parish house."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Місце зустрічі поколінь",
+          "en": "A place where generations meet"
+        },
+        "text": {
+          "uk": "Епархіальна довідка згадує приміщення для дітей та молоді в парафіяльному домі. Знайомство з вірою потребує часу для запитань, розмови й спільної молитви.",
+          "en": "The eparchial history describes space for children and young people in the parish house. Learning the faith calls for time to ask questions, talk and pray together."
+        },
+        "source": "eparchy"
+      },
+      {
+        "title": {
+          "uk": "Долучитися до життя парафії",
+          "en": "Taking part in parish life"
+        },
+        "text": {
+          "uk": "Першим кроком може стати знайомство з храмом та історією громади. Відомості про сьогоднішні зустрічі, служіння та можливості допомоги будуть додані після підтвердження парафією.",
+          "en": "A first step can be getting to know the church and the community’s history. Details of present-day gatherings, ministries and opportunities to help will be added after parish confirmation."
+        }
+      }
     ],
-    "published":true
+    "published": true,
+    "photo_intro": {
+      "title": {
+        "uk": "Разом у храмі й поза ним",
+        "en": "Together at church and beyond"
+      },
+      "text": {
+        "uk": "Діти й парафіяни перед іконостасом, спільнота з настоятелем на сходах храму та зимовий відпочинок — миті парафіяльного життя. Світлини нагадують про молитву, зустрічі й радість бути разом.",
+        "en": "Children and parishioners before the iconostasis, the community with the parish priest on the church steps, and a winter outing are moments of parish life. The photographs recall prayer, encounters and the joy of being together."
+      }
+    }
   },
   "catechesis": {
-    "title":{"uk":"Катехизація та молодь", "en":"Catechesis and young people"},
-    "description":{"uk":"Історія катехитичного центру при парафії святих Кирила і Мефодія. Поточні групи й час занять уточнюються.", "en":"The catechetical centre at Saints Cyril and Methodius parish: its history and purpose. Current groups and meeting times await confirmation."},
-    "intro":{"uk":"Катехизація допомагає пізнавати християнську віру й ставити важливі запитання. Для дітей та молоді особливо цінні довіра, живе спілкування й підтримка родини.", "en":"Catechesis helps people understand the Christian faith and ask meaningful questions. For children and young people, trust, conversation and family support are especially valuable."},
-    "blocks":[
-      {"title":{"uk":"Простір для навчання віри", "en":"A space for learning the faith"},"text":{"uk":"Наріжний камінь парафіяльного дому та катехитичного центру освячено 2011 року, а готовий дім — 2015 року. Єпархіальна історія згадує заняття дітей і молоді в цьому приміщенні.", "en":"The cornerstone of the parish house and catechetical centre was blessed in 2011, and the completed house in 2015. The eparchial account records catechesis for children and young people there."},"source":"eparchy"},
-      {"title":{"uk":"Як долучитися", "en":"How to take part"},"text":{"uk":"Нинішні вікові групи, катехити й порядок запису потребують підтвердження. Час занять із давнішої єпархіальної сторінки не подається тут як чинний розклад.", "en":"Current age groups, catechists and enrolment arrangements need parish confirmation. Times on the older eparchial page are not presented here as a current timetable."}}
+    "title": {
+      "uk": "Катехизація та молодь",
+      "en": "Catechesis and young people"
+    },
+    "description": {
+      "uk": "Історія катехитичного центру при парафії святих Кирила і Мефодія. Поточні групи й час занять уточнюються.",
+      "en": "The catechetical centre at Saints Cyril and Methodius parish: its history and purpose. Current groups and meeting times await confirmation."
+    },
+    "intro": {
+      "uk": "Катехизація допомагає пізнавати християнську віру й ставити важливі запитання. Для дітей та молоді особливо цінні довіра, живе спілкування й підтримка родини.",
+      "en": "Catechesis helps people understand the Christian faith and ask meaningful questions. For children and young people, trust, conversation and family support are especially valuable."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Простір для навчання віри",
+          "en": "A space for learning the faith"
+        },
+        "text": {
+          "uk": "Наріжний камінь парафіяльного дому та катехитичного центру освячено 2011 року, а готовий дім — 2015 року. Єпархіальна історія згадує заняття дітей і молоді в цьому приміщенні.",
+          "en": "The cornerstone of the parish house and catechetical centre was blessed in 2011, and the completed house in 2015. The eparchial account records catechesis for children and young people there."
+        },
+        "source": "eparchy"
+      },
+      {
+        "title": {
+          "uk": "Як долучитися",
+          "en": "How to take part"
+        },
+        "text": {
+          "uk": "Нинішні вікові групи, катехити й порядок запису потребують підтвердження. Час занять із давнішої єпархіальної сторінки не подається тут як чинний розклад.",
+          "en": "Current age groups, catechists and enrolment arrangements need parish confirmation. Times on the older eparchial page are not presented here as a current timetable."
+        }
+      }
     ],
-    "published":true
+    "published": true
   },
   "mothers-in-prayer": {
-    "title":{"uk":"Матері в молитві", "en":"Mothers in Prayer"},
-    "description":{"uk":"Молитовна спільнота матерів, згадана в історії парафії Порошкова. Актуальні зустрічі та спосіб долучення уточнюються.", "en":"The mothers’ prayer community recorded in the history of Poroshkovo parish. Present meeting arrangements await confirmation."},
-    "intro":{"uk":"Молитва за дітей і родини єднає матерів у надії та довірі до Бога. Це також нагадування, що родина не повинна залишатися наодинці зі своїми турботами.", "en":"Prayer for children and families brings mothers together in hope and trust in God. It is also a reminder that families need not face their concerns alone."},
-    "blocks":[
-      {"title":{"uk":"Згадка в історії парафії", "en":"Recorded in the parish story"},"text":{"uk":"Офіційна єпархіальна довідка згадує спільноту матерів у молитві при парафії. Ця згадка засвідчує її місце в історії громади, але не встановлює нинішнього складу чи графіка зустрічей.", "en":"The official eparchial account mentions a mothers’ prayer community at the parish. This records its place in the community’s story, while leaving present membership and meeting times to be confirmed."},"source":"eparchy"},
-      {"title":{"uk":"Зустрічі спільноти", "en":"Community gatherings"},"text":{"uk":"День, час і спосіб приєднання будуть опубліковані після уточнення. Особисті молитовні наміри та відомості про дітей на сайті не збираються.", "en":"The day, time and way to join will be published once confirmed. This website does not collect personal prayer intentions or information about children."}}
+    "title": {
+      "uk": "Матері в молитві",
+      "en": "Mothers in Prayer"
+    },
+    "description": {
+      "uk": "Молитовна спільнота матерів, згадана в історії парафії Порошкова. Актуальні зустрічі та спосіб долучення уточнюються.",
+      "en": "The mothers’ prayer community recorded in the history of Poroshkovo parish. Present meeting arrangements await confirmation."
+    },
+    "intro": {
+      "uk": "Молитва за дітей і родини єднає матерів у надії та довірі до Бога. Це також нагадування, що родина не повинна залишатися наодинці зі своїми турботами.",
+      "en": "Prayer for children and families brings mothers together in hope and trust in God. It is also a reminder that families need not face their concerns alone."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Згадка в історії парафії",
+          "en": "Recorded in the parish story"
+        },
+        "text": {
+          "uk": "Офіційна єпархіальна довідка згадує спільноту матерів у молитві при парафії. Ця згадка засвідчує її місце в історії громади, але не встановлює нинішнього складу чи графіка зустрічей.",
+          "en": "The official eparchial account mentions a mothers’ prayer community at the parish. This records its place in the community’s story, while leaving present membership and meeting times to be confirmed."
+        },
+        "source": "eparchy"
+      },
+      {
+        "title": {
+          "uk": "Зустрічі спільноти",
+          "en": "Community gatherings"
+        },
+        "text": {
+          "uk": "День, час і спосіб приєднання будуть опубліковані після уточнення. Особисті молитовні наміри та відомості про дітей на сайті не збираються.",
+          "en": "The day, time and way to join will be published once confirmed. This website does not collect personal prayer intentions or information about children."
+        }
+      }
     ],
-    "published":true
+    "published": true
   },
   "contacts": {
-    "title":{"uk":"Контакти та відвідини", "en":"Contact and visiting"},
-    "description":{"uk":"Парафія святих Кирила і Мефодія, село Порошково, Закарпаття. Адреса храму, контакти та точна карта очікують підтвердження.", "en":"Saints Cyril and Methodius parish, Poroshkovo, Zakarpattia, Ukraine. The church’s visiting address, contacts and map pin await confirmation."},
-    "intro":{"uk":"Наша парафія — у селі Порошково на Закарпатті. Для першого візиту потрібні підтверджені адреса храму та час богослужіння.", "en":"Our parish is in the village of Poroshkovo in Zakarpattia, Ukraine. For a first visit, please check the confirmed church address and service time."},
-    "blocks":[
-      {"title":{"uk":"Планування візиту", "en":"Planning a visit"},"text":{"uk":"Точну адресу для відвідувачів, телефон і пошту буде додано після погодження парафією. Позначка на карті та маршрут з’являться разом із підтвердженою геолокацією храму.", "en":"The visiting address, telephone number and email will be added after parish approval. A map pin and directions will be provided once the church’s exact location has been confirmed."}},
-      {"title":{"uk":"Парафія на сайті єпархії", "en":"Our parish on the eparchy’s website"},"text":{"uk":"Офіційна єпархіальна сторінка містить історичну довідку про громаду. Контакти єпархіального управління на тій сторінці не є особистими контактами цієї парафії.", "en":"The official eparchial page provides a historical account of the community. Contact details for the eparchial offices on that page are not direct parish contacts."},"source":"eparchy"}
+    "title": {
+      "uk": "Контакти та відвідини",
+      "en": "Contact and visiting"
+    },
+    "description": {
+      "uk": "Парафія святих Кирила і Мефодія, село Порошково, Закарпаття. Адреса храму, контакти та точна карта очікують підтвердження.",
+      "en": "Saints Cyril and Methodius parish, Poroshkovo, Zakarpattia, Ukraine. The church’s visiting address, contacts and map pin await confirmation."
+    },
+    "intro": {
+      "uk": "Наша парафія — у селі Порошково на Закарпатті. Для першого візиту потрібні підтверджені адреса храму та час богослужіння.",
+      "en": "Our parish is in the village of Poroshkovo in Zakarpattia, Ukraine. For a first visit, please check the confirmed church address and service time."
+    },
+    "blocks": [
+      {
+        "title": {
+          "uk": "Планування візиту",
+          "en": "Planning a visit"
+        },
+        "text": {
+          "uk": "Точну адресу для відвідувачів, телефон і пошту буде додано після погодження парафією. Позначка на карті та маршрут з’являться разом із підтвердженою геолокацією храму.",
+          "en": "The visiting address, telephone number and email will be added after parish approval. A map pin and directions will be provided once the church’s exact location has been confirmed."
+        }
+      },
+      {
+        "title": {
+          "uk": "Парафія на сайті єпархії",
+          "en": "Our parish on the eparchy’s website"
+        },
+        "text": {
+          "uk": "Офіційна єпархіальна сторінка містить історичну довідку про громаду. Контакти єпархіального управління на тій сторінці не є особистими контактами цієї парафії.",
+          "en": "The official eparchial page provides a historical account of the community. Contact details for the eparchial offices on that page are not direct parish contacts."
+        },
+        "source": "eparchy"
+      }
     ],
-    "published":true
+    "published": true
   },
-  "news":{"title":{"uk":"Події та новини", "en":"News and events"}, "published":false},
-  "gallery":{"title":{"uk":"Фотогалерея", "en":"Photo gallery"}, "published":false},
-  "support":{"title":{"uk":"Підтримати парафію", "en":"Support the parish"}, "published":false}
+  "news": {
+    "title": {
+      "uk": "Події та новини",
+      "en": "News and events"
+    },
+    "published": false
+  },
+  "gallery": {
+    "title": {
+      "uk": "Фотогалерея",
+      "en": "Photo gallery"
+    },
+    "description": {
+      "uk": "Фотографії парафії в Порошкові: храм, дзвіниця, молитва, іконостас, Літургія та зустрічі спільноти.",
+      "en": "Photographs of Poroshkovo parish: the church, bell tower, prayer, iconostasis, Divine Liturgy and community gatherings."
+    },
+    "intro": {
+      "uk": "Фотографії зберігають миті молитви та зустрічей громади. Тут — храм і дзвіниця, богослужіння, спільнота з настоятелем та відпочинок разом.",
+      "en": "Photographs preserve moments of prayer and community life. Explore the church and bell tower, worship, the community with the parish priest and time spent together."
+    },
+    "published": true
+  },
+  "support": {
+    "title": {
+      "uk": "Підтримати парафію",
+      "en": "Support the parish"
+    },
+    "published": false
+  }
 }

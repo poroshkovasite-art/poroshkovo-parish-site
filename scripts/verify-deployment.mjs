@@ -10,8 +10,10 @@ const site=JSON.parse(fs.readFileSync(path.join(root,'content/site.json'))),base
 assert.ok(base&&site.publication_approved,'Approved production URL required');
 const audit=path.resolve(root,'../audit');fs.mkdirSync(audit,{recursive:true});
 const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json'))),hash=b=>createHash('sha256').update(b).digest('hex');
+const publishedPhotos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))).filter(p=>p.publication_status==='approved'&&p.rights_confirmed);
+const assets=['/assets/site.css','/assets/app.js','/favicon.ico','/assets/favicon.ico','/assets/favicon-16x16.png','/assets/favicon-32x32.png','/assets/apple-touch-icon.png','/assets/icon-192.png','/assets/icon-512.png','/assets/og-card.png','/robots.txt','/sitemap.xml','/uk/site.webmanifest','/en/site.webmanifest',...publishedPhotos.flatMap(p=>p.widths.map(w=>`/assets/photos/${p.id}-${w}.webp`)),...fs.readdirSync(path.join(out,'assets/brand')).filter(f=>f.endsWith('.png')).map(f=>`/assets/brand/${f}`)];
 const report={date:'2026-10-29',url:base,status:'RUNNING',http:[],layouts:[],accessibility:[],jsErrors:[],interactions:[]};
-for(const route of [...routes,'/assets/site.css','/assets/app.js','/assets/favicon.svg','/assets/og-card.png','/robots.txt','/sitemap.xml']){
+for(const route of [...routes,...assets]){
  const response=await fetch(base+route),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200,route);
  const local=fs.readFileSync(path.join(out,route.endsWith('/')?route.slice(1)+'index.html':route.slice(1)));
  assert.equal(hash(bytes),hash(local),`Live bytes must match local production build: ${route}`);
@@ -27,6 +29,7 @@ try{
   await page.setViewportSize({width,height:width<600?844:1000});
   for(const route of routes){
    await page.goto(base+route);
+   await page.evaluate(async()=>{await Promise.all([...document.images].filter(i=>i.hasAttribute("src")).map(i=>{i.loading="eager";return i.decode().catch(()=>{});}));});
    const metrics=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,brokenImages:[...document.images].filter(i=>i.getAttribute('src')&&(!i.complete||!i.naturalWidth)).length}));
    assert.ok(!metrics.overflow&&!metrics.brokenImages,`Layout/images: ${width} ${route}`);report.layouts.push({width,route,...metrics});
    if(width===1440){const a=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.equal(a.violations.length,0,`Accessibility: ${route}`);report.accessibility.push({route,violations:a.violations.length});}

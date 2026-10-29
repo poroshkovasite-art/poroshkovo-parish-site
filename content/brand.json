@@ -1,0 +1,18 @@
+{
+  "id": "poroshkovo-parish-logo",
+  "status": "owner_supplied_official_logo",
+  "source_sha256": "03aac3fa6fe42999fd21228fc22c16e754bab29b0787056e7af99125ba5b72e8",
+  "received_on": "2026-10-29",
+  "publication_authorization": "Explicit owner instruction in this conversation",
+  "source_width": 1254,
+  "source_height": 1254,
+  "processing": "Conventional monochrome threshold and resizing; only exterior-connected white background made transparent; internal white retained; composition unchanged",
+  "colors": [
+    "#000000",
+    "#ffffff"
+  ],
+  "header_alt": {
+    "uk": "Логотип парафії Порошково: святі Кирило і Мефодій",
+    "en": "Poroshkovo parish logo: Saints Cyril and Methodius"
+  }
+}

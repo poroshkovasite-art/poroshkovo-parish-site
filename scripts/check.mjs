@@ -15,7 +15,7 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
   const title=html.match(/<title>(.*?)<\/title>/)[1],description=html.match(/<meta name="description" content="([^"]+)"/)[1];
   assert.ok(!titles.has(title),`Duplicate title ${file}`);titles.add(title);assert.ok(!descriptions.has(description),`Duplicate description ${file}`);descriptions.add(description);
   assert.match(html,/<link rel="canonical" href="https?:\/\//);assert.match(html,/hreflang="uk"/);assert.match(html,/hreflang="en"/);assert.match(html,/og:image/);
-  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,`Duplicate id ${file}`);
+  const ids=[...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,`Duplicate id ${file}`);
   const schedule=JSON.parse(fs.readFileSync(path.join(root,'content/schedule.json')));
   if(schedule.verification_status!=='confirmed')assert.ok(!/11:00|16:00|17:00|09:00|13:00|14:00/.test(html),`Unconfirmed timetable leaked: ${file}`);
   assert.ok(!/26100236|Центральна,? 94/.test(html),`Unconfirmed legal details leaked: ${file}`);
@@ -27,7 +27,10 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
   if(address.hash)assert.ok(fs.readFileSync(path.join(out,target),'utf8').includes(`id="${address.hash.slice(1)}"`),`Broken fragment ${ref}`);links++;
  }
 }
-for(const f of ['robots.txt','sitemap.xml','assets/favicon.svg','assets/og-card.png','_headers'])assert.ok(files.includes(f));
+for(const f of ['robots.txt','sitemap.xml','favicon.ico','assets/favicon.ico','assets/favicon-16x16.png','assets/favicon-32x32.png','assets/apple-touch-icon.png','assets/icon-192.png','assets/icon-512.png','assets/og-card.png','uk/site.webmanifest','en/site.webmanifest','_headers'])assert.ok(files.includes(f),`Required file: ${f}`);
+const ico=fs.readFileSync(path.join(out,'favicon.ico'));assert.equal(ico.readUInt16LE(2),1);assert.equal(ico.readUInt16LE(4),3);assert.deepEqual([0,1,2].map(i=>ico[6+i*16]),[16,32,48]);
+for(const [name,size] of [['favicon-16x16.png',16],['favicon-32x32.png',32],['apple-touch-icon.png',180],['icon-192.png',192],['icon-512.png',512]]){const bytes=fs.readFileSync(path.join(out,'assets',name));assert.equal(bytes.readUInt32BE(16),size);assert.equal(bytes.readUInt32BE(20),size);}
+for(const lang of ['uk','en']){const manifest=JSON.parse(fs.readFileSync(path.join(out,lang,'site.webmanifest')));assert.equal(manifest.start_url,`/${lang}/`);for(const icon of manifest.icons)assert.ok(fs.existsSync(path.join(out,new URL(icon.src,'https://local.test').pathname.slice(1))));}
 assert.ok(!files.some(f=>/google.*html/.test(f)),'No borrowed verification files');
 const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json')));
 for(const route of routes)assert.ok(routes.includes(route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/')),'Every page has a counterpart');

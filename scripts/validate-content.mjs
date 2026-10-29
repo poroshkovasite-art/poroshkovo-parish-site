@@ -13,6 +13,7 @@ export function validateContent({site,pages,photos,news,schedule}) {
   assert.ok(p.widths.includes(960)&&p.widths.every(w=>Number.isInteger(w)&&w>0&&w<=p.width),'Responsive widths must be real and include the default 960px variant');
  }
  const slugs=new Set();
+ if(site.hero_photo_id)assert.ok(photos.some(p=>p.id===site.hero_photo_id&&p.publication_status==='approved'&&p.rights_confirmed),'Hero must reference an approved photo');
  for(const n of news.filter(n=>n.verification_status==='confirmed')){
   assert.match(n.slug,/^[a-z0-9-]+$/);assert.ok(!slugs.has(n.slug),'Unique news slug');slugs.add(n.slug);
   assert.ok(date(n.date)&&date(n.extracted_on)&&n.source_url,'News date and provenance');assert.ok(bilingual(n.title)&&bilingual(n.summary),'Bilingual news');

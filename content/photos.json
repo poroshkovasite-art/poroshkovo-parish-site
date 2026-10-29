@@ -1,1 +1,530 @@
-[]
+[
+  {
+    "id": "divine-liturgy",
+    "title": {
+      "uk": "Божественна Літургія",
+      "en": "Divine Liturgy"
+    },
+    "caption": {
+      "uk": "Божественна Літургія",
+      "en": "Divine Liturgy"
+    },
+    "alt": {
+      "uk": "Священник звершує Божественну Літургію біля престолу",
+      "en": "A priest celebrates the Divine Liturgy at the altar"
+    },
+    "category": "worship",
+    "category_label": {
+      "uk": "Богослужіння",
+      "en": "Worship"
+    },
+    "placements": [
+      "home",
+      "gallery"
+    ],
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      640,
+      960,
+      1122
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner request to publish these supplied files on poroshkovo.pages.dev, 2026-10-29",
+    "consent_reference": "Owner expressly requested publication of the supplied photograph in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "c334541b-9f9e-48d1-9b28-86b0a87fde36.png",
+    "original_sha256": "42bb28e65f98189d66b97b6718ac6d39f483e68112bba7b209e0724429cdcf96",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null
+  },
+  {
+    "id": "parish-community-children",
+    "title": {
+      "uk": "Парафіяльна спільнота і діти",
+      "en": "Parish community and children"
+    },
+    "caption": {
+      "uk": "Парафіяльна спільнота і діти",
+      "en": "Parish community and children"
+    },
+    "alt": {
+      "uk": "Діти та парафіяни в храмі перед іконостасом",
+      "en": "Children and parishioners inside the church before the iconostasis"
+    },
+    "category": "community",
+    "category_label": {
+      "uk": "Спільнота",
+      "en": "Community"
+    },
+    "placements": [
+      "community",
+      "gallery"
+    ],
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      640,
+      960,
+      1086
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner request to publish these supplied files on poroshkovo.pages.dev, 2026-10-29",
+    "consent_reference": "Owner expressly requested publication of the supplied photograph in this conversation",
+    "contains_children": true,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "a293597d-ea4f-46d8-9cab-dc4b53560763.png",
+    "original_sha256": "76e992648384b89ce08776a4660a01b4c58086190ed1d7cbf01d96747cd22e1f",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null
+  },
+  {
+    "id": "easter-blessing",
+    "title": {
+      "uk": "Великоднє благословення",
+      "en": "Easter blessing"
+    },
+    "caption": {
+      "uk": "Великоднє благословення",
+      "en": "Easter blessing"
+    },
+    "alt": {
+      "uk": "Священник благословляє вірних на Великдень біля храму",
+      "en": "A priest blesses the faithful at Easter outside the church"
+    },
+    "category": "worship",
+    "category_label": {
+      "uk": "Богослужіння",
+      "en": "Worship"
+    },
+    "placements": [
+      "spiritual-life",
+      "gallery"
+    ],
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      640,
+      960,
+      1122
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner request to publish these supplied files on poroshkovo.pages.dev, 2026-10-29",
+    "consent_reference": "Owner expressly requested publication of the supplied photograph in this conversation",
+    "contains_children": true,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "5dd880ac-0313-46fc-9381-f1bb18c14cb4.png",
+    "original_sha256": "ee4b4d291247b72009346d401ce63e09f45e2f357e004e4aae1e837b733bad88",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null
+  },
+  {
+    "id": "parish-winter-outing",
+    "title": {
+      "uk": "Парафіяльний відпочинок узимку",
+      "en": "Parish winter outing"
+    },
+    "caption": {
+      "uk": "Парафіяльний відпочинок узимку",
+      "en": "Parish winter outing"
+    },
+    "alt": {
+      "uk": "Парафіяльна спільнота під час зимового відпочинку",
+      "en": "The parish community during a winter outing"
+    },
+    "category": "community",
+    "category_label": {
+      "uk": "Спільнота",
+      "en": "Community"
+    },
+    "placements": [
+      "community",
+      "gallery"
+    ],
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      480,
+      640,
+      960,
+      1672
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner request to publish these supplied files on poroshkovo.pages.dev, 2026-10-29",
+    "consent_reference": "Owner expressly requested publication of the supplied photograph in this conversation",
+    "contains_children": true,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "61dad15b-c7b0-46b8-8fc9-5cd3c7ddb82d.png",
+    "original_sha256": "283d6046f1c244b1e63f1b90530f9372327e16990cb0fe5409bb481aa28665f7",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null
+  },
+  {
+    "id": "church-exterior",
+    "title": {
+      "uk": "Храм святих Кирила і Мефодія",
+      "en": "Church of Saints Cyril and Methodius"
+    },
+    "caption": {
+      "uk": "Храм святих Кирила і Мефодія",
+      "en": "Church of Saints Cyril and Methodius"
+    },
+    "alt": {
+      "uk": "Храм парафії святих Кирила і Мефодія в Порошкові",
+      "en": "The church of Saints Cyril and Methodius parish in Poroshkovo"
+    },
+    "category": "church",
+    "category_label": {
+      "uk": "Храм",
+      "en": "Church"
+    },
+    "placements": [
+      "about",
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      960,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to lightly improve colors/brightness and publish these NEF photographs, 2026-10-29",
+    "consent_reference": "Owner publication request in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "810_9965.NEF",
+    "original_sha256": "49c364284da6ca5e9ad07ee2a17ffb294be3a061f70f2e8198a15a6f815d7ba5",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null,
+    "processing": {
+      "decoder": "full-resolution camera JPEG embedded in NEF",
+      "gamma": 0.985,
+      "color_factor": 1.025,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "bell-tower",
+    "title": {
+      "uk": "Парафіяльна дзвіниця",
+      "en": "The parish bell tower"
+    },
+    "caption": {
+      "uk": "Парафіяльна дзвіниця",
+      "en": "The parish bell tower"
+    },
+    "alt": {
+      "uk": "Дзвіниця на території парафії",
+      "en": "The bell tower in the parish grounds"
+    },
+    "category": "church",
+    "category_label": {
+      "uk": "Храм",
+      "en": "Church"
+    },
+    "placements": [
+      "about",
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      960,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to lightly improve colors/brightness and publish these NEF photographs, 2026-10-29",
+    "consent_reference": "Owner publication request in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "810_9969.NEF",
+    "original_sha256": "32b611a5540a43baf1643280c1cd8d4ec4d8fe594acf500e13781b4f2fffb017",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null,
+    "processing": {
+      "decoder": "full-resolution camera JPEG embedded in NEF",
+      "gamma": 0.98,
+      "color_factor": 1.025,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "prayer-at-crucifix",
+    "title": {
+      "uk": "Молитва біля розп’яття",
+      "en": "Prayer before the crucifix"
+    },
+    "caption": {
+      "uk": "Молитва біля розп’яття",
+      "en": "Prayer before the crucifix"
+    },
+    "alt": {
+      "uk": "Вірні моляться біля розп’яття у храмі",
+      "en": "The faithful pray before the crucifix inside the church"
+    },
+    "category": "worship",
+    "category_label": {
+      "uk": "Богослужіння",
+      "en": "Worship"
+    },
+    "placements": [
+      "spiritual-life",
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      960,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to lightly improve colors/brightness and publish these NEF photographs, 2026-10-29",
+    "consent_reference": "Owner publication request in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "810_9942.NEF",
+    "original_sha256": "47e1c3dc15b7096adb5b4eb73f4e6d813755e766b89ced94f2cf5316464f057e",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null,
+    "processing": {
+      "decoder": "full-resolution camera JPEG embedded in NEF",
+      "gamma": 0.94,
+      "color_factor": 1.025,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "iconostasis",
+    "title": {
+      "uk": "Іконостас храму",
+      "en": "The church iconostasis"
+    },
+    "caption": {
+      "uk": "Іконостас храму",
+      "en": "The church iconostasis"
+    },
+    "alt": {
+      "uk": "Іконостас у храмі парафії",
+      "en": "The iconostasis inside the parish church"
+    },
+    "category": "worship",
+    "category_label": {
+      "uk": "Богослужіння",
+      "en": "Worship"
+    },
+    "placements": [
+      "spiritual-life",
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      960,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to lightly improve colors/brightness and publish these NEF photographs, 2026-10-29",
+    "consent_reference": "Owner publication request in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "810_9971.NEF",
+    "original_sha256": "d220fe93a7495ec7f8612eeebe13fe3ce21435354f39ae1da544159cb178777c",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null,
+    "processing": {
+      "decoder": "full-resolution camera JPEG embedded in NEF",
+      "gamma": 0.94,
+      "color_factor": 1.025,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "parish-prayer-on-church-steps",
+    "title": {
+      "uk": "Спільнота з настоятелем на сходах храму",
+      "en": "The community with the parish priest on the church steps"
+    },
+    "caption": {
+      "uk": "Спільнота з настоятелем на сходах храму",
+      "en": "The community with the parish priest on the church steps"
+    },
+    "alt": {
+      "uk": "Настоятель і парафіяни на сходах храму",
+      "en": "The parish priest and parishioners on the church steps"
+    },
+    "category": "community",
+    "category_label": {
+      "uk": "Спільнота",
+      "en": "Community"
+    },
+    "placements": [
+      "community",
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      960,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to lightly improve colors/brightness and publish these NEF photographs, 2026-10-29",
+    "consent_reference": "Owner publication request in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "810_9958.NEF",
+    "original_sha256": "07699a6a131a1dc055757e7166450f9b37498e0ea276d53bfe892d43db59586e",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null,
+    "processing": {
+      "decoder": "full-resolution camera JPEG embedded in NEF",
+      "gamma": 0.95,
+      "color_factor": 1.025,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "church-altar",
+    "title": {
+      "uk": "Престол у храмі",
+      "en": "The altar inside the church"
+    },
+    "caption": {
+      "uk": "Престол у храмі",
+      "en": "The altar inside the church"
+    },
+    "alt": {
+      "uk": "Престол у храмі парафії",
+      "en": "The altar inside the parish church"
+    },
+    "category": "worship",
+    "category_label": {
+      "uk": "Богослужіння",
+      "en": "Worship"
+    },
+    "placements": [
+      "spiritual-life",
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      960,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to lightly improve colors/brightness and publish these NEF photographs, 2026-10-29",
+    "consent_reference": "Owner publication request in this conversation",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано для сайту парафії",
+      "en": "Provided for the parish website"
+    },
+    "author": null,
+    "original_file": "810_9975.NEF",
+    "original_sha256": "4e72449c3f17bddd34127b1a80be14d97f60b31a0b5d7a135657eabd3cc5e518",
+    "source_url": null,
+    "extracted_on": "2026-10-29",
+    "verification_status": "user_supplied_scene_and_publication_authorized",
+    "captured_on": null,
+    "processing": {
+      "decoder": "full-resolution camera JPEG embedded in NEF",
+      "gamma": 0.95,
+      "color_factor": 1.025,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  }
+]

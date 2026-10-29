@@ -7,11 +7,25 @@
     "uk": "Мукачівська греко-католицька єпархія",
     "en": "Greek Catholic Eparchy of Mukachevo"
   },
-  "locality": { "uk": "с. Порошково, Закарпаття, Україна", "en": "Poroshkovo, Zakarpattia, Ukraine" },
+  "locality": {
+    "uk": "с. Порошково, Закарпаття, Україна",
+    "en": "Poroshkovo, Zakarpattia, Ukraine"
+  },
   "production_url": "https://poroshkovo.pages.dev",
   "publication_approved": true,
-  "contact": { "verification_status": "needs_confirmation", "address": null, "phone": null, "email": null, "map_url": null, "embed_url": null },
-  "donations": { "verification_status": "needs_confirmation", "recipient": null, "iban": null },
-  "hero_photo_id": null,
+  "contact": {
+    "verification_status": "needs_confirmation",
+    "address": null,
+    "phone": null,
+    "email": null,
+    "map_url": null,
+    "embed_url": null
+  },
+  "donations": {
+    "verification_status": "needs_confirmation",
+    "recipient": null,
+    "iban": null
+  },
+  "hero_photo_id": "divine-liturgy",
   "reviewed_on": "2026-10-29"
 }
