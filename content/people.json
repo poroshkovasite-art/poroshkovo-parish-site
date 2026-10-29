@@ -1,11 +1,19 @@
 [
   {
-    "id":"anatolii-horzov",
-    "name":{"uk":"о. Анатолій Горзов", "en":"Fr Anatolii Horzov"},
-    "role":{"uk":"Настоятель, зазначений на сайті єпархії", "en":"Parish priest listed by the eparchy"},
-    "source_url":"https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
-    "extracted_on":"2026-10-29",
-    "verification_status":"listed_by_eparchy_current_appointment_needs_confirmation",
-    "photo_id":null
+    "id": "anatolii-horzov",
+    "name": {
+      "uk": "о. Анатолій Горзов",
+      "en": "Fr Anatoliy Horzov"
+    },
+    "role": {
+      "uk": "Настоятель парафії",
+      "en": "Parish pastor"
+    },
+    "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
+    "extracted_on": "2026-10-29",
+    "verification_status": "confirmed_by_direct_interview_relayed_by_owner",
+    "photo_id": null,
+    "confirmed_on": "2026-10-29",
+    "confirmation_source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source"
   }
 ]

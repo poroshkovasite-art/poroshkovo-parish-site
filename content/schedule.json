@@ -1,16 +1,309 @@
 {
-  "verification_status":"needs_confirmation",
-  "confirmed_on":null,
-  "source_url":"https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
-  "extracted_on":"2026-10-29",
-  "historical_reference_only":[
-    {"day":"Sunday and feasts", "time":"11:00", "service":"Divine Liturgy"},
-    {"day":"Sunday and feasts", "time":"16:00", "service":"Vespers"},
-    {"day":"Saturday and feast eves", "time":"17:00", "service":"Great Vespers"},
-    {"day":"Monday–Saturday", "time":"09:00", "service":"Divine Liturgy"},
-    {"day":"Saturday", "time":"13:00 / 14:00", "service":"Catechesis"},
-    {"day":"Sunday and feasts", "time":"09:00", "service":"Mothers in Prayer"}
+  "verification_status": "confirmed",
+  "confirmed_on": "2026-10-29",
+  "valid_from": "2026-10-29",
+  "timezone": "Europe/Kyiv",
+  "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+  "extracted_on": "2026-10-29",
+  "source": {
+    "type": "direct_pastor_interview_relayed_by_owner",
+    "name": {
+      "uk": "о. Анатолій Горзов, настоятель парафії",
+      "en": "Fr Anatoliy Horzov, parish pastor"
+    },
+    "interview_date": "2026-10-29",
+    "reference": "Owner-supplied official schedule brief, attachment 313b18f8-ad81-468a-8889-d5d778253c37"
+  },
+  "services": [
+    {
+      "id": "weekday-confession",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "day": {
+        "uk": "Понеділок — субота",
+        "en": "Monday–Saturday"
+      },
+      "time": "08:30",
+      "name": {
+        "uk": "Можливість приступити до Святої Сповіді",
+        "en": "Opportunity for Confession"
+      },
+      "category": "confession",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "weekday-liturgy",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "day": {
+        "uk": "Понеділок — субота",
+        "en": "Monday–Saturday"
+      },
+      "time": "09:00",
+      "name": {
+        "uk": "Божественна Літургія",
+        "en": "Divine Liturgy"
+      },
+      "category": "liturgy",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "saturday-vespers",
+      "weekdays": [
+        6
+      ],
+      "day": {
+        "uk": "Субота",
+        "en": "Saturday"
+      },
+      "time": "18:00",
+      "name": {
+        "uk": "Вечірня. Молитовна підготовка до недільного дня",
+        "en": "Vespers in preparation for Sunday"
+      },
+      "category": "vespers",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "sunday-mothers",
+      "weekdays": [
+        0
+      ],
+      "day": {
+        "uk": "Неділя",
+        "en": "Sunday"
+      },
+      "time": "10:00",
+      "name": {
+        "uk": "Молитовна зустріч спільноти «Матері в молитві»",
+        "en": "Mothers in Prayer community gathering"
+      },
+      "category": "prayer",
+      "verification_status": "confirmed"
+    },
+    {
+      "id": "sunday-liturgy",
+      "weekdays": [
+        0
+      ],
+      "day": {
+        "uk": "Неділя",
+        "en": "Sunday"
+      },
+      "time": "11:00",
+      "name": {
+        "uk": "Божественна Літургія",
+        "en": "Divine Liturgy"
+      },
+      "category": "liturgy",
+      "verification_status": "confirmed"
+    }
   ],
-  "services":[],
-  "announcements":[]
+  "announcements": [],
+  "sunday_confession": {
+    "time": null,
+    "note": {
+      "uk": "Перед недільною Літургією є можливість приступити до Святої Сповіді. Точний початок сповіді в неділю окремо не встановлено.",
+      "en": "Confession is available before the Sunday Divine Liturgy. The exact starting time has not been specified."
+    }
+  },
+  "seasonal": [
+    {
+      "id": "great-lent",
+      "title": {
+        "uk": "Богослужіння Великого посту",
+        "en": "Lenten Services"
+      },
+      "paragraphs": {
+        "uk": [
+          "Упродовж Великого посту в нашій парафії відбуваються додаткові богослужіння, особливо у вечірній час.",
+          "Одне з особливих богослужінь цього періоду — Літургія Передосвячених Дарів, яку зазвичай звершують о 18:00 у визначені парафією дні.",
+          "У великопісному богослужбовому житті також передбачені особливі молитви й богослужіння: Царські часи, Сповідь, панахиди та парастаси.",
+          "Точний розклад великопісних богослужінь оголошується окремо."
+        ],
+        "en": [
+          "During Great Lent, additional services are celebrated in our parish, especially in the evening.",
+          "The Liturgy of the Presanctified Gifts is usually celebrated at 18:00 on the days announced by the parish.",
+          "Lenten services also include special prayers and commemorations, the Royal Hours, opportunities for Confession, and memorial services.",
+          "The detailed Lenten schedule is announced separately."
+        ]
+      },
+      "usual_time": "18:00",
+      "announced_dates": [],
+      "verification_status": "confirmed_practice_dates_pending",
+      "time_semantics": "usual_time_only_on_days_announced_by_parish"
+    }
+  ],
+  "prayer_life": [
+    {
+      "id": "mothers-in-prayer",
+      "title": {
+        "uk": "Матері в молитві",
+        "en": "Mothers in Prayer"
+      },
+      "paragraphs": {
+        "uk": [
+          "При нашій парафії діє молитовна спільнота матерів, які щонеділі збираються для спільної молитви за своїх дітей та родини.",
+          "Молитовна зустріч відбувається о 10:00, за годину до недільної Божественної Літургії.",
+          "Ця спільна молитва є свідченням материнської любові, віри та духовної підтримки."
+        ],
+        "en": [
+          "Our parish has a Mothers in Prayer community whose members gather every Sunday to pray for their children and families.",
+          "The prayer meeting begins at 10:00, one hour before the Sunday Divine Liturgy.",
+          "Their common prayer expresses maternal love, faith and spiritual support."
+        ]
+      },
+      "icon": "prayer",
+      "verification_status": "confirmed",
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+      "verified_on": "2026-10-29"
+    },
+    {
+      "id": "rosary",
+      "title": {
+        "uk": "Молитва на вервиці",
+        "en": "Rosary Prayer"
+      },
+      "paragraphs": {
+        "uk": [
+          "У духовному житті нашої парафії особливе місце займає молитва на вервиці (розарій). Через спільну та особисту молитву вірні звертаються до Пресвятої Богородиці з проханнями за свої родини, громаду та всіх потребуючих."
+        ],
+        "en": [
+          "Rosary prayer holds a special place in the spiritual life of our parish. Through shared and personal prayer, the faithful turn to the Blessed Virgin Mary with petitions for their families, the community and all those in need."
+        ]
+      },
+      "icon": "prayer",
+      "verification_status": "confirmed",
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+      "verified_on": "2026-10-29"
+    },
+    {
+      "id": "book-of-sobriety",
+      "title": {
+        "uk": "Книга тверезості — молитва та особиста постанова",
+        "en": "Book of Sobriety — Prayer and Personal Commitment"
+      },
+      "paragraphs": {
+        "uk": [
+          "У нашій парафії ведеться Книга тверезості, до якої можуть записатися люди, що добровільно приймають постанову утримуватися від вживання алкоголю.",
+          "Таку постанову можна прийняти на певний час — наприклад, на пів року, рік або п'ять років — і пожертвувати її як особистий духовний намір за близьку людину чи особливу потребу.",
+          "Це добровільний крок особистої відповідальності, молитви та духовного зростання."
+        ],
+        "en": [
+          "Our parish keeps a Book of Sobriety for those who voluntarily make a commitment to abstain from alcohol.",
+          "This commitment may be undertaken for a chosen period, such as six months, one year or five years, and offered as a personal spiritual intention for another person or a particular need.",
+          "It is a voluntary act of personal responsibility, prayer and spiritual growth."
+        ]
+      },
+      "icon": "book",
+      "verification_status": "confirmed",
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+      "verified_on": "2026-10-29"
+    },
+    {
+      "id": "departed",
+      "title": {
+        "uk": "Молитва за померлих",
+        "en": "Remembering Our Departed"
+      },
+      "paragraphs": {
+        "uk": [
+          "У нашій парафії особливе місце займає молитва за померлих.",
+          "Щороку 1 листопада, за місцевою закарпатською традицією, родини відвідують могили своїх близьких, впорядковують їх та збираються на спільну молитву.",
+          "На цвинтарі звершуються панахиди, а парафіяльна спільнота молиться за упокій душ померлих.",
+          "Протягом церковного року відбуваються й інші поминальні богослужіння."
+        ],
+        "en": [
+          "Prayer for the departed holds a special place in our parish.",
+          "Every year on 1 November, following the local Transcarpathian tradition, families visit and care for the graves of their loved ones and gather in prayer.",
+          "Memorial services are celebrated at the cemetery, and the parish remembers the departed in prayer.",
+          "Other memorial services are also held throughout the church year."
+        ]
+      },
+      "icon": "candle",
+      "verification_status": "confirmed",
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+      "verified_on": "2026-10-29"
+    },
+    {
+      "id": "defenders",
+      "title": {
+        "uk": "Молитва за захисників України та всіх постраждалих від війни",
+        "en": "Prayer for Ukraine’s Defenders and All Those Affected by War"
+      },
+      "paragraphs": {
+        "uk": [
+          "Наша парафія постійно єднається в молитві за українських воїнів, за всіх, хто захищає нашу Батьківщину, за поранених, полонених та людей, які страждають від війни.",
+          "Щотижня у парафії підносяться молитви за загиблих воїнів, невинних жертв війни та їхні родини.",
+          "У молитві ми прагнемо підтримати тих, хто переживає біль, втрату та важкі життєві випробування."
+        ],
+        "en": [
+          "Our parish regularly prays for Ukraine’s defenders and for all those who suffer because of the war.",
+          "Every week, we remember fallen service members, innocent victims of war and their families in prayer.",
+          "Through prayer, we seek to offer spiritual support to those experiencing suffering, loss and hardship."
+        ]
+      },
+      "icon": "prayer",
+      "verification_status": "confirmed",
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+      "verified_on": "2026-10-29"
+    }
+  ],
+  "annual_traditions": [
+    {
+      "id": "departed-remembrance",
+      "month": 11,
+      "day": 1,
+      "title": {
+        "uk": "Молитовне поминання померлих",
+        "en": "Prayerful remembrance of the departed"
+      },
+      "description": {
+        "uk": "Місцева парафіяльна традиція: родини відвідують могили близьких, впорядковують їх та збираються на молитву. На цвинтарі звершуються панахиди. Час і точне місце богослужіння уточнюйте в парафії; протягом року відбуваються й інші поминальні служби.",
+        "en": "A local parish tradition: families visit and care for the graves of loved ones and gather in prayer. Memorial services are celebrated at the cemetery. Confirm the time and exact location with the parish; other memorial services are also held throughout the year."
+      },
+      "category": "memorial",
+      "time": null,
+      "location": {
+        "uk": "Цвинтар · точне місце і час уточнюйте в парафії",
+        "en": "Cemetery · confirm the exact location and time with the parish"
+      }
+    }
+  ],
+  "undated_practices": [
+    {
+      "title": {
+        "uk": "Молитва за захисників України та всіх постраждалих від війни",
+        "en": "Prayer for Ukraine’s Defenders and All Those Affected by War"
+      },
+      "period": {
+        "uk": "Щотижня · без встановленого дня й години",
+        "en": "Weekly · no fixed day or time specified"
+      },
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source"
+    },
+    {
+      "title": {
+        "uk": "Богослужіння Великого посту",
+        "en": "Lenten Services"
+      },
+      "period": {
+        "uk": "Великий піст · окремі богослужіння за оголошеннями парафії",
+        "en": "Great Lent · individual services as announced by the parish"
+      },
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source"
+    }
+  ]
 }

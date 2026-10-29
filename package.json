@@ -17,7 +17,8 @@
     "test:portal": "node scripts/portal-qa.mjs",
     "build:editor": "node scripts/build.mjs --editor",
     "preview:editor": "node scripts/serve.mjs --editor",
-    "test:publication": "node scripts/publication-test.mjs"
+    "test:publication": "node scripts/publication-test.mjs",
+    "test:schedule": "node scripts/schedule-qa.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

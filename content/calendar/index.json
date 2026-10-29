@@ -10,7 +10,8 @@
   },
   "sources": {
     "church": "https://mgce.uz.ua/tserkovnij-kalendar/",
-    "eparchy": "https://mgce.uz.ua/pastoralnij-kalendar/"
+    "eparchy": "https://mgce.uz.ua/pastoralnij-kalendar/",
+    "parish": "https://poroshkovo.pages.dev/uk/services/#schedule-source"
   },
   "paschal_anchors": {
     "2026": {

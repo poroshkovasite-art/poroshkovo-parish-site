@@ -16,12 +16,23 @@ export function periodDays(value,mode='month'){
 }
 export const occurs=(event,date)=>event.date<=date&&(event.end_date||event.date)>=date;
 export const confirmed=event=>event.status==='confirmed'&&event.year===Number(event.date.slice(0,4))&&Boolean(event.source_url&&event.verified_on);
+export function regularServices(schedule,date){
+ if(schedule?.verification_status!=='confirmed'||!parseDate(date)||date<schedule.valid_from)return [];
+ const weekday=parseDate(date).getUTCDay(),services=schedule.services.filter(s=>s.verification_status==='confirmed'&&s.weekdays.includes(weekday));
+ if(weekday===0&&schedule.sunday_confession?.note)services.push({id:'sunday-confession',time:null,category:'confession',name:schedule.sunday_confession.note});
+ return services;
+}
+export function annualParishEvents(schedule,year){
+ if(schedule?.verification_status!=='confirmed'||!Number.isInteger(year)||year<Number(schedule.valid_from.slice(0,4))||year>2199)return [];
+ return (schedule.annual_traditions||[]).map(e=>({...e,id:`${e.id}-${year}`,annual_template_id:e.id,date:`${year}-${String(e.month).padStart(2,'0')}-${String(e.day).padStart(2,'0')}`,year,status:'confirmed',source_url:schedule.source_url,verified_on:schedule.confirmed_on,tab:'parish',recurrence:'annual'})).filter(e=>parseDate(e.date)&&e.date>=schedule.valid_from);
+}
 const escapeICS=value=>String(value||'').replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,');
 // RFC 5545: fold at 75 UTF-8 octets, with CRLF and an exclusive all-day end.
 export function makeICS(event,lang='uk'){
  if(!confirmed(event)||!parseDate(event.date)||!parseDate(event.end_date||event.date))throw Error('Only verified, dated events can be exported.');
  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Poroshkovo Parish//Calendar//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',`UID:${event.id}@poroshkovo.pages.dev`,`DTSTAMP:${event.verified_on.replaceAll('-','')}T120000Z`,`DTSTART;VALUE=DATE:${event.date.replaceAll('-','')}`,`DTEND;VALUE=DATE:${addDays(event.end_date||event.date,1).replaceAll('-','')}`,`SUMMARY:${escapeICS(event.title[lang])}`,`DESCRIPTION:${escapeICS([event.description?.[lang],event.source_url].filter(Boolean).join('\n'))}`,`URL:${event.source_url}`];
  if(event.location?.[lang])lines.push(`LOCATION:${escapeICS(event.location[lang])}`);
+ if(event.recurrence==='annual')lines.push(`RRULE:FREQ=YEARLY;BYMONTH=${Number(event.date.slice(5,7))};BYMONTHDAY=${Number(event.date.slice(8,10))}`);
  lines.push('END:VEVENT','END:VCALENDAR');
  return lines.map(line=>{let part='',bytes=0,out=[];for(const ch of line){const size=new TextEncoder().encode(ch).length;if(bytes+size>75){out.push(part);part=' ';bytes=1;}part+=ch;bytes+=size;}out.push(part);return out.join('\r\n');}).join('\r\n')+'\r\n';
 }

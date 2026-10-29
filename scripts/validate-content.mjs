@@ -26,7 +26,12 @@ export function validateContent({site,pages,photos,news,schedule}) {
  }
  if(schedule.verification_status==='confirmed'){
   assert.ok(date(schedule.confirmed_on)&&schedule.services.length,'Current schedule must have confirmation date and services');
-  for(const s of schedule.services)assert.ok(bilingual(s.day)&&bilingual(s.name)&&/^([01]\d|2[0-3]):[0-5]\d$/.test(s.time),'Valid bilingual service/time');
+  assert.equal(schedule.timezone,'Europe/Kyiv','Service hours stay in the parish time zone');
+  assert.ok(date(schedule.valid_from)&&schedule.source?.interview_date===schedule.confirmed_on&&schedule.source_url,'Current pastor interview provenance');
+  for(const s of schedule.services){assert.ok(bilingual(s.day)&&bilingual(s.name)&&/^([01]\d|2[0-3]):[0-5]\d$/.test(s.time),'Valid bilingual service/time');assert.ok(s.weekdays.length&&s.weekdays.every(d=>Number.isInteger(d)&&d>=0&&d<=6),'Explicit weekly recurrence');}
+  assert.equal(schedule.sunday_confession.time,null,'Do not invent a Sunday Confession starting time');
+  assert.ok(bilingual(schedule.sunday_confession.note));
+  for(const p of schedule.prayer_life)assert.ok(bilingual(p.title)&&p.paragraphs.uk.length&&p.paragraphs.en.length&&p.source_url&&date(p.verified_on),'Prayer practice provenance and translations');
  }
  if(site.contact.verification_status==='confirmed'){
   const c=site.contact;assert.ok(bilingual(c.address),'Confirmed visiting address');

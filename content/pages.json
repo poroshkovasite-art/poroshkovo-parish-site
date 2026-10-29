@@ -104,39 +104,18 @@
   },
   "services": {
     "title": {
-      "uk": "Богослужіння",
-      "en": "Worship and services"
+      "uk": "Розклад богослужінь",
+      "en": "Schedule of Services"
     },
     "description": {
-      "uk": "Інформація про богослужіння парафії в Порошкові. Актуальний розклад та святкові зміни очікують підтвердження парафії.",
-      "en": "Worship information for Saints Cyril and Methodius parish in Poroshkovo. Current service times and feast-day changes await parish confirmation."
+      "uk": "Підтверджений розклад парафії Порошкова: Літургія пн–сб о 09:00, неділя о 11:00; Сповідь, Вечірня та молитовне життя. Київський час.",
+      "en": "Confirmed Poroshkovo parish schedule: Liturgy Monday–Saturday at 09:00 and Sunday at 11:00; Confession, Vespers and parish prayer. Kyiv time."
     },
     "intro": {
-      "uk": "Спільна молитва збирає парафію навколо Христа. Перед поїздкою до храму важливо звірити час богослужіння, особливо у святкові дні.",
-      "en": "Shared prayer gathers the parish around Christ. Please verify service times before travelling to church, especially on feast days."
+      "uk": "Запрошуємо до спільної молитви. Регулярний розклад підтверджено настоятелем о. Анатолієм Горзовим 29 жовтня 2026 року. Усі години подано за київським часом (Europe/Kyiv).",
+      "en": "Join us in prayer. The regular schedule was confirmed by the parish pastor, Fr Anatoliy Horzov, on 29 October 2026. All times are Kyiv time (Europe/Kyiv)."
     },
-    "blocks": [
-      {
-        "title": {
-          "uk": "Божественна Літургія",
-          "en": "The Divine Liturgy"
-        },
-        "text": {
-          "uk": "У центрі літургійного життя стоїть Євхаристія — подяка Богові та єднання з Христом. У молитві Церква слухає Боже слово й приносить Йому радості та потреби людей.",
-          "en": "The Eucharist stands at the heart of liturgical life: thanksgiving to God and communion with Christ. In prayer, the Church listens to God’s word and brings before Him the joys and needs of the world."
-        }
-      },
-      {
-        "title": {
-          "uk": "Сповідь і духовна розмова",
-          "en": "Confession and spiritual conversation"
-        },
-        "text": {
-          "uk": "Для особистої зустрічі зі священником потрібна окрема домовленість. Підтверджений спосіб зв’язку й години сповіді буде оприлюднено після уточнення в парафії.",
-          "en": "A personal meeting with a priest requires an individual arrangement. Confirmed contact details and confession times will be shared once the parish has provided them."
-        }
-      }
-    ],
+    "blocks": [],
     "published": true
   },
   "spiritual-life": {
@@ -145,8 +124,8 @@
       "en": "Life in faith"
     },
     "description": {
-      "uk": "Літургія, особиста молитва та свідчення святих Кирила і Мефодія у візантійській греко-католицькій традиції.",
-      "en": "Liturgy, personal prayer and the witness of Saints Cyril and Methodius in the Byzantine Greek Catholic tradition."
+      "uk": "Молитовне життя парафії Порошкова: Матері в молитві, вервиця, Книга тверезості, молитва за померлих, захисників України та постраждалих від війни.",
+      "en": "Prayer in Poroshkovo parish: Mothers in Prayer, the Rosary, Book of Sobriety, remembrance of the departed and prayer for Ukraine’s defenders and those affected by war."
     },
     "intro": {
       "uk": "Віра зростає в молитві, уважності до Божого слова та любові до ближнього. Літургійна традиція допомагає поєднувати церковну молитву з повсякденним життям.",
@@ -169,8 +148,8 @@
           "en": "The rhythm of the Church year"
         },
         "text": {
-          "uk": "Свята й пости відкривають різні сторони євангельської історії. Актуальні дати парафіяльних свят і богослужінь слід звіряти з оголошеннями парафії після їх підтвердження.",
-          "en": "Feasts and fasting seasons unfold different aspects of the Gospel story. Parish celebrations and service dates should be checked against parish announcements once these have been confirmed."
+          "uk": "Регулярні години богослужінь підтверджено настоятелем. Окремі святкові та великопісні богослужіння оголошуються парафією додатково.",
+          "en": "Regular service times have been confirmed by the parish pastor. The parish announces individual feast-day and Lenten services separately."
         }
       }
     ],
@@ -278,36 +257,14 @@
       "en": "Mothers in Prayer"
     },
     "description": {
-      "uk": "Молитовна спільнота матерів, згадана в історії парафії Порошкова. Актуальні зустрічі та спосіб долучення уточнюються.",
-      "en": "The mothers’ prayer community recorded in the history of Poroshkovo parish. Present meeting arrangements await confirmation."
+      "uk": "Матері в молитві у Порошкові: щонеділі о 10:00, за годину до Божественної Літургії. Молитва за дітей і родини.",
+      "en": "Mothers in Prayer in Poroshkovo: every Sunday at 10:00, one hour before the Divine Liturgy. Prayer for children and families."
     },
     "intro": {
-      "uk": "Молитва за дітей і родини єднає матерів у надії та довірі до Бога. Це також нагадування, що родина не повинна залишатися наодинці зі своїми турботами.",
-      "en": "Prayer for children and families brings mothers together in hope and trust in God. It is also a reminder that families need not face their concerns alone."
+      "uk": "Молитва за дітей і родини єднає матерів у надії та довірі до Бога. Зустрічаємося щонеділі о 10:00 за київським часом.",
+      "en": "Prayer for children and families brings mothers together in hope and trust in God. The community gathers every Sunday at 10:00 Kyiv time."
     },
-    "blocks": [
-      {
-        "title": {
-          "uk": "Згадка в історії парафії",
-          "en": "Recorded in the parish story"
-        },
-        "text": {
-          "uk": "Офіційна єпархіальна довідка згадує спільноту матерів у молитві при парафії. Ця згадка засвідчує її місце в історії громади, але не встановлює нинішнього складу чи графіка зустрічей.",
-          "en": "The official eparchial account mentions a mothers’ prayer community at the parish. This records its place in the community’s story, while leaving present membership and meeting times to be confirmed."
-        },
-        "source": "eparchy"
-      },
-      {
-        "title": {
-          "uk": "Зустрічі спільноти",
-          "en": "Community gatherings"
-        },
-        "text": {
-          "uk": "День, час і спосіб приєднання будуть опубліковані після уточнення. Особисті молитовні наміри та відомості про дітей на сайті не збираються.",
-          "en": "The day, time and way to join will be published once confirmed. This website does not collect personal prayer intentions or information about children."
-        }
-      }
-    ],
+    "blocks": [],
     "published": true
   },
   "contacts": {
@@ -508,15 +465,15 @@
   "social-ministry": {
     "title": {
       "uk": "Соціальне служіння",
-      "en": "Social ministry"
+      "en": "Social Ministry"
     },
     "description": {
-      "uk": "Розділ парафіяльного сайту Порошкова: соціальне служіння. Перевірені матеріали та контакти.",
-      "en": "A section of the Poroshkovo parish website: social ministry. Verified materials and parish contacts."
+      "uk": "Молитовна підтримка захисників України, постраждалих від війни та їхніх родин у парафії Порошкова.",
+      "en": "Prayerful support for Ukraine’s defenders, those affected by war and their families in Poroshkovo parish."
     },
     "intro": {
-      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
-      "en": "Verified materials about this area of parish life."
+      "uk": "Єднаємося в молитві за тих, хто переживає біль, втрату та важкі життєві випробування.",
+      "en": "We join in prayer for those experiencing suffering, loss and hardship."
     },
     "published": false
   },

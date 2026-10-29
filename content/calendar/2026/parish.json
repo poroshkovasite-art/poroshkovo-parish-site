@@ -1,8 +1,35 @@
 {
   "year": 2026,
   "category": "parish",
-  "source_url": null,
+  "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
   "verified_on": "2026-10-29",
-  "status": "awaiting_parish_confirmation",
-  "events": []
+  "status": "confirmed",
+  "events": [
+    {
+      "id": "departed-remembrance-2026",
+      "month": 11,
+      "day": 1,
+      "title": {
+        "uk": "Молитовне поминання померлих",
+        "en": "Prayerful remembrance of the departed"
+      },
+      "description": {
+        "uk": "Місцева парафіяльна традиція: родини відвідують могили близьких, впорядковують їх та збираються на молитву. На цвинтарі звершуються панахиди. Час і точне місце богослужіння уточнюйте в парафії; протягом року відбуваються й інші поминальні служби.",
+        "en": "A local parish tradition: families visit and care for the graves of loved ones and gather in prayer. Memorial services are celebrated at the cemetery. Confirm the time and exact location with the parish; other memorial services are also held throughout the year."
+      },
+      "category": "memorial",
+      "time": null,
+      "location": {
+        "uk": "Цвинтар · точне місце і час уточнюйте в парафії",
+        "en": "Cemetery · confirm the exact location and time with the parish"
+      },
+      "date": "2026-11-01",
+      "year": 2026,
+      "status": "confirmed",
+      "source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+      "verified_on": "2026-10-29",
+      "annual_template_id": "departed-remembrance",
+      "recurrence": "annual"
+    }
+  ]
 }
