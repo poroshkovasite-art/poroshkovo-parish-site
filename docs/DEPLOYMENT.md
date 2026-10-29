@@ -6,6 +6,10 @@
 
 Первоначальный README-коммит GitHub сохраняется посредством merge без force push; исходное описание репозитория включено в README. Другие GitHub-авторизации не удаляются.
 
+Первый production-деплой подтверждён Cloudflare 29.10.2026: `582177ff-5557-4a8a-bedb-01a3f14d6faf`, исходный merge-коммит `0af5969bac835b1f7d99a401982e84f01fa51f7e`. Публичный адрес — [poroshkovo.pages.dev](https://poroshkovo.pages.dev/). В настройках проверены `Automatic deployments: Enabled` и production branch `main`.
+
+Для независимой проверки опубликованной версии: `npm ci`, `npm run build:production`, `npm run check`, `npm run verify:deployment`. Последняя команда требует Chromium для Playwright (или `PLAYWRIGHT_CHROMIUM_EXECUTABLE`) и сравнивает содержимое публичных страниц и ресурсов с текущей локальной production-сборкой. Также проверяются языки, canonical, индексация, 404, мобильная сетка, меню, карусель, фильтры и доступность. Результат сохраняется вне репозитория в `../audit/production-verification.json`.
+
 1. Использовать только существующий репозиторий `poroshkovasite-art/poroshkovo-parish-site` и отдельный Cloudflare Pages-проект `poroshkovo`. Для доступа к Cloudflare владелец указал `poroshkovasite@gmail.com`.
 2. Проверить материалы, тексты, актуальное расписание и контакты с парафией. Подтвердить право официальной публикации и использование фотографий.
 3. Сохранить первоначальный README-коммит существующего репозитория через merge; загрузить только исходники `site` без `node_modules`, `dist`, `.env`, исходных фотоматериалов, служебных аудитов и секретов. Force push запрещён. Remote — `https://github.com/poroshkovasite-art/poroshkovo-parish-site.git`.
