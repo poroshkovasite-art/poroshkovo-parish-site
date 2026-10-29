@@ -644,8 +644,8 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 0.82,
-      "color_factor": 1.055,
+      "gamma": 0.62,
+      "color_factor": 1.045,
       "contrast_factor": 1.035,
       "unsharp_mask": {
         "radius": 0.65,
@@ -663,7 +663,8 @@
       "generative_processing": false,
       "metadata_removed": true,
       "original_unchanged": true,
-      "final_style_version": "2026-10-29-approved-v1"
+      "final_style_version": "2026-10-29-brighter-prayer-v2",
+      "owner_requested_adjustment": "Additional natural shadow and midtone lift requested after reviewing the published card, 2026-10-29; original and composition unchanged."
     },
     "description": {
       "uk": "Молитва є основою життя нашої парафії та джерелом духовної сили для громади.",
