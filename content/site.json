@@ -1,0 +1,17 @@
+{
+  "name": {
+    "uk": "Парафія святих рівноапостольних Кирила і Мефодія",
+    "en": "Parish of Saints Cyril and Methodius, Equal to the Apostles"
+  },
+  "diocese": {
+    "uk": "Мукачівська греко-католицька єпархія",
+    "en": "Greek Catholic Eparchy of Mukachevo"
+  },
+  "locality": { "uk": "с. Порошково, Закарпаття, Україна", "en": "Poroshkovo, Zakarpattia, Ukraine" },
+  "production_url": null,
+  "publication_approved": false,
+  "contact": { "verification_status": "needs_confirmation", "address": null, "phone": null, "email": null, "map_url": null, "embed_url": null },
+  "donations": { "verification_status": "needs_confirmation", "recipient": null, "iban": null },
+  "hero_photo_id": null,
+  "reviewed_on": "2026-10-29"
+}

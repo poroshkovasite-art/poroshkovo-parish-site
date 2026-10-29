@@ -1,0 +1,30 @@
+{
+  "eparchy": {
+    "title": {"uk":"Історична довідка МГКЄ", "en":"Eparchial parish history"},
+    "source_url":"https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
+    "extracted_on":"2026-10-29",
+    "verification_status":"verified_primary_historical_source",
+    "note":"The page has no stated update date. Historical facts verified against the page; current rector, activities and timetable require parish confirmation. Copyright retained by source; photographs not reused."
+  },
+  "directory": {
+    "title":{"uk":"Парафії Мукачівської єпархії", "en":"Eparchial parish directory"},
+    "source_url":"https://mgce.uz.ua/parafiyi/",
+    "extracted_on":"2026-10-29",
+    "verification_status":"verified_primary_source"
+  },
+  "patrons": {
+    "title":{"uk":"Бенедикт XVI про святих Кирила і Мефодія, 17.06.2009", "en":"Benedict XVI on Saints Cyril and Methodius, 17 June 2009"},
+    "source_url":"https://www.vatican.va/content/benedict-xvi/en/audiences/2009/documents/hf_ben-xvi_aud_20090617.html",
+    "extracted_on":"2026-10-29",
+    "verification_status":"verified_primary_source"
+  },
+  "registry": {
+    "title":{"uk":"Реєстрова картка 26100236", "en":"Registry aggregator, 26100236"},
+    "source_url":"https://opendatabot.ua/c/26100236",
+    "extracted_on":"2026-10-29",
+    "verification_status":"secondary_source_needs_official_documents",
+    "publish":false,
+    "registered_address":"с. Порошково, вул. Центральна, 94",
+    "note":"Not a verified visiting address. Do not publish code or legal address before parish documents are supplied."
+  }
+}

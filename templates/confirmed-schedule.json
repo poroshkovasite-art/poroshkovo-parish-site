@@ -1,0 +1,7 @@
+{
+  "_instructions":"Fill with parish-approved current times only. Copy services into content/schedule.json and set confirmed_on + verification_status=confirmed. Remove expired announcements.",
+  "verification_status":"needs_confirmation",
+  "confirmed_on":null,
+  "services":[{"day":{"uk":"", "en":""}, "time":"", "name":{"uk":"", "en":""}}],
+  "announcements":[{"date":null,"verification_status":"needs_confirmation","title":{"uk":"", "en":""},"text":{"uk":"", "en":""}}]
+}

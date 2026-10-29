@@ -1,0 +1,11 @@
+{
+  "_instructions":"Replace all template text, add a real event date and source. Keep needs_confirmation until approved by the parish. Copy the completed object into content/news.json; complete news title/description/intro in content/pages.json.",
+  "slug":"replace-with-real-event-slug",
+  "date":null,
+  "verification_status":"needs_confirmation",
+  "source_url":null,
+  "extracted_on":null,
+  "title":{"uk":"", "en":""},
+  "summary":{"uk":"", "en":""},
+  "body":{"uk":[], "en":[]}
+}

@@ -1,0 +1,35 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),out=path.join(root,'dist');
+const files=fs.readdirSync(out,{recursive:true}).filter(f=>fs.statSync(path.join(out,f)).isFile()).map(f=>f.replaceAll('\\','/'));
+let pages=0,links=0;
+const titles=new Set(),descriptions=new Set();
+for(const file of files.filter(f=>f.endsWith('.html'))){
+ const html=fs.readFileSync(path.join(out,file),'utf8');pages++;
+ assert.match(html,/<html lang="(uk|en)">/);assert.match(html,/<title>[^<]+<\/title>/);
+ assert.ok(!/isf-center-website|google-site-verification|NAU|УГКЦ|ПЦУ|Lorem ipsum|undefined|TODO/i.test(html),`Foreign or placeholder content: ${file}`);
+ if(!['index.html','404.html'].includes(file)){
+  assert.equal((html.match(/<h1[ >]/g)||[]).length,1,`One H1 in ${file}`);
+  const title=html.match(/<title>(.*?)<\/title>/)[1],description=html.match(/<meta name="description" content="([^"]+)"/)[1];
+  assert.ok(!titles.has(title),`Duplicate title ${file}`);titles.add(title);assert.ok(!descriptions.has(description),`Duplicate description ${file}`);descriptions.add(description);
+  assert.match(html,/<link rel="canonical" href="https?:\/\//);assert.match(html,/hreflang="uk"/);assert.match(html,/hreflang="en"/);assert.match(html,/og:image/);
+  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,`Duplicate id ${file}`);
+  const schedule=JSON.parse(fs.readFileSync(path.join(root,'content/schedule.json')));
+  if(schedule.verification_status!=='confirmed')assert.ok(!/11:00|16:00|17:00|09:00|13:00|14:00/.test(html),`Unconfirmed timetable leaked: ${file}`);
+  assert.ok(!/26100236|Центральна,? 94/.test(html),`Unconfirmed legal details leaked: ${file}`);
+ }
+ for(const match of html.matchAll(/(?:href|src|data-full)="([^"<>]+)"/g)){
+  const ref=match[1];if(/^(https?:|mailto:|tel:|data:)/.test(ref))continue;
+  const address=new URL(ref,'http://localhost:4173/'+file.replaceAll('\\','/'));let target=decodeURIComponent(address.pathname).slice(1);if(target.endsWith('/'))target+='index.html';
+  assert.ok(fs.existsSync(path.join(out,target)),`Broken internal reference ${file} -> ${ref}`);
+  if(address.hash)assert.ok(fs.readFileSync(path.join(out,target),'utf8').includes(`id="${address.hash.slice(1)}"`),`Broken fragment ${ref}`);links++;
+ }
+}
+for(const f of ['robots.txt','sitemap.xml','assets/favicon.svg','assets/og-card.png','_headers'])assert.ok(files.includes(f));
+assert.ok(!files.some(f=>/google.*html/.test(f)),'No borrowed verification files');
+const routes=JSON.parse(fs.readFileSync(path.join(out,'routes.json')));
+for(const route of routes)assert.ok(routes.includes(route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/')),'Every page has a counterpart');
+for(const h of JSON.parse(fs.readFileSync(path.join(root,'content/history.json'))))assert.ok(h.source_url&&h.extracted_on&&h.verification_status,'Fact provenance');
+console.log(JSON.stringify({status:'PASS',html_pages:pages,bilingual_content_routes:routes.length,internal_references:links,unique_titles:titles.size,unconfirmed_details_excluded:true},null,2));

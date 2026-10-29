@@ -1,0 +1,17 @@
+{
+  "_instructions":"Only parish-specific originals with documented rights. Never approve a photograph of a child without consent. Create real-size WebP variants and record exact widths. Copy into content/photos.json after completing all fields.",
+  "id":"replace-with-unique-photo-id",
+  "publication_status":"needs_confirmation",
+  "rights_confirmed":false,
+  "consent_reference":null,
+  "original_file":null,
+  "source_url":null,
+  "extracted_on":null,
+  "credit":"",
+  "category":"church",
+  "width":null,
+  "height":null,
+  "widths":[640,960,1920],
+  "alt":{"uk":"", "en":""},
+  "caption":{"uk":"", "en":""}
+}

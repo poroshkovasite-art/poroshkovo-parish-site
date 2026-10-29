@@ -1,0 +1,16 @@
+{
+  "verification_status":"needs_confirmation",
+  "confirmed_on":null,
+  "source_url":"https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
+  "extracted_on":"2026-10-29",
+  "historical_reference_only":[
+    {"day":"Sunday and feasts", "time":"11:00", "service":"Divine Liturgy"},
+    {"day":"Sunday and feasts", "time":"16:00", "service":"Vespers"},
+    {"day":"Saturday and feast eves", "time":"17:00", "service":"Great Vespers"},
+    {"day":"Monday–Saturday", "time":"09:00", "service":"Divine Liturgy"},
+    {"day":"Saturday", "time":"13:00 / 14:00", "service":"Catechesis"},
+    {"day":"Sunday and feasts", "time":"09:00", "service":"Mothers in Prayer"}
+  ],
+  "services":[],
+  "announcements":[]
+}
