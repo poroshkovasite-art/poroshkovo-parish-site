@@ -53,7 +53,8 @@
     },
     "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
     "caption_overlay": {
-      "uk": "Божественна Літургія"
+      "uk": "Божественна Літургія",
+      "en": "Divine Liturgy"
     },
     "source_dimensions": {
       "width": 959,
@@ -67,8 +68,8 @@
       "captioned": {
         "filename_pattern": "divine-liturgy-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
     "previous_reference_file": "c334541b-9f9e-48d1-9b28-86b0a87fde36.png",
@@ -94,7 +95,11 @@
       "metadata_removed": true,
       "original_unchanged": true
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "parish-community-children",
@@ -151,7 +156,8 @@
     "consents_confirmed": true,
     "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
     "caption_overlay": {
-      "uk": "Діти у парафії"
+      "uk": "Діти у парафії",
+      "en": "Children in Our Parish"
     },
     "source_dimensions": {
       "width": 1086,
@@ -165,8 +171,8 @@
       "captioned": {
         "filename_pattern": "parish-community-children-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
     "processing": {
@@ -191,7 +197,11 @@
       "metadata_removed": true,
       "original_unchanged": true
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "easter-blessing",
@@ -248,7 +258,8 @@
     "consents_confirmed": true,
     "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
     "caption_overlay": {
-      "uk": "Великоднє благословення"
+      "uk": "Великоднє благословення",
+      "en": "Easter Blessing"
     },
     "source_dimensions": {
       "width": 1122,
@@ -262,8 +273,8 @@
       "captioned": {
         "filename_pattern": "easter-blessing-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
     "processing": {
@@ -288,7 +299,11 @@
       "metadata_removed": true,
       "original_unchanged": true
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "parish-winter-outing",
@@ -345,7 +360,8 @@
     "consents_confirmed": true,
     "web_processing": "Conventional color/light/contrast and mild sharpening; no generative processing. Two variants. Original files preserved.",
     "caption_overlay": {
-      "uk": "Спільний відпочинок"
+      "uk": "Спільний відпочинок",
+      "en": "Community Outing"
     },
     "source_dimensions": {
       "width": 1672,
@@ -360,7 +376,7 @@
         "filename_pattern": "parish-winter-outing-captioned-{width}.webp",
         "caption_language": "uk",
         "available_on_site": false,
-        "status": "local_proof_only_source_needed"
+        "status": "archived_replaced_by_localized_html"
       }
     },
     "processing": {
@@ -385,20 +401,24 @@
       "metadata_removed": true,
       "original_unchanged": true
     },
-    "embedded_caption_in_enhanced": true
+    "embedded_caption_in_enhanced": true,
+    "publication_languages": [
+      "uk"
+    ],
+    "localization_limitation": "Only the original with an artificial Ukrainian caption is available. Keep full frame in Ukrainian without a second overlay; exclude from English until an uncaptioned original is supplied."
   },
   {
     "id": "church-exterior",
     "title": {
-      "uk": "Храм святих Кирила і Мефодія",
+      "uk": "Храм святих Кирила і Методія",
       "en": "Church of Saints Cyril and Methodius"
     },
     "caption": {
-      "uk": "Храм святих Кирила і Мефодія",
+      "uk": "Храм святих Кирила і Методія",
       "en": "Church of Saints Cyril and Methodius"
     },
     "alt": {
-      "uk": "Храм парафії святих Кирила і Мефодія в Порошкові",
+      "uk": "Храм парафії святих Кирила і Методія в Порошкові",
       "en": "The church of Saints Cyril and Methodius parish in Poroshkovo"
     },
     "category": "church",
@@ -470,7 +490,8 @@
     },
     "web_processing": "Owner-approved blue sky/cloud edit and natural color enhancement. Original NEF preserved unchanged; architecture visually compared. Responsive clean and captioned versions.",
     "caption_overlay": {
-      "uk": "Наш храм"
+      "uk": "Наш храм",
+      "en": "Our Church"
     },
     "source_dimensions": {
       "width": 7360,
@@ -484,11 +505,15 @@
       "captioned": {
         "filename_pattern": "church-exterior-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "bell-tower",
@@ -574,7 +599,8 @@
     },
     "web_processing": "Owner-approved blue sky/cloud edit and natural color enhancement. Original NEF preserved unchanged; architecture visually compared. Responsive clean and captioned versions.",
     "caption_overlay": {
-      "uk": "Дзвіниця парафії"
+      "uk": "Дзвіниця парафії",
+      "en": "Parish Bell Tower"
     },
     "source_dimensions": {
       "width": 7360,
@@ -588,11 +614,15 @@
       "captioned": {
         "filename_pattern": "bell-tower-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "prayer-at-crucifix",
@@ -672,7 +702,8 @@
     },
     "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
     "caption_overlay": {
-      "uk": "Молитовне життя"
+      "uk": "Молитовне життя",
+      "en": "Prayer Life"
     },
     "source_dimensions": {
       "width": 7360,
@@ -686,11 +717,15 @@
       "captioned": {
         "filename_pattern": "prayer-at-crucifix-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "iconostasis",
@@ -769,7 +804,8 @@
     },
     "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
     "caption_overlay": {
-      "uk": "Іконостас храму"
+      "uk": "Іконостас храму",
+      "en": "Church Iconostasis"
     },
     "source_dimensions": {
       "width": 7360,
@@ -783,11 +819,15 @@
       "captioned": {
         "filename_pattern": "iconostasis-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "parish-prayer-on-church-steps",
@@ -866,7 +906,8 @@
     },
     "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
     "caption_overlay": {
-      "uk": "Парафіяльна спільнота"
+      "uk": "Парафіяльна спільнота",
+      "en": "Parish Community"
     },
     "source_dimensions": {
       "width": 7360,
@@ -880,11 +921,15 @@
       "captioned": {
         "filename_pattern": "parish-prayer-on-church-steps-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   },
   {
     "id": "church-altar",
@@ -964,7 +1009,8 @@
     },
     "web_processing": "Conventional shadow/midtone lift, natural color and mild sharpening from the camera original. Faces, icons and objects not regenerated. Original NEF unchanged.",
     "caption_overlay": {
-      "uk": "Молитва у храмі"
+      "uk": "Молитва у храмі",
+      "en": "Prayer in the Church"
     },
     "source_dimensions": {
       "width": 7360,
@@ -978,10 +1024,14 @@
       "captioned": {
         "filename_pattern": "church-altar-captioned-{width}.webp",
         "caption_language": "uk",
-        "available_on_site": true,
-        "status": "approved"
+        "available_on_site": false,
+        "status": "archived_replaced_by_localized_html"
       }
     },
-    "embedded_caption_in_enhanced": false
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ]
   }
 ]

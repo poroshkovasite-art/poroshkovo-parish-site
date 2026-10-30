@@ -13,7 +13,9 @@ export function validateContent({site,pages,photos,news,schedule}) {
   assert.ok(p.widths.includes(Math.min(960,p.width))&&p.widths.every(w=>Number.isInteger(w)&&w>0&&w<=p.width),'Responsive widths must include the native/default size without upscaling');
   if(p.contains_children)assert.equal(p.consents_confirmed,true,'Publication requires owner confirmation of necessary child-photo consents');
   if(p.variants){
-   assert.ok(p.caption_overlay?.uk,'Approved Ukrainian overlay title');
+   assert.ok(p.caption_overlay?.uk&&p.caption_overlay?.en,'Approved bilingual overlay titles');
+   assert.equal(p.variants?.captioned?.available_on_site,false,'Baked captions are archived, not published');
+   if(p.embedded_caption_in_enhanced)assert.ok(!p.publication_languages?.includes('en'),'English requires a clean photo original');
    if(p.processing.generative_processing)assert.ok(['church-exterior','bell-tower'].includes(p.id)&&p.processing.user_authorized_sky_edit===true,'Only the two expressly approved sky edits may use generative processing');
   }
  }

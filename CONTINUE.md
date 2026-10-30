@@ -37,7 +37,7 @@ Search Console: владение poroshkovasite@gmail.com подтвержден
 
 ## Фото и порядок главной — 29.10.2026, последнее поручение
 
-Hero теперь church-exterior, следом история с картой 1921 года, затем divine-liturgy и остальные блоки. Все 10 фото прошли обработку; 93 активных WebP (49 улучшенных и 44 с плашкой). Два одобренных sky-edit храм/дзвіниця используют image_gen; остальные обычную коррекцию. Оригиналы и контрольные суммы сохранены. Карта отдельно: content/historical-map.json, assets/history; оригинал и sky-мастера в рабочем photos/editorial_sources. Зимний полный кадр сохраняет старую встроенную подпись: новый кроп только локальная проба, не публиковать с обрезанной обувью. Текущие подробности — docs/UNIFIED_PHOTO_STYLE.md. Последние фактические SHA, deployment, отчёты и backup — D:\POROSHKOVO_PARISH_WORK\FINAL_REPORT.md и audit/current-release.json после финальной проверки.
+В прежнем выпуске hero был church-exterior (впоследствии заменён на divine-liturgy), следом история с картой 1921 года, затем divine-liturgy и остальные блоки. Все 10 фото прошли обработку; 93 архивных WebP (в актуальном dist только 49 улучшенных; 44 с плашкой исключены). Два одобренных sky-edit храм/дзвіниця используют image_gen; остальные обычную коррекцию. Оригиналы и контрольные суммы сохранены. Карта отдельно: content/historical-map.json, assets/history; оригинал и sky-мастера в рабочем photos/editorial_sources. Зимний полный кадр сохраняет старую встроенную подпись: новый кроп только локальная проба, не публиковать с обрезанной обувью. Текущие подробности — docs/UNIFIED_PHOTO_STYLE.md. Последние фактические SHA, deployment, отчёты и backup — D:\POROSHKOVO_PARISH_WORK\FINAL_REPORT.md и audit/current-release.json после финальной проверки.
 
 
 ## Подтверждённое расписание — 29.10.2026
@@ -54,3 +54,11 @@ scripts/worship.mjs связывает компактный верхний бл�
 ## Актуальный hero — последнее поручение владельца
 
 Восстановлено `content/site.json: hero_photo_id = divine-liturgy`: священник у чаши, UA и EN. Предыдущие заметки о church-exterior как hero больше не описывают текущий вариант. Все 93 файла фото, content/photos.json и остальные фото-разделы не менялись. Статическая проверка и media-qa закрепляют divine-liturgy. Отдельная проверка обеих главных на девяти ширинах: audit/hero-restored-*-verification.json.
+
+## Последнее задание: локализация визуального оформления — 30.10.2026
+
+Один assets/brand/poroshkovo-parish-symbol.svg без видимых слов и растровых вставок. Header: символ + name_lines.uk/en из brand.json; Footer и favicon также без встроенного текста. Свои тексты сайта используют Методій/Методія. Не менять цитаты, документы и исходные имена файлов. Два локализованных OG PNG.
+
+Компоненты используют только enhanced; caption_overlay.uk/en — отдельная HTML/CSS-полоса, без дублированного заголовка снизу. Все 49 базовых WebP побайтово сохранены, 44 captioned остаются в исходном архиве, но не копируются в dist. Hero остаётся divine-liturgy. Зимний чистый оригинал не найден: UA полный кадр без второй накладки; EN исключён из всех блоков/галереи/lightbox. Не обрезать людей/не дорисовывать; ждать чистого исходника.
+
+Новый npm run test:localization: точные подписи, отсутствие captioned в HTML/dist, чистый SVG, ссылки/реальные загрузки/хеши, 32 маршрута, 9 ширин главной/галереи, геометрия шапки/полос, lightbox, proof.html и попарные PNG. Визуальный просмотр actual-photo-assets обязателен отдельно. Остальные тесты: build:production/check, test:browser/media/portal/schedule/publication (последнему нужен build:editor и preview:editor на 4174). Публикация main через native Cloudflare poroshkovo после локальных PASS. Финальные SHA/deployment/живой QA/ZIP записываются в D:\POROSHKOVO_PARISH_WORK\FINAL_REPORT.md и audit/current-release.json после фактической проверки.

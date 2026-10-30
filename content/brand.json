@@ -1,35 +1,35 @@
 {
-  "id": "poroshkovo-parish-logo",
-  "status": "owner_supplied_official_logo",
-  "source_sha256": "66113e38ce1d4845ebc2649487d9ef9ba0b705339c3b880050eb2ff57fa4e96e",
+  "id": "poroshkovo-parish-symbol",
+  "status": "owner_requested_text_free_symbol_with_localized_html_name",
+  "source_sha256": "f46fe2b6e9a90f0d8a4a99f8dc3a12ce09c280af01f4dd4c0f69b9f44c99254f",
   "received_on": "2026-10-29",
-  "publication_authorization": "Explicit owner instruction in this conversation",
-  "source_width": 1254,
-  "source_height": 1254,
-  "processing": "Conventional monochrome threshold and resizing; only exterior-connected white background made transparent; internal white retained; composition unchanged",
+  "source_width": 280,
+  "source_height": 280,
+  "processing": "Clean repo-native SVG line symbol based on the owner-selected two-saint design; no visible words, text elements or embedded raster. Parish name is localized HTML.",
   "colors": [
-    "#000000",
-    "#ffffff"
+    "#303e45",
+    "#b08e52"
   ],
   "header_alt": {
-    "uk": "Логотип парафії Порошково: святі Кирило і Мефодій",
-    "en": "Poroshkovo parish logo: Saints Cyril and Methodius"
+    "uk": "Знак парафії: святі Кирило і Методій",
+    "en": "Parish symbol: Saints Cyril and Methodius"
   },
-  "header_logo": {
-    "id": "poroshkovo-parish-header-logo",
-    "file": "/assets/brand/poroshkovo-parish-header-logo.svg",
-    "width": 594,
-    "height": 268,
-    "source_crop_width": 594,
-    "source_sha256": "ecd09cd97ce363f3e0bda9b637aa4be5f9dc1d9e6450c6590442b628a9346d24",
-    "source_original": "poroshkovo-header-logo-owner-reference.png",
-    "received_on": "2026-10-29",
-    "status": "owner_selected_header_wordmark",
-    "processing": "Original source pixels embedded unchanged in SVG. Non-generative SVG chroma filters isolate the supplied charcoal/gold ink and make the neutral screenshot background transparent. Presentation clipping omits unrelated screenshot margins; no redrawing or reconstruction of saints, crosses or lettering.",
-    "colors": [
-      "charcoal",
-      "gold"
+  "symbol": {
+    "file": "/assets/brand/poroshkovo-parish-symbol.svg",
+    "width": 280,
+    "height": 280
+  },
+  "name_lines": {
+    "uk": [
+      "ПАРАФІЯ",
+      "СВЯТИХ КИРИЛА І МЕТОДІЯ",
+      "ПОРОШКОВО"
     ],
-    "publication_authorization": "Explicit owner request to use this supplied design as the main logo in the upper-left site header."
-  }
+    "en": [
+      "PARISH OF",
+      "SAINTS CYRIL AND METHODIUS",
+      "POROSHKOVO"
+    ]
+  },
+  "previous_reference_sha256": "ecd09cd97ce363f3e0bda9b637aa4be5f9dc1d9e6450c6590442b628a9346d24"
 }
