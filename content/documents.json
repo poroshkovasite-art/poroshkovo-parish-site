@@ -1,37 +1,49 @@
 {
   "section_id": "documents",
   "title": {
-    "uk": "Декрет про призначення настоятеля",
-    "en": "Decree appointing the parish priest"
+    "uk": "Офіційні документи парафії",
+    "en": "Official parish documents"
   },
-  "publication_status": "draft",
+  "publication_status": "approved",
   "records": [
     {
       "id": "pastor-appointment",
       "title": {
-        "uk": "Декрет про призначення настоятеля",
-        "en": "Decree appointing the parish priest"
+        "uk": "Декрет про призначення о. Анатолія Горзова",
+        "en": "Decree appointing Fr Anatoliy Horzov"
       },
       "description": {
-        "uk": "",
-        "en": ""
+        "uk": "Декрет № 144/11, виданий 15 липня 2011 року. Владика Мілан Шашік призначає о. Анатолія Горзова адміністратором парафії у Порошкові від 18 липня 2011 року та доручає побічно обслуговувати вірників сіл Маюрки та Мокра Перечинського деканату.",
+        "en": "Decree No. 144/11, issued on 15 July 2011. Bishop Milan Šášik appoints Fr Anatoliy Horzov administrator of the parish in Poroshkovo with effect from 18 July 2011, also entrusting him with the care of the faithful in Maiurky and Mokra in the Perechyn deanery."
       },
       "category": "church",
       "photos": [],
       "date": null,
-      "source": null,
-      "verified_on": null,
-      "verification_status": "needs_confirmation",
-      "publication_status": "draft",
-      "issued_on": null,
+      "source": "Owner-supplied documents and explicit publication request, 31 October 2026",
+      "verified_on": "2026-10-31",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "issued_on": "2011-07-15",
+      "effective_from": "2011-07-18",
+      "document_number": "144/11",
       "issuer": {
-        "uk": "",
-        "en": ""
+        "uk": "Владика Мілан Шашік, єпархіальний єпископ Мукачівської греко-католицької єпархії",
+        "en": "Bishop Milan Šášik, Eparchial Bishop of the Greek Catholic Eparchy of Mukachevo"
       },
-      "public_file": null,
-      "publication_permission": false,
-      "privacy_reviewed": false,
-      "privacy_reviewed_on": null
+      "public_file": "documents/pastor-appointment-decree.pdf",
+      "preview_id": "pastor-appointment-decree",
+      "preview_width": 1163,
+      "preview_height": 1600,
+      "publication_permission": true,
+      "privacy_reviewed": true,
+      "privacy_reviewed_on": "2026-10-31",
+      "privacy_review_note": "Organizational church appointment document supplied expressly for publication; no private home address or personal contact details. Official signatures and seals are part of the authorized document.",
+      "original_sha256": "a9bdfb1e213f34df7e6a1187d22e4aca4598f8b10efc3ecca2b8823355f9ea4f",
+      "language": "uk",
+      "summary_note": {
+        "uk": "Короткий опис змісту документа. Скан оригіналу подано без змін.",
+        "en": "This English summary is for information and is not a certified translation. The original Ukrainian scan is unchanged."
+      }
     },
     {
       "id": "eparchial-decree",
@@ -167,6 +179,44 @@
       "publication_permission": false,
       "privacy_reviewed": false,
       "privacy_reviewed_on": null
+    },
+    {
+      "date": null,
+      "source": "Owner-supplied documents and explicit publication request, 31 October 2026",
+      "verified_on": "2026-10-31",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "id": "bank-account-certificate",
+      "title": {
+        "uk": "Банківська довідка про рахунок парафії",
+        "en": "Parish bank account certificate"
+      },
+      "description": {
+        "uk": "Довідка ПриватБанку № 251125SU222854 від 25 листопада 2025 року про відкриття гривневого рахунку громади. Отримувач у довідці: РГ ГКЦ С.ПОРОШКОВО; код ЄДРПОУ 26100236.",
+        "en": "PrivatBank certificate No. 251125SU222854 dated 25 November 2025 confirming the opening of the community’s UAH account. The beneficiary is recorded as РГ ГКЦ С.ПОРОШКОВО; EDRPOU code 26100236."
+      },
+      "category": "other",
+      "photos": [],
+      "issued_on": "2025-11-25",
+      "issuer": {
+        "uk": "АТ КБ «ПриватБанк», Закарпатське ГРУ",
+        "en": "JSC CB PrivatBank, Zakarpattia Regional Directorate"
+      },
+      "public_file": "documents/bank-account-certificate.pdf",
+      "preview_id": "bank-account-certificate",
+      "preview_width": 1163,
+      "preview_height": 1600,
+      "publication_permission": true,
+      "privacy_reviewed": true,
+      "privacy_reviewed_on": "2026-10-31",
+      "privacy_review_note": "Organization bank account certificate expressly supplied for public donation details; no personal bank account or private home address.",
+      "original_sha256": "df086fa83ab49963dd68f091a60a83fc6d270fc9d9a14f76110f40bd2ca36066",
+      "language": "uk",
+      "summary_note": {
+        "uk": "Банківські реквізити також наведено текстом у розділі підтримки.",
+        "en": "Bank details are also provided as selectable text on the support page."
+      },
+      "link_slug": "support"
     }
   ]
 }

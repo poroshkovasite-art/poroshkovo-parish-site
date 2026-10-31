@@ -457,7 +457,7 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 1.0,
+      "gamma": 1,
       "color_factor": 1.025,
       "contrast_factor": 1.015,
       "unsharp_mask": {
@@ -566,7 +566,7 @@
     "captured_on": null,
     "processing": {
       "decoder": "full-resolution camera JPEG embedded in NEF",
-      "gamma": 1.0,
+      "gamma": 1,
       "color_factor": 1.025,
       "contrast_factor": 1.015,
       "unsharp_mask": {
@@ -1033,5 +1033,349 @@
       "uk",
       "en"
     ]
+  },
+  {
+    "id": "former-worship-building",
+    "title": {
+      "uk": "Приміщення перших богослужінь",
+      "en": "A place of early parish worship"
+    },
+    "caption": {
+      "uk": "Приміщення перших богослужінь",
+      "en": "A place of early parish worship"
+    },
+    "alt": {
+      "uk": "Старе одноповерхове приміщення з ґанком, у якому, за свідченням парафії, тривалий час відбувалися богослужіння",
+      "en": "An older single-storey building with a porch, identified by the parish as a long-used place of worship"
+    },
+    "description": {
+      "uk": "За свідченням парафії, у цьому приміщенні громада тривалий час збиралася на Службу Божу. Фотографія зберігає пам’ять про цей етап парафіяльного життя.",
+      "en": "According to the parish, the community gathered in this building for the Divine Liturgy over a long period. The photograph preserves the memory of that chapter in parish life."
+    },
+    "caption_overlay": {
+      "uk": "З пам’яті парафії",
+      "en": "Parish memories"
+    },
+    "category": "history",
+    "category_label": {
+      "uk": "Історія",
+      "en": "History"
+    },
+    "placements": [
+      "history",
+      "gallery"
+    ],
+    "width": 4000,
+    "height": 3000,
+    "widths": [
+      480,
+      640,
+      768,
+      960,
+      1600,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "publication_authorization": "Owner-supplied documents and explicit publication request, 31 October 2026",
+    "consent_reference": "Owner supplied these parish photographs for public placement in this request",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "author": null,
+    "captured_on": null,
+    "original_file": "до історії, це перше приміщення в якому довгий час відбувалась служба..jpg",
+    "original_sha256": "aa992b1b0443618f1429d71083df96af222aaa73b5ee5cb05aaf933f76212475",
+    "source_url": null,
+    "extracted_on": "2026-10-31",
+    "verification_status": "owner_supplied_scene_and_publication_authorized",
+    "web_processing": "Responsive WebP encoding only. Full frame, natural colors, faces and architecture preserved; no generative processing, no added lettering.",
+    "embedded_caption_in_enhanced": false,
+    "source_dimensions": {
+      "width": 4000,
+      "height": 3000
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "former-worship-building-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "available_on_site": false,
+        "status": "not_created_use_localized_html"
+      }
+    },
+    "processing": {
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "pastor-parish-work",
+    "title": {
+      "uk": "Турбота про парафіяльне подвір’я",
+      "en": "Caring for the parish grounds"
+    },
+    "caption": {
+      "uk": "Турбота про парафіяльне подвір’я",
+      "en": "Caring for the parish grounds"
+    },
+    "alt": {
+      "uk": "Настоятель разом із помічником працює на подвір’ї парафії біля бетономішалки",
+      "en": "The parish pastor and a helper working on the parish grounds beside a concrete mixer"
+    },
+    "description": {
+      "uk": "Парафіяльне життя продовжується і поза богослужіннями. На наданому парафією фото — настоятель і спільна праця на подвір’ї храму.",
+      "en": "Parish life continues beyond the services. This photograph supplied by the parish shows the pastor sharing in work on the church grounds."
+    },
+    "caption_overlay": {
+      "uk": "Служіння і щоденна праця",
+      "en": "Ministry and daily work"
+    },
+    "category": "community",
+    "category_label": {
+      "uk": "Спільнота",
+      "en": "Community"
+    },
+    "placements": [
+      "about",
+      "community",
+      "support",
+      "gallery"
+    ],
+    "width": 4000,
+    "height": 3000,
+    "widths": [
+      480,
+      640,
+      768,
+      960,
+      1600,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "publication_authorization": "Owner-supplied documents and explicit publication request, 31 October 2026",
+    "consent_reference": "Owner supplied these parish photographs for public placement in this request",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "author": null,
+    "captured_on": null,
+    "original_file": "чим занят священник настоятель коли не служить.jpg",
+    "original_sha256": "bdc549c0201b623cd0dcd27af3fdc042f980762b9d61a9f0e99c91776905bc40",
+    "source_url": null,
+    "extracted_on": "2026-10-31",
+    "verification_status": "owner_supplied_scene_and_publication_authorized",
+    "web_processing": "Responsive WebP encoding only. Full frame, natural colors, faces and architecture preserved; no generative processing, no added lettering.",
+    "embedded_caption_in_enhanced": false,
+    "source_dimensions": {
+      "width": 4000,
+      "height": 3000
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "pastor-parish-work-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "available_on_site": false,
+        "status": "not_created_use_localized_html"
+      }
+    },
+    "processing": {
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "parish-house-today",
+    "title": {
+      "uk": "Парафіяльний дім сьогодні",
+      "en": "Our parish house today"
+    },
+    "caption": {
+      "uk": "Парафіяльний дім сьогодні",
+      "en": "Our parish house today"
+    },
+    "alt": {
+      "uk": "Сучасний двоповерховий парафіяльний будинок з червоним дахом і розп’яттям перед входом",
+      "en": "The present two-storey parish building with a red roof and a crucifix near the entrance"
+    },
+    "description": {
+      "uk": "Сучасне приміщення парафії, представлене громадою. Поруч із храмом воно є частиною простору нашого спільного життя.",
+      "en": "The present parish premises, identified by the community. Alongside the church, they form part of the setting for our shared parish life."
+    },
+    "caption_overlay": {
+      "uk": "Дім нашої спільноти",
+      "en": "A home for our community"
+    },
+    "category": "church",
+    "category_label": {
+      "uk": "Храм",
+      "en": "Church"
+    },
+    "placements": [
+      "about",
+      "community",
+      "gallery"
+    ],
+    "width": 4000,
+    "height": 3000,
+    "widths": [
+      480,
+      640,
+      768,
+      960,
+      1600,
+      1920
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "publication_authorization": "Owner-supplied documents and explicit publication request, 31 October 2026",
+    "consent_reference": "Owner supplied these parish photographs for public placement in this request",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "author": null,
+    "captured_on": null,
+    "original_file": "сьогоднящне примищення всій структури.jpg",
+    "original_sha256": "5c16db06f270126bd1e54b4ee46b8dde1feb3674c37a50ab1befb7df4818658e",
+    "source_url": null,
+    "extracted_on": "2026-10-31",
+    "verification_status": "owner_supplied_scene_and_publication_authorized",
+    "web_processing": "Responsive WebP encoding only. Full frame, natural colors, faces and architecture preserved; no generative processing, no added lettering.",
+    "embedded_caption_in_enhanced": false,
+    "source_dimensions": {
+      "width": 4000,
+      "height": 3000
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "parish-house-today-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "available_on_site": false,
+        "status": "not_created_use_localized_html"
+      }
+    },
+    "processing": {
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    }
+  },
+  {
+    "id": "pastor-anatolii-horzov",
+    "title": {
+      "uk": "Настоятель — о. Анатолій Горзов",
+      "en": "Parish pastor — Fr Anatoliy Horzov"
+    },
+    "caption": {
+      "uk": "Настоятель — о. Анатолій Горзов",
+      "en": "Parish pastor — Fr Anatoliy Horzov"
+    },
+    "caption_overlay": {
+      "uk": "о. Анатолій Горзов",
+      "en": "Fr Anatoliy Horzov"
+    },
+    "alt": {
+      "uk": "Настоятель о. Анатолій Горзов біля входу до парафіяльного будинку",
+      "en": "Parish pastor Fr Anatoliy Horzov by the entrance to the parish house"
+    },
+    "description": {
+      "uk": "Настоятель парафії та керівник соціальних програм і проєктів. Особу та служіння підтверджено парафією.",
+      "en": "Parish pastor and head of social programmes and projects. His identity and ministry have been confirmed by the parish."
+    },
+    "category": "community",
+    "category_label": {
+      "uk": "Спільнота",
+      "en": "Community"
+    },
+    "placements": [
+      "gallery"
+    ],
+    "width": 7360,
+    "height": 4912,
+    "widths": [
+      480,
+      640,
+      768,
+      960,
+      1600,
+      1920,
+      2560
+    ],
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "publication_authorization": "Explicit owner instruction to identify, brighten and publish the portrait of Fr Anatoliy Horzov, 2026-10-31",
+    "consent_reference": "The owner supplied both named NEF portraits and identified Fr Anatoliy Horzov and his social programme leadership role.",
+    "contains_children": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "original_file": "810_9993.NEF",
+    "original_sha256": "c0e0b2e327129e37e3e1ffadc1c23e891ccb74f7486bd8f057a9617729f56d17",
+    "alternative_original": "810_9981.NEF",
+    "alternative_original_sha256": "e15ff02d34a522d49be6601e3deaa7a1fca12378cbe0644bb851ffa7468a78ae",
+    "captured_on": null,
+    "author": null,
+    "source_url": null,
+    "extracted_on": "2026-10-31",
+    "verification_status": "identity_and_role_confirmed_by_owner",
+    "embedded_caption_in_enhanced": false,
+    "web_processing": "Native camera JPEG decoded from NEF. Responsive full-frame encoding without invented detail. Mild non-destructive brightness(1.045), saturate(1.07), contrast(1.015) at display time; source face and scene preserved. Generative trial rejected and not published.",
+    "display_adjustment": {
+      "method": "CSS global photographic tone/color filter",
+      "brightness": 1.045,
+      "saturation": 1.07,
+      "contrast": 1.015
+    },
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "pastor-anatolii-horzov-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "available_on_site": false,
+        "status": "not_created_use_localized_html"
+      }
+    },
+    "processing": {
+      "decoder": "Full-resolution camera JPEG embedded in NEF",
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true
+    },
+    "source_dimensions": {
+      "width": 7360,
+      "height": 4912
+    }
   }
 ]

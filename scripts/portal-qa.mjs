@@ -44,7 +44,7 @@ try{
    }
    await page.locator('.menu-toggle').click();await page.locator('.nav-group summary').nth(1).click();await screenshot(page,`${lang}-menu-${width}`);assert.ok(await page.locator('#navigation').evaluate(e=>e.getBoundingClientRect().right<=innerWidth&&e.getBoundingClientRect().bottom<=innerHeight));
    await page.locator('.nav-group summary').nth(2).click();assert.equal(await page.locator('.nav-group[open]').count(),1);await page.keyboard.press('Escape');await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
-   await page.locator('.menu-toggle').click();await page.locator('#navigation > a').last().click();assert.ok(page.url().includes('/contacts/'));assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
+   await page.locator('.menu-toggle').click();await page.locator(`#navigation > a[href="/${lang}/contacts/"]`).click();assert.ok(page.url().includes('/contacts/'));assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
    await page.goto(`${base}/${lang}/calendar/?date=2026-10-29`);await page.locator('[data-calendar-day]').first().waitFor();await screenshot(page,`${lang}-calendar-${width}`,true);await page.locator('.calendar-shell').screenshot({path:path.join(audit,`portal-${tag}-${lang}-calendar-detail-${width}.png`)});
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
    report.checks.push({lang,width,header:'PASS',menu:'PASS',calendar:'PASS'});

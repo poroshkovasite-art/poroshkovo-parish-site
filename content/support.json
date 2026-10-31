@@ -4,25 +4,25 @@
     "uk": "Підтримати життя парафії",
     "en": "Support parish life"
   },
-  "publication_status": "draft",
+  "publication_status": "approved",
   "records": [
     {
       "id": "parish-needs",
       "title": {
-        "uk": "Підтримати життя парафії",
-        "en": "Support parish life"
+        "uk": "Підтримати життя нашої парафії",
+        "en": "Support the life of our parish"
       },
       "description": {
-        "uk": "",
-        "en": ""
+        "uk": "Вашу добровільну пожертву можна переказати на офіційний гривневий рахунок релігійної громади. Дякуємо за участь у житті парафії та турботу про її спільний дім.",
+        "en": "You can make a voluntary donation to the religious community’s official UAH bank account. Thank you for sharing in parish life and caring for our common home."
       },
       "category": "parish",
       "photos": [],
       "date": null,
-      "source": null,
-      "verified_on": null,
-      "verification_status": "needs_confirmation",
-      "publication_status": "draft"
+      "source": "Owner-supplied documents and explicit publication request, 31 October 2026",
+      "verified_on": "2026-10-31",
+      "verification_status": "confirmed",
+      "publication_status": "approved"
     },
     {
       "id": "social-needs",
@@ -59,33 +59,69 @@
       "verified_on": null,
       "verification_status": "needs_confirmation",
       "publication_status": "draft"
+    },
+    {
+      "date": null,
+      "source": "Owner-supplied documents and explicit publication request, 31 October 2026",
+      "verified_on": "2026-10-31",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "id": "practical-help",
+      "title": {
+        "uk": "Допомогти справою",
+        "en": "Offer practical help"
+      },
+      "description": {
+        "uk": "Хочете долучитися до праці на парафіяльному подвір’ї, допомогти матеріалами чи запропонувати іншу підтримку? Узгодьте потреби та можливості з парафією за телефоном +380 50 432 19 69.",
+        "en": "Would you like to help on the parish grounds, offer materials or contribute in another way? Please contact the parish on +380 50 432 19 69 to discuss current needs and how you can help."
+      },
+      "category": "parish",
+      "photos": [
+        "pastor-parish-work"
+      ],
+      "contact_phone": "+380504321969"
     }
   ],
   "accounts": [
     {
+      "date": null,
+      "source": "Owner-supplied documents and explicit publication request, 31 October 2026",
+      "verified_on": "2026-10-31",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
       "id": "official-account",
       "title": {
-        "uk": "Офіційний рахунок",
-        "en": "Official account"
+        "uk": "Офіційний рахунок парафії",
+        "en": "Official parish account"
       },
       "description": {
-        "uk": "",
-        "en": ""
+        "uk": "Гривневий рахунок, зазначений у наданій парафією банківській довідці від 25.11.2025.",
+        "en": "The UAH account recorded in the bank certificate dated 25 November 2025 supplied by the parish."
       },
       "category": "bank",
       "photos": [],
-      "date": null,
-      "source": null,
-      "verified_on": null,
-      "verification_status": "needs_confirmation",
-      "publication_status": "draft",
-      "recipient": null,
-      "iban": null,
-      "bank": null,
+      "recipient": "РГ ГКЦ С.ПОРОШКОВО",
+      "edrpou": "26100236",
+      "iban": "UA643052990000026004003610032",
+      "bank": "АТ КБ «ПриватБанк»",
+      "bank_en": "JSC CB PrivatBank",
+      "mfo": "305299",
+      "branch": {
+        "uk": "Закарпатське ГРУ",
+        "en": "Zakarpattia Regional Directorate"
+      },
       "swift": null,
-      "currency": null,
-      "payment_reference": null,
-      "financial_confirmation": false
+      "currency": "UAH",
+      "payment_reference": "Добровільна пожертва на діяльність парафії",
+      "payment_reference_note": {
+        "uk": "Рекомендоване формулювання для добровільної пожертви.",
+        "en": "Suggested Ukrainian reference for a voluntary donation."
+      },
+      "financial_confirmation": true,
+      "confirmation_basis": "Owner expressly supplied this organization bank certificate for publication in Support Us on 2026-10-31; transcribed and checked against scan; IBAN modulo 97 verified.",
+      "source_document": "bank-account-certificate",
+      "certificate_date": "2025-11-25",
+      "account_opened_on": "2025-11-25"
     }
   ],
   "reports": []

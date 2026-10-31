@@ -19,7 +19,8 @@
     "preview:editor": "node scripts/serve.mjs --editor",
     "test:publication": "node scripts/publication-test.mjs",
     "test:schedule": "node scripts/schedule-qa.mjs",
-    "test:localization": "node scripts/localization-qa.mjs"
+    "test:localization": "node scripts/localization-qa.mjs",
+    "test:owner-materials": "node scripts/owner-materials-qa.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

@@ -24,7 +24,8 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
   const ids=[...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,`Duplicate id ${file}`);
   const schedule=JSON.parse(fs.readFileSync(path.join(root,'content/schedule.json')));
   if(schedule.verification_status!=='confirmed')assert.ok(!/11:00|16:00|17:00|09:00|13:00|14:00/.test(html),`Unconfirmed timetable leaked: ${file}`);
-  assert.ok(!/26100236|Центральна,? 94/.test(html),`Unconfirmed legal details leaked: ${file}`);
+  assert.ok(!/Центральна,? 94/.test(html),`Unconfirmed legal address leaked: ${file}`);
+  if(html.includes('26100236'))assert.equal(JSON.parse(fs.readFileSync(path.join(root,'content/parish-identity.json'))).edrpou,'26100236','Owner-confirmed organisation code');
  }
  for(const match of html.matchAll(/(?:href|src|data-full)="([^"<>]+)"/g)){
   const ref=match[1];if(/^(https?:|mailto:|tel:|viber:|data:)/.test(ref))continue;

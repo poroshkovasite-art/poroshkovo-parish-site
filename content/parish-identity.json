@@ -1,0 +1,20 @@
+{
+  "verification_status": "confirmed_owner_supplied_documents",
+  "verified_on": "2026-10-31",
+  "source": "Owner-supplied documents and explicit publication request, 31 October 2026",
+  "source_document_public": false,
+  "source_sha256": "31c1bbc7d61c7a2284ef78313f0d5d28b729d066d87545f77e6537aa321a121c",
+  "legal_name": "РЕЛІГІЙНА ГРЕКО-КАТОЛИЦЬКА ГРОМАДА \"СВЯТИХ РІВНОАПОСТОЛЬНИХ КИРИЛА І МЕФОДІЯ\" С. ПОРОШКОВО ПЕРЕЧИНСЬКОГО РАЙОНУ",
+  "edrpou": "26100236",
+  "nonprofit": {
+    "decision_number": "1707104600018",
+    "decision_date": "2017-02-22",
+    "classification": "0035",
+    "register_inclusion_date": "2003-12-24"
+  },
+  "state_registration_date": null,
+  "public_notice": {
+    "uk": "Відомості переписано з наданого парафією рішення про неприбутковий статус від 22.02.2017; код ЄДРПОУ також зазначений у банківській довідці. Назву наведено дослівно за документом. Дата 24.12.2003 стосується включення до Реєстру неприбуткових установ та організацій, а не дати державної реєстрації чи заснування парафії.",
+    "en": "These particulars were transcribed from the parish-supplied non-profit status decision dated 22 February 2017; the EDRPOU code also appears in the bank certificate. The legal name is quoted as written in the document. 24 December 2003 refers to inclusion in the Register of Non-Profit Institutions and Organisations, not to state registration or the foundation of the parish."
+  }
+}

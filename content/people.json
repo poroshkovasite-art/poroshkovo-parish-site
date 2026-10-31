@@ -12,8 +12,14 @@
     "source_url": "https://mgce.uz.ua/parafiya-svyatyh-kyryla-ta-mefodiya/",
     "extracted_on": "2026-10-29",
     "verification_status": "confirmed_by_direct_interview_relayed_by_owner",
-    "photo_id": null,
+    "photo_id": "pastor-anatolii-horzov",
     "confirmed_on": "2026-10-29",
-    "confirmation_source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source"
+    "confirmation_source_url": "https://poroshkovo.pages.dev/uk/services/#schedule-source",
+    "additional_role": {
+      "uk": "Керівник соціальних програм і проєктів",
+      "en": "Head of social programmes and projects"
+    },
+    "portrait_confirmed_on": "2026-10-31",
+    "portrait_confirmation": "Owner supplied 810_9981.NEF and 810_9993.NEF and explicitly identified the sitter as Fr Anatoliy Horzov. Role confirmed in the same message."
   }
 ]

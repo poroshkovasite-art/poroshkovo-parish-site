@@ -329,18 +329,18 @@
   },
   "support": {
     "title": {
-      "uk": "Допомогти парафії",
-      "en": "Support our parish"
+      "uk": "Підтримати нас",
+      "en": "Support Us"
     },
     "description": {
-      "uk": "Розділ парафіяльного сайту Порошкова: допомогти парафії. Перевірені матеріали та контакти.",
-      "en": "A section of the Poroshkovo parish website: support our parish. Verified materials and parish contacts."
+      "uk": "Підтримайте парафію у Порошкові: офіційний гривневий рахунок ПриватБанку, реквізити, банківська довідка та можливості практичної допомоги.",
+      "en": "Support the Poroshkovo parish: official PrivatBank UAH account, beneficiary details, bank certificate and ways to offer practical help."
     },
     "intro": {
-      "uk": "Підтверджені матеріали про цей напрям парафіяльного життя.",
-      "en": "Verified materials about this area of parish life."
+      "uk": "Спільна молитва, щоденна праця й ваша участь підтримують життя нашої парафії. Тут зібрано офіційні реквізити громади та способи допомогти.",
+      "en": "Shared prayer, daily work and your participation sustain our parish life. Here you will find the community’s official bank details and ways to help."
     },
-    "published": false
+    "published": true
   },
   "calendar": {
     "title": {
@@ -378,12 +378,12 @@
       "en": "Official documents"
     },
     "description": {
-      "uk": "Розділ парафіяльного сайту Порошкова: офіційні документи. Перевірені матеріали та контакти.",
-      "en": "A section of the Poroshkovo parish website: official documents. Verified materials and parish contacts."
+      "uk": "Декрет про призначення о. Анатолія Горзова, банківська довідка та підтверджені відомості про релігійну громаду Порошкова.",
+      "en": "The decree appointing Fr Anatoliy Horzov, the parish bank certificate and verified particulars of the religious community in Poroshkovo."
     },
     "intro": {
-      "uk": "Офіційні документи парафії публікуються після перевірки та дозволу на відкритий доступ.",
-      "en": "Official parish documents are published after review and approval for public access."
+      "uk": "Документи нашої парафії: оригінальні скани для перегляду й завантаження та відомості про релігійну громаду.",
+      "en": "Our parish documents: original scans to view and download, together with particulars of the religious community."
     },
     "published": true
   },
