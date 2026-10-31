@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),base=process.env.MEDIA_BASE_URL||'http://localhost:4173',tag=base.startsWith('http://localhost')?'local':'production',audit=path.resolve(root,'../audit');
-const photos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))),brand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json'))),expectedHero='divine-liturgy';
+const photos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))),brand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json'))),expectedHero='church-exterior';
 const report={date:'2026-10-30',base,status:'RUNNING',hero:expectedHero,photoAssets:[],headerChecks:[],placements:[],icons:[],errors:[]},iconData={};
 fs.mkdirSync(audit,{recursive:true});
 const hash=b=>createHash('sha256').update(b).digest('hex');

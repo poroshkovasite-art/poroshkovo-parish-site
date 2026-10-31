@@ -25,7 +25,7 @@ const expected={
  'pastor-anatolii-horzov':['о. Анатолій Горзов','Fr Anatoliy Horzov']
 };
 for(const p of photos){assert.deepEqual([p.caption_overlay.uk,p.caption_overlay.en],expected[p.id]);assert.equal(p.variants.captioned.available_on_site,false);for(const lang of ['uk','en'])for(const field of ['title','caption','description','alt'])assert.ok(p[field]?.[lang],`${p.id} ${field}.${lang}`);}
-assert.equal(read('site').hero_photo_id,'divine-liturgy');
+assert.equal(read('site').hero_photo_id,'church-exterior');
 const symbol=fs.readFileSync(path.join(out,brand.symbol.file),'utf8');
 assert.ok(!/<text\b|<image\b|data:|[А-Яа-яІіЇїЄєҐґ]/u.test(symbol),'Symbol must contain no lettering or raster');
 assert.equal(hash(Buffer.from(symbol)),brand.source_sha256);
@@ -46,7 +46,7 @@ try{
   for(const o of metrics.overlays){assert.equal(o.text,expected[o.id][lang==='uk'?0:1]);assert.ok(!o.duplicate,'Duplicate caption beneath overlay');assert.ok(o.box.x>=o.image.x-1&&o.box.right<=o.image.right+1&&o.box.bottom<=o.image.bottom+1&&o.box.y>=o.image.y,`Overlay outside image: ${o.id}`);assert.ok(o.box.height>=30&&o.parent.height>=o.image.height-1);report.overlays++;}
   if(lang==='en')assert.equal(await page.locator('[data-image-id="parish-winter-outing"]').count(),0);
   if(slug==='gallery/'){assert.equal(await page.locator('[data-photo-id]').count(),photos.filter(p=>p.publication_languages.includes(lang)).length);if(lang==='uk')assert.equal(await page.locator('[data-photo-id="parish-winter-outing"] [data-photo-overlay]').count(),0);}
-  else{assert.equal(await page.locator('.hero-image img').getAttribute('data-image-id'),'divine-liturgy');assert.equal(await page.locator('meta[property="og:image"]').getAttribute('content'),`${read('site').production_url}/assets/og-card-${lang}.png`);}
+  else{assert.equal(await page.locator('.hero-image img').getAttribute('data-image-id'),'church-exterior');assert.equal(await page.locator('meta[property="og:image"]').getAttribute('content'),`${read('site').production_url}/assets/og-card-${lang}.png`);}
   report.layouts.push({width,lang,slug:slug||'home',status:'PASS'});
  }}
  // Verify all components, including history, services and community, rather than only the home/gallery fixtures.

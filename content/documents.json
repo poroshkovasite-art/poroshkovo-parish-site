@@ -43,6 +43,34 @@
       "summary_note": {
         "uk": "Короткий опис змісту документа. Скан оригіналу подано без змін.",
         "en": "This English summary is for information and is not a certified translation. The original Ukrainian scan is unchanged."
+      },
+      "presentation": {
+        "preview_id": "pastor-appointment-presentation",
+        "preview_width": 1069,
+        "preview_height": 1471,
+        "original_sha256": "0aafce077406692a464cc442fb62cf6057ff5e0501fb367993978ebefbee3f59",
+        "owner_supplied_on": "2026-10-31",
+        "notice": {
+          "uk": "Оформлена копія, надана парафією. Оригінальний скан декрету доступний у PDF.",
+          "en": "Presentation copy supplied by the parish. The original decree scan is available in PDF."
+        },
+        "status": "owner_supplied_corrected_presentation_checked_against_original",
+        "verification": {
+          "checked_on": "2026-10-31",
+          "method": "Side-by-side visual comparison of all visible document text with original owner-supplied JPEG scan",
+          "document_number": "144/11",
+          "canon": "298 ККСЦ",
+          "appointee": "АНАТОЛІЙ ГОРЗОВ",
+          "appointment": "адміністратором парафії",
+          "issued_on": "2011-07-15",
+          "effective_from": "2011-07-18",
+          "issuer": "Мілан Шашік",
+          "additional_places": [
+            "Маюрки",
+            "Мокра"
+          ],
+          "result": "Key factual fields and body wording agree; newly drawn lettering, ornamentation and signatures remain a prepared visual copy, not a literal scan."
+        }
       }
     },
     {
