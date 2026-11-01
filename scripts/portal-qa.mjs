@@ -59,10 +59,10 @@ try{
    const mapPage=await context.newPage();
    await mapPage.setViewportSize({width,height:width<500?844:1000});let googleRequests=0;const listener=req=>{if(/google\.com\/maps/.test(req.url()))googleRequests++;};mapPage.on('request',listener);
    await mapPage.goto(`${base}/${lang}/contacts/`);assert.equal(await mapPage.locator('.map-frame iframe').count(),0);assert.equal(googleRequests,0,'No Google connection before consent');
-   await mapPage.locator('[data-load-map]').click();const frame=mapPage.locator('.map-frame iframe');await frame.waitFor();assert.ok((await frame.getAttribute('src')).startsWith('https://www.google.com/maps/embed?pb='));await mapPage.waitForFunction(()=>document.querySelector('.map-frame iframe')?.contentWindow!==null);
+   await mapPage.locator('[data-load-map]').click();const frame=mapPage.locator('.map-frame iframe');await frame.waitFor();assert.equal(await frame.getAttribute('src'),read('site').contact.embed_url);await mapPage.waitForFunction(()=>document.querySelector('.map-frame iframe')?.contentWindow!==null);
    await mapPage.waitForTimeout(1800);await mapPage.locator('.find-church').scrollIntoViewIfNeeded();await screenshot(mapPage,`${lang}-map-${width}`);await mapPage.locator('.find-church').screenshot({path:path.join(audit,`portal-${tag}-${lang}-map-block-${width}.png`)});
-   assert.match(await mapPage.locator('.map-actions a').first().getAttribute('href'),/destination=48\.670772%2C22\.752723/);assert.equal(await mapPage.locator('.map-actions a').last().getAttribute('href'),'https://maps.app.goo.gl/C3U3LFnu9HUtSBBB9');assert.ok(googleRequests>=1);mapPage.off('request',listener);await mapPage.close();
-   report.checks.push({lang,width,mapConsent:'PASS',exactPin:'48.670772,22.752723',mapRequest:'PASS'});
+   assert.match(await mapPage.locator('.map-actions a').first().getAttribute('href'),/destination=48\.67082394012906%2C22\.752845895344038/);assert.equal(await mapPage.locator('.map-actions a').last().getAttribute('href'),read('site').contact.map_url);assert.ok(googleRequests>=1);mapPage.off('request',listener);await mapPage.close();
+   report.checks.push({lang,width,mapConsent:'PASS',exactPin:'48.67082394012906,22.752845895344038',mapRequest:'PASS'});
   }
   await page.setViewportSize({width:390,height:844});await page.goto(`${base}/${lang}/`);await page.locator('.menu-toggle').click();await page.setViewportSize({width:1440,height:900});assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');assert.ok(await page.locator('#navigation').isVisible());await page.setViewportSize({width:390,height:844});assert.ok(!await page.locator('#navigation').isVisible());
  }

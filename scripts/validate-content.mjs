@@ -38,8 +38,14 @@ export function validateContent({site,pages,photos,news,schedule}) {
  if(site.contact.verification_status==='confirmed'){
   const c=site.contact;assert.ok(bilingual(c.address),'Confirmed visiting address');
   if(c.email)assert.match(c.email,/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-  if(c.embed_url)assert.ok(c.embed_url.startsWith('https://www.google.com/maps/embed'),'Approved map embed host');
+  if(c.embed_url)assert.equal(new URL(c.embed_url).origin,'https://www.google.com','Approved map embed host');
   if(c.map_url)assert.ok(c.map_url.startsWith('https://'),'Secure route URL');
+ }
+ if(site.contact.location_verification_status==='owner_confirmed_exact_pin'){
+  const c=site.contact,point=`${c.coordinates.latitude},${c.coordinates.longitude}`,embed=new URL(c.embed_url);
+  assert.ok(Number.isFinite(c.coordinates.latitude)&&Math.abs(c.coordinates.latitude)<=90&&Number.isFinite(c.coordinates.longitude)&&Math.abs(c.coordinates.longitude)<=180,'Valid exact church coordinates');
+  assert.equal(c.map_url,`https://www.google.com/maps?q=${point}`);assert.equal(c.directions_url,`https://www.google.com/maps/dir/?api=1&destination=${point.replace(',','%2C')}`);
+  assert.equal(embed.origin,'https://www.google.com');assert.equal(embed.pathname,'/maps');assert.equal(embed.searchParams.get('q'),point);assert.equal(embed.searchParams.get('output'),'embed');assert.equal(embed.searchParams.get('z'),'18');
  }
  if(site.contact.phone_verification_status==='confirmed')assert.match(site.contact.phone,/^\+[1-9]\d{7,14}$/,'Confirmed international contact number');
 }
