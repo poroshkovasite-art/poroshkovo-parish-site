@@ -347,11 +347,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -549,11 +557,19 @@
       "home_featured": true,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -855,11 +871,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -953,11 +977,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -1057,11 +1089,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -1155,11 +1195,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -1357,11 +1405,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -1669,11 +1725,19 @@
       "home_featured": true,
       "contains_children": false,
       "contains_aid_recipients": true,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -2067,11 +2131,19 @@
       "home_featured": false,
       "contains_children": true,
       "contains_aid_recipients": false,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -2477,11 +2549,19 @@
       "home_featured": true,
       "contains_children": false,
       "contains_aid_recipients": true,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
@@ -2563,11 +2643,19 @@
       "home_featured": false,
       "contains_children": false,
       "contains_aid_recipients": true,
-      "publication_status": "pending_approval",
-      "rights_confirmed": false,
-      "consents_confirmed": false,
-      "consent_reference": null,
-      "publication_authorization": null,
+      "publication_status": "approved",
+      "rights_confirmed": true,
+      "consents_confirmed": true,
+      "consent_reference": "Owner explicitly confirmed publication rights and all necessary depicted-person/parental consents in this Codex chat on 2026-11-02 for originals 4,6,9-12,14,17,21,25,26.",
+      "publication_authorization": {
+        "source": "Direct owner confirmation in current Codex chat",
+        "confirmed_on": "2026-11-02",
+        "scope": "Website publication, rights and required consents, including parents/representatives of children",
+        "excluded_originals": [
+          "8.jpeg",
+          "20.jpeg"
+        ]
+      },
       "captured_on": null,
       "date_source": null,
       "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",

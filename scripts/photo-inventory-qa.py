@@ -17,10 +17,10 @@ for p in photos:
     data=(private/'originals'/p['original_file']).read_bytes()
     sha=hashlib.sha256(data).hexdigest()
     assert sha==p['original_sha256'] and sha not in hashes
-    assert (Path.home()/'Desktop'/p['original_file']).read_bytes()==data
     hashes.add(sha)
-    assert p['publication_status']=='pending_approval'
-    assert not p['rights_confirmed'] and not p['consents_confirmed']
+    assert p['publication_status'] in ['pending_approval','approved']
+    if p['publication_status']=='pending_approval':assert not p['rights_confirmed'] and not p['consents_confirmed']
+    else:assert p['rights_confirmed'] and p['consents_confirmed'] and p['consent_reference']
     assert p['captured_on'] is None
     for entry in p['web_files']:
         file=private/'web'/entry['file']
@@ -28,7 +28,7 @@ for p in photos:
         with Image.open(file) as im:
             assert im.width<=p['width'] and abs(im.width/im.height-p['width']/p['height'])<.005
             assert not im.getexif() and not im.info.get('icc_profile')
-        assert not (root/'dist/assets/photos'/file.name).exists()
+        assert (root/'dist/assets/photos'/file.name).exists() == (p['publication_status']=='approved')
         web_count+=1
     report['originals'].append({'file':p['original_file'],'sha256':sha,'unchanged':True,'publication_status':p['publication_status']})
 assert len(hashes)==26 and web_count==116

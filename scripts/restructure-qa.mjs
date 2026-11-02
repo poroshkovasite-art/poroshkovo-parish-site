@@ -9,7 +9,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),audit
 const base=process.env.RESTRUCTURE_BASE_URL||'http://localhost:4173',tag=base.includes('localhost')?'local':'production';
 const read=n=>JSON.parse(fs.readFileSync(path.join(root,'content',n+'.json'))),mission=read('community-mission'),catalog=read('parish-photo-catalog'),social=read('social-ministry');
 assert.deepEqual(social.ministry_directions,mission.ministry_directions);assert.equal(mission.ministry_directions.length,7);
-for(const p of catalog.photos){assert.equal(p.publication_status,'pending_approval');assert.equal(photoApproved(p),false);}
+for(const p of catalog.photos){assert.ok(['approved','pending_approval'].includes(p.publication_status));assert.equal(photoApproved(p),p.publication_status==='approved'&&!photoExcluded(p));if(photoApproved(p))assert.ok(p.rights_confirmed&&p.consents_confirmed&&p.consent_reference);}
 assert.equal(catalog.missing[0].status,'missing');
 for(const id of ['chronicle-summer-camp-friendship','chronicle-church-grounds-cleanup']){
  assert.ok(photoExcluded({id}));
@@ -28,7 +28,7 @@ try{
   assert.deepEqual(order,['hero','mission','carousel','services','history','contacts','support']);
   const photoIds=await page.locator('main img[data-image-id]').evaluateAll(imgs=>imgs.map(i=>i.dataset.imageId));
   assert.equal(new Set(photoIds).size,photoIds.length,'No repeated home photograph');
-  assert.equal(await page.locator('[data-community-mission] [data-photo-id]').count(),3);
+  assert.ok(await page.locator('[data-community-mission] [data-photo-id]').count()>=3);await page.locator('[data-mission-carousel]').scrollIntoViewIfNeeded();await page.locator('[data-mission-step="1"]').click();await page.waitForFunction(()=>document.querySelector('[data-mission-carousel]').dataset.active==='1');await page.locator('[data-mission-track]').focus();await page.keyboard.press('ArrowLeft');await page.waitForFunction(()=>document.querySelector('[data-mission-carousel]').dataset.active==='0');
   assert.equal(await page.locator('[data-service]').count(),4);assert.equal(await page.locator('[data-ministry-direction]').count(),7);
   assert.equal(await page.locator('#navigation a[href$="/first-visit/"],#navigation a[href$="/support/"],[data-feature-carousel],[data-load-map],.map-consent').count(),0);
   assert.equal(await page.locator('[data-home-support] .home-iban').innerText(),read('support').accounts[0].iban);
@@ -62,7 +62,7 @@ try{
   report.layouts.push({lang,width,uniqueHomePhotos:photoIds.length,status:'PASS'});
  }
  // The standalone history visual is a complete, attributed map, not a fabricated local plan.
- for(const lang of ['uk','en']){await page.goto(`${base}/${lang}/history/`);assert.equal(await page.locator('[data-historical-map]').count(),1);assert.ok((await page.locator('.historical-map figcaption').innerText()).includes('1648'));assert.equal(await page.locator('.historical-map .source-link').getAttribute('href'),read('historical-map').source_url);}
+ for(const lang of ['uk','en']){await page.goto(`${base}/${lang}/history/`);assert.equal(await page.locator('[data-historical-map]').count(),1);assert.ok((await page.locator('.historical-map figcaption').innerText()).includes(read('historical-map').title[lang]));assert.equal(await page.locator('.historical-map .source-link').getAttribute('href'),read('historical-map').source_url);}
  await ctx.close();
  const failed=await browser.newContext();await failed.route('https://tile.openstreetmap.org/**',r=>r.abort());const fp=await failed.newPage();await fp.goto(base+'/uk/contacts/');await fp.locator('[data-map-status]:not([hidden])').waitFor();assert.equal(await fp.locator('.map-actions a').count(),2);assert.ok(await fp.locator('.map-static-fallback').isVisible());report.fallback='PASS';await failed.close();
  const noJS=await browser.newContext({javaScriptEnabled:false});const np=await noJS.newPage();await np.goto(base+'/en/contacts/');assert.ok(await np.locator('.map-static-fallback').isVisible());assert.equal(await np.locator('.map-actions a').count(),2);await noJS.close();

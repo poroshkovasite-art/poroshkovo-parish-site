@@ -4,12 +4,12 @@ import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
-import {photoApproved,photoThemes,validatePhotoCatalog} from './parish-photos.mjs';
+import {photoApproved,photoThemes,validatePhotoCatalog,photoExcluded} from './parish-photos.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),audit=path.resolve(root,'../audit');fs.mkdirSync(audit,{recursive:true});
 const base=process.env.CHRONICLE_BASE_URL||'http://localhost:4173',editorBase=process.env.CHRONICLE_EDITOR_URL||'http://localhost:4174',tag=base.includes('localhost')?'local':'production';
 const catalog=JSON.parse(fs.readFileSync(path.join(root,'content/parish-photo-catalog.json'))),report={status:'RUNNING',base,layouts:[],privacy:[],carousel:[],errors:[],accessibility:[]};
 validatePhotoCatalog(catalog);
-for(const p of catalog.photos){assert.equal(photoApproved(p),false);assert.equal(p.captured_on,null);assert.equal(p.processing.generative_processing,false);assert.equal(p.processing.crop,false);for(const key of ['rights_confirmed','consents_confirmed']){const bad=structuredClone(catalog);bad.photos[0].publication_status='approved';bad.photos[0].rights_confirmed=true;bad.photos[0].consents_confirmed=true;bad.photos[0].consent_reference='fixture';bad.photos[0][key]=false;assert.throws(()=>validatePhotoCatalog(bad));}}
+for(const p of catalog.photos){assert.equal(photoApproved(p),p.publication_status==='approved'&&!photoExcluded(p));assert.equal(p.captured_on,null);assert.equal(p.processing.generative_processing,false);assert.equal(p.processing.crop,false);for(const key of ['rights_confirmed','consents_confirmed']){const bad=structuredClone(catalog);bad.photos[0].publication_status='approved';bad.photos[0].rights_confirmed=true;bad.photos[0].consents_confirmed=true;bad.photos[0].consent_reference='fixture';bad.photos[0][key]=false;assert.throws(()=>validatePhotoCatalog(bad));}}
 assert.equal(catalog.missing[0].status,'missing');
 const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const ready=p=>p.evaluate(async()=>Promise.all([...document.images].filter(i=>i.hasAttribute('src')).map(i=>{i.loading='eager';return i.decode();})));
@@ -18,7 +18,7 @@ try{
  for(const lang of ['uk','en'])for(const width of [320,390,768,1024,1440,1920])for(const slug of ['','gallery/','social-ministry/']){
   await page.setViewportSize({width,height:1000});await page.goto(`${base}/${lang}/${slug}`);await ready(page);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-  assert.equal(await page.locator('[data-photo-id^="chronicle-"]').count(),0,'No pending photo card in public HTML');
+  for(const p of catalog.photos.filter(p=>!photoApproved(p)))assert.equal(await page.locator('[data-photo-id="'+p.id+'"]').count(),0,'No unapproved photo in public HTML');
   assert.ok(!(await page.content()).includes('pending_approval'));
   if(slug==='gallery/'){
    assert.equal(await page.locator('[data-photo-section]').count(),Object.keys(photoThemes).length);
@@ -39,10 +39,10 @@ try{
   report.layouts.push({lang,width,slug:slug||'home',status:'PASS'});
  }
  // Direct URLs must also be blocked, rather than merely hidden in the UI.
- for(const p of catalog.photos){const response=await page.request.get(`${base}/assets/photos/${p.id}-${p.widths[0]}.webp`);assert.equal(response.status(),404);report.privacy.push({file:p.original_file,status:404});}
+ for(const p of catalog.photos.filter(p=>!photoApproved(p))){const response=await page.request.get(`${base}/assets/photos/${p.id}-${p.widths[0]}.webp`);assert.equal(response.status(),404);report.privacy.push({file:p.original_file,status:404});}
  if(tag==='local'&&process.env.CHRONICLE_SKIP_EDITOR!=='1')for(const lang of ['uk','en']){
-  await page.goto(`${editorBase}/${lang}/gallery/`);await ready(page);assert.ok((await page.locator('meta[name="robots"]').getAttribute('content')).includes('noindex'));assert.equal(await page.locator('[data-photo-id^="chronicle-"]').count(),26);
-  for(const p of catalog.photos){assert.equal(await page.locator(`[data-photo-id="${p.id}"] img`).getAttribute('alt'),p.alt[lang]);assert.ok((await page.locator(`[data-photo-id="${p.id}"]`).locator('..').textContent()).includes('pending_approval'));}
+  await page.goto(`${editorBase}/${lang}/gallery/`);await ready(page);assert.ok((await page.locator('meta[name="robots"]').getAttribute('content')).includes('noindex'));assert.equal(await page.locator('[data-photo-id^="chronicle-"]').count(),catalog.photos.filter(p=>!photoExcluded(p)).length);
+  for(const p of catalog.photos.filter(p=>!photoExcluded(p))){assert.equal(await page.locator(`[data-photo-id="${p.id}"] img`).getAttribute('alt'),p.alt[lang]);if(!photoApproved(p))assert.ok((await page.locator(`[data-photo-id="${p.id}"]`).locator('..').textContent()).includes('pending_approval'));}
   await page.locator('[data-theme-filter="social-ministry"]').click();assert.equal(await page.locator('[data-photo-section]:visible [data-photo]').count(),3);
   await page.goto(`${editorBase}/${lang}/social-ministry/`);assert.ok(await page.locator('[data-photo-id^="chronicle-"]').count()>=3);
  }

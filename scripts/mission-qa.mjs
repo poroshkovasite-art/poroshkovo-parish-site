@@ -12,7 +12,7 @@ try{
  for(const lang of ['uk','en'])for(const width of [320,390,768,1024,1440,1920])for(const slug of ['','community-impact/','social-ministry/']){
   await page.setViewportSize({width,height:1000});await page.goto(`${base}/${lang}/${slug}`);assert.equal(await page.locator('h1').count(),1);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-  assert.equal(await page.locator('[data-photo-id^="chronicle-"]').count(),0);
+  for(const p of JSON.parse(fs.readFileSync(path.join(root,'content/parish-photo-catalog.json'))).photos.filter(p=>p.publication_status!=='approved'))assert.equal(await page.locator('[data-photo-id="'+p.id+'"]').count(),0);
   if(!slug){assert.equal(await page.locator('main > section').nth(1).getAttribute('data-community-mission'),'');assert.equal(await page.locator('[data-ministry-direction]').count(),7);assert.equal(await page.locator('[data-service]').count(),4);assert.ok((await page.locator('[data-community-mission]').innerText()).includes(lang==='uk'?'Наша місія — не лише допомагати людям':'Our mission is to help people'));}
   if(slug==='community-impact/'){
    assert.equal(await page.locator('[data-community-impact]').count(),1);for(const id of ['spiritual-values','children-development','active-youth','solidarity','activity-examples','goals','mission-and-needs'])assert.equal(await page.locator('#'+id).count(),1);

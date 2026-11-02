@@ -3,14 +3,20 @@
 .mission-composition .mission-heading h2{font-size:clamp(34px,3.7vw,52px);max-width:17ch}
 .mission-composition .mission-heading>p:not(.eyebrow){font-size:16px;line-height:1.85}
 .mission-composition .mission-heading .lead{font-size:19px;color:var(--ink)}
-.mission-photo-composition{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
-.mission-photo-composition .parish-photo{border:0;border-radius:16px;overflow:hidden;background:var(--tint)}
-.mission-photo-composition .parish-photo:first-child{grid-row:span 2;align-self:center}
-.mission-photo-composition .photo-visual{display:block;background:var(--tint)}
-.mission-photo-composition img{width:100%;height:auto;object-fit:contain}
-.mission-photo-composition figcaption{padding:13px 16px}
-.mission-photo-composition figcaption strong{font:18px/1.35 var(--serif)}
-.mission-photo-composition figcaption p,.mission-photo-composition figcaption>span{display:none}
+.mission-photo-carousel{min-width:0}
+.mission-photo-carousel>.eyebrow{margin-bottom:16px}
+.mission-photo-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;border-radius:18px;overscroll-behavior-inline:contain;background:var(--white);border:1px solid var(--line)}
+.mission-photo-track>.parish-photo{flex:0 0 100%;width:100%;min-width:0;scroll-snap-align:start;border:0;border-radius:0;align-self:stretch}
+.mission-photo-track .photo-visual{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:var(--tint)}
+.mission-photo-track img{width:100%;height:100%;object-fit:contain}
+.mission-photo-track figcaption{min-height:160px;padding:23px 26px}
+.mission-photo-track figcaption strong{font:27px/1.25 var(--serif);margin-bottom:12px}
+.mission-photo-track figcaption p{font-size:14px;line-height:1.75;margin-bottom:10px}
+.mission-photo-track figcaption>span{font-size:10px}
+.mission-photo-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:20px}
+.mission-photo-controls button{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;background:var(--white);color:var(--accent)}
+.mission-photo-controls button:hover{background:var(--tint)}
+.mission-photo-status{font-size:12px;letter-spacing:.08em;color:var(--muted);font-variant-numeric:tabular-nums;min-width:68px;text-align:center}
 .home-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .home-service-card{display:flex;flex-direction:column;align-items:start;padding:26px 23px;border:1px solid var(--line);border-radius:16px;background:var(--white);min-width:0}
 .home-service-card .mission-number{margin-bottom:20px}

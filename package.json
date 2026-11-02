@@ -26,7 +26,8 @@
     "test:chronicle": "node scripts/chronicle-qa.mjs",
     "test:mission": "node scripts/mission-qa.mjs",
     "test:hero-buildings": "node scripts/hero-buildings-qa.mjs",
-    "test:restructure": "node scripts/restructure-qa.mjs"
+    "test:restructure": "node scripts/restructure-qa.mjs",
+    "test:mission-carousel": "node scripts/mission-carousel-qa.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

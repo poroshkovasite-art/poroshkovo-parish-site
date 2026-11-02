@@ -44,16 +44,16 @@
   {
     "id": "bible",
     "icon": "book",
-    "url": "https://www.bible.com/uk",
+    "url": "https://ugcc.ua/library/bible/",
     "title": {
       "uk": "Святе Письмо — читати Біблію",
       "en": "Holy Scripture — read the Bible"
     },
     "description": {
-      "uk": "Читайте та слухайте Слово Боже українською мовою.",
-      "en": "Read and listen to the word of God in Ukrainian."
+      "uk": "Читайте Святе Письмо Старого і Нового Завіту в перекладі о. Івана Хоменка.",
+      "en": "Read the Old and New Testaments in Ukrainian, translated by Fr Ivan Khomenko."
     },
-    "verified_on": "2026-10-29"
+    "verified_on": "2026-11-02"
   },
   {
     "id": "vatican",
