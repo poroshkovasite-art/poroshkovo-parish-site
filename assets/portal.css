@@ -60,3 +60,18 @@ img[data-image-id="pastor-anatolii-horzov"],.lightbox img[data-portrait-adjusted
 .home-map{margin-top:0}.home-map .map-grid{grid-template-columns:1fr}.home-map .map-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 32px}.home-map .map-card>svg,.home-map .map-card>small,.home-map .map-card>.contact-links{display:none}.home-map .map-card h3{font-size:28px;margin:0;grid-column:1}.home-map .map-card>p{grid-column:1;margin:0}.home-map .map-actions{grid-column:2;grid-row:1/5;margin:0}.map-coordinate span{overflow-wrap:anywhere;min-width:0}.map-consent h3{max-width:30ch;font-size:24px}
 @media(min-width:769px) and (max-width:1100px){.pastor-profile{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px}.pastor-portrait-link img{height:640px}}
 @media(max-width:620px){.map-frame{height:300px}.map-consent{padding:16px}.map-consent>svg{width:24px;height:24px;margin-bottom:8px}.map-consent h3{font-size:20px;margin-bottom:10px}.map-consent p{font-size:12px;line-height:1.5;margin-bottom:12px}.home-map .map-card{display:block}.home-map .map-card h3{font-size:26px;margin-bottom:16px}.home-map .map-card>p{margin-bottom:12px}.home-map .map-actions{margin-block:20px 0}}
+
+/* Center date artwork as a single composition without changing photo panels. */
+.history-visual.history-date-panel{display:grid;place-items:center;min-height:340px;padding:clamp(28px,3.5vw,52px);background:var(--tint)}
+.history-date-content{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;width:100%;max-width:440px;text-align:center}
+.history-date-content .line-icon{width:60px;height:60px;margin:0;flex-shrink:0}
+.history-date-content .history-date-art{max-width:12ch;margin:0;font-size:clamp(38px,4.6vw,64px);line-height:1.12;text-wrap:balance}
+.history-date-content p{max-width:30ch;margin:0;font-size:14px;line-height:1.65}
+@media(max-width:620px){.history-visual.history-date-panel{min-height:260px;padding:32px 24px}.history-date-content{gap:18px}.history-date-content .line-icon{width:52px;height:52px}.history-date-content .history-date-art{font-size:clamp(36px,9vw,45px)}}
+
+.history-date-content .history-date-art{display:flex;flex-direction:column;align-items:center;gap:4px}
+.history-date-separator{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#story-land .history-date-unit:first-child{font-size:.8em}
+#story-village .history-date-unit:last-child{font-size:.6em;max-width:16ch}
+.history-date-content .history-date-years{display:block;max-width:none;font-size:clamp(28px,3.5vw,48px);white-space:nowrap}
+@media(max-width:620px){.history-date-content .history-date-years{font-size:clamp(24px,7vw,30px)}}

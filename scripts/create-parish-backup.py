@@ -60,8 +60,9 @@ for evidence in (root.parent/'audit').iterdir():
         (stage/'AUDIT').mkdir(exist_ok=True);shutil.copy2(evidence,stage/'AUDIT'/evidence.name)
     elif evidence.is_dir() and evidence.name=='visual-polish':
         shutil.copytree(evidence,stage/'AUDIT/visual-polish',dirs_exist_ok=True,ignore=shutil.ignore_patterns('after-candidate-*','baseline-site','baseline-source.zip'))
-reading_audit=root/'audit/liturgy-word'
-if reading_audit.exists():shutil.copytree(reading_audit,stage/'AUDIT/liturgy-word',dirs_exist_ok=True)
+for audit_name in ['liturgy-word','history-alignment']:
+    reading_audit=root/'audit'/audit_name
+    if reading_audit.exists():shutil.copytree(reading_audit,stage/'AUDIT'/audit_name,dirs_exist_ok=True)
 shutil.copy2(args.report or root/'PARISH_PHOTO_GALLERY_REPORT.md',stage/'FINAL_REPORT.md')
 shutil.copy2(root/'PARISH_PHOTO_MAPPING.csv',stage/'PARISH_PHOTO_MAPPING.csv')
 shutil.copy2(root/'START_SITE.cmd',stage/'SOURCE_CODE/START_SITE.cmd')

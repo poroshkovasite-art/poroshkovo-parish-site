@@ -12,4 +12,6 @@ Reproduction: build production, serve it on port 4186, then run `node scripts/li
 
 Old public scan-image and scan-PDF URLs redirect to the continuous reading page. This also addresses Cloudflare's retention of previously cached assets after a deployment. The files remain in the source archive.
 
+The three symbolic History panels now center their icon, date and caption as a single composition. The Zakarpattia panel no longer inherits photo-only styling that removed its padding. Dates remain 1646, 1381 and 1751 · 1949 · 2002; text and photo panels retain their existing arrangement. UA/EN passed ten layout checks across the same five widths and four axe checks. Screenshots are retained under `audit/history-alignment` in the backup.
+
 Publication verification and the exact commit/deployment identifiers are recorded in the local release report after deployment. A fresh backup preserves the previous original collections, current source, archived scans, private Word reference, Git history and production output; it verifies a rebuild and archive hashes.
