@@ -1,6 +1,7 @@
 """Verify the preserved originals, every derived file, and public exclusion."""
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageOps
 
@@ -32,9 +33,11 @@ for p in photos:
         web_count+=1
     report['originals'].append({'file':p['original_file'],'sha256':sha,'unchanged':True,'publication_status':p['publication_status']})
 assert len(hashes)==26 and web_count==116
-for k,start in enumerate(range(0,26,9),1):
+excluded=set(json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {excludedPhotoIds} from './scripts/parish-photos.mjs';process.stdout.write(JSON.stringify([...excludedPhotoIds]));"],cwd=root,text=True)))
+proof_photos=[p for p in photos if p['id'] not in excluded]
+for k,start in enumerate(range(0,len(proof_photos),9),1):
     canvas=Image.new('RGB',(1380,975),'#eee')
-    for j,p in enumerate(photos[start:start+9]):
+    for j,p in enumerate(proof_photos[start:start+9]):
         im=Image.open(private/'web'/f"{p['id']}-{p['widths'][-1]}.webp")
         thumb=ImageOps.contain(im,(440,290))
         x,y=(j%3)*460,(j//3)*325

@@ -1,2 +1,2 @@
-// The mission is now a static composition; retain this entry point for existing workflows.
-import './visual-polish-qa.mjs';
+// The mission is static; verify the single central carousel and authorized new stories.
+import './owner-additions-qa.mjs';

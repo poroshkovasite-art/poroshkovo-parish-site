@@ -48,8 +48,8 @@ try{
   for(const slug of ['about','community','spiritual-life','gallery']){const ids=slug==='gallery'?localizedPhotos.map(p=>p.id):localizedPhotos.filter(p=>p.placements.includes(slug)).map(p=>p.id);
    await page.goto(`${base}/${lang}/${slug}/`);await ready(page);assert.deepEqual((await page.locator('[data-photo-id]').evaluateAll(es=>es.map(e=>e.dataset.photoId))).sort(),ids.slice().sort());
    if(slug==='gallery')assert.ok(await page.locator('.photo-button img').evaluateAll(es=>es.every(i=>i.dataset.photoVariant==='enhanced')),'Gallery uses detail-friendly enhanced variants');
-   const images=await page.locator('.photo-button img').evaluateAll(es=>es.map(e=>({id:e.dataset.imageId,ratio:e.getBoundingClientRect().width/e.getBoundingClientRect().height,natural:Number(e.getAttribute('width'))/Number(e.getAttribute('height')),complete:e.complete&&e.naturalWidth>0})));
-   for(const i of images)assert.ok(i.complete,`Photo loaded: ${i.id}`);assert.ok(await page.locator('.photo-button img').evaluateAll(es=>es.every(i=>getComputedStyle(i).objectFit==='contain')),'Full photo content preserved inside editorial frames');
+   const images=await page.locator('.photo-button img').evaluateAll(es=>es.map(e=>({id:e.dataset.imageId,ratio:e.getBoundingClientRect().width/e.getBoundingClientRect().height,natural:Number(e.getAttribute('width'))/Number(e.getAttribute('height')),complete:e.complete&&e.naturalWidth>0,fit:getComputedStyle(e).objectFit})));
+   for(const i of images)assert.ok(i.complete&&(Math.abs(i.ratio-i.natural)<0.01||i.fit==='contain'),`Declared image ratio without CSS cropping: ${i.id}`);
    report.placements.push({lang,slug,ids,declaredRatiosPreserved:true,captionFooterCrops:photos.filter(p=>p.processing?.crop).map(p=>p.id)});
    if(lang==='uk')await page.screenshot({path:path.join(audit,`media-${tag}-${lang}-${slug}-desktop.png`),fullPage:true});
   }

@@ -1,0 +1,19 @@
+# Authorized parish materials — 2 November 2026
+
+This change integrates the published visual system from `7ae5a559f91240619ad17a2fe2f1424eaa046e90` with the owner’s subsequent content requests.
+
+Four newly supplied Desktop photographs are distinct from the numbered 26-photo chronicle catalogue. Their originals remain in the ignored private-materials directory with SHA256 identities recorded in `content/photos.json`. The owner explicitly confirmed reproduction rights, depicted-person consents, and publication of the complete certificate, including the official signature and seal. Public WebP copies use conventional brightness 1.065 and contrast 1.02, EXIF orientation normalization and mild sharpening; there is no generative processing or crop. Matching card frames use `object-fit: contain`.
+
+Two source-backed stories appear as separate anchored articles on the bilingual social ministry page: preparing food for Ukrainian defenders and receiving appreciation from the 33rd Separate Mechanized Brigade. Neither dates, delivery routes, recipient locations, portion counts nor a link between this food batch and that brigade are inferred. Two photographs join the existing central carousel; the remaining two are available within the stories and gallery.
+
+The certificate has no visible issue date. Only the specifically reviewed `brigade-appreciation` record may use `issued_on: null` with an explicit absent-date status and review note. Issuer, publication permission, privacy review and file validation remain mandatory. The PDF embeds the exact EXIF-oriented original photograph; a brighter WebP is used for the preview. No signature, seal or text is redrawn.
+
+The owner expressly confirmed electronic reproduction rights and pastoral/community-leadership approval for the supplied liturgical text. `/uk/divine-liturgy/` and its English-navigation counterpart are separate from catechesis. The rite follows `Літургія укр.pdf`, from the opening blessing to dismissal, with separate eight-tone and daily-variable sections. Source speakers and rubrics receive distinct presentation; font size and reading mode work without storing personal data. The Ukrainian text is explicitly not represented as an English translation or a certified 2024 edition.
+
+Six owner-requested lexical updates are recorded with the original wording and source page in `content/divine-liturgy.json`. Modern forms were checked against UGCC sources. The preparation prayer containing “скарбнице благ” was transcribed and visually checked against page 9 of the second PDF supplied by the owner; its distinct origin is stated. No missing prayer was composed from memory. The unchanged main source PDF remains available for comparison.
+
+The children’s catechism offers six bilingual topic cards linking to the corresponding materials listed by Clara Studio. YOUCAT is clearly attributed as an external resource. Its PDFs are not rehosted. The exact owner-requested Bible URL remains `https://ugcc.ua/library/bible/`.
+
+The existing 26-photo catalogue and every permission state remain unchanged. Photographs 8 and 20 remain excluded; 15 chronicle originals and their 70 WebP copies remain private. The missing scene remains missing. The owner-supplied regional map, bank details and church coordinates are preserved. Maps open immediately with attribution and accurate disclosure of external tile-provider data transfers.
+
+Validation includes production build, internal links and fragments, 19 Ukrainian plus 19 English routes, browser and accessibility checks, unchanged-original and derivative hashes, exact certificate-image pixels, metadata exclusion, single-carousel controls, immediate maps, bank-detail copying, and 120 full-page before/after screenshot pairs across six requested widths. Final deployment, measured performance and backup evidence are recorded in the external release report after publication.

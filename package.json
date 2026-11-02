@@ -27,9 +27,11 @@
     "test:mission": "node scripts/mission-qa.mjs",
     "test:hero-buildings": "node scripts/hero-buildings-qa.mjs",
     "test:restructure": "node scripts/restructure-qa.mjs",
-    "test:mission-carousel": "node scripts/visual-polish-qa.mjs",
+    "test:mission-carousel": "node scripts/mission-carousel-qa.mjs",
     "test:visual-polish": "node scripts/visual-polish-qa.mjs",
-    "test:owner-additions": "node scripts/owner-additions-integrity.mjs"
+    "test:owner-additions": "node scripts/owner-additions-integrity.mjs",
+    "audit:visual": "node scripts/visual-audit.mjs",
+    "test:owner-additions-ui": "node scripts/owner-additions-qa.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

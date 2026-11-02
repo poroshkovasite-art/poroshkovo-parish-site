@@ -39,8 +39,14 @@
     "location_note": "Owner-confirmed physical location of the church. These coordinates replace the earlier pin; no legal address or village-centre approximation is used.",
     "map_tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     "administrative_address": {
-      "uk": "вул. Центральна, 94",
-      "en": "94 Tsentralna Street"
+      "uk": "с. Порошково, вул. Центральна, 94",
+      "en": "94 Tsentralna Street, Poroshkovo"
+    },
+    "administrative_address_verification": {
+      "status": "owner_confirmed",
+      "confirmed_on": "2026-11-02",
+      "source": "Owner final audit instructions: legal address belongs to the administrative building, not the church pin.",
+      "coordinates": null
     },
     "administrative_address_verification_status": "owner_confirmed",
     "administrative_address_source": "Explicit owner clarification in final visual audit request, 2026-11-02; administrative house only, not the church map pin"
