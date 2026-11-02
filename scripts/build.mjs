@@ -24,6 +24,10 @@ for(const [year,groups] of Object.entries(calendar.years))for(const [tab,group] 
  for(const event of group.events){if(!confirmed(event)||!parseDate(event.date)||!parseDate(event.end_date||event.date)||(event.end_date||event.date)<event.date||!event.title.uk||!event.title.en)throw Error('Invalid or unverified calendar record: '+event.id);if(Number(event.date.slice(0,4))!==Number(year))throw Error('Calendar date in wrong year');}
 }
 const iconVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'assets/favicon.ico'))).digest('hex').slice(0,12);
+const readingAssetVersions=['portal.css','owner-additions.css','liturgy-book.css','liturgy-reader.js'].map(name=>{
+ const asset='/assets/'+name,bytes=fs.readFileSync(path.join(root,'assets',name),'utf8').replaceAll('\r\n','\n');
+ return [asset,createHash('sha256').update(bytes).digest('hex').slice(0,12)];
+});
 function iconLinks(lang){return `<link rel="icon" href="/favicon.ico?v=${iconVersion}" sizes="16x16 32x32 48x48"><link rel="icon" href="/assets/favicon-32x32.png?v=${iconVersion}" type="image/png" sizes="32x32"><link rel="icon" href="/assets/favicon-16x16.png?v=${iconVersion}" type="image/png" sizes="16x16"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=${iconVersion}" sizes="180x180"><link rel="manifest" href="/${lang}/site.webmanifest?v=${iconVersion}">`;}
 const production=process.argv.includes('--production');
 const editor=process.argv.includes('--editor');
@@ -74,7 +78,7 @@ for(const p of photoCatalog.photos){
  }
 }
 for(const record of S.models.documents.records)if(approvedDocument(record,root)){fs.mkdirSync(path.join(out,'documents'),{recursive:true});fs.copyFileSync(path.join(root,'approved-documents',path.basename(record.public_file)),path.join(out,record.public_file));}
-const write=(f,s)=>{const dest=path.join(out,f);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,s);};
+const write=(f,s)=>{const dest=path.join(out,f);fs.mkdirSync(path.dirname(dest),{recursive:true});if(f.endsWith('.html'))for(const [asset,version] of readingAssetVersions)s=s.replaceAll(`"${asset}"`,`"${asset}?v=${version}"`);fs.writeFileSync(dest,s);};
 function timeline(lang) {const t=ui[lang],cats=lang==='uk'?{all:'Усі теми',village:'Історія села',church:'Історія Церкви',parish:'Історія парафії'}:{all:'All themes',village:'Village history',church:'Church history',parish:'Parish history'};return `<section class="timeline-section"><div class="section-top"><h2>${t.history}</h2><p class="timeline-count" aria-live="polite"><span data-timeline-count>${history.length}</span> ${t.results}</p></div><div class="filters timeline-categories" role="group" aria-label="${lang==='uk'?'Теми історії':'History themes'}">${Object.entries(cats).map(([id,label])=>`<button data-history-category="${id}" aria-pressed="${id==='all'}">${label}</button>`).join('')}</div><div class="filters" role="group" aria-label="${t.timeline}">${[['all',t.all],['roots',t.roots],['renewal',t.renewal],['church',t.church],['home',t.house]].map(([v,label])=>`<button data-era="${v}" aria-pressed="${v==='all'}">${label}</button>`).join('')}</div><ol class="timeline">${history.map(h=>`<li data-timeline-item data-era-item="${h.era}" data-history-topic="${h.category}"><time${h.datetime?` datetime="${h.datetime}"`:''}>${esc(lang==='en'?(h.date_en||h.date):h.date)}</time><div><span class="timeline-category">${cats[h.category]}</span><p>${esc(h[lang])}</p><a class="source-link" href="${esc(h.source_url)}">${t.source} ↗</a></div></li>`).join('')}</ol><p class="source-note">${t.timelineNote}</p>${C.source('eparchy',lang)}</section>`;}
 const HomeLayout=createHomeLayout({C,P,Chronicle,mission:read('community-mission'),photos:allPhotos,support:read('support'),carousel:read('home-carousel'),editor});
 const home=lang=>HomeLayout.Home(lang);
