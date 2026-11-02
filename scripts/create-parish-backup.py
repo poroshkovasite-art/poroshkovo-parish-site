@@ -49,6 +49,10 @@ shutil.copytree(root/'private-materials/parish-chronicle',source/'private-materi
 shutil.copytree(root/'private-materials/administrative-building',source/'private-materials/administrative-building',dirs_exist_ok=True)
 shutil.copytree(root/'private-materials/administrative-building',stage/'PHOTOS/ADMINISTRATIVE_BUILDING_ORIGINAL',dirs_exist_ok=True)
 shutil.copytree(root/'private-materials/parish-chronicle',stage/'PHOTOS/CHRONICLE_PRIVATE',dirs_exist_ok=True)
+word_reference=root/'private-materials/liturgy-reference'
+if word_reference.exists():
+    shutil.copytree(word_reference,source/'private-materials/liturgy-reference',dirs_exist_ok=True)
+    shutil.copytree(word_reference,stage/'DOCUMENTATION/PRIVATE_LITURGY_REFERENCE',dirs_exist_ok=True)
 shutil.copytree(root/'dist',stage/'READY_TO_PUBLISH')
 shutil.copytree(root/'dist-editor',stage/'EDITORIAL_PREVIEW_PRIVATE')
 for evidence in (root.parent/'audit').iterdir():
@@ -56,6 +60,8 @@ for evidence in (root.parent/'audit').iterdir():
         (stage/'AUDIT').mkdir(exist_ok=True);shutil.copy2(evidence,stage/'AUDIT'/evidence.name)
     elif evidence.is_dir() and evidence.name=='visual-polish':
         shutil.copytree(evidence,stage/'AUDIT/visual-polish',dirs_exist_ok=True,ignore=shutil.ignore_patterns('after-candidate-*','baseline-site','baseline-source.zip'))
+reading_audit=root/'audit/liturgy-word'
+if reading_audit.exists():shutil.copytree(reading_audit,stage/'AUDIT/liturgy-word',dirs_exist_ok=True)
 shutil.copy2(args.report or root/'PARISH_PHOTO_GALLERY_REPORT.md',stage/'FINAL_REPORT.md')
 shutil.copy2(root/'PARISH_PHOTO_MAPPING.csv',stage/'PARISH_PHOTO_MAPPING.csv')
 shutil.copy2(root/'START_SITE.cmd',stage/'SOURCE_CODE/START_SITE.cmd')

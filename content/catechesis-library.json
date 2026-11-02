@@ -1,0 +1,36 @@
+{
+  "resources": [
+    {
+      "id": "compendium",
+      "icon": "book-cross",
+      "title": {
+        "uk": "Компендіум Катехизму Католицької Церкви",
+        "en": "Compendium of the Catechism of the Catholic Church"
+      },
+      "description": {
+        "uk": "Компендіум Катехизму Католицької Церкви — стислий і доступний виклад основ католицької віри у формі 598 запитань і відповідей. Книга допомагає пізнавати християнське віровчення, Святі Таїнства, Божі заповіді та молитовне життя.",
+        "en": "The Compendium of the Catechism of the Catholic Church is a concise, accessible presentation of the foundations of the Catholic faith in 598 questions and answers. It helps readers explore Christian teaching, the sacraments, God’s commandments and prayer. The book itself is available in Ukrainian."
+      },
+      "url": "https://ugcc.od.ua/wp-content/uploads/2024/11/Compendium.pdf",
+      "button": {"uk": "Читати Компендіум", "en": "Read the Compendium"},
+      "language": "uk",
+      "format": "PDF",
+      "hosting": "external_only",
+      "verified_on": "2026-11-02"
+    },
+    {
+      "id": "youcat-youth",
+      "icon": "book",
+      "title": {"uk": "YOUCAT для молоді", "en": "YOUCAT for young people"},
+      "description": {
+        "uk": "Катехизм Католицької Церкви для молоді у формі запитань і відповідей. Знайомтеся з українським виданням на сторінці Видавництва Святого Павла.",
+        "en": "The youth catechism presents the Catholic faith through questions and answers. Discover the Ukrainian edition on the Saint Paul publishing house’s website."
+      },
+      "url": "https://sviatyipavlo.com/youcat-ukrayinskoyu-katehyzm-dlya-molodi/",
+      "button": {"uk": "Про молодіжний YOUCAT", "en": "Explore YOUCAT for young people"},
+      "language": "uk",
+      "hosting": "external_only",
+      "verified_on": "2026-11-02"
+    }
+  ]
+}

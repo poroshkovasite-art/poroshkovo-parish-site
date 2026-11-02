@@ -17,7 +17,7 @@ const C=createComponents({site:read('site'),pages:read('pages'),ui:read('ui'),so
 for(const slug of sectionSlugs.filter(s=>!['documents','first-visit','social-ministry','support'].includes(s))){assert.equal(S.visible(slug),false,slug);assert.ok(!fs.existsSync(path.join(root,'dist','uk',slug,'index.html')));assert.ok(fs.existsSync(path.join(root,'dist-editor','uk',slug,'index.html')));}
 assert.equal(S.visible('social-ministry'),true);
 assert.ok(fs.existsSync(path.join(root,'dist','uk/social-ministry/index.html')));
-assert.deepEqual(fs.readdirSync(path.join(root,'dist','documents')).sort(),['bank-account-certificate.pdf','brigade-appreciation.pdf','parish-divine-liturgy-source.pdf','pastor-appointment-decree.pdf']);assert.ok(!fs.existsSync(path.join(root,'dist','content')));assert.ok(!fs.existsSync(path.join(root,'dist','approved-documents')));
+assert.deepEqual(fs.readdirSync(path.join(root,'dist','documents')).sort(),['bank-account-certificate.pdf','brigade-appreciation.pdf','pastor-appointment-decree.pdf']);assert.ok(!fs.existsSync(path.join(root,'dist','content')));assert.ok(!fs.existsSync(path.join(root,'dist','approved-documents')));
 for(const p of read('photos').filter(p=>p.contains_children&&p.publication_status==='approved'))assert.equal(p.consents_confirmed,true);
 const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE}:{})});
 const widths=[320,360,375,390,430,768,1024,1440,1920],errors=[],checks=[];

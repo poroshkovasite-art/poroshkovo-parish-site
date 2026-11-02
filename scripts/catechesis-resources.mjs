@@ -1,0 +1,7 @@
+import {esc} from './components.mjs';
+const icon=kind=>`<svg class="line-icon catechesis-book-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11C14 7 8 7 4 9v24c5-2 10-1 16 2 6-3 11-4 16-2V9c-4-2-10-2-16 2Zm0 0v24"/>${kind==='book-cross'?'<path d="M12 13v12m-4-8h8m9-2 7-1m-7 7 7-1"/>':'<path d="m8 15 7 1m-7 6 7 1m10-7 7-1m-7 8 7-1"/>'}</svg>`;
+export function renderCatechesisBooks(model,kids,language){
+ const uk=language==='uk';
+ const books=[...model.resources,{id:'youcat-kids',icon:'book',title:kids.title,description:kids.description,url:kids.url,button:{uk:'Матеріали Clara Studio',en:'Explore Clara Studio materials'},language:'uk'}];
+ return `<h2 id="catechesis-books-title">${uk?'Катехитичні книги':'Catechetical books'}</h2><div class="resource-grid catechesis-books">${books.map(book=>`<article class="resource-card catechesis-book" id="${esc(book.id)}" aria-labelledby="${esc(book.id)}-title">${icon(book.icon)}<h3 id="${esc(book.id)}-title">${esc(book.title[language])}</h3><p>${esc(book.description[language])}</p><a class="button" href="${esc(book.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(book.button[language])} · ${uk?'українською, нова вкладка':'in Ukrainian, opens in a new tab'}">${esc(book.button[language])}<span aria-hidden="true"> ↗</span></a></article>`).join('')}</div>`;
+}

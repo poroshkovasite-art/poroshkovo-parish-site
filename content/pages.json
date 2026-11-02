@@ -215,12 +215,12 @@
   },
   "catechesis": {
     "title": {
-      "uk": "Катехизм для дітей — пізнаємо Бога разом",
-      "en": "Catechism for children — discovering God together"
+      "uk": "Катехизація — пізнаємо віру",
+      "en": "Catechesis — exploring the faith"
     },
     "description": {
-      "uk": "Для дітей, батьків і катехитів: теми віри, творчі завдання та зовнішні матеріали YOUCAT для дітей від Clara Studio.",
-      "en": "For children, parents and catechists: faith topics, creative activities and external YOUCAT for Kids materials from Clara Studio."
+      "uk": "Компендіум Катехизму Католицької Церкви, YOUCAT для молоді та окремі матеріали YOUCAT для дітей, батьків і катехитів.",
+      "en": "The Compendium of the Catechism of the Catholic Church, YOUCAT for young people and separate YOUCAT for Kids resources for families and catechists."
     },
     "intro": {
       "uk": "Катехизація допомагає пізнавати християнську віру й ставити важливі запитання. Для дітей та молоді особливо цінні довіра, живе спілкування й підтримка родини.",
@@ -528,8 +528,8 @@
       "en": "Divine Liturgy"
     },
     "description": {
-      "uk": "Божественна Літургія святого Івана Золотоустого: текст українською, навігація, вісім гласів і повсякденні піснеспіви.",
-      "en": "The Divine Liturgy of Saint John Chrysostom: Ukrainian text, reading controls, eight tones and daily hymns."
+      "uk": "Божественна Літургія святого Івана Золотоустого: повний чин, молитви та відпусти українською, зручне читання і друк.",
+      "en": "The Divine Liturgy of Saint John Chrysostom: the complete rite, prayers and dismissals in Ukrainian, with reading controls and printing."
     },
     "intro": {
       "uk": "Молімося разом: Слово, подяка та Євхаристія.",

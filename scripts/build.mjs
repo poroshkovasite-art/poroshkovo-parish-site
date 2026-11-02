@@ -44,7 +44,7 @@ pages.support.published=site.donations.verification_status==='confirmed'&&Boolea
 for(const slug of ['news','gallery','support'])if(pages[slug].published&&(!pages[slug].description||!pages[slug].intro))throw Error(`Complete bilingual metadata and intro for ${slug} before enabling it.`);
 validateContent({site,pages,photos:allPhotos,news,schedule});
 const C=createComponents({site,pages,ui,sources,photos:allPhotos,people,schedule,brand,editor});
-const Additions=createOwnerAdditions({C,photos:allPhotos,stories:read('defender-stories'),catechism:read('children-catechism'),liturgy:read('divine-liturgy')});
+const Additions=createOwnerAdditions({C,photos:allPhotos,stories:read('defender-stories'),catechism:read('children-catechism'),readingResources:read('catechesis-library'),liturgy:read('divine-liturgy')});
 const Chronicle=createChronicle({C,photos:allPhotos,mission:read('community-mission'),carousel:read('home-carousel'),editor});
 C.Gallery=Chronicle.Gallery;
 const Mission=createMission({model:read('community-mission'),C,photos:allPhotos,editor});
@@ -57,7 +57,7 @@ fs.mkdirSync(out,{recursive:true});
 // Delete stale generated files only inside the verified project output directory.
 for(const entry of fs.readdirSync(out))fs.rmSync(path.join(out,entry),{recursive:true,force:true});
 fs.cpSync(path.join(root,'public'),out,{recursive:true,filter:src=>path.basename(src)!=='.gitkeep'});
-fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true,filter:src=>!/-captioned-\d+\.webp$/.test(src)&&!photoCatalog.photos.some(p=>!photoApproved(p)&&path.basename(src).startsWith(p.id+'-'))});
+fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true,filter:src=>path.relative(path.join(root,'assets'),src).split(path.sep)[0]!=='liturgy-source'&&!/-captioned-\d+\.webp$/.test(src)&&!photoCatalog.photos.some(p=>!photoApproved(p)&&path.basename(src).startsWith(p.id+'-'))});
 // Pending images never enter public assets, even if accidentally left in assets/photos.
 for(const p of photoCatalog.photos){
  for(const width of p.widths){
@@ -73,7 +73,6 @@ for(const p of photoCatalog.photos){
   }else if(!fs.existsSync(dest))throw Error('Approved photo must be promoted into versioned assets: '+filename);
  }
 }
-if(read('divine-liturgy').rights_confirmed&&read('divine-liturgy').pastor_approval_confirmed){fs.mkdirSync(path.join(out,'documents'),{recursive:true});fs.copyFileSync(path.join(root,'approved-documents/parish-divine-liturgy-source.pdf'),path.join(out,'documents/parish-divine-liturgy-source.pdf'));}
 for(const record of S.models.documents.records)if(approvedDocument(record,root)){fs.mkdirSync(path.join(out,'documents'),{recursive:true});fs.copyFileSync(path.join(root,'approved-documents',path.basename(record.public_file)),path.join(out,record.public_file));}
 const write=(f,s)=>{const dest=path.join(out,f);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,s);};
 function timeline(lang) {const t=ui[lang],cats=lang==='uk'?{all:'Усі теми',village:'Історія села',church:'Історія Церкви',parish:'Історія парафії'}:{all:'All themes',village:'Village history',church:'Church history',parish:'Parish history'};return `<section class="timeline-section"><div class="section-top"><h2>${t.history}</h2><p class="timeline-count" aria-live="polite"><span data-timeline-count>${history.length}</span> ${t.results}</p></div><div class="filters timeline-categories" role="group" aria-label="${lang==='uk'?'Теми історії':'History themes'}">${Object.entries(cats).map(([id,label])=>`<button data-history-category="${id}" aria-pressed="${id==='all'}">${label}</button>`).join('')}</div><div class="filters" role="group" aria-label="${t.timeline}">${[['all',t.all],['roots',t.roots],['renewal',t.renewal],['church',t.church],['home',t.house]].map(([v,label])=>`<button data-era="${v}" aria-pressed="${v==='all'}">${label}</button>`).join('')}</div><ol class="timeline">${history.map(h=>`<li data-timeline-item data-era-item="${h.era}" data-history-topic="${h.category}"><time${h.datetime?` datetime="${h.datetime}"`:''}>${esc(lang==='en'?(h.date_en||h.date):h.date)}</time><div><span class="timeline-category">${cats[h.category]}</span><p>${esc(h[lang])}</p><a class="source-link" href="${esc(h.source_url)}">${t.source} ↗</a></div></li>`).join('')}</ol><p class="source-note">${t.timelineNote}</p>${C.source('eparchy',lang)}</section>`;}
@@ -81,7 +80,7 @@ const HomeLayout=createHomeLayout({C,P,Chronicle,mission:read('community-mission
 const home=lang=>HomeLayout.Home(lang);
 function content(lang,slug) {
  if(slug==='home')return home(lang);
- if(slug==='divine-liturgy')return C.PageHeading(lang,slug)+Additions.Liturgy(lang);
+ if(slug==='divine-liturgy')return Additions.Liturgy(lang);
  if(slug==='catechesis')return C.PageHeading(lang,slug)+Additions.Catechism(lang)+`<section class="section wrap">${C.Blocks(lang,slug)}</section>`;
  if(slug==='community-impact')return C.PageHeading(lang,slug)+Mission.Impact(lang);
  if(sectionSlugs.includes(slug))return C.PageHeading(lang,slug)+(slug==='social-ministry'?Mission.Social(lang):'')+S.render(slug,lang)+(slug==='social-ministry'?Additions.DefenderStories(lang)+Chronicle.Social(lang):'');
