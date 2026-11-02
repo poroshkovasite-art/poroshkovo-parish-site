@@ -15,7 +15,7 @@ export function photoTheme(p) {
 }
 // Owner excluded these two child-work scenes on 2 November 2026.
 // Keep the original catalogue and permission statuses intact, including in editor preview.
-export const excludedPhotoIds = new Set(['chronicle-young-parish-helpers','chronicle-church-grounds-cleanup']);
+export const excludedPhotoIds = new Set(['chronicle-summer-camp-friendship','chronicle-church-grounds-cleanup']);
 export const photoExcluded = p => excludedPhotoIds.has(p.id);
 export function photoApproved(p) {
  return !photoExcluded(p) && p.publication_status==='approved' && p.rights_confirmed===true &&

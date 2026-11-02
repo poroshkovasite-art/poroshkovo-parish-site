@@ -11,7 +11,7 @@ import {approvedDocument} from './publication.mjs';
 import {createChronicle} from './chronicle.mjs';
 import {createMission} from './community-mission.mjs';
 import {createHomeLayout} from './home-layout.mjs';
-import {photoApproved,validatePhotoCatalog} from './parish-photos.mjs';
+import {photoApproved,photoExcluded,validatePhotoCatalog} from './parish-photos.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=f=>JSON.parse(fs.readFileSync(path.join(root,'content',f+'.json'),'utf8'));
 const site=read('site'),pages=read('pages'),ui=read('ui'),sources=read('sources'),photos=read('photos'),people=read('people'),schedule=read('schedule'),news=read('news'),history=read('history');
@@ -60,7 +60,7 @@ for(const p of photoCatalog.photos){
   const filename=`${p.id}-${width}.webp`,dest=path.join(out,'assets/photos',filename);
   if(!photoApproved(p)){
    if(fs.existsSync(dest))fs.rmSync(dest);
-   if(editor&&!['chronicle-young-parish-helpers','chronicle-church-grounds-cleanup'].includes(p.id)){const staged=path.join(root,'private-materials/parish-chronicle/web',filename);if(fs.existsSync(staged))fs.copyFileSync(staged,dest);else throw Error('Missing local private photo: '+filename);}
+   if(editor&&!photoExcluded(p)){const staged=path.join(root,'private-materials/parish-chronicle/web',filename);if(fs.existsSync(staged))fs.copyFileSync(staged,dest);else throw Error('Missing local private photo: '+filename);}
   }else if(!fs.existsSync(dest))throw Error('Approved photo must be promoted into versioned assets: '+filename);
  }
 }

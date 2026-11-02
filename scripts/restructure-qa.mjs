@@ -11,7 +11,10 @@ const read=n=>JSON.parse(fs.readFileSync(path.join(root,'content',n+'.json'))),m
 assert.deepEqual(social.ministry_directions,mission.ministry_directions);assert.equal(mission.ministry_directions.length,7);
 for(const p of catalog.photos){assert.equal(p.publication_status,'pending_approval');assert.equal(photoApproved(p),false);}
 assert.equal(catalog.missing[0].status,'missing');
-for(const id of ['chronicle-young-parish-helpers','chronicle-church-grounds-cleanup'])assert.ok(photoExcluded({id}));
+for(const id of ['chronicle-summer-camp-friendship','chronicle-church-grounds-cleanup']){
+ assert.ok(photoExcluded({id}));
+ assert.equal(photoApproved({...catalog.photos.find(p=>p.id===id),publication_status:'approved',rights_confirmed:true,consents_confirmed:true}),false,'Owner exclusion overrides later general approvals');
+}
 const report={status:'RUNNING',base,checkedAt:new Date().toISOString(),layouts:[],maps:[],accessibility:[],errors:[],googleRequests:[],fallback:null};
 const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 try{
