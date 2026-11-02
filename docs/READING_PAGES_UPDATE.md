@@ -10,4 +10,6 @@ Validation: production build and structural checks passed for 38 bilingual route
 
 Reproduction: build production, serve it on port 4186, then run `node scripts/liturgy-book-qa.mjs`. `BOOK_BASE_URL` can point at a deployed site. The source importer accepts the owner's DOCX and `--scan-source` pointing to the original pre-Word JSON; it refuses to compare the Word edition against itself. The Word source is retained in the private working archive and backup, outside the public build.
 
+Old public scan-image and scan-PDF URLs redirect to the continuous reading page. This also addresses Cloudflare's retention of previously cached assets after a deployment. The files remain in the source archive.
+
 Publication verification and the exact commit/deployment identifiers are recorded in the local release report after deployment. A fresh backup preserves the previous original collections, current source, archived scans, private Word reference, Git history and production output; it verifies a rebuild and archive hashes.
