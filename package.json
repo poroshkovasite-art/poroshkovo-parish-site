@@ -22,7 +22,10 @@
     "test:localization": "node scripts/localization-qa.mjs",
     "test:owner-materials": "node scripts/owner-materials-qa.mjs",
     "test:home-update": "node scripts/home-update-qa.mjs",
-    "test:seo": "python scripts/seo-audit.py"
+    "test:seo": "python scripts/seo-audit.py",
+    "test:chronicle": "node scripts/chronicle-qa.mjs",
+    "test:mission": "node scripts/mission-qa.mjs",
+    "test:hero-buildings": "node scripts/hero-buildings-qa.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",

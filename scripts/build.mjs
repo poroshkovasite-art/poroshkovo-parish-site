@@ -8,6 +8,9 @@ import {createPortal} from './portal.mjs';
 import {parseDate,confirmed} from '../assets/calendar-core.js';
 import {createSections,sectionSlugs} from './sections.mjs';
 import {approvedDocument} from './publication.mjs';
+import {createChronicle} from './chronicle.mjs';
+import {createMission} from './community-mission.mjs';
+import {photoApproved,validatePhotoCatalog} from './parish-photos.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=f=>JSON.parse(fs.readFileSync(path.join(root,'content',f+'.json'),'utf8'));
 const site=read('site'),pages=read('pages'),ui=read('ui'),sources=read('sources'),photos=read('photos'),people=read('people'),schedule=read('schedule'),news=read('news'),history=read('history');
@@ -22,6 +25,9 @@ const iconVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'as
 function iconLinks(lang){return `<link rel="icon" href="/favicon.ico?v=${iconVersion}" sizes="16x16 32x32 48x48"><link rel="icon" href="/assets/favicon-32x32.png?v=${iconVersion}" type="image/png" sizes="32x32"><link rel="icon" href="/assets/favicon-16x16.png?v=${iconVersion}" type="image/png" sizes="16x16"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=${iconVersion}" sizes="180x180"><link rel="manifest" href="/${lang}/site.webmanifest?v=${iconVersion}">`;}
 const production=process.argv.includes('--production');
 const editor=process.argv.includes('--editor');
+const photoCatalog=read('parish-photo-catalog');
+validatePhotoCatalog(photoCatalog);
+const allPhotos=[...photos,...photoCatalog.photos];
 if(editor&&production)throw Error('Editor preview cannot be a production build.');
 if(production&&(!site.production_url||!site.publication_approved))throw Error('Production requires a confirmed independent production_url and publication_approved=true.');
 const base=site.production_url||'http://localhost:4173';
@@ -32,8 +38,11 @@ pages.news.published=approvedNews.length>0;
 pages.gallery.published=photos.some(p=>p.publication_status==='approved'&&p.rights_confirmed);
 pages.support.published=site.donations.verification_status==='confirmed'&&Boolean(site.donations.iban);
 for(const slug of ['news','gallery','support'])if(pages[slug].published&&(!pages[slug].description||!pages[slug].intro))throw Error(`Complete bilingual metadata and intro for ${slug} before enabling it.`);
-validateContent({site,pages,photos,news,schedule});
-const C=createComponents({site,pages,ui,sources,photos,people,schedule,brand});
+validateContent({site,pages,photos:allPhotos,news,schedule});
+const C=createComponents({site,pages,ui,sources,photos:allPhotos,people,schedule,brand,editor});
+const Chronicle=createChronicle({C,photos:allPhotos,mission:read('community-mission'),editor});
+C.Gallery=Chronicle.Gallery;
+const Mission=createMission({model:read('community-mission'),C,photos:allPhotos,editor});
 const P=createPortal({C,site,photos,calendar,resources:read('resources'),stories:read('history-stories'),historicalMap:read('historical-map')});
 const S=createSections({models:Object.fromEntries(sectionSlugs.map(s=>[s,read(s)])),C,root,identity:read('parish-identity'),editor});
 for(const slug of sectionSlugs)pages[slug].published=editor||S.visible(slug);
@@ -43,14 +52,25 @@ fs.mkdirSync(out,{recursive:true});
 // Delete stale generated files only inside the verified project output directory.
 for(const entry of fs.readdirSync(out))fs.rmSync(path.join(out,entry),{recursive:true,force:true});
 fs.cpSync(path.join(root,'public'),out,{recursive:true,filter:src=>path.basename(src)!=='.gitkeep'});
-fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true,filter:src=>!/-captioned-\d+\.webp$/.test(src)});
+fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true,filter:src=>!/-captioned-\d+\.webp$/.test(src)&&!photoCatalog.photos.some(p=>!photoApproved(p)&&path.basename(src).startsWith(p.id+'-'))});
+// Pending images never enter public assets, even if accidentally left in assets/photos.
+for(const p of photoCatalog.photos){
+ for(const width of p.widths){
+  const filename=`${p.id}-${width}.webp`,dest=path.join(out,'assets/photos',filename);
+  if(!photoApproved(p)){
+   if(fs.existsSync(dest))fs.rmSync(dest);
+   if(editor){const staged=path.join(root,'private-materials/parish-chronicle/web',filename);if(fs.existsSync(staged))fs.copyFileSync(staged,dest);else throw Error('Missing local private photo: '+filename);}
+  }else if(!fs.existsSync(dest))throw Error('Approved photo must be promoted into versioned assets: '+filename);
+ }
+}
 for(const record of S.models.documents.records)if(approvedDocument(record,root)){fs.mkdirSync(path.join(out,'documents'),{recursive:true});fs.copyFileSync(path.join(root,'approved-documents',path.basename(record.public_file)),path.join(out,record.public_file));}
 const write=(f,s)=>{const dest=path.join(out,f);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,s);};
 function timeline(lang) {const t=ui[lang],cats=lang==='uk'?{all:'Усі теми',village:'Історія села',church:'Історія Церкви',parish:'Історія парафії'}:{all:'All themes',village:'Village history',church:'Church history',parish:'Parish history'};return `<section class="timeline-section"><div class="section-top"><h2>${t.history}</h2><p class="timeline-count" aria-live="polite"><span data-timeline-count>${history.length}</span> ${t.results}</p></div><div class="filters timeline-categories" role="group" aria-label="${lang==='uk'?'Теми історії':'History themes'}">${Object.entries(cats).map(([id,label])=>`<button data-history-category="${id}" aria-pressed="${id==='all'}">${label}</button>`).join('')}</div><div class="filters" role="group" aria-label="${t.timeline}">${[['all',t.all],['roots',t.roots],['renewal',t.renewal],['church',t.church],['home',t.house]].map(([v,label])=>`<button data-era="${v}" aria-pressed="${v==='all'}">${label}</button>`).join('')}</div><ol class="timeline">${history.map(h=>`<li data-timeline-item data-era-item="${h.era}" data-history-topic="${h.category}"><time${h.datetime?` datetime="${h.datetime}"`:''}>${esc(lang==='en'?(h.date_en||h.date):h.date)}</time><div><span class="timeline-category">${cats[h.category]}</span><p>${esc(h[lang])}</p><a class="source-link" href="${esc(h.source_url)}">${t.source} ↗</a></div></li>`).join('')}</ol><p class="source-note">${t.timelineNote}</p>${C.source('eparchy',lang)}</section>`;}
-function home(lang) {return C.Hero(lang)+`<section class="section wrap home-schedule">${C.CompactSchedule(lang)}</section>`+C.PastorProfile(lang,{home:true})+S.AppointmentFeature(lang,{home:true})+P.HistoryTeaser(lang)+P.LiturgyPreview(lang)+sectionSlugs.filter(s=>!['documents','first-visit','social-ministry','support'].includes(s)&&S.visible(s)).map(s=>`<section class="section wrap">${S.teaser(s,lang)}</section>`).join('')+S.FeatureCarousel(lang)+P.HomePhotos(lang)+P.MiniCalendar(lang)+P.SpiritualPreview(lang)+P.CommunityPreview(lang)+C.Carousel(lang)+P.GalleryPreview(lang)+P.ResourcePreview(lang)+P.Visit(lang)+C.Map(lang,{home:true});}
+function home(lang) {return C.Hero(lang)+Mission.Home(lang)+Chronicle.Carousel(lang)+`<section class="section wrap home-schedule">${C.CompactSchedule(lang)}</section>`+C.PastorProfile(lang,{home:true})+S.AppointmentFeature(lang,{home:true})+P.HistoryTeaser(lang)+P.LiturgyPreview(lang)+sectionSlugs.filter(s=>!['documents','first-visit','social-ministry','support'].includes(s)&&S.visible(s)).map(s=>`<section class="section wrap">${S.teaser(s,lang)}</section>`).join('')+S.FeatureCarousel(lang)+P.HomePhotos(lang)+P.MiniCalendar(lang)+P.SpiritualPreview(lang)+P.CommunityPreview(lang)+C.Carousel(lang)+P.ResourcePreview(lang)+P.Visit(lang)+C.Map(lang,{home:true});}
 function content(lang,slug) {
  if(slug==='home')return home(lang);
- if(sectionSlugs.includes(slug))return C.PageHeading(lang,slug)+S.render(slug,lang);
+ if(slug==='community-impact')return C.PageHeading(lang,slug)+Mission.Impact(lang);
+ if(sectionSlugs.includes(slug))return C.PageHeading(lang,slug)+(slug==='social-ministry'?Mission.Social(lang):'')+S.render(slug,lang)+(slug==='social-ministry'?Chronicle.Social(lang):'');
  if(slug==='calendar')return C.PageHeading(lang,slug)+P.Calendar(lang);
  if(slug==='resources')return C.PageHeading(lang,slug)+`<section class="section wrap">${P.Resources(lang)}<p class="source-note">${lang==='uk'?'Посилання перевірено 29.10.2026. Зовнішні сайти відкриваються в новій вкладці та мають власні правила приватності.':'Links checked on 29 October 2026. External websites open in a new tab and have their own privacy policies.'}</p></section>`;
  if(slug==='privacy')return `<section class="page-heading wrap narrow"><h1>${ui[lang].privacy}</h1><p>${ui[lang].privacyText}</p></section>`;
@@ -62,7 +82,7 @@ function shell(lang,slug,body,article=null) {
  const t=ui[lang],other=lang==='uk'?'en':'uk',p=pages[slug]||{},title=(slug==='404'?t.notFound:article?.title[lang]||p.title?.[lang]||t.privacy)+' | '+t.shortName+' · '+(lang==='uk'?'Порошково':'Poroshkovo'),description=slug==='404'?t.notFound:article?.summary[lang]||p.description?.[lang]||t.privacyText;
  const route=url(lang,article?'news/'+article.slug:slug), counterpart=url(other,article?'news/'+article.slug:slug);
  const noindex=!production||slug==='404';
- return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#713f46"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="robots" content="${noindex?'noindex, nofollow':'index, follow'}"><link rel="canonical" href="${base}${route}"><link rel="alternate" hreflang="uk" href="${base}${lang==='uk'?route:counterpart}"><link rel="alternate" hreflang="en" href="${base}${lang==='en'?route:counterpart}"><link rel="alternate" hreflang="x-default" href="${base}${lang==='uk'?route:counterpart}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="${article?'article':'website'}"><meta property="og:url" content="${base}${route}"><meta property="og:locale" content="${lang==='uk'?'uk_UA':'en_GB'}"><meta property="og:site_name" content="${esc(site.name[lang])}"><meta property="og:image" content="${base}/assets/og-card-${lang}.png"><meta property="og:image:alt" content="${esc(site.name[lang])}"><meta name="twitter:card" content="summary_large_image">${verificationMeta}${["home","contacts"].includes(slug)?`<script type="application/ld+json">${churchSchemas[lang]}</script>`:""}${iconLinks(lang)}<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/portal.css">${slug==='home'?'<link rel="stylesheet" href="/assets/home-features.css"><script defer src="/assets/home-features.js"></script>':''}<script defer src="/assets/app.js"></script>${["home","calendar"].includes(slug)?'<script type="module" src="/assets/calendar.js"></script>':''}</head><body id="top">${!production?`<div class="preview-label">${t.localPreview}</div>`:''}${C.Header(lang,slug)}<main id="main">${body}</main>${C.Footer(lang,slug)}${C.Lightbox(lang)}</body></html>`;
+ return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#713f46"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="robots" content="${noindex?'noindex, nofollow':'index, follow'}"><link rel="canonical" href="${base}${route}"><link rel="alternate" hreflang="uk" href="${base}${lang==='uk'?route:counterpart}"><link rel="alternate" hreflang="en" href="${base}${lang==='en'?route:counterpart}"><link rel="alternate" hreflang="x-default" href="${base}${lang==='uk'?route:counterpart}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="${article?'article':'website'}"><meta property="og:url" content="${base}${route}"><meta property="og:locale" content="${lang==='uk'?'uk_UA':'en_GB'}"><meta property="og:site_name" content="${esc(site.name[lang])}"><meta property="og:image" content="${base}/assets/og-card-${lang}.png"><meta property="og:image:alt" content="${esc(site.name[lang])}"><meta name="twitter:card" content="summary_large_image">${verificationMeta}${["home","contacts"].includes(slug)?`<script type="application/ld+json">${churchSchemas[lang]}</script>`:""}${iconLinks(lang)}<link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/portal.css"><link rel="stylesheet" href="/assets/chronicle.css"><link rel="stylesheet" href="/assets/community-mission.css"><link rel="stylesheet" href="/assets/hero-buildings.css"><script defer src="/assets/chronicle.js"></script>${slug==='home'?'<link rel="stylesheet" href="/assets/home-features.css"><script defer src="/assets/home-features.js"></script>':''}<script defer src="/assets/app.js"></script>${["home","calendar"].includes(slug)?'<script type="module" src="/assets/calendar.js"></script>':''}</head><body id="top">${!production?`<div class="preview-label">${t.localPreview}</div>`:''}${C.Header(lang,slug)}<main id="main">${body}</main>${C.Footer(lang,slug)}${C.Lightbox(lang)}</body></html>`;
 }
 const routes=[];
 for(const lang of ['uk','en']) {

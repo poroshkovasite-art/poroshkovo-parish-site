@@ -1,0 +1,2637 @@
+{
+  "version": 1,
+  "source": "Owner file-to-scene catalogue supplied on 2026-11-02",
+  "photos": [
+    {
+      "id": "chronicle-youth-olympiad",
+      "original_file": "1.jpeg",
+      "catalog_title_uk": "Молодь парафії на олімпіаді в Ужгороді",
+      "title": {
+        "uk": "Молодь парафії на олімпіаді в Ужгороді",
+        "en": "Parish youth at an olympiad in Uzhhorod"
+      },
+      "caption": {
+        "uk": "Молодь парафії на олімпіаді в Ужгороді",
+        "en": "Parish youth at an olympiad in Uzhhorod"
+      },
+      "caption_overlay": {
+        "uk": "Молодь парафії на олімпіаді в Ужгороді",
+        "en": "Parish youth at an olympiad in Uzhhorod"
+      },
+      "description": {
+        "uk": "Підтримуємо прагнення молоді до розвитку, знань та нових досягнень.",
+        "en": "We support young people in learning, growing and pursuing new achievements."
+      },
+      "alt": {
+        "uk": "Група молоді зі священником біля сучасної будівлі.",
+        "en": "Young people and a priest standing outside a modern building."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": true,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Група молоді зі священником біля сучасної будівлі.",
+        "en": "Young people and a priest standing outside a modern building."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "7ded3a13a7a6bf438408f333b0aa70ac409bc8d13456e00dcdf592684e1c26c2",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-youth-olympiad-480.webp",
+          "bytes": 30748,
+          "sha256": "312070dd87777b2c8851a3e5847531a4d70e166176545a68eaf328c9a8b2e499"
+        },
+        {
+          "file": "chronicle-youth-olympiad-768.webp",
+          "bytes": 68794,
+          "sha256": "fddfd701f8a9af35dc91c79344831b596063b589bc707402152c6e96f704c3c7"
+        },
+        {
+          "file": "chronicle-youth-olympiad-960.webp",
+          "bytes": 98792,
+          "sha256": "95d1cc90e9fdc233c5eca360017d83d70caaaa7b0f0a1ed22c079b10c412b494"
+        },
+        {
+          "file": "chronicle-youth-olympiad-1280.webp",
+          "bytes": 155236,
+          "sha256": "ae985e71a80ff2eb1e98571d788bcf0ecaffb8ae3608470b1165447dc3e9b2da"
+        },
+        {
+          "file": "chronicle-youth-olympiad-1600.webp",
+          "bytes": 211830,
+          "sha256": "8a8dc11eca2e4cfe0995e250b0c6ac36068e6181e57b48a2bc82b443f577bb64"
+        }
+      ],
+      "mission_direction": "active-youth"
+    },
+    {
+      "id": "chronicle-icon-painting-school",
+      "original_file": "2.jpeg",
+      "catalog_title_uk": "Завершення школи іконопису та освячення ікон",
+      "title": {
+        "uk": "Завершення школи іконопису та освячення ікон",
+        "en": "Completion of the icon-painting school and blessing of icons"
+      },
+      "caption": {
+        "uk": "Завершення школи іконопису та освячення ікон",
+        "en": "Completion of the icon-painting school and blessing of icons"
+      },
+      "caption_overlay": {
+        "uk": "Завершення школи іконопису та освячення ікон",
+        "en": "Completion of the icon-painting school and blessing of icons"
+      },
+      "description": {
+        "uk": "Через мистецтво іконопису діти відкривають красу християнської віри.",
+        "en": "Through icon painting, children discover the beauty of the Christian faith."
+      },
+      "alt": {
+        "uk": "Учасники школи іконопису тримають написані ікони в храмі.",
+        "en": "Icon-painting school participants holding their icons inside the church."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Учасники школи іконопису тримають написані ікони в храмі.",
+        "en": "Icon-painting school participants holding their icons inside the church."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "2f6759c3ac178381b6626b354a9d39f48fdcd21bbfc24d2e87dddb272ce4fa8c",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-icon-painting-school-480.webp",
+          "bytes": 46908,
+          "sha256": "731aaf83db24d1d92fcc2070eac27268d5061978db1eae11a747f5a1b42e77e6"
+        },
+        {
+          "file": "chronicle-icon-painting-school-768.webp",
+          "bytes": 99070,
+          "sha256": "5e739d84fbc924aeec127293c7da11e6d3a37924293d99fdf78ebdb52558cc6c"
+        },
+        {
+          "file": "chronicle-icon-painting-school-960.webp",
+          "bytes": 139282,
+          "sha256": "b14d5efa1166c643fce49f4b54f43b983f205bf3a5e37014ff2224898a27c6f8"
+        },
+        {
+          "file": "chronicle-icon-painting-school-1280.webp",
+          "bytes": 202874,
+          "sha256": "8ea62c664d1a389c360b7008f226e385e5f1bbfcdb04c9e35e68cf3dca7d0a18"
+        },
+        {
+          "file": "chronicle-icon-painting-school-1600.webp",
+          "bytes": 270680,
+          "sha256": "129525d53a176bc26891682c456e8de5b639b8a3de19e2ce1021558a4107a9da"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-transfiguration-first-fruits",
+      "original_file": "3.jpeg",
+      "catalog_title_uk": "Освячення первоплодів на свято Преображення Господнього",
+      "title": {
+        "uk": "Освячення первоплодів на свято Преображення Господнього",
+        "en": "Blessing of the first fruits on the Feast of the Transfiguration"
+      },
+      "caption": {
+        "uk": "Освячення первоплодів на свято Преображення Господнього",
+        "en": "Blessing of the first fruits on the Feast of the Transfiguration"
+      },
+      "caption_overlay": {
+        "uk": "Освячення первоплодів на свято Преображення Господнього",
+        "en": "Blessing of the first fruits on the Feast of the Transfiguration"
+      },
+      "description": {
+        "uk": "Дякуємо Богові за Його щедрі дари та благословення.",
+        "en": "We thank God for his generous gifts and blessings."
+      },
+      "alt": {
+        "uk": "Міністранти біля кошиків із плодами перед іконостасом.",
+        "en": "Altar servers beside baskets of fruit in front of the iconostasis."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": true,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Міністранти біля кошиків із плодами перед іконостасом.",
+        "en": "Altar servers beside baskets of fruit in front of the iconostasis."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "34fd09132e07ac4a5e0f8ef91d62b35c139cc9b9b7ab26beade096202763430c",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-transfiguration-first-fruits-480.webp",
+          "bytes": 53178,
+          "sha256": "73d8e094c0ff6250cbfdecbd17f28186c16a7c5f0abab0dd68c0d7414e79cf42"
+        },
+        {
+          "file": "chronicle-transfiguration-first-fruits-768.webp",
+          "bytes": 118188,
+          "sha256": "9e88c70c53eeb77682db05a7aecc8f4c67ca08565a79425b0fcc8927f6a7f196"
+        },
+        {
+          "file": "chronicle-transfiguration-first-fruits-960.webp",
+          "bytes": 166808,
+          "sha256": "21a41828a4dcda5e52e4d4a9a28c0ee638569dabb80a737c0f529c6f908dd06a"
+        },
+        {
+          "file": "chronicle-transfiguration-first-fruits-1280.webp",
+          "bytes": 252934,
+          "sha256": "c539ebe9cdbf30480c2fa2d88cc791a73c8d22dc6edb9b3098b73a485dd4b550"
+        },
+        {
+          "file": "chronicle-transfiguration-first-fruits-1600.webp",
+          "bytes": 327210,
+          "sha256": "20f37bbd627b2cf550be759fbbc17d76f7d5eb5b9bb4a6ed65f6aa6fba38479f"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-youth-bike-ride",
+      "original_file": "4.jpeg",
+      "catalog_title_uk": "Велопробіг із парафіяльною молоддю",
+      "title": {
+        "uk": "Велопробіг із парафіяльною молоддю",
+        "en": "Bicycle outing with parish youth"
+      },
+      "caption": {
+        "uk": "Велопробіг із парафіяльною молоддю",
+        "en": "Bicycle outing with parish youth"
+      },
+      "caption_overlay": {
+        "uk": "Велопробіг із парафіяльною молоддю",
+        "en": "Bicycle outing with parish youth"
+      },
+      "description": {
+        "uk": "Активний відпочинок, дружба та спільні пригоди нашої молоді.",
+        "en": "An active day of friendship and shared experiences for our young people."
+      },
+      "alt": {
+        "uk": "Молодь із велосипедами на вулиці.",
+        "en": "Young people with bicycles outdoors."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Молодь із велосипедами на вулиці.",
+        "en": "Young people with bicycles outdoors."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "eab825859504a326343bb059a576c125f162606dc5e79fb132f40673f843dcd7",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-youth-bike-ride-480.webp",
+          "bytes": 73880,
+          "sha256": "b8452222b785ca8bcad0a9a495b0ff97800c3c44ccb23904a6a5fb5ef9576356"
+        },
+        {
+          "file": "chronicle-youth-bike-ride-768.webp",
+          "bytes": 166726,
+          "sha256": "e093c154d1e34d71297e3aa382ef1182b43f3747d6e0e483efb16efa21c6ec01"
+        },
+        {
+          "file": "chronicle-youth-bike-ride-960.webp",
+          "bytes": 236954,
+          "sha256": "49d13dd6e17331ed4094c05ec9a04caa78f507f222884643414b944a3152dc9c"
+        },
+        {
+          "file": "chronicle-youth-bike-ride-1200.webp",
+          "bytes": 323442,
+          "sha256": "b1ee41082b50ec3a357f9d9837b07ba900acbe4618b11de6d1d493a6f0926ee8"
+        }
+      ],
+      "mission_direction": "active-youth"
+    },
+    {
+      "id": "chronicle-holy-baptism-garment",
+      "original_file": "5.jpeg",
+      "catalog_title_uk": "Таїнство Святого Хрещення",
+      "title": {
+        "uk": "Таїнство Святого Хрещення",
+        "en": "The Sacrament of Holy Baptism"
+      },
+      "caption": {
+        "uk": "Таїнство Святого Хрещення",
+        "en": "The Sacrament of Holy Baptism"
+      },
+      "caption_overlay": {
+        "uk": "Таїнство Святого Хрещення",
+        "en": "The Sacrament of Holy Baptism"
+      },
+      "description": {
+        "uk": "Таїнство Хрещення — початок нового життя у Христі.",
+        "en": "Baptism marks the beginning of a new life in Christ."
+      },
+      "alt": {
+        "uk": "Священник у ризах тримає біле крестильне одеяння в храмі.",
+        "en": "A vested priest holding a white baptismal garment inside the church."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": true,
+      "contains_children": false,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Священник у ризах тримає біле крестильне одеяння в храмі.",
+        "en": "A vested priest holding a white baptismal garment inside the church."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "e04bafe72f6d4c8bc1b1393a634eccdc35c43ed843f22a11934bb94878913283",
+      "width": 1366,
+      "height": 2048,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1366
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-holy-baptism-garment-480.webp",
+          "bytes": 38550,
+          "sha256": "b79272604927148658a570e7a62692f2563f9abc8a96deebdb6741ca72965ae2"
+        },
+        {
+          "file": "chronicle-holy-baptism-garment-768.webp",
+          "bytes": 69912,
+          "sha256": "055d4178987af3a4e136fc962fbadf20ad5eb2454aae25d3b39ba038c12bbd45"
+        },
+        {
+          "file": "chronicle-holy-baptism-garment-960.webp",
+          "bytes": 93570,
+          "sha256": "496057a0ceca5c93b74640522c5eeecc84e0e64d06151f767560d77e417f227e"
+        },
+        {
+          "file": "chronicle-holy-baptism-garment-1280.webp",
+          "bytes": 132476,
+          "sha256": "afb9440bf62ace6b1d73e142d3d1883ab01f1d7067227a098ce6b7a1180227ca"
+        },
+        {
+          "file": "chronicle-holy-baptism-garment-1366.webp",
+          "bytes": 139446,
+          "sha256": "2eb2b24b9db892169461d01ccf445305850d1218fa27d4f0e74f60e4344504a1"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-parish-summer-camp",
+      "original_file": "6.jpeg",
+      "catalog_title_uk": "Літній парафіяльний табір — 2026",
+      "title": {
+        "uk": "Літній парафіяльний табір",
+        "en": "Parish summer camp"
+      },
+      "caption": {
+        "uk": "Літній парафіяльний табір",
+        "en": "Parish summer camp"
+      },
+      "caption_overlay": {
+        "uk": "Літній парафіяльний табір",
+        "en": "Parish summer camp"
+      },
+      "description": {
+        "uk": "Дні радості, спільної молитви, дружби та незабутніх вражень.",
+        "en": "Days of joy, shared prayer, friendship and lasting memories."
+      },
+      "alt": {
+        "uk": "Велика група учасників табору в жовтих футболках біля парафіяльного будинку.",
+        "en": "A large group of camp participants in yellow T-shirts outside the parish building."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": true,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Велика група учасників табору в жовтих футболках біля парафіяльного будинку.",
+        "en": "A large group of camp participants in yellow T-shirts outside the parish building."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "62bc29be517b14712f564a6e3e0e55accdbae9cc51ccaabbe9d7b62269bc1770",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-parish-summer-camp-480.webp",
+          "bytes": 64858,
+          "sha256": "3f74540fdc4c98c2b8b557fae1d4a072974462fdd487795829d3a5d92e7ac525"
+        },
+        {
+          "file": "chronicle-parish-summer-camp-768.webp",
+          "bytes": 159080,
+          "sha256": "3d7f72966bf053353cb64469db28d093e522dc0e6078d52233395a432c05fa74"
+        },
+        {
+          "file": "chronicle-parish-summer-camp-960.webp",
+          "bytes": 233282,
+          "sha256": "1f1f1a2bc7acc8f294e9109fdae284739435f86a52a71aef04a479a97137235a"
+        },
+        {
+          "file": "chronicle-parish-summer-camp-1280.webp",
+          "bytes": 378430,
+          "sha256": "fdbcf96aebf81d4be6895b4f59e984ee7df6206a58e68a8de85de733d0a52743"
+        },
+        {
+          "file": "chronicle-parish-summer-camp-1600.webp",
+          "bytes": 466192,
+          "sha256": "f6a49bc86b657057cd9bb91107862e48e5f0563c462c8a23c99363c07324289a"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-children-creative-talents",
+      "original_file": "7.jpeg",
+      "catalog_title_uk": "Творчість та дитячі таланти",
+      "title": {
+        "uk": "Творчість та дитячі таланти",
+        "en": "Children's creativity and talents"
+      },
+      "caption": {
+        "uk": "Творчість та дитячі таланти",
+        "en": "Children's creativity and talents"
+      },
+      "caption_overlay": {
+        "uk": "Творчість та дитячі таланти",
+        "en": "Children's creativity and talents"
+      },
+      "description": {
+        "uk": "Кожна дитина має свої таланти, які ми допомагаємо розкривати.",
+        "en": "Every child has talents that we help them discover."
+      },
+      "alt": {
+        "uk": "Дитина показує малюнок на спині жовтої футболки.",
+        "en": "A child showing a drawing on the back of a yellow T-shirt."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Дитина показує малюнок на спині жовтої футболки.",
+        "en": "A child showing a drawing on the back of a yellow T-shirt."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "9d4cf053b9d7a36331dff934c972b42a478d0d77fe09ee639d7fc62ea562f5f4",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-children-creative-talents-480.webp",
+          "bytes": 29096,
+          "sha256": "8cddd82b1054123e353f5245cca2dfa602530ccb655abd56bd925c51d8827fc1"
+        },
+        {
+          "file": "chronicle-children-creative-talents-768.webp",
+          "bytes": 56286,
+          "sha256": "237234a30a25abdda0a911496d2b73be5594b6815401180c58b7b29334592083"
+        },
+        {
+          "file": "chronicle-children-creative-talents-960.webp",
+          "bytes": 76294,
+          "sha256": "6f480f6bfb171f4520b9dff661093ed4aaa0796334fe8d62102f6feb924f5801"
+        },
+        {
+          "file": "chronicle-children-creative-talents-1200.webp",
+          "bytes": 107068,
+          "sha256": "d630b3b949835e533df821724b50ada89ee772c91144bc2126c008a28a896154"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-summer-camp-friendship",
+      "original_file": "8.jpeg",
+      "catalog_title_uk": "Дружні миті літнього табору",
+      "title": {
+        "uk": "Дружні миті літнього табору",
+        "en": "Friendly moments at summer camp"
+      },
+      "caption": {
+        "uk": "Дружні миті літнього табору",
+        "en": "Friendly moments at summer camp"
+      },
+      "caption_overlay": {
+        "uk": "Дружні миті літнього табору",
+        "en": "Friendly moments at summer camp"
+      },
+      "description": {
+        "uk": "Веселі спогади та дружня атмосфера літнього табору.",
+        "en": "Happy memories and a friendly atmosphere at summer camp."
+      },
+      "alt": {
+        "uk": "Діти позують у відкритому багажному відділенні автомобіля, що стоїть.",
+        "en": "Children posing in the open luggage compartment of a parked car."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти позують у відкритому багажному відділенні автомобіля, що стоїть.",
+        "en": "Children posing in the open luggage compartment of a parked car."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "c1366999bb18b5d35f06606d95f1c24a50a377b6cc6cbb4097c0d2095771fc4b",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-summer-camp-friendship-480.webp",
+          "bytes": 49288,
+          "sha256": "caa2ab1fd35c76410c20da13c73c3c03fa104e7b5805bd3a11cf562325dd2b05"
+        },
+        {
+          "file": "chronicle-summer-camp-friendship-768.webp",
+          "bytes": 110968,
+          "sha256": "b21ffdd329a31725d66d45654e42c82063b3e980779e85bf167557bb0deb9751"
+        },
+        {
+          "file": "chronicle-summer-camp-friendship-960.webp",
+          "bytes": 158944,
+          "sha256": "8e34b4de8e686c345ad3132657b245e4b50e712717f7cbeaa5011d101346ebe8"
+        },
+        {
+          "file": "chronicle-summer-camp-friendship-1280.webp",
+          "bytes": 248222,
+          "sha256": "81348dd62508d8563db2ceb93434c1569873196cb501ec47925a357fa80deaa7"
+        },
+        {
+          "file": "chronicle-summer-camp-friendship-1600.webp",
+          "bytes": 322914,
+          "sha256": "e703926e939be814c484c721b24730754915297944afb308b912a69f915b44db"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-outdoor-creative-workshop",
+      "original_file": "9.jpeg",
+      "catalog_title_uk": "Творча майстерня просто неба",
+      "title": {
+        "uk": "Творча майстерня просто неба",
+        "en": "An outdoor creative workshop"
+      },
+      "caption": {
+        "uk": "Творча майстерня просто неба",
+        "en": "An outdoor creative workshop"
+      },
+      "caption_overlay": {
+        "uk": "Творча майстерня просто неба",
+        "en": "An outdoor creative workshop"
+      },
+      "description": {
+        "uk": "Літній табір дарує можливість творити, навчатися й дружити.",
+        "en": "Summer camp offers opportunities to create, learn and make friends."
+      },
+      "alt": {
+        "uk": "Діти й дорослі малюють на жовтих футболках за столом надворі.",
+        "en": "Children and adults painting yellow T-shirts at an outdoor table."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти й дорослі малюють на жовтих футболках за столом надворі.",
+        "en": "Children and adults painting yellow T-shirts at an outdoor table."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "962da4851fd181eea8f761577d9b9594ffcd2b5b65b782bd67edf86f22040a2b",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-outdoor-creative-workshop-480.webp",
+          "bytes": 81636,
+          "sha256": "f652f6c5fa0a34642e6be4f03fa00db71a80cd984b9a0e9ffef8a4ae62490a46"
+        },
+        {
+          "file": "chronicle-outdoor-creative-workshop-768.webp",
+          "bytes": 175896,
+          "sha256": "d2c6ce753c12158c49530eb890d23ce8ff163e287f56b711dd345fe625eba97b"
+        },
+        {
+          "file": "chronicle-outdoor-creative-workshop-960.webp",
+          "bytes": 242374,
+          "sha256": "d41e998595f34d5c2550589e5b4fef8ade8731ba684d7de5b4c23e603f9b2058"
+        },
+        {
+          "file": "chronicle-outdoor-creative-workshop-1200.webp",
+          "bytes": 317216,
+          "sha256": "a7560b5c9b2b81ceb190d78949819d8cc32706252fd0a6816344e38bca1aab7d"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-summer-camp-masterclass",
+      "original_file": "10.jpeg",
+      "catalog_title_uk": "Майстер-клас у літньому таборі",
+      "title": {
+        "uk": "Майстер-клас у літньому таборі",
+        "en": "A summer camp workshop"
+      },
+      "caption": {
+        "uk": "Майстер-клас у літньому таборі",
+        "en": "A summer camp workshop"
+      },
+      "caption_overlay": {
+        "uk": "Майстер-клас у літньому таборі",
+        "en": "A summer camp workshop"
+      },
+      "description": {
+        "uk": "Спільна творчість відкриває нові здібності та об’єднує дітей.",
+        "en": "Creating together helps children discover new skills and build friendships."
+      },
+      "alt": {
+        "uk": "Діти з дорослими працюють із тістом за великим столом у приміщенні.",
+        "en": "Children and adults working with dough around a large indoor table."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти з дорослими працюють із тістом за великим столом у приміщенні.",
+        "en": "Children and adults working with dough around a large indoor table."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "57ba68d601b558ba824d8f0c7961c84bcf3e00b6d6853adc136ded3bab75616e",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-summer-camp-masterclass-480.webp",
+          "bytes": 32790,
+          "sha256": "ef440d8b05da3f484ceb6735fdeba273c930ff085d728354b79ca57e714d98a0"
+        },
+        {
+          "file": "chronicle-summer-camp-masterclass-768.webp",
+          "bytes": 61942,
+          "sha256": "576a15893e65c2b129a769219b79301f1ab8c856b3a2c14fd5628c2cbee1ed6c"
+        },
+        {
+          "file": "chronicle-summer-camp-masterclass-960.webp",
+          "bytes": 79848,
+          "sha256": "f74a43e7b8cb75bc53d827d03740a7d60176ab3585f0de0f4b5be0663d329235"
+        },
+        {
+          "file": "chronicle-summer-camp-masterclass-1280.webp",
+          "bytes": 114802,
+          "sha256": "13d6c812d580e01239ec13e8f2a2d6b6e26a3491b84c3fc06589421caeb17dbb"
+        },
+        {
+          "file": "chronicle-summer-camp-masterclass-1600.webp",
+          "bytes": 147218,
+          "sha256": "69b702610c04238bc0c6b820629a6c97a8337563140c59d77546b302d199ca30"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-summer-camp-crafts",
+      "original_file": "11.jpeg",
+      "catalog_title_uk": "Творчі заняття літнього табору",
+      "title": {
+        "uk": "Творчі заняття літнього табору",
+        "en": "Creative activities at summer camp"
+      },
+      "caption": {
+        "uk": "Творчі заняття літнього табору",
+        "en": "Creative activities at summer camp"
+      },
+      "caption_overlay": {
+        "uk": "Творчі заняття літнього табору",
+        "en": "Creative activities at summer camp"
+      },
+      "description": {
+        "uk": "Розвиваємо таланти, творчість та радість спільного навчання.",
+        "en": "Developing talents and creativity through the joy of learning together."
+      },
+      "alt": {
+        "uk": "Дівчинка показує власноруч виготовлену роботу із серцем.",
+        "en": "A girl showing her handmade artwork with a heart."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Дівчинка показує власноруч виготовлену роботу із серцем.",
+        "en": "A girl showing her handmade artwork with a heart."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "1d986b315436fe4926aa1035f8e619d2a5ecb81c6ae8f2595113ff8c9ac86426",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-summer-camp-crafts-480.webp",
+          "bytes": 63764,
+          "sha256": "91cfb85046c277edb321b9f0a2267039d2ca339d8c9417fe87b43848c5e5e89e"
+        },
+        {
+          "file": "chronicle-summer-camp-crafts-768.webp",
+          "bytes": 129438,
+          "sha256": "5f5aec81bb19fecf0f0621db1d198b8ed3bc16a7d87c608a0d80901b84de76bf"
+        },
+        {
+          "file": "chronicle-summer-camp-crafts-960.webp",
+          "bytes": 175200,
+          "sha256": "2128ef897d8afe5a5bb8f2bc858046e39752ed69e65dbccf2be3ffb645f03bb5"
+        },
+        {
+          "file": "chronicle-summer-camp-crafts-1200.webp",
+          "bytes": 228522,
+          "sha256": "4008f05ae8e481fdfac11cb57f43f9f8d4722211a8f65713d86b73fd4370fcf0"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-children-group-picnic",
+      "original_file": "12.jpeg",
+      "catalog_title_uk": "Пікнік із дітьми середньої групи",
+      "title": {
+        "uk": "Пікнік із дітьми середньої групи",
+        "en": "A picnic with the middle children's group"
+      },
+      "caption": {
+        "uk": "Пікнік із дітьми середньої групи",
+        "en": "A picnic with the middle children's group"
+      },
+      "caption_overlay": {
+        "uk": "Пікнік із дітьми середньої групи",
+        "en": "A picnic with the middle children's group"
+      },
+      "description": {
+        "uk": "Дружба, спілкування та незабутні миті разом.",
+        "en": "Friendship, conversation and memorable moments together."
+      },
+      "alt": {
+        "uk": "Діти й дорослі зібралися на пікнік на траві.",
+        "en": "Children and adults sharing a picnic on the grass."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти й дорослі зібралися на пікнік на траві.",
+        "en": "Children and adults sharing a picnic on the grass."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "cfab787b0a7404820bfc8eaf0830d6fb753fc4198c11e7f567911956d3123f7a",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-children-group-picnic-480.webp",
+          "bytes": 56938,
+          "sha256": "dfa27021fe003b68cae5899beb82baa59eaa321a5a12f21b5e0a8dd9f2c6c09b"
+        },
+        {
+          "file": "chronicle-children-group-picnic-768.webp",
+          "bytes": 139226,
+          "sha256": "4728564a6fe674b538333bfd2065da9f8fda4374fcbdd3c266a82292289addf4"
+        },
+        {
+          "file": "chronicle-children-group-picnic-960.webp",
+          "bytes": 211220,
+          "sha256": "4ebf4546baac3e434b1443e319667bdb3cc2b90b09470ca1d1f90b31521ca7c3"
+        },
+        {
+          "file": "chronicle-children-group-picnic-1280.webp",
+          "bytes": 345802,
+          "sha256": "303859bc6e3a7877f1815386d1db9051d6461219712067bb08ae83742aa4b13f"
+        },
+        {
+          "file": "chronicle-children-group-picnic-1600.webp",
+          "bytes": 484086,
+          "sha256": "1b29c4d5cc7f528e36a7c3a0d1b1a5f9bbb5d6e74add37c86e74dba03f624c61"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-pentecost-parish",
+      "original_file": "13.jpeg",
+      "catalog_title_uk": "Зелені свята у нашій парафії",
+      "title": {
+        "uk": "Зелені свята у нашій парафії",
+        "en": "Pentecost in our parish"
+      },
+      "caption": {
+        "uk": "Зелені свята у нашій парафії",
+        "en": "Pentecost in our parish"
+      },
+      "caption_overlay": {
+        "uk": "Зелені свята у нашій парафії",
+        "en": "Pentecost in our parish"
+      },
+      "description": {
+        "uk": "Спільна молитва та святкування у парафіяльній спільноті.",
+        "en": "Shared prayer and celebration in our parish community."
+      },
+      "alt": {
+        "uk": "Духовенство, міністранти та парафіяни під час богослужіння біля храму.",
+        "en": "Clergy, altar servers and parishioners during a service outside the church."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Духовенство, міністранти та парафіяни під час богослужіння біля храму.",
+        "en": "Clergy, altar servers and parishioners during a service outside the church."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "9ca64ad3c78e3d81153be36ed2ea75c257f1577e5917dc5dbffb677e50874c4b",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-pentecost-parish-480.webp",
+          "bytes": 100412,
+          "sha256": "44efdceca4aeb9a8ac719928ba92de03ca4e0fc106526af1cca288b57535ed70"
+        },
+        {
+          "file": "chronicle-pentecost-parish-768.webp",
+          "bytes": 236868,
+          "sha256": "14d1d7b3fb425a2552a6f8dbdbb718e743013f5ec3a58e3fffe6adbbbcdf5ad6"
+        },
+        {
+          "file": "chronicle-pentecost-parish-960.webp",
+          "bytes": 337376,
+          "sha256": "c07c2bea3b8916a3302ecc93c65dd1e49f0574ce7503e4d1e6107f0af7092424"
+        },
+        {
+          "file": "chronicle-pentecost-parish-1200.webp",
+          "bytes": 428978,
+          "sha256": "5848037db965af47d8b83e43b86e70d49e19343db49d37f3711eadc3be5bc978"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-catechesis-table-tennis",
+      "original_file": "14.jpeg",
+      "catalog_title_uk": "Катехизація та дружнє спілкування",
+      "title": {
+        "uk": "Катехизація та дружнє спілкування",
+        "en": "Catechesis and time with friends"
+      },
+      "caption": {
+        "uk": "Катехизація та дружнє спілкування",
+        "en": "Catechesis and time with friends"
+      },
+      "caption_overlay": {
+        "uk": "Катехизація та дружнє спілкування",
+        "en": "Catechesis and time with friends"
+      },
+      "description": {
+        "uk": "Парафія — це також місце дружби, розвитку та спільного дозвілля.",
+        "en": "The parish is also a place for friendship, growth and shared recreation."
+      },
+      "alt": {
+        "uk": "Діти з ракетками біля столу для настільного тенісу.",
+        "en": "Children with paddles beside a table-tennis table."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти з ракетками біля столу для настільного тенісу.",
+        "en": "Children with paddles beside a table-tennis table."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "05938e54836c95668878d4203d98d5d701e65ee1baca17cbb01f5bcb764a0a0b",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-catechesis-table-tennis-480.webp",
+          "bytes": 23576,
+          "sha256": "1f1b8d0ea9e18a8da216be97c5f4af31374d887bbb18be485821285ac43f1de5"
+        },
+        {
+          "file": "chronicle-catechesis-table-tennis-768.webp",
+          "bytes": 46830,
+          "sha256": "458c50b59b2b1b7c6fa0c6b4dc9c945b4a429ebfeb10860ebeb78107b6961567"
+        },
+        {
+          "file": "chronicle-catechesis-table-tennis-960.webp",
+          "bytes": 62614,
+          "sha256": "8c8681952df7fc125b95513c40d4d13161607b9d5681541b4ebab8df6d8c5442"
+        },
+        {
+          "file": "chronicle-catechesis-table-tennis-1280.webp",
+          "bytes": 93334,
+          "sha256": "a9e2eec85777dcae700816dec8c7fe5ca35725293ca4e76019aae446f4f0eefd"
+        },
+        {
+          "file": "chronicle-catechesis-table-tennis-1600.webp",
+          "bytes": 123668,
+          "sha256": "1d49092cdf0dfcf5e8d88a2f41c3925879e581e7a1f24cd5c4fbb6056be779df"
+        }
+      ],
+      "mission_direction": "children-development"
+    },
+    {
+      "id": "chronicle-easter-altar-servers",
+      "original_file": "15.jpeg",
+      "catalog_title_uk": "Великоднє служіння міністрантів — 2026",
+      "title": {
+        "uk": "Великоднє служіння міністрантів",
+        "en": "Altar servers at Easter"
+      },
+      "caption": {
+        "uk": "Великоднє служіння міністрантів",
+        "en": "Altar servers at Easter"
+      },
+      "caption_overlay": {
+        "uk": "Великоднє служіння міністрантів",
+        "en": "Altar servers at Easter"
+      },
+      "description": {
+        "uk": "Наші юні помічники беруть активну участь у богослужіннях.",
+        "en": "Our young helpers take an active part in parish worship."
+      },
+      "alt": {
+        "uk": "Міністранти у літургійних облаченнях зі священником перед іконостасом.",
+        "en": "Altar servers in liturgical vestments with a priest before the iconostasis."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Міністранти у літургійних облаченнях зі священником перед іконостасом.",
+        "en": "Altar servers in liturgical vestments with a priest before the iconostasis."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "526a068d8b246089a69e8cc21b8ea5715a4ab277eebc5f26fa59a9a8ec0e937b",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-easter-altar-servers-480.webp",
+          "bytes": 51162,
+          "sha256": "cde8321c275d4d1974ffcc655a02247f3facbabfbaefc85c2d8e41d20e9b1229"
+        },
+        {
+          "file": "chronicle-easter-altar-servers-768.webp",
+          "bytes": 108210,
+          "sha256": "df7a040c6580eafbdfe184c8e2e81edf3e4029da0dd3439276c26c0febbf42fc"
+        },
+        {
+          "file": "chronicle-easter-altar-servers-960.webp",
+          "bytes": 151890,
+          "sha256": "9761643a157c1925c04111256a26564eab75480e6a85ebd0d45da0e997076a92"
+        },
+        {
+          "file": "chronicle-easter-altar-servers-1280.webp",
+          "bytes": 223342,
+          "sha256": "23cce6520a757f260504846394f2a18cb6d711cc271be259d783fa1b58c94b01"
+        },
+        {
+          "file": "chronicle-easter-altar-servers-1600.webp",
+          "bytes": 293340,
+          "sha256": "a2884aa59ce00e580eab55cff2cd7d9eb1b89c042f1c26b14c198cf33cf9c61d"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-easter-celebration",
+      "original_file": "16.jpeg",
+      "catalog_title_uk": "Святкування Пасхи Христової — 2026",
+      "title": {
+        "uk": "Святкування Пасхи Христової",
+        "en": "Celebrating the Resurrection of Christ"
+      },
+      "caption": {
+        "uk": "Святкування Пасхи Христової",
+        "en": "Celebrating the Resurrection of Christ"
+      },
+      "caption_overlay": {
+        "uk": "Святкування Пасхи Христової",
+        "en": "Celebrating the Resurrection of Christ"
+      },
+      "description": {
+        "uk": "Світле Христове Воскресіння об’єднує нашу парафіяльну родину.",
+        "en": "The joy of Christ's Resurrection brings our parish family together."
+      },
+      "alt": {
+        "uk": "Священник і парафіяни біля храму з великодніми кошиками.",
+        "en": "A priest and parishioners outside the church with Easter baskets."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Священник і парафіяни біля храму з великодніми кошиками.",
+        "en": "A priest and parishioners outside the church with Easter baskets."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "371a629279d814324a9040d11dc6bcc2031775cdf30657258a12e90071283525",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-easter-celebration-480.webp",
+          "bytes": 53360,
+          "sha256": "1ffe4d4901da7430b48393c597065947cf8ddccad069a81b33b4584b662d865b"
+        },
+        {
+          "file": "chronicle-easter-celebration-768.webp",
+          "bytes": 127810,
+          "sha256": "56fe93dd81664cb9155b0ccc82258def021709b22506483a56fc5e703bb0356f"
+        },
+        {
+          "file": "chronicle-easter-celebration-960.webp",
+          "bytes": 194330,
+          "sha256": "b4ce15835dd8b5e6cd488335f23dd459fceb16e0735fb3d3f45d65e8c7d25950"
+        },
+        {
+          "file": "chronicle-easter-celebration-1280.webp",
+          "bytes": 328322,
+          "sha256": "9e7ebf9577c27b07087b25c2e2348a8b177a86502db5ce2acc12ca5111e27cd5"
+        },
+        {
+          "file": "chronicle-easter-celebration-1600.webp",
+          "bytes": 434512,
+          "sha256": "86404ba829afe3d6ee73e0278cb7660a7b92f053796f341007675dac807608e6"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-families-support",
+      "original_file": "17.jpeg",
+      "catalog_title_uk": "Допомога потребуючим родинам",
+      "title": {
+        "uk": "Допомога потребуючим родинам",
+        "en": "Support for families in need"
+      },
+      "caption": {
+        "uk": "Допомога потребуючим родинам",
+        "en": "Support for families in need"
+      },
+      "caption_overlay": {
+        "uk": "Допомога потребуючим родинам",
+        "en": "Support for families in need"
+      },
+      "description": {
+        "uk": "Діла милосердя починаються з уваги до конкретної людини.",
+        "en": "Acts of mercy begin with care for each person."
+      },
+      "alt": {
+        "uk": "Священник і літня жінка біля столу з продуктами.",
+        "en": "A priest and an older woman beside a table with food."
+      },
+      "theme": "social-ministry",
+      "category": "social-ministry",
+      "placements": [
+        "gallery",
+        "social-ministry"
+      ],
+      "home_featured": true,
+      "contains_children": false,
+      "contains_aid_recipients": true,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Священник і літня жінка біля столу з продуктами.",
+        "en": "A priest and an older woman beside a table with food."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "17044dd3008417d4f28ad56815f1ed396d9060a00343142af4d46828b88ac974",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-families-support-480.webp",
+          "bytes": 39432,
+          "sha256": "d49fdc98f2142b5093e76d3af95fa962d4e8534a536d420f483feed685f76516"
+        },
+        {
+          "file": "chronicle-families-support-768.webp",
+          "bytes": 78042,
+          "sha256": "05a4b48345b42030826707137ecf0a6b193ae93d36b438be03818e4889d2a528"
+        },
+        {
+          "file": "chronicle-families-support-960.webp",
+          "bytes": 105028,
+          "sha256": "01dbceccc03d3c307a77962075582988a8a5e22afdcc7be710048ff0ac2d09b2"
+        },
+        {
+          "file": "chronicle-families-support-1200.webp",
+          "bytes": 140300,
+          "sha256": "ac2f901768e75ffec377d1c4391fc905d57f781c6a603958dd5791a56896226c"
+        }
+      ],
+      "mission_direction": "solidarity"
+    },
+    {
+      "id": "chronicle-young-parish-helpers",
+      "original_file": "18.jpeg",
+      "catalog_title_uk": "Юні помічники нашої парафії",
+      "title": {
+        "uk": "Юні помічники нашої парафії",
+        "en": "Our young parish helpers"
+      },
+      "caption": {
+        "uk": "Юні помічники нашої парафії",
+        "en": "Our young parish helpers"
+      },
+      "caption_overlay": {
+        "uk": "Юні помічники нашої парафії",
+        "en": "Our young parish helpers"
+      },
+      "description": {
+        "uk": "Навчаємося відповідальності та спільної праці від молодих років.",
+        "en": "Learning responsibility and how to work together from a young age."
+      },
+      "alt": {
+        "uk": "Троє юних помічників несуть деревину на подвір’ї храму.",
+        "en": "Three young helpers carrying wood in the church courtyard."
+      },
+      "theme": "parish-development",
+      "category": "parish-development",
+      "placements": [
+        "gallery",
+        "parish-development"
+      ],
+      "home_featured": true,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Троє юних помічників несуть деревину на подвір’ї храму.",
+        "en": "Three young helpers carrying wood in the church courtyard."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "42e523f9250cab61bac589a043530ce1d53f239ceaa48189820c8681677edd7b",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-young-parish-helpers-480.webp",
+          "bytes": 48816,
+          "sha256": "4ecd9e0296233c5dd0e37dcdfbdd093cb2dc4797c692c8d61c89a142bfba4767"
+        },
+        {
+          "file": "chronicle-young-parish-helpers-768.webp",
+          "bytes": 120006,
+          "sha256": "b81cd4ccbf667043563bd89e76b7abf79f7f57f0abbe06a86a884cc1f62fb1a0"
+        },
+        {
+          "file": "chronicle-young-parish-helpers-960.webp",
+          "bytes": 183062,
+          "sha256": "38eb72b9db7a30be334ab112790afdce871a348a748ec228ce4de1bc26f47e4d"
+        },
+        {
+          "file": "chronicle-young-parish-helpers-1280.webp",
+          "bytes": 304166,
+          "sha256": "7195f55f38baf3ad97abeb52312c06fe48e3c13c3fbe1a0fa2c64eef42feefd1"
+        },
+        {
+          "file": "chronicle-young-parish-helpers-1600.webp",
+          "bytes": 428134,
+          "sha256": "538f22fc3080d8e3789bb0ebd1fff4ab60bf475a6679b4264d17ba500bee4437"
+        }
+      ],
+      "mission_direction": "active-youth"
+    },
+    {
+      "id": "chronicle-entrance-ramp-preparation",
+      "original_file": "19.jpeg",
+      "catalog_title_uk": "Підготовка до облаштування пандуса",
+      "title": {
+        "uk": "Підготовка до облаштування пандуса",
+        "en": "Preparing for an access ramp"
+      },
+      "caption": {
+        "uk": "Підготовка до облаштування пандуса",
+        "en": "Preparing for an access ramp"
+      },
+      "caption_overlay": {
+        "uk": "Підготовка до облаштування пандуса",
+        "en": "Preparing for an access ramp"
+      },
+      "description": {
+        "uk": "Працюємо над тим, щоб наш храм ставав доступнішим для кожної людини.",
+        "en": "Working to make our church more accessible to everyone."
+      },
+      "alt": {
+        "uk": "Роботи з тачкою та будівельними матеріалами біля входу до храму.",
+        "en": "Work with a wheelbarrow and building materials near the church entrance."
+      },
+      "theme": "parish-development",
+      "category": "parish-development",
+      "placements": [
+        "gallery",
+        "parish-development"
+      ],
+      "home_featured": true,
+      "contains_children": false,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Роботи з тачкою та будівельними матеріалами біля входу до храму.",
+        "en": "Work with a wheelbarrow and building materials near the church entrance."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "de71c615c801265d794eaa95b14575073dd444cf66576f51fdca0a2b9aaf3837",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-entrance-ramp-preparation-480.webp",
+          "bytes": 102912,
+          "sha256": "7f3652c669aeaf6b0c30be4d41cb459db5012db71145d246385680e7c15e72ac"
+        },
+        {
+          "file": "chronicle-entrance-ramp-preparation-768.webp",
+          "bytes": 256174,
+          "sha256": "36c8aeacf84893f263e502837119e42412de30f2c44bd4a8e9af59dffdd64d02"
+        },
+        {
+          "file": "chronicle-entrance-ramp-preparation-960.webp",
+          "bytes": 385194,
+          "sha256": "4fcca7be3f9de84a320fb8fc1ace1778b61007bca5227969749a1143db89376b"
+        },
+        {
+          "file": "chronicle-entrance-ramp-preparation-1200.webp",
+          "bytes": 551520,
+          "sha256": "3aa5a90169c63e495af855326e3cb26726947c698ed25ecc8b71704d2cb68708"
+        }
+      ],
+      "mission_direction": "solidarity"
+    },
+    {
+      "id": "chronicle-church-grounds-cleanup",
+      "original_file": "20.jpeg",
+      "catalog_title_uk": "Спільне прибирання території храму",
+      "title": {
+        "uk": "Спільне прибирання території храму",
+        "en": "Cleaning the church grounds together"
+      },
+      "caption": {
+        "uk": "Спільне прибирання території храму",
+        "en": "Cleaning the church grounds together"
+      },
+      "caption_overlay": {
+        "uk": "Спільне прибирання території храму",
+        "en": "Cleaning the church grounds together"
+      },
+      "description": {
+        "uk": "Разом працюємо, щоб територія нашого храму була охайною та затишною.",
+        "en": "Working together to keep our church grounds tidy and welcoming."
+      },
+      "alt": {
+        "uk": "Дві учасниці з тачкою та садовим інвентарем біля храму.",
+        "en": "Two participants with a wheelbarrow and gardening tools beside the church."
+      },
+      "theme": "parish-development",
+      "category": "parish-development",
+      "placements": [
+        "gallery",
+        "parish-development"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Дві учасниці з тачкою та садовим інвентарем біля храму.",
+        "en": "Two participants with a wheelbarrow and gardening tools beside the church."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "2037d608af6486fddadcb112d20f7dfea5dfcf41b2796d24f197e04b27288644",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-church-grounds-cleanup-480.webp",
+          "bytes": 106668,
+          "sha256": "6e0fac92e2995b2df9c0251fb428b5b0e139aa2c6306dfdf953624c4251cf2f0"
+        },
+        {
+          "file": "chronicle-church-grounds-cleanup-768.webp",
+          "bytes": 281848,
+          "sha256": "12c546a414eca587fff04f44a6593eb11830e0990ee37c65221b727693693b8b"
+        },
+        {
+          "file": "chronicle-church-grounds-cleanup-960.webp",
+          "bytes": 424306,
+          "sha256": "4d77a1491b721f5241c1b997f31ff48cb021d3ac58ffb13d437155321b8bff69"
+        },
+        {
+          "file": "chronicle-church-grounds-cleanup-1200.webp",
+          "bytes": 601778,
+          "sha256": "1f36e5da410dc532f6e605beca38e22dd0ccc82f4bc0798f7446d66bd5c15716"
+        }
+      ],
+      "mission_direction": "solidarity"
+    },
+    {
+      "id": "chronicle-youth-winter-recreation",
+      "original_file": "21.jpeg",
+      "catalog_title_uk": "Зимове дозвілля з молоддю",
+      "title": {
+        "uk": "Зимове дозвілля з молоддю",
+        "en": "Winter recreation with parish youth"
+      },
+      "caption": {
+        "uk": "Зимове дозвілля з молоддю",
+        "en": "Winter recreation with parish youth"
+      },
+      "caption_overlay": {
+        "uk": "Зимове дозвілля з молоддю",
+        "en": "Winter recreation with parish youth"
+      },
+      "description": {
+        "uk": "Спільний відпочинок зміцнює дружбу та єдність нашої молоді.",
+        "en": "Spending time together strengthens friendship among our young people."
+      },
+      "alt": {
+        "uk": "Група молоді на ковзанах на льодовій ковзанці.",
+        "en": "A group of young people wearing skates at an ice rink."
+      },
+      "theme": "children-youth",
+      "category": "children-youth",
+      "placements": [
+        "gallery",
+        "children-youth"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Група молоді на ковзанах на льодовій ковзанці.",
+        "en": "A group of young people wearing skates at an ice rink."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "c58560b06d133ab944a71151be70f53869b3a597720999fae9cea78fc1fe6627",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-youth-winter-recreation-480.webp",
+          "bytes": 26966,
+          "sha256": "78b5b357e2d51fafeb6b5c89296c0a03869ec69661c4475fd6aec49427ac5f9b"
+        },
+        {
+          "file": "chronicle-youth-winter-recreation-768.webp",
+          "bytes": 59370,
+          "sha256": "3e8b5c2f020626a11da84602d423ed5f859d7915c09143c3673e47d1fe55b15e"
+        },
+        {
+          "file": "chronicle-youth-winter-recreation-960.webp",
+          "bytes": 85698,
+          "sha256": "6dc5def36b46590582162ee66b67dc4b760091415d6b4f720d937a6837199197"
+        },
+        {
+          "file": "chronicle-youth-winter-recreation-1280.webp",
+          "bytes": 129442,
+          "sha256": "a5d62f6a06c74a24d246a6568ca476a7940b5e007f717facf8b921ef3509db08"
+        },
+        {
+          "file": "chronicle-youth-winter-recreation-1600.webp",
+          "bytes": 174600,
+          "sha256": "753b94d10e3260ad292b09e84c03df10905d39a8ded7ee47340530773d5024af"
+        }
+      ],
+      "mission_direction": "active-youth"
+    },
+    {
+      "id": "chronicle-baptism-with-family",
+      "original_file": "22.jpeg",
+      "catalog_title_uk": "Таїнство Хрещення у парафіяльній спільноті",
+      "title": {
+        "uk": "Таїнство Хрещення у парафіяльній спільноті",
+        "en": "Baptism in our parish community"
+      },
+      "caption": {
+        "uk": "Таїнство Хрещення у парафіяльній спільноті",
+        "en": "Baptism in our parish community"
+      },
+      "caption_overlay": {
+        "uk": "Таїнство Хрещення у парафіяльній спільноті",
+        "en": "Baptism in our parish community"
+      },
+      "description": {
+        "uk": "Радість нового життя у Христі та молитва парафіяльної спільноти.",
+        "en": "The joy of new life in Christ and the prayers of our parish community."
+      },
+      "alt": {
+        "uk": "Хрещення дитини в храмі у присутності сім’ї.",
+        "en": "A child's baptism inside the church with the family present."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Хрещення дитини в храмі у присутності сім’ї.",
+        "en": "A child's baptism inside the church with the family present."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "fad0d8849902b11c0ac2533a0bf069ce40e2c6cf4c15cfd460ebc47d2c0e3ae8",
+      "width": 1600,
+      "height": 1205,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-baptism-with-family-480.webp",
+          "bytes": 29064,
+          "sha256": "93a0a057b07fea41c0b15dff9edbcc780ba4389e56828e1535e2044097e63f6e"
+        },
+        {
+          "file": "chronicle-baptism-with-family-768.webp",
+          "bytes": 54410,
+          "sha256": "0d89415ae29388e65e587e7426f818fdb8a4009b0ef01594e29062d4710ca0d6"
+        },
+        {
+          "file": "chronicle-baptism-with-family-960.webp",
+          "bytes": 70588,
+          "sha256": "29d5a238417b2a6ff348c05488edc13a6aa458d6b8437d5d720feda93c2dbd8a"
+        },
+        {
+          "file": "chronicle-baptism-with-family-1280.webp",
+          "bytes": 103364,
+          "sha256": "63641d1943b4e9967476583c5999ffc728a23a6c299e78cefc567e3addf9d62b"
+        },
+        {
+          "file": "chronicle-baptism-with-family-1600.webp",
+          "bytes": 140134,
+          "sha256": "fb1d669ee725fea9fc016efd7b04ce1948ba2dc63739006f913bc290c8ef91a9"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-christmas-concert",
+      "original_file": "23.jpeg",
+      "catalog_title_uk": "Різдвяний концерт у нашому храмі",
+      "title": {
+        "uk": "Різдвяний концерт у нашому храмі",
+        "en": "A Christmas concert in our church"
+      },
+      "caption": {
+        "uk": "Різдвяний концерт у нашому храмі",
+        "en": "A Christmas concert in our church"
+      },
+      "caption_overlay": {
+        "uk": "Різдвяний концерт у нашому храмі",
+        "en": "A Christmas concert in our church"
+      },
+      "description": {
+        "uk": "Різдвяна радість, коляда та спільне святкування народження Спасителя.",
+        "en": "Christmas joy, carols and a shared celebration of the Saviour's birth."
+      },
+      "alt": {
+        "uk": "Діти й дорослі перед іконостасом між різдвяними ялинками.",
+        "en": "Children and adults before the iconostasis between Christmas trees."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти й дорослі перед іконостасом між різдвяними ялинками.",
+        "en": "Children and adults before the iconostasis between Christmas trees."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "e0e5963248c49695d31b28b407ea84ef30e7e58a8f6d57db4284c5dc8c3b0e40",
+      "width": 1600,
+      "height": 1200,
+      "widths": [
+        480,
+        768,
+        960,
+        1280,
+        1600
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-christmas-concert-480.webp",
+          "bytes": 52140,
+          "sha256": "c3d2f13ed4024b3bcc816b6cd1a6d6de29160992172d46c741571b520be7b153"
+        },
+        {
+          "file": "chronicle-christmas-concert-768.webp",
+          "bytes": 117674,
+          "sha256": "339acc961890b883989e37d2dccf6ed000533282c7138e12288357c7258d1c2d"
+        },
+        {
+          "file": "chronicle-christmas-concert-960.webp",
+          "bytes": 168356,
+          "sha256": "22a68fb39211a5e7a6959944e756072cecdd4604a557adaf6ca434851c51de05"
+        },
+        {
+          "file": "chronicle-christmas-concert-1280.webp",
+          "bytes": 257164,
+          "sha256": "2014075c2c02eee8e8969af5538a2d987d08f9a58f7221d49c9efb4a399918fa"
+        },
+        {
+          "file": "chronicle-christmas-concert-1600.webp",
+          "bytes": 338414,
+          "sha256": "3ab3142ed88c262a90decde694f3c66324f0926b169ab957c32b3355e1203cb1"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-solemn-holy-communion",
+      "original_file": "24.jpeg",
+      "catalog_title_uk": "Урочисте Святе Причастя",
+      "title": {
+        "uk": "Урочисте Святе Причастя",
+        "en": "Solemn Holy Communion"
+      },
+      "caption": {
+        "uk": "Урочисте Святе Причастя",
+        "en": "Solemn Holy Communion"
+      },
+      "caption_overlay": {
+        "uk": "Урочисте Святе Причастя",
+        "en": "Solemn Holy Communion"
+      },
+      "description": {
+        "uk": "Особливий день духовної радості та єдності з Христом.",
+        "en": "A special day of spiritual joy and communion with Christ."
+      },
+      "alt": {
+        "uk": "Діти у святковому вбранні перед іконостасом.",
+        "en": "Children in festive clothing before the iconostasis."
+      },
+      "theme": "spiritual-life",
+      "category": "spiritual-life",
+      "placements": [
+        "gallery",
+        "spiritual-life"
+      ],
+      "home_featured": false,
+      "contains_children": true,
+      "contains_aid_recipients": false,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Діти у святковому вбранні перед іконостасом.",
+        "en": "Children in festive clothing before the iconostasis."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "7a9b7669b89631f9013191a650e06ade2173ecc06ae1948cbcf29877c7fc743f",
+      "width": 1200,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        960,
+        1200
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-solemn-holy-communion-480.webp",
+          "bytes": 89236,
+          "sha256": "c0a83b4e920449a4d998bba78ac23c869072e1470206ce3c385656abd64b4f3b"
+        },
+        {
+          "file": "chronicle-solemn-holy-communion-768.webp",
+          "bytes": 205086,
+          "sha256": "96b124aa1e4cafa66c72ca6949beef4f4c63767bb2c5a3cbc8eabebf82f0286c"
+        },
+        {
+          "file": "chronicle-solemn-holy-communion-960.webp",
+          "bytes": 290616,
+          "sha256": "c34ee94997940cf32f3670fc2bfb4fa2a0a496a28f51ddc60a3dc853487853da"
+        },
+        {
+          "file": "chronicle-solemn-holy-communion-1200.webp",
+          "bytes": 375462,
+          "sha256": "165a6f467cb36a598f5ca42bec3a3f7f191802dba98342372047b88155c4070e"
+        }
+      ],
+      "mission_direction": "spiritual-values"
+    },
+    {
+      "id": "chronicle-personal-support-visit",
+      "original_file": "25.jpeg",
+      "catalog_title_uk": "Поруч із тими, хто потребує підтримки",
+      "title": {
+        "uk": "Поруч із тими, хто потребує підтримки",
+        "en": "Standing alongside those who need support"
+      },
+      "caption": {
+        "uk": "Поруч із тими, хто потребує підтримки",
+        "en": "Standing alongside those who need support"
+      },
+      "caption_overlay": {
+        "uk": "Поруч із тими, хто потребує підтримки",
+        "en": "Standing alongside those who need support"
+      },
+      "description": {
+        "uk": "Турбота, увага та людська підтримка — важлива частина парафіяльного життя.",
+        "en": "Care, attention and personal support are an important part of parish life."
+      },
+      "alt": {
+        "uk": "Чоловік поруч із літньою жінкою біля будинку.",
+        "en": "A man standing beside an older woman outside a house."
+      },
+      "theme": "social-ministry",
+      "category": "social-ministry",
+      "placements": [
+        "gallery",
+        "social-ministry"
+      ],
+      "home_featured": true,
+      "contains_children": false,
+      "contains_aid_recipients": true,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Чоловік поруч із літньою жінкою біля будинку.",
+        "en": "A man standing beside an older woman outside a house."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "108f408232961966a18d441844a80112b57b4e75525894a39667f5c1ba559528",
+      "width": 576,
+      "height": 1280,
+      "widths": [
+        480,
+        576
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-personal-support-visit-480.webp",
+          "bytes": 163180,
+          "sha256": "7dfb6864e0a919005bf1cb80775c465bbf7e74090f53e1adbb3100c4da5b925c"
+        },
+        {
+          "file": "chronicle-personal-support-visit-576.webp",
+          "bytes": 223934,
+          "sha256": "4a0d13d922ec17d15c01439848f0f0fa5aae9e0639441dd5db90f21b756e66b1"
+        }
+      ],
+      "mission_direction": "solidarity"
+    },
+    {
+      "id": "chronicle-elderly-home-visit",
+      "original_file": "26.jpeg",
+      "catalog_title_uk": "Відвідування та підтримка літніх людей",
+      "title": {
+        "uk": "Відвідування та підтримка літніх людей",
+        "en": "Visiting and supporting older people"
+      },
+      "caption": {
+        "uk": "Відвідування та підтримка літніх людей",
+        "en": "Visiting and supporting older people"
+      },
+      "caption_overlay": {
+        "uk": "Відвідування та підтримка літніх людей",
+        "en": "Visiting and supporting older people"
+      },
+      "description": {
+        "uk": "Не залишаємо наодинці тих, хто потребує нашої присутності та допомоги.",
+        "en": "Offering companionship and help to those who need our presence."
+      },
+      "alt": {
+        "uk": "Відвідувач поруч із літньою людиною вдома.",
+        "en": "A visitor beside an older person at home."
+      },
+      "theme": "social-ministry",
+      "category": "social-ministry",
+      "placements": [
+        "gallery",
+        "social-ministry"
+      ],
+      "home_featured": false,
+      "contains_children": false,
+      "contains_aid_recipients": true,
+      "publication_status": "pending_approval",
+      "rights_confirmed": false,
+      "consents_confirmed": false,
+      "consent_reference": null,
+      "publication_authorization": null,
+      "captured_on": null,
+      "date_source": null,
+      "date_verification": "Original Telegram event caption not supplied; do not infer from message time or camera watermark",
+      "verification_status": "visually_verified_against_owner_file_catalog",
+      "visual_observation": {
+        "uk": "Відвідувач поруч із літньою людиною вдома.",
+        "en": "A visitor beside an older person at home."
+      },
+      "credit": {
+        "uk": "Надано для сайту парафії",
+        "en": "Provided for the parish website"
+      },
+      "source_exif_date": null,
+      "original_sha256": "c492230b77e4163d9aa3206d16ea8264bdb32170cc6da4ab85d0dfc2ba472e90",
+      "width": 900,
+      "height": 1600,
+      "widths": [
+        480,
+        768,
+        900
+      ],
+      "processing": {
+        "brightness": 1.025,
+        "color": 1.015,
+        "contrast": 1.01,
+        "unsharp_mask": {
+          "radius": 0.45,
+          "percent": 25,
+          "threshold": 4
+        },
+        "crop": false,
+        "generative_processing": false,
+        "metadata_removed": true,
+        "original_unchanged": true
+      },
+      "web_files": [
+        {
+          "file": "chronicle-elderly-home-visit-480.webp",
+          "bytes": 79008,
+          "sha256": "f886c8655931ebcf1b53b27956aebff6a6de6cd3dd71b30158b930b3bb76108b"
+        },
+        {
+          "file": "chronicle-elderly-home-visit-768.webp",
+          "bytes": 151184,
+          "sha256": "26a16a66fdda2199b0dce95c9508848c57ba3494f78c123b2c460634ae0d9c50"
+        },
+        {
+          "file": "chronicle-elderly-home-visit-900.webp",
+          "bytes": 182100,
+          "sha256": "c93095a97b2351a21f11503394e08d30ac10223c1934328424212a5e489b309d"
+        }
+      ],
+      "mission_direction": "solidarity"
+    }
+  ],
+  "missing": [
+    {
+      "id": "shared-heavy-building-work",
+      "title": {
+        "uk": "Спільна праця біля храму",
+        "en": "Working together beside the church"
+      },
+      "status": "missing",
+      "reason": "Men carrying a heavy building element: no matching original on Desktop; no substitution."
+    }
+  ]
+}

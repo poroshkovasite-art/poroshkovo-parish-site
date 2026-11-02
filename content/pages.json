@@ -506,5 +506,20 @@
       "en": "Verified materials about this area of parish life."
     },
     "published": false
+  },
+  "community-impact": {
+    "title": {
+      "uk": "Наш вплив на громаду",
+      "en": "Our Community Impact"
+    },
+    "description": {
+      "uk": "Місія парафії Порошкова: духовні цінності, розвиток дітей і молоді, соціальна солідарність, підтверджена діяльність та можливості співпраці.",
+      "en": "The mission of Poroshkovo parish: spiritual values, children and youth development, social solidarity, documented activities and opportunities for partnership."
+    },
+    "intro": {
+      "uk": "Реальні приклади служіння, цілі розвитку громади та прозорий підхід до майбутніх партнерств.",
+      "en": "Documented examples of service, community development goals and a transparent approach to future partnerships."
+    },
+    "published": true
   }
 }

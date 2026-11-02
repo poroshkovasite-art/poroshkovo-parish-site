@@ -1,0 +1,37 @@
+.chronicle-group{margin-block:42px}
+.chronicle-group>h2{font-size:clamp(27px,3vw,38px)}
+.chronicle-theme{display:block;font-size:12px;color:var(--accent);margin-bottom:10px}
+.chronicle-empty{padding:24px;border:1px solid var(--line);border-radius:12px}
+.chronicle-carousel{--stage-width:min(620px,66%);--side-offset:42%}
+.chronicle-carousel .section-top{max-width:850px;margin-inline:auto;text-align:center}
+.chronicle-carousel .section-top h2{font-size:clamp(33px,4vw,52px)}
+.chronicle-viewport{overflow:hidden;isolation:isolate;padding:28px 0 48px;touch-action:pan-y}
+.chronicle-track{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch}
+.chronicle-slide{grid-area:1/1;width:var(--stage-width);justify-self:center;min-width:0;position:relative;transform-origin:50% 45%;transition:transform 800ms cubic-bezier(.22,.61,.36,1),opacity 800ms ease,visibility 0s 800ms;will-change:transform,opacity}
+.chronicle-slide .parish-photo{height:100%;margin:0;background:var(--white);border:1px solid #d8ccc1;border-radius:22px;overflow:hidden;box-shadow:0 8px 28px #39222514;transition:box-shadow 800ms ease}
+.chronicle-slide .photo-visual{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:#e9e3d9}
+.chronicle-slide .photo-button{width:100%}
+.chronicle-slide .photo-button img{width:100%;height:100%;max-height:100%;object-fit:contain}
+.chronicle-slide figcaption{padding:26px 30px;transition:opacity 800ms ease}
+.chronicle-slide figcaption strong{display:block;font:28px/1.3 var(--serif);color:var(--ink)}
+.chronicle-slide figcaption p{font-size:15px;line-height:1.75}
+.chronicle-slide[data-stage-position="active"]{transform:translate(0,0) scale(1);opacity:1;z-index:3;visibility:visible;transition-delay:0s}
+.chronicle-slide[data-stage-position="active"] .parish-photo{box-shadow:0 18px 38px #39222526}
+.chronicle-slide[data-stage-position="previous"]{transform:translate(calc(-1 * var(--side-offset)),28px) scale(.88);opacity:.56;z-index:2;visibility:visible;transition-delay:0s}
+.chronicle-slide[data-stage-position="next"]{transform:translate(var(--side-offset),28px) scale(.88);opacity:.56;z-index:2;visibility:visible;transition-delay:0s}
+.chronicle-slide[data-stage-position="off-left"]{transform:translate(-80%,45px) scale(.8);opacity:0;z-index:0;visibility:hidden;pointer-events:none}
+.chronicle-slide[data-stage-position="off-right"]{transform:translate(80%,45px) scale(.8);opacity:0;z-index:0;visibility:hidden;pointer-events:none}
+.chronicle-slide:not([data-stage-position="active"]) figcaption{opacity:0;pointer-events:none}
+.chronicle-select{display:none;position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:22px;background:transparent;cursor:pointer}
+.is-enhanced .chronicle-slide[data-stage-position="previous"]>.chronicle-select,.is-enhanced .chronicle-slide[data-stage-position="next"]>.chronicle-select{display:block}
+.chronicle-view{border:0;background:none;padding:10px 0;cursor:pointer;min-height:44px}
+.chronicle-controls{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:0 0 22px}
+.chronicle-controls[hidden]{display:none}
+.chronicle-controls button{min-height:44px;min-width:44px;border:1px solid var(--line);background:var(--white);color:var(--accent);border-radius:24px;padding:10px 16px;cursor:pointer}
+.chronicle-status{font-size:13px;min-width:44px;text-align:center;font-variant-numeric:tabular-nums}
+.chronicle-carousel>.text-link{display:block;width:max-content;max-width:100%;margin-inline:auto}
+.chronicle-viewport:focus-visible{outline:3px solid var(--accent);outline-offset:-3px;border-radius:18px}
+@media(max-width:1000px){.chronicle-carousel{--stage-width:72%;--side-offset:42%}.chronicle-slide figcaption{padding:24px}.chronicle-slide figcaption strong{font-size:25px}}
+@media(max-width:620px){.chronicle-carousel{--stage-width:calc(100% - 24px);--side-offset:30%}.chronicle-viewport{padding:18px 0 36px}.chronicle-slide .parish-photo{border-radius:18px}.chronicle-slide figcaption{padding:21px}.chronicle-slide figcaption strong{font-size:24px}.chronicle-slide figcaption p{font-size:14px}.chronicle-slide[data-stage-position="previous"]{transform:translate(calc(-1 * var(--side-offset)),18px) scale(.9)}.chronicle-slide[data-stage-position="next"]{transform:translate(var(--side-offset),18px) scale(.9)}}
+@media(prefers-reduced-motion:reduce){.chronicle-slide,.chronicle-slide .parish-photo,.chronicle-slide figcaption{transition:none;will-change:auto}}
+@media print{.chronicle-track{display:block}.chronicle-slide{width:100%;transform:none!important;opacity:1!important;visibility:visible!important;margin-bottom:20px}.chronicle-slide figcaption{opacity:1!important}.chronicle-controls,.chronicle-select{display:none!important}}

@@ -21,7 +21,7 @@ try {
    const response=await page.goto('http://localhost:4173'+route);assert.equal(response.status(),200,route);
    await page.evaluate(()=>document.fonts.ready);
    await page.evaluate(async()=>{await Promise.all([...document.images].filter(i=>i.hasAttribute("src")).map(i=>{i.loading="eager";return i.decode().catch(()=>{});}));});
-   const measured=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,brokenImages:[...document.images].filter(i=>i.getAttribute('src')&&(!i.complete||i.naturalWidth===0)).length,h1:document.querySelectorAll('h1').length,invalidRects:[...document.querySelectorAll('main h1,main h2,main p')].filter(e=>{if(e.closest('.carousel,.feature-viewport'))return false;const r=e.getBoundingClientRect();return r.width&&r.right>innerWidth+1}).map(e=>e.textContent.slice(0,50))}));
+   const measured=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,brokenImages:[...document.images].filter(i=>i.getAttribute('src')&&(!i.complete||i.naturalWidth===0)).length,h1:document.querySelectorAll('h1').length,invalidRects:[...document.querySelectorAll('main h1,main h2,main p')].filter(e=>{if(e.closest('.carousel,.feature-viewport,.chronicle-viewport'))return false;const r=e.getBoundingClientRect();return r.width&&r.right>innerWidth+1}).map(e=>e.textContent.slice(0,50))}));
    results.push({width,route,...measured});if(measured.overflow||measured.brokenImages||measured.h1!==1||measured.invalidRects.length)failures.push({width,route,...measured});
    const expected=route.startsWith('/uk/')?route.replace('/uk/','/en/'):route.replace('/en/','/uk/');assert.equal(new URL(await page.locator('.language').getAttribute('href'),'http://localhost:4173').pathname,expected);
   }

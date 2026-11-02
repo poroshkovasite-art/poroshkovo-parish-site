@@ -1,0 +1,11 @@
+.hero-with-buildings{grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:40px}
+.hero-buildings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start;min-width:0}
+.hero-buildings>figure{min-width:0;margin:0}
+.hero-buildings .photo-button{display:block;width:100%;border-radius:18px;overflow:hidden}
+.hero-buildings .photo-visual{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;border-radius:18px;background:var(--tint)}
+.hero-buildings .photo-visual>img{height:100%;width:100%;object-fit:contain;border-radius:0}
+.hero-buildings figcaption{padding:14px 2px 0}
+.hero-buildings figcaption strong{display:block;font:21px/1.3 var(--serif);color:var(--ink)}
+.hero-buildings figcaption p{font-size:13px;line-height:1.75;margin:12px 0 0}
+@media(max-width:1100px){.hero-with-buildings{grid-template-columns:1fr;gap:30px}.hero-with-buildings .hero-copy{max-width:850px}.hero-with-buildings h1{max-width:22ch}.hero-buildings{gap:24px}.hero-buildings figcaption strong{font-size:25px}}
+@media(max-width:620px){.hero-buildings{grid-template-columns:1fr;gap:28px}.hero-buildings figcaption strong{font-size:24px}.hero-buildings figcaption p{font-size:14px}.hero-with-buildings{padding-bottom:40px}}

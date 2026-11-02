@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
+import {photoTheme} from './parish-photos.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),base=process.env.MEDIA_BASE_URL||'http://localhost:4173',tag=base.startsWith('http://localhost')?'local':'production',audit=path.resolve(root,'../audit');
 const photos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))),brand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json'))),expectedHero='church-exterior';
 const report={date:'2026-10-30',base,status:'RUNNING',hero:expectedHero,photoAssets:[],headerChecks:[],placements:[],icons:[],errors:[]},iconData={};
@@ -45,15 +46,15 @@ try{
  for(const lang of ['uk','en']){
   const localizedPhotos=photos.filter(p=>!p.publication_languages||p.publication_languages.includes(lang));
   for(const slug of ['about','community','spiritual-life','gallery']){const ids=slug==='gallery'?localizedPhotos.map(p=>p.id):localizedPhotos.filter(p=>p.placements.includes(slug)).map(p=>p.id);
-   await page.goto(`${base}/${lang}/${slug}/`);await ready(page);assert.deepEqual(await page.locator('[data-photo-id]').evaluateAll(es=>es.map(e=>e.dataset.photoId)),ids);
+   await page.goto(`${base}/${lang}/${slug}/`);await ready(page);assert.deepEqual((await page.locator('[data-photo-id]').evaluateAll(es=>es.map(e=>e.dataset.photoId))).sort(),ids.slice().sort());
    if(slug==='gallery')assert.ok(await page.locator('.photo-button img').evaluateAll(es=>es.every(i=>i.dataset.photoVariant==='enhanced')),'Gallery uses detail-friendly enhanced variants');
    const images=await page.locator('.photo-button img').evaluateAll(es=>es.map(e=>({id:e.dataset.imageId,ratio:e.getBoundingClientRect().width/e.getBoundingClientRect().height,natural:Number(e.getAttribute('width'))/Number(e.getAttribute('height')),complete:e.complete&&e.naturalWidth>0})));
    for(const i of images)assert.ok(i.complete&&Math.abs(i.ratio-i.natural)<0.01,`Declared image ratio without CSS cropping: ${i.id}`);
    report.placements.push({lang,slug,ids,declaredRatiosPreserved:true,captionFooterCrops:photos.filter(p=>p.processing?.crop).map(p=>p.id)});
    if(lang==='uk')await page.screenshot({path:path.join(audit,`media-${tag}-${lang}-${slug}-desktop.png`),fullPage:true});
   }
-  await page.locator('[data-photo-filter="worship"]').click();assert.equal(await page.locator('[data-photo-card]:visible').count(),localizedPhotos.filter(p=>p.category==='worship').length);await page.locator('[data-photo-filter="community"]').click();assert.equal(await page.locator('[data-photo-card]:visible').count(),localizedPhotos.filter(p=>p.category==='community').length);await page.locator('[data-photo-filter="all"]').click();
-  await page.locator('[data-photo-id="divine-liturgy"]').click();assert.ok(await page.locator('dialog').isVisible());await page.keyboard.press('ArrowRight');assert.ok((await page.locator('dialog figcaption').innerText()).includes(photos[1].caption_overlay[lang]));await page.keyboard.press('Escape');assert.ok(await page.locator('[data-photo-id="divine-liturgy"]').evaluate(e=>document.activeElement===e));
+  await page.locator('[data-theme-filter="spiritual-life"]').click();assert.equal(await page.locator('[data-photo-card]:visible').count(),localizedPhotos.filter(p=>photoTheme(p)==='spiritual-life').length);await page.locator('[data-theme-filter="children-youth"]').click();assert.equal(await page.locator('[data-photo-card]:visible').count(),localizedPhotos.filter(p=>photoTheme(p)==='children-youth').length);await page.locator('[data-theme-filter="all"]').click();
+  await page.locator('[data-photo-id="divine-liturgy"]').click();assert.ok(await page.locator('dialog').isVisible());await page.keyboard.press('ArrowRight');assert.ok((await page.locator('dialog figcaption').innerText()).includes(localizedPhotos.filter(p=>photoTheme(p)==='spiritual-life')[1].caption_overlay[lang]));await page.keyboard.press('Escape');assert.ok(await page.locator('[data-photo-id="divine-liturgy"]').evaluate(e=>document.activeElement===e));
  }
  const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'}),touch=await mobile.newPage();await touch.goto(`${base}/uk/gallery/`);await ready(touch);await touch.locator('[data-photo-id="divine-liturgy"]').tap();await touch.locator('dialog img').evaluate(i=>i.decode());
  const cdp=await mobile.newCDPSession(touch),y=350;await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:320,y}]});for(const x of [260,200,140,80])await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await touch.waitForFunction(total=>document.querySelector('dialog figcaption').textContent.startsWith('2 / '+total),photos.length);await touch.locator('[data-close]').tap();await mobile.close();

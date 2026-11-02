@@ -1377,5 +1377,92 @@
       "width": 7360,
       "height": 4912
     }
+  },
+  {
+    "id": "parish-administrative-building",
+    "title": {
+      "uk": "Парафіяльний та адміністративний будинок",
+      "en": "Parish and Administrative Building"
+    },
+    "caption": {
+      "uk": "Парафіяльний та адміністративний будинок",
+      "en": "Parish and Administrative Building"
+    },
+    "caption_overlay": {
+      "uk": "Парафіяльний та адміністративний будинок",
+      "en": "Parish and Administrative Building"
+    },
+    "alt": {
+      "uk": "Двоповерховий парафіяльний та адміністративний будинок із червоним дахом, огорожею та розп’яттям біля входу",
+      "en": "The two-storey parish and administrative building with a red roof, a fence and a crucifix near the entrance"
+    },
+    "description": {
+      "uk": "Осередок організаційної, соціальної та благодійної діяльності нашої парафії. Тут координується праця, спрямована на підтримку людей, розвиток громади та реалізацію парафіяльних ініціатив.",
+      "en": "The centre of our parish's organisational, social and charitable activities, coordinating initiatives that support people, strengthen the local community and contribute to parish development."
+    },
+    "category": "buildings",
+    "theme": "buildings",
+    "category_label": {
+      "uk": "Наші будівлі",
+      "en": "Our Buildings"
+    },
+    "mission_direction": "solidarity",
+    "placements": [
+      "home",
+      "about",
+      "gallery"
+    ],
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      480,
+      640,
+      768,
+      960,
+      1280,
+      1448
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "contains_children": false,
+    "contains_aid_recipients": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "author": null,
+    "original_file": "Исправленный вид религиозного дома с оградой.png",
+    "original_sha256": "aeb0d450a7b7833c2debb3e7d5fb7965751b4536fc3c08dd1a73654253f8c1c9",
+    "source_url": null,
+    "captured_on": null,
+    "extracted_on": "2026-11-02",
+    "verification_status": "owner_confirmed_building_identity_and_publication",
+    "publication_authorization": "Owner supplied this improved PNG and expressly requested public placement on Home, About and Gallery in this chat on 2026-11-02",
+    "consent_reference": "Owner explicit publication request; building photograph without identifiable people",
+    "processing": {
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true,
+      "source_note": "Previously improved PNG supplied by the owner; prior enhancement provenance is not asserted. This pipeline only resizes and encodes WebP."
+    },
+    "source_dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "embedded_caption_in_enhanced": false,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "variants": {
+      "enhanced": {
+        "filename_pattern": "parish-administrative-building-{width}.webp",
+        "contains_added_caption": false
+      },
+      "captioned": {
+        "available_on_site": false
+      }
+    }
   }
 ]
