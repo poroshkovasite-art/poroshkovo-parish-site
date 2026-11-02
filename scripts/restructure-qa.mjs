@@ -28,7 +28,7 @@ try{
   assert.deepEqual(order,['hero','mission','carousel','services','history','contacts','support']);
   const photoIds=await page.locator('main img[data-image-id]').evaluateAll(imgs=>imgs.map(i=>i.dataset.imageId));
   assert.equal(new Set(photoIds).size,photoIds.length,'No repeated home photograph');
-  assert.ok(await page.locator('[data-community-mission] [data-photo-id]').count()>=3);await page.locator('[data-mission-carousel]').scrollIntoViewIfNeeded();await page.locator('[data-mission-step="1"]').click();await page.waitForFunction(()=>document.querySelector('[data-mission-carousel]').dataset.active==='1');await page.locator('[data-mission-track]').focus();await page.keyboard.press('ArrowLeft');await page.waitForFunction(()=>document.querySelector('[data-mission-carousel]').dataset.active==='0');
+  assert.equal(await page.locator('[data-community-mission] [data-photo-id]').count(),3);assert.equal(await page.locator('[data-mission-carousel],[data-mission-step]').count(),0);
   assert.equal(await page.locator('[data-service]').count(),4);assert.equal(await page.locator('[data-ministry-direction]').count(),7);
   assert.equal(await page.locator('#navigation a[href$="/first-visit/"],#navigation a[href$="/support/"],[data-feature-carousel],[data-load-map],.map-consent').count(),0);
   assert.equal(await page.locator('[data-home-support] .home-iban').innerText(),read('support').accounts[0].iban);
@@ -39,7 +39,7 @@ try{
    const map=page.locator('[data-parish-map]');await map.scrollIntoViewIfNeeded();
    await page.waitForFunction(()=>[...document.querySelectorAll('.leaflet-tile')].some(i=>i.complete&&i.naturalWidth>0),{timeout:30000});
    const details=await map.evaluate(e=>({point:e.parishMarker.getLatLng(),zoom:e.parishMap.getZoom(),title:e.parishMarker.options.title,tileUrl:e.dataset.tileUrl,attribution:e.querySelector('.leaflet-control-attribution').textContent}));
-   assert.equal(details.point.lat,48.67082394012906);assert.equal(details.point.lng,22.752845895344038);assert.equal(details.zoom,17);assert.equal(details.title,'Парафія святих Кирила і Методія');assert.match(details.attribution,/OpenStreetMap/);
+   assert.equal(details.point.lat,48.67082394012906);assert.equal(details.point.lng,22.752845895344038);assert.equal(details.zoom,17);assert.equal(details.title,lang==='uk'?'Храм святих Кирила і Методія':'Church of Saints Cyril and Methodius');assert.match(details.attribution,/OpenStreetMap/);
    await map.locator('.leaflet-control-zoom-in').click();await page.waitForFunction(()=>document.querySelector('[data-parish-map]').parishMap.getZoom()===18);
    await page.waitForTimeout(500);
    const before=await map.evaluate(e=>e.parishMap.getCenter().lng),box=await map.boundingBox();

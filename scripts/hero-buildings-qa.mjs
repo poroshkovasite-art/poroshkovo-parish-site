@@ -18,6 +18,7 @@ try{
  for(const lang of ['uk','en'])for(const width of [320,390,768,1024,1440,1920]){
   await page.setViewportSize({width,height:1000});await page.goto(`${base}/${lang}/`);await page.locator('[data-hero-buildings] img').evaluateAll(imgs=>Promise.all(imgs.map(i=>i.decode())));
   const pair=page.locator('[data-hero-buildings]');assert.deepEqual(await pair.locator('[data-photo-id]').evaluateAll(es=>es.map(e=>e.dataset.photoId)),['church-exterior','parish-administrative-building']);
+  const cards=await pair.locator(':scope>figure').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().toJSON()));if(width>620)assert.ok(Math.abs(cards[0].height-cards[1].height)<1,'Whole building cards have equal heights');assert.equal(await pair.locator('figcaption p').count(),0,'Detailed building description belongs on About');
   const geometry=await pair.locator('.photo-visual').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().toJSON()));assert.ok(Math.abs(geometry[0].height-geometry[1].height)<1,'Equal image heights');
   if(width>620){assert.ok(Math.abs(geometry[0].y-geometry[1].y)<1);assert.ok(geometry[1].x>=geometry[0].right);}else assert.ok(geometry[1].y>geometry[0].bottom);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));

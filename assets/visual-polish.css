@@ -1,0 +1,109 @@
+:root{
+ --card-radius:18px;--card-surface:#fffdf9;--card-border:#dcd2c6;
+ --card-shadow:0 2px 4px #49352e05,0 9px 25px #49352e0b;
+ --card-shadow-hover:0 5px 10px #49352e09,0 17px 34px #49352e15;
+ --card-padding:24px;--card-gap:24px;--card-lift:-4px;
+ --footer-surface:#e7ded2;--footer-base:#dcd0c1;--footer-border:#d1c2b1;
+}
+:is(.content-card,.resource-card,.history-story,.schedule-panel,.contact-note,.map-card,.home-bank-card,.bank-card,.mission-contact,.home-service-card,.mission-example-grid>article,.hero-buildings>figure,.mission-priorities>article,.mission-donor-grid>article,.section-teaser,.priest-panel){border:1px solid var(--card-border);border-radius:var(--card-radius);background:var(--card-surface);box-shadow:var(--card-shadow);transition:box-shadow 220ms ease,transform 220ms ease}
+.parish-photo:not(.chronicle-slide .parish-photo){border:1px solid var(--card-border);border-radius:var(--card-radius);background:var(--card-surface);box-shadow:var(--card-shadow);transition:box-shadow 220ms ease,transform 220ms ease}
+.home-service-grid,.resource-grid,.gallery-grid,.card-grid{gap:var(--card-gap);align-items:stretch}
+.home-service-card,.resource-card,.home-bank-card,.bank-card,.map-card,.mission-example-grid>article,.mission-priorities>article,.mission-donor-grid>article{padding:var(--card-padding)}
+.resource-card,.home-service-card{display:flex;flex-direction:column;align-items:start}
+.resource-card>a:last-child,.home-service-card>.text-link{margin-top:auto;padding-top:16px;min-height:44px}
+.home-service-card h3{font-size:clamp(25px,2.1vw,29px);line-height:1.25;min-height:2.5em}
+.home-service-card h4{font-size:14px;line-height:1.65}
+.hero-buildings{align-items:stretch;gap:20px}
+.hero-buildings>figure{display:flex;flex-direction:column;overflow:hidden}
+.hero-buildings .photo-button{border-radius:0;flex-shrink:0}
+.hero-buildings .photo-visual{border-radius:0}
+.hero-buildings figcaption{padding:16px 18px;flex:1;display:flex;align-items:start}
+.hero-buildings figcaption strong{font-size:clamp(19px,1.5vw,23px);line-height:1.35}
+.mission-composition{grid-template-columns:1fr;gap:30px}
+.mission-composition .mission-heading{max-width:900px}
+.mission-composition .mission-heading h2{max-width:24ch}
+.mission-composition .mission-heading>p:not(.eyebrow){max-width:78ch}
+.mission-composition .mission-heading .actions{margin-top:20px}
+.mission-photo-composition{min-width:0;width:100%;max-width:none}
+.mission-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--card-gap)}
+.mission-photo-grid>.parish-photo{min-width:0;height:100%;display:flex;flex-direction:column;overflow:hidden}
+.mission-photo-grid .photo-visual,.gallery-grid .photo-visual{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:var(--tint)}
+.mission-photo-grid .photo-button,.gallery-grid .photo-button{flex-shrink:0}
+.mission-photo-grid img,.gallery-grid .photo-button img{width:100%;height:100%;object-fit:contain}
+.mission-photo-grid figcaption{padding:18px 22px;flex:1}
+.mission-photo-grid figcaption strong{font:clamp(19px,1.6vw,24px)/1.35 var(--serif)}
+.chronicle-slide .photo-visual{aspect-ratio:3/2}
+.chronicle-slide .parish-photo{border-radius:20px}
+.chronicle-slide figcaption{padding:24px}
+.chronicle-slide figcaption strong{font-size:clamp(24px,2vw,28px)}
+.gallery-grid>.parish-photo{display:flex;flex-direction:column;height:100%;overflow:hidden}
+.gallery-grid figcaption{display:flex;flex-direction:column;align-items:start;flex:1;padding:var(--card-padding)}
+.gallery-grid figcaption strong{font:22px/1.35 var(--serif)}
+.gallery-grid figcaption p{font-size:14px;line-height:1.75}
+.gallery-grid .photo-mission-link{margin-top:auto;padding-top:16px;min-height:44px}
+.historical-map img{max-width:650px!important;margin-inline:auto}
+.historical-map>a{max-width:650px;width:100%;justify-self:center}
+.history-map-feature .historical-map{gap:var(--card-gap);padding:var(--card-padding);border-radius:var(--card-radius)}
+.historical-map figcaption{max-width:65ch}
+.map-object-note{border-block:1px solid var(--card-border);padding-block:16px;font-size:14px!important;line-height:1.7}
+.map-object-note strong,.map-object-note span{display:block}
+.map-object-note span{margin-top:10px}
+.building-address{font-size:13px!important}
+.home-bank-card dd{margin-bottom:16px}
+.footer{background:var(--footer-surface);color:var(--ink);border-top:1px solid var(--footer-border);padding-top:48px;padding-bottom:0}
+.footer-grid{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr) minmax(0,1fr);gap:40px;padding-bottom:32px}
+.footer h2{font-size:clamp(25px,2.2vw,32px);max-width:28ch;line-height:1.22}
+.footer p{color:#5e5350;line-height:1.75}
+.footer a{color:var(--accent)}
+.footer-grid>div:not(:first-child)>a{display:flex;align-items:center;min-height:44px;line-height:1.5;margin:0;padding-block:7px}
+.footer .contact-links{gap:10px;margin-bottom:0}
+.footer .contact-links a{border-color:#cbbcab;background:#ffffff29}
+.footer-base{background:var(--footer-base);border-top:1px solid var(--footer-border)}
+.footer-bottom{margin-top:0;border:0;padding-block:18px;color:#554747}
+.footer-bottom a{min-height:44px;display:flex;align-items:center}
+@media(hover:hover) and (pointer:fine){
+ :is(.resource-card,.home-service-card,.history-story,.home-bank-card,.bank-card,.mission-photo-grid>.parish-photo,.gallery-grid>.parish-photo):hover{transform:translateY(var(--card-lift));box-shadow:var(--card-shadow-hover)}
+}
+:is(.resource-card,.home-service-card,.home-bank-card,.bank-card,.gallery-grid>.parish-photo,.mission-photo-grid>.parish-photo):focus-within{box-shadow:var(--card-shadow-hover)}
+@media(min-width:621px) and (max-width:1100px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.footer-grid{gap:28px;grid-template-columns:1.4fr 1fr}.footer-grid>div:last-child{grid-column:2}.footer-identity{grid-row:1/3}}
+@media(max-width:620px){
+ :root{--card-padding:20px;--card-gap:16px}
+ .hero-with-buildings{gap:20px;padding-bottom:28px}
+ .hero-with-buildings .hero-copy{padding-bottom:0}
+ .hero-buildings{gap:20px}
+ .hero-buildings figcaption{padding:15px 18px}
+ .hero-buildings figcaption strong{font-size:21px}
+ .section{padding-block:44px}
+ .mission-composition{gap:24px}
+ .mission-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mission-photo-grid>.parish-photo:first-child{grid-column:1/-1}
+ .mission-photo-grid figcaption{padding:15px}
+ .mission-photo-grid figcaption strong{font-size:18px}
+ .mission-photo-grid>.parish-photo:first-child .photo-visual{aspect-ratio:3/2}
+ .home-service-card h3{font-size:27px;min-height:0}
+ .chronicle-slide figcaption{padding:20px}
+ .gallery-grid{grid-template-columns:minmax(0,1fr)}
+ .gallery-grid figcaption strong{font-size:23px}
+ .footer{padding-top:36px}
+ .footer-grid{display:flex;flex-direction:column;gap:28px;padding-bottom:28px}
+ .footer h2{font-size:28px}
+ .footer-logo{width:60px;height:60px}
+ .footer-bottom{padding-block:12px}
+}
+@media(prefers-reduced-motion:reduce){.parish-photo,.resource-card,.home-service-card,.history-story,.home-bank-card,.bank-card,.hero-buildings>figure{transition:none!important}}
+.home-service-card[id]{scroll-margin-top:130px}
+@media(prefers-reduced-motion:reduce){:is(.resource-card,.home-service-card,.history-story,.home-bank-card,.bank-card,.mission-photo-grid>.parish-photo,.gallery-grid>.parish-photo):hover{transform:none!important}}
+
+.mission-donor-grid>article{display:flex;flex-direction:column;align-items:start}.mission-donor-grid>article>.text-link{margin-top:auto;min-height:44px;padding-top:12px}
+
+.mission-priorities>article,.mission-donor-grid>article{min-width:0}
+@media(max-width:1000px){.mission-priorities{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.mission-priorities{grid-template-columns:minmax(0,1fr)}}
+@media(hover:hover) and (pointer:fine){.hero-buildings>figure:hover{transform:translateY(var(--card-lift));box-shadow:var(--card-shadow-hover)}}
+@media(prefers-reduced-motion:reduce){.hero-buildings>figure:hover{transform:none!important}}
+
+.home-service-section .ministry-icon{width:32px;height:32px;margin-bottom:14px}
+.home-service-section .home-service-card h3{font-size:clamp(24px,2vw,28px);line-height:1.25}
+.home-service-section .home-service-card h4{line-height:1.5;margin:6px 0 8px}
+.home-service-section .home-service-card [data-ministry-direction]+[data-ministry-direction]{padding-top:8px}

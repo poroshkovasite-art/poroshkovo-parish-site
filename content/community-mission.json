@@ -373,5 +373,9 @@
       ],
       "icon": "people"
     }
-  ]
+  ],
+  "home_summary": {
+    "uk": "Спільна молитва, дитячі табори, творчі зустрічі та діла милосердя єднають нашу парафію. Підтримуємо дітей, родини й літніх людей та заохочуємо громаду до взаємодопомоги й відповідальності.",
+    "en": "Shared prayer, children’s camps, creative activities and acts of mercy bring our parish together. We support children, families and older people, encouraging mutual care and responsibility within our community."
+  }
 }

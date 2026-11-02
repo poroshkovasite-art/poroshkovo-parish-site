@@ -13,8 +13,9 @@ document.querySelectorAll('[data-parish-map]').forEach(surface=>{
   layer.on('tileload',()=>{loaded++;fallback.hidden=true;status.hidden=true;});
   layer.on('tileerror',()=>{if(!loaded){status.hidden=false;status.textContent=uk?'Не вдалося завантажити картографічні тайли. Скористайтеся посиланнями Google Maps або маршруту нижче.':'Map tiles could not be loaded. Use the Google Maps or directions links below.';}});
   layer.addTo(map);
-  const marker=L.marker(point,{title:'Парафія святих Кирила і Методія',alt:uk?'Точна метка храму':'Exact church location',keyboard:true}).addTo(map);
-  const label=document.createElement('span');label.textContent='Парафія святих Кирила і Методія';
+  const markerTitle=uk?'Храм святих Кирила і Методія':'Church of Saints Cyril and Methodius';
+  const marker=L.marker(point,{title:markerTitle,alt:uk?'Точна метка храму':'Exact church location',keyboard:true}).addTo(map);
+  const label=document.createElement('span');label.textContent=markerTitle;
   marker.bindTooltip(label,{permanent:true,direction:'top',offset:[0,-36],className:'parish-map-label'});
   surface.dataset.mapReady='true';
   // Read-only geometry is useful to verify the exact pin without moving it.

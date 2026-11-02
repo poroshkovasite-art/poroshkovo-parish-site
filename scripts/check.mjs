@@ -24,7 +24,7 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
   const ids=[...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,`Duplicate id ${file}`);
   const schedule=JSON.parse(fs.readFileSync(path.join(root,'content/schedule.json')));
   if(schedule.verification_status!=='confirmed')assert.ok(!/11:00|16:00|17:00|09:00|13:00|14:00/.test(html),`Unconfirmed timetable leaked: ${file}`);
-  assert.ok(!/Центральна,? 94/.test(html),`Unconfirmed legal address leaked: ${file}`);
+  if(/Центральна,? 94|94 Tsentralna/.test(html)){const c=JSON.parse(fs.readFileSync(path.join(root,'content/site.json'))).contact;assert.equal(c.administrative_address_verification?.status,'owner_confirmed',`Administrative address requires owner confirmation: ${file}`);assert.ok(/адміністративн|administrative/i.test(html),`Address must identify the administrative building: ${file}`);}
   if(html.includes('26100236'))assert.equal(JSON.parse(fs.readFileSync(path.join(root,'content/parish-identity.json'))).edrpou,'26100236','Owner-confirmed organisation code');
  }
  for(const match of html.matchAll(/(?:href|src|data-full)="([^"<>]+)"/g)){

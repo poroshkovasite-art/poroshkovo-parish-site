@@ -11,6 +11,8 @@ root=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
 parser.add_argument('--previous',type=Path,required=True)
 parser.add_argument('--stage',type=Path,required=True)
+parser.add_argument('--release-json',type=Path)
+parser.add_argument('--report',type=Path)
 args=parser.parse_args()
 stage=args.stage.resolve()
 assert not stage.exists(), 'Use a fresh staging directory; never overwrite a previous backup'
@@ -30,7 +32,7 @@ with zipfile.ZipFile(args.previous) as previous:
         rel=PurePosixPath(*parts[1:])
         assert not rel.is_absolute() and '..' not in rel.parts
         assert ((info.external_attr>>16)&0o170000)!=0o120000, 'No symlinks in archive'
-        if not rel.parts or rel.parts[0] in ['SOURCE_CODE','READY_TO_PUBLISH','SOURCE_HISTORY.bundle']:continue
+        if not rel.parts or rel.parts[0] in ['SOURCE_CODE','READY_TO_PUBLISH','EDITORIAL_PREVIEW_PRIVATE','SOURCE_HISTORY.bundle','CURRENT_RELEASE.json','CURRENT_FILE_HASHES.json']:continue
         if info.is_dir():continue
         dest=stage/Path(*rel.parts)
         if rel.as_posix()=='FINAL_REPORT.md':dest=stage/'DOCUMENTATION/PREVIOUS_FINAL_REPORT_20261101.md'
@@ -43,14 +45,18 @@ files=subprocess.check_output(['git','ls-files','-z'],cwd=root).decode('utf-8').
 for rel in filter(None,files):
     dest=source/rel;assert dest.resolve().is_relative_to(source.resolve())
     dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(root/rel,dest)
-shutil.copytree(root/'private-materials/parish-chronicle',source/'private-materials/parish-chronicle')
-shutil.copytree(root/'private-materials/administrative-building',source/'private-materials/administrative-building')
-shutil.copytree(root/'private-materials/administrative-building',stage/'PHOTOS/ADMINISTRATIVE_BUILDING_ORIGINAL')
-shutil.copytree(root/'private-materials/parish-chronicle',stage/'PHOTOS/CHRONICLE_PRIVATE')
+shutil.copytree(root/'private-materials/parish-chronicle',source/'private-materials/parish-chronicle',dirs_exist_ok=True)
+shutil.copytree(root/'private-materials/administrative-building',source/'private-materials/administrative-building',dirs_exist_ok=True)
+shutil.copytree(root/'private-materials/administrative-building',stage/'PHOTOS/ADMINISTRATIVE_BUILDING_ORIGINAL',dirs_exist_ok=True)
+shutil.copytree(root/'private-materials/parish-chronicle',stage/'PHOTOS/CHRONICLE_PRIVATE',dirs_exist_ok=True)
 shutil.copytree(root/'dist',stage/'READY_TO_PUBLISH')
 shutil.copytree(root/'dist-editor',stage/'EDITORIAL_PREVIEW_PRIVATE')
-shutil.copytree(root.parent/'audit',stage/'AUDIT',dirs_exist_ok=True)
-shutil.copy2(root/'PARISH_PHOTO_GALLERY_REPORT.md',stage/'FINAL_REPORT.md')
+for evidence in (root.parent/'audit').iterdir():
+    if evidence.is_file() and evidence.suffix in ['.json','.png','.jpg','.html','.md']:
+        (stage/'AUDIT').mkdir(exist_ok=True);shutil.copy2(evidence,stage/'AUDIT'/evidence.name)
+    elif evidence.is_dir() and evidence.name=='visual-polish':
+        shutil.copytree(evidence,stage/'AUDIT/visual-polish',dirs_exist_ok=True,ignore=shutil.ignore_patterns('after-candidate-*','baseline-site','baseline-source.zip'))
+shutil.copy2(args.report or root/'PARISH_PHOTO_GALLERY_REPORT.md',stage/'FINAL_REPORT.md')
 shutil.copy2(root/'PARISH_PHOTO_MAPPING.csv',stage/'PARISH_PHOTO_MAPPING.csv')
 shutil.copy2(root/'START_SITE.cmd',stage/'SOURCE_CODE/START_SITE.cmd')
 (stage/'START_SITE.cmd').write_text('@echo off\r\ncall "%~dp0SOURCE_CODE\\START_SITE.cmd"\r\n',encoding='ascii')
@@ -65,10 +71,16 @@ expected={p.relative_to(root/'dist').as_posix():digest(p) for p in (root/'dist')
 restored={p.relative_to(source/'dist').as_posix():digest(p) for p in (source/'dist').rglob('*') if p.is_file()}
 assert expected==restored, 'Restored production output must match every original production file'
 print(f'Restore build verified: {len(expected)} files.',flush=True)
-release={'status':'local_prepared','commit':commit,'deployed_commit':'0bc9dd399c2124cc4ecb85591c35b8343be878e1',
-    'deployment_status':'New commit not yet deployed; see FINAL_REPORT.md for access status',
-    'pending_new_photos':26,'approved_new_photos':0,'public_output':'READY_TO_PUBLISH',
-    'private_output':'EDITORIAL_PREVIEW_PRIVATE - do not deploy','restore_files':len(expected),'restore_hashes_match':True}
+catalog=json.loads((root/'content/parish-photo-catalog.json').read_text(encoding='utf-8'))
+release={'status':'local_prepared','commit':commit,'deployment_status':'Publication not verified in this backup run',
+    'pending_new_photos':sum(p['publication_status']=='pending_approval' for p in catalog['photos']),
+    'approved_new_photos':sum(p['publication_status']=='approved' for p in catalog['photos']),
+    'public_output':'READY_TO_PUBLISH','private_output':'EDITORIAL_PREVIEW_PRIVATE - do not deploy',
+    'restore_files':len(expected),'restore_hashes_match':True}
+if args.release_json:
+    verified=json.loads(args.release_json.read_text(encoding='utf-8-sig'))
+    assert verified['status']=='success' and verified['commit']==commit and verified['verification_status']=='PASS'
+    release.update(verified)
 (stage/'CURRENT_RELEASE.json').write_text(json.dumps(release,indent=2)+'\n',encoding='utf-8')
 old_release=stage/'AUDIT/current-release.json'
 if old_release.exists():shutil.copy2(old_release,stage/'AUDIT/previous-public-release-20261101.json')

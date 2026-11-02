@@ -14,7 +14,7 @@ const publishedPhotos=[...JSON.parse(fs.readFileSync(path.join(root,'content/pho
 const assets=['/assets/site.css','/assets/app.js','/favicon.ico','/assets/favicon.ico','/assets/favicon-16x16.png','/assets/favicon-32x32.png','/assets/apple-touch-icon.png','/assets/icon-192.png','/assets/icon-512.png','/assets/og-card.png','/assets/og-card-uk.png','/assets/og-card-en.png','/robots.txt','/sitemap.xml','/uk/site.webmanifest','/en/site.webmanifest',...publishedPhotos.flatMap(p=>p.widths.flatMap(w=>[`/assets/photos/${p.id}-${w}.webp`,...(p.variants?.captioned?.available_on_site?[`/assets/photos/${p.id}-captioned-${w}.webp`]:[])])),...fs.readdirSync(path.join(out,'assets/brand')).filter(f=>f.endsWith('.png')).map(f=>`/assets/brand/${f}`)];
 const report={date:new Date().toISOString().slice(0,10),url:base,status:'RUNNING',http:[],layouts:[],accessibility:[],jsErrors:[],interactions:[]};
 assets.push(...fs.readdirSync(path.join(out,'documents')).map(f=>'/documents/'+f),...fs.readdirSync(path.join(out,'assets/documents')).map(f=>'/assets/documents/'+f));
-assets.push('/assets/hero-buildings.css','/assets/community-mission.css','/assets/chronicle.css','/assets/chronicle.js','/assets/home-features.css','/assets/home-features.js','/assets/portal.css','/assets/calendar.js','/assets/calendar-core.js','/assets/calendar-labels.js');
+assets.push('/assets/visual-polish.css','/assets/hero-buildings.css','/assets/community-mission.css','/assets/chronicle.css','/assets/chronicle.js','/assets/home-features.css','/assets/home-features.js','/assets/portal.css','/assets/calendar.js','/assets/calendar-core.js','/assets/calendar-labels.js');
 assets.push('/assets/mission-carousel.js','/uk/sitemap.xml','/en/sitemap.xml','/assets/home-layout.css','/assets/parish-map.css','/assets/parish-map.js','/assets/vendor/leaflet/leaflet.css','/assets/vendor/leaflet/leaflet.js',...fs.readdirSync(path.join(out,'assets/vendor/leaflet/images')).map(f=>'/assets/vendor/leaflet/images/'+f));
 const headerBrand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json')));if(headerBrand.symbol)assets.push(headerBrand.symbol.file);
 const historicalMap=JSON.parse(fs.readFileSync(path.join(root,'content/historical-map.json')));
@@ -22,7 +22,8 @@ assets.push(...historicalMap.widths.map(w=>`/assets/history/${historicalMap.id}-
 assets.push('/google696019cf5de45d47.html','/verification/google696019cf5de45d47.txt','/googled4db93a6e7198af5.html','/verification/googled4db93a6e7198af5.txt');
 for(const route of [...routes,...assets]){
  const response=await fetch(base+route),bytes=Buffer.from(await response.arrayBuffer());assert.equal(response.status,200,route);
- const local=fs.readFileSync(path.join(out,route.endsWith('/')?route.slice(1)+'index.html':route.slice(1)));
+ const redirectTarget=/^\/google[0-9a-f]+\.html$/.test(route)?'verification/'+route.slice(1).replace('.html','.txt'):route.endsWith('/')?route.slice(1)+'index.html':route.slice(1);
+ const local=fs.readFileSync(path.join(out,redirectTarget));
  assert.equal(hash(bytes),hash(local),`Live bytes must match local production build: ${route}`);
  report.http.push({route,status:response.status,bytes:bytes.length,sha256:hash(bytes),exactMatch:true});
  if(route.endsWith('/')){const html=bytes.toString();assert.ok(html.includes(`<html lang="${route.startsWith('/uk/')?'uk':'en'}">`));assert.ok(html.includes('content="index, follow"'));assert.ok(!html.includes('preview-label'));assert.ok(html.includes(`rel="canonical" href="${base}${route}"`));}
