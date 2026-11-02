@@ -37,7 +37,13 @@
     "location_verified_on": "2026-11-01",
     "location_source": "Explicit exact coordinates supplied by the parish website owner on 2026-11-01",
     "location_note": "Owner-confirmed physical location of the church. These coordinates replace the earlier pin; no legal address or village-centre approximation is used.",
-    "map_tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+    "map_tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "administrative_address": {
+      "uk": "вул. Центральна, 94",
+      "en": "94 Tsentralna Street"
+    },
+    "administrative_address_verification_status": "owner_confirmed",
+    "administrative_address_source": "Explicit owner clarification in final visual audit request, 2026-11-02; administrative house only, not the church map pin"
   },
   "donations": {
     "verification_status": "confirmed",

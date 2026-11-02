@@ -1464,5 +1464,276 @@
         "available_on_site": false
       }
     }
+  },
+  {
+    "id": "brigade-appreciation",
+    "title": {
+      "uk": "Подяка за служіння",
+      "en": "Appreciation for parish service"
+    },
+    "caption": {
+      "uk": "Подяка 33-ї окремої механізованої бригади парафії святих Кирила і Методія.",
+      "en": "The 33rd Separate Mechanized Brigade’s certificate of appreciation to the parish of Saints Cyril and Methodius."
+    },
+    "caption_overlay": {
+      "uk": "Подяка за служіння",
+      "en": "Appreciation for parish service"
+    },
+    "alt": {
+      "uk": "Подяка 33-ї окремої механізованої бригади парафії святих Кирила і Методія.",
+      "en": "The 33rd Separate Mechanized Brigade’s certificate of appreciation to the parish of Saints Cyril and Methodius."
+    },
+    "description": {
+      "uk": "Подяка 33-ї окремої механізованої бригади парафії святих Кирила і Методія.",
+      "en": "The 33rd Separate Mechanized Brigade’s certificate of appreciation to the parish of Saints Cyril and Methodius."
+    },
+    "category": "social",
+    "theme": "social-ministry",
+    "mission_direction": "solidarity",
+    "category_label": {
+      "uk": "Соціальне служіння",
+      "en": "Social ministry"
+    },
+    "placements": [
+      "gallery"
+    ],
+    "width": 1600,
+    "height": 1200,
+    "widths": [
+      480,
+      800,
+      960,
+      1280,
+      1600
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "consents_confirmed": true,
+    "contains_children": false,
+    "contains_aid_recipients": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "original_file": "owner-additions-20261102/1.jpeg",
+    "original_sha256": "850223c58a5c8753f1057719541c409bdb2e053e52d4e7e659df88791d0eb45c",
+    "captured_on": null,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "consent_reference": "Owner expressly confirmed photograph rights, depicted-person consent and full certificate/signature/seal publication in this chat, 2026-11-02",
+    "processing": {
+      "brightness_factor": 1.065,
+      "contrast_factor": 1.02,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "social_story": "brigade-appreciation"
+  },
+  {
+    "id": "brigade-appreciation-presentation",
+    "title": {
+      "uk": "Визнання доброї справи",
+      "en": "Recognition of shared service"
+    },
+    "caption": {
+      "uk": "Вручення подяки парафіяльній громаді від 33-ї окремої механізованої бригади.",
+      "en": "Presentation of the 33rd Separate Mechanized Brigade’s certificate of appreciation to the parish community."
+    },
+    "caption_overlay": {
+      "uk": "Визнання доброї справи",
+      "en": "Recognition of shared service"
+    },
+    "alt": {
+      "uk": "Вручення подяки парафіяльній громаді від 33-ї окремої механізованої бригади.",
+      "en": "Presentation of the 33rd Separate Mechanized Brigade’s certificate of appreciation to the parish community."
+    },
+    "description": {
+      "uk": "Вручення подяки парафіяльній громаді від 33-ї окремої механізованої бригади.",
+      "en": "Presentation of the 33rd Separate Mechanized Brigade’s certificate of appreciation to the parish community."
+    },
+    "category": "social",
+    "theme": "social-ministry",
+    "mission_direction": "solidarity",
+    "category_label": {
+      "uk": "Соціальне служіння",
+      "en": "Social ministry"
+    },
+    "placements": [
+      "gallery"
+    ],
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      800,
+      960,
+      1200
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "consents_confirmed": true,
+    "contains_children": false,
+    "contains_aid_recipients": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "original_file": "owner-additions-20261102/2.jpeg",
+    "original_sha256": "f7d631e0f5a3e6a86682278b15c8fcd1fdbf5823a55f2feaa0500ced912b6479",
+    "captured_on": null,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "consent_reference": "Owner expressly confirmed photograph rights, depicted-person consent and full certificate/signature/seal publication in this chat, 2026-11-02",
+    "processing": {
+      "brightness_factor": 1.065,
+      "contrast_factor": 1.02,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "social_story": "brigade-appreciation"
+  },
+  {
+    "id": "defenders-food-preparation",
+    "title": {
+      "uk": "Тепло спільної праці",
+      "en": "Care through shared work"
+    },
+    "caption": {
+      "uk": "Парафіянки готують голубці для наших захисників.",
+      "en": "Parish women prepare cabbage rolls for Ukraine’s defenders."
+    },
+    "caption_overlay": {
+      "uk": "Тепло спільної праці",
+      "en": "Care through shared work"
+    },
+    "alt": {
+      "uk": "Парафіянки готують голубці для наших захисників.",
+      "en": "Parish women prepare cabbage rolls for Ukraine’s defenders."
+    },
+    "description": {
+      "uk": "Парафіянки готують голубці для наших захисників.",
+      "en": "Parish women prepare cabbage rolls for Ukraine’s defenders."
+    },
+    "category": "social",
+    "theme": "social-ministry",
+    "mission_direction": "solidarity",
+    "category_label": {
+      "uk": "Соціальне служіння",
+      "en": "Social ministry"
+    },
+    "placements": [
+      "gallery"
+    ],
+    "width": 1600,
+    "height": 1200,
+    "widths": [
+      480,
+      800,
+      960,
+      1280,
+      1600
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "consents_confirmed": true,
+    "contains_children": false,
+    "contains_aid_recipients": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "original_file": "owner-additions-20261102/3.jpeg",
+    "original_sha256": "6e94ae7fa2af0e9d1d0978a0e2fc7714c3e38258474844c748f2d2de19097265",
+    "captured_on": null,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "consent_reference": "Owner expressly confirmed photograph rights, depicted-person consent and full certificate/signature/seal publication in this chat, 2026-11-02",
+    "processing": {
+      "brightness_factor": 1.065,
+      "contrast_factor": 1.02,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "social_story": "defenders-food"
+  },
+  {
+    "id": "defenders-prepared-food",
+    "title": {
+      "uk": "Домашнє тепло для захисників",
+      "en": "A taste of home for defenders"
+    },
+    "caption": {
+      "uk": "Домашня їжа, приготовлена з любов’ю для українських воїнів.",
+      "en": "Home-cooked food prepared with love for Ukrainian service members."
+    },
+    "caption_overlay": {
+      "uk": "Домашнє тепло для захисників",
+      "en": "A taste of home for defenders"
+    },
+    "alt": {
+      "uk": "Домашня їжа, приготовлена з любов’ю для українських воїнів.",
+      "en": "Home-cooked food prepared with love for Ukrainian service members."
+    },
+    "description": {
+      "uk": "Домашня їжа, приготовлена з любов’ю для українських воїнів.",
+      "en": "Home-cooked food prepared with love for Ukrainian service members."
+    },
+    "category": "social",
+    "theme": "social-ministry",
+    "mission_direction": "solidarity",
+    "category_label": {
+      "uk": "Соціальне служіння",
+      "en": "Social ministry"
+    },
+    "placements": [
+      "gallery"
+    ],
+    "width": 1600,
+    "height": 1200,
+    "widths": [
+      480,
+      800,
+      960,
+      1280,
+      1600
+    ],
+    "publication_status": "approved",
+    "rights_confirmed": true,
+    "consents_confirmed": true,
+    "contains_children": false,
+    "contains_aid_recipients": false,
+    "credit": {
+      "uk": "Надано парафією",
+      "en": "Provided by the parish"
+    },
+    "original_file": "owner-additions-20261102/4.jpeg",
+    "original_sha256": "c748ecdc6a97c6a566b4884a7525bb87b0812a8f62d0c63b997f7d47433a94cb",
+    "captured_on": null,
+    "publication_languages": [
+      "uk",
+      "en"
+    ],
+    "consent_reference": "Owner expressly confirmed photograph rights, depicted-person consent and full certificate/signature/seal publication in this chat, 2026-11-02",
+    "processing": {
+      "brightness_factor": 1.065,
+      "contrast_factor": 1.02,
+      "crop": false,
+      "generative_processing": false,
+      "metadata_removed": true,
+      "original_unchanged": true
+    },
+    "social_story": "defenders-food"
   }
 ]

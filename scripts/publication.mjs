@@ -15,7 +15,8 @@ export function validateRecord(record){
 }
 export function approvedDocument(record,root){
  validateRecord(record);if(!publishable(record))return false;
- if(!record.publication_permission||!record.privacy_reviewed||!record.privacy_reviewed_on||!record.issued_on||!bilingual(record.issuer))throw Error('Document needs issuer, date, permission and privacy review: '+record.id);
+ const reviewedUndated=record.id==='brigade-appreciation'&&record.issued_on===null&&record.issued_date_status==='not_stated_on_document'&&record.issued_date_reviewed===true&&Boolean(record.issued_date_review_note);
+ if(!record.publication_permission||!record.privacy_reviewed||!record.privacy_reviewed_on||(!record.issued_on&&!reviewedUndated)||!bilingual(record.issuer))throw Error('Document needs issuer, date, permission and privacy review: '+record.id);
  const file=record.public_file;
  if(!/^documents\/[a-z0-9-]+\.pdf$/.test(file||''))throw Error('Use a neutral PDF filename within documents/');
  const full=path.resolve(root,'approved-documents',path.basename(file));

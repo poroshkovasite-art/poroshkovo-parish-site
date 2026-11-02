@@ -6,7 +6,7 @@ import {spawn} from 'node:child_process';
 const editor=process.argv.includes('--editor'),port=Number(process.env.PORT||(editor?4174:4173));
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),editor?'../dist-editor':'../dist');
 const securityHeaders=Object.fromEntries(fs.readFileSync(path.join(root,'_headers'),'utf8').split('\n').filter(l=>l.startsWith('  ')&&l.includes(':')).map(l=>{const i=l.indexOf(':');return [l.slice(0,i).trim(),l.slice(i+1).trim()];}));
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.webmanifest':'application/manifest+json','.ico':'image/x-icon','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.xml':'application/xml','.txt':'text/plain; charset=utf-8'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.webmanifest':'application/manifest+json','.ico':'image/x-icon','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.jpeg':'image/jpeg','.pdf':'application/pdf','.xml':'application/xml','.txt':'text/plain; charset=utf-8'};
 http.createServer((req,res)=>{
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400);return res.end();}
  const target=path.resolve(root,'.'+pathname),safe=target===root||target.startsWith(root+path.sep);

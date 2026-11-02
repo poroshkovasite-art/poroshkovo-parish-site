@@ -28,7 +28,7 @@ try{
   assert.deepEqual(order,['hero','mission','carousel','services','history','contacts','support']);
   const photoIds=await page.locator('main img[data-image-id]').evaluateAll(imgs=>imgs.map(i=>i.dataset.imageId));
   assert.equal(new Set(photoIds).size,photoIds.length,'No repeated home photograph');
-  assert.ok(await page.locator('[data-community-mission] [data-photo-id]').count()>=3);await page.locator('[data-mission-carousel]').scrollIntoViewIfNeeded();await page.locator('[data-mission-step="1"]').click();await page.waitForFunction(()=>document.querySelector('[data-mission-carousel]').dataset.active==='1');await page.locator('[data-mission-track]').focus();await page.keyboard.press('ArrowLeft');await page.waitForFunction(()=>document.querySelector('[data-mission-carousel]').dataset.active==='0');
+  assert.equal(await page.locator('[data-mission-composition] [data-photo-id]').count(),3);assert.equal(await page.locator('[data-mission-carousel]').count(),0);
   assert.equal(await page.locator('[data-service]').count(),4);assert.equal(await page.locator('[data-ministry-direction]').count(),7);
   assert.equal(await page.locator('#navigation a[href$="/first-visit/"],#navigation a[href$="/support/"],[data-feature-carousel],[data-load-map],.map-consent').count(),0);
   assert.equal(await page.locator('[data-home-support] .home-iban').innerText(),read('support').accounts[0].iban);

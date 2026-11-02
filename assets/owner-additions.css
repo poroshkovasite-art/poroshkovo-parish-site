@@ -1,0 +1,25 @@
+.defender-story{padding-block:40px;border-top:1px solid var(--line);scroll-margin-top:130px}
+.defender-story-copy{max-width:76ch;margin-bottom:28px}.defender-story-copy h3{font-size:clamp(28px,3vw,38px);line-height:1.2}
+.defender-story-photos{grid-template-columns:repeat(2,minmax(0,1fr))}.defender-story-photos .parish-photo{margin:0}
+.defender-priorities{display:grid;grid-template-columns:1fr 1fr;gap:16px 32px;padding-left:24px}
+.defender-priorities li{padding:8px}.local-spiritual-resources{margin-bottom:40px}.youcat-topics{margin-top:24px}
+.youcat-intro{max-width:84ch}.youcat-topics .resource-card{display:flex;flex-direction:column}.youcat-topics .resource-card>a:first-of-type{margin-top:auto}
+.topic-number{color:var(--accent);letter-spacing:.12em;font-size:13px}.home-service-card{scroll-margin-top:130px}
+.liturgy-library{--reader-size:22px}.reader-toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:28px}
+.reader-toolbar button{min-width:48px;min-height:46px;border:1px solid var(--line);border-radius:12px;background:var(--white);color:var(--ink);padding:10px 16px;font:inherit}
+.liturgy-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:start}.liturgy-toc{position:sticky;top:120px}
+.liturgy-toc h2{font-size:25px}.liturgy-toc a,.rite-navigation a{display:block;min-height:44px;padding:10px 0;font-size:14px}
+.liturgy-book{background:#fffcf5;border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,60px);box-shadow:0 12px 40px #49342b0b;min-width:0}
+.liturgy-book h2{font-size:clamp(28px,3vw,38px);line-height:1.25}.liturgy-part{scroll-margin-top:115px;margin-top:44px}
+.liturgy-book p{font-family:var(--serif);font-size:var(--reader-size);line-height:1.7;color:#24201e;margin:0 0 1em}
+.liturgy-book .liturgy-rubric,.liturgy-speaker{color:#862e36}.liturgy-rubric{font-family:var(--serif);font-size:1.25em;margin:32px 0 18px;scroll-margin-top:120px}
+.liturgy-book [data-role=people]{font-weight:600;background:#f2e9df;border-left:3px solid #ad7d75;padding:12px 16px;border-radius:0 10px 10px 0}
+.reader-legend{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;border-block:1px solid var(--line);padding:18px 0}.reader-legend span{padding:5px 8px}
+.reader-legend [data-role=people]{background:#f2e9df;border-radius:8px}.liturgy-edition{border-top:1px solid var(--line);margin-top:44px;padding-top:24px;scroll-margin-top:120px}
+.liturgy-edition p,.liturgy-book p.language-note{font-family:var(--sans);font-size:14px;line-height:1.8}.liturgy-edition a{display:block}.rite-navigation{margin-top:28px}.rite-navigation summary,.liturgy-edition summary{cursor:pointer;padding:14px;min-height:44px}
+.reading-mode .header,.reading-mode .footer,.reading-mode>.breadcrumb,.reading-mode .page-heading{display:none}.reading-mode .liturgy-library{padding-top:24px}.reading-mode .reader-toolbar{position:sticky;top:0;z-index:20;background:var(--paper);padding:12px 0}.reading-mode .liturgy-toc{top:86px}
+@media(max-width:850px){.liturgy-layout{grid-template-columns:1fr;gap:24px}.liturgy-toc{position:static}.liturgy-toc a{display:inline-block;margin-right:18px}.liturgy-book{max-width:100%}}
+@media(max-width:620px){.defender-story-photos{grid-template-columns:1fr}.defender-priorities{grid-template-columns:1fr;gap:8px}.defender-story{padding-block:28px}.liturgy-library{--reader-size:21px}.liturgy-book p{line-height:1.65}.liturgy-book [data-role=people]{padding:10px 12px}.liturgy-toc a{display:block}.liturgy-part{margin-top:32px}}
+
+.liturgy-book p.eyebrow{font-family:var(--sans);font-size:11px;line-height:1.6;color:var(--accent)}
+.liturgy-preparation{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:32px}.liturgy-preparation small{font-size:12px;color:var(--muted)}.liturgy-toc summary{cursor:pointer;padding:12px 0;min-height:44px}

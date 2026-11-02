@@ -6,14 +6,12 @@ import {approvedAccount,publishable} from './publication.mjs';
 export function createHomeLayout({C,P,Chronicle,mission,photos,support,editor=false}) {
  const t=(v,l)=>esc(v[l]);
  // Distinct visual roles: buildings in hero, community in mission, prayer in carousel.
- const socialPhotos=['chronicle-youth-bike-ride','chronicle-parish-summer-camp','chronicle-outdoor-creative-workshop','chronicle-families-support','chronicle-children-group-picnic','chronicle-catechesis-table-tennis','chronicle-personal-support-visit','chronicle-youth-winter-recreation','chronicle-summer-camp-masterclass','chronicle-elderly-home-visit','chronicle-summer-camp-crafts'];
- const fallbackPhotos=['parish-community-children','parish-prayer-on-church-steps','pastor-parish-work'];
- const eligible=(p,l)=>p&&!photoExcluded(p)&&(photoApproved(p)||(editor&&p.publication_status==='pending_approval'))&&(!p.publication_languages||p.publication_languages.includes(l));
- function MissionPhotos(l){
-  const pick=ids=>ids.map(id=>photos.find(p=>p.id===id)).filter(p=>eligible(p,l));
-  const social=pick(socialPhotos),chosen=social.length?social:pick(fallbackPhotos),uk=l==='uk';
-  return `<div class="mission-photo-carousel" data-mission-carousel role="region" aria-roledescription="${uk?'карусель':'carousel'}" aria-labelledby="mission-photo-heading"><h3 id="mission-photo-heading" class="eyebrow">${uk?'Спільнота в дії':'Our Community in Action'}</h3><div class="mission-photo-track" data-mission-track tabindex="0" aria-label="${uk?'Фотографії соціального та спільнотного життя':'Photographs of social and community life'}">${chosen.map(p=>C.PhotoFigure(p,l,false).replace('<figure ',`<figure data-mission-photo="${p.id}" `).replace('<figcaption>',`<figcaption>${editor&&p.publication_status==='pending_approval'?'<p class="editor-status">pending_approval</p>':''}`)).join('')}</div><div class="mission-photo-controls" data-mission-controls hidden><button type="button" data-mission-step="-1" aria-label="${uk?'Попередня світлина':'Previous photograph'}">←</button><span class="mission-photo-status" data-mission-status role="status" aria-live="polite"></span><button type="button" data-mission-step="1" aria-label="${uk?'Наступна світлина':'Next photograph'}">→</button></div></div>`;
- }
+ const missionPhotos=[
+  {id:'chronicle-personal-support-visit',label:{uk:'Поруч із людьми',en:'Care and companionship'}},
+  {id:'chronicle-outdoor-creative-workshop',label:{uk:'Творчість дітей',en:'Children’s creativity'}},
+  {id:'chronicle-youth-winter-recreation',label:{uk:'Спільний відпочинок',en:'Recreation together'}}
+ ];
+ function MissionPhotos(l){return `<div class="mission-photo-composition" data-mission-composition aria-label="${l==='uk'?'Турбота, розвиток і спільне дозвілля':'Care, development and shared recreation'}">${missionPhotos.map(item=>{const p=photos.find(p=>p.id===item.id);if(!p||!photoApproved(p)||photoExcluded(p))return '';return C.PhotoFigure(p,l,false).replace(/<strong>.*?<\/strong>/,`<strong>${t(item.label,l)}</strong>`);}).join('')}</div>`;}
  function Mission(l) {
   return `<section class="section wrap mission-home mission-composition" data-community-mission aria-labelledby="mission-title"><div class="mission-heading"><p class="eyebrow">${l==='uk'?'Віра, що діє через любов':'Faith working through love'}</p><h2 id="mission-title">${t(mission.title,l)}</h2><p class="lead">${t(mission.lead,l)}</p><p>${t(mission.paragraphs[1],l)}</p><div class="actions"><a class="text-link" href="${url(l,'community-impact')}">${l==='uk'?'Наш вплив на громаду':'Our Community Impact'} ↗</a></div></div>${MissionPhotos(l)}</section>`;
  }

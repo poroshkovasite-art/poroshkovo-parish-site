@@ -245,6 +245,48 @@
         "en": "Bank details are also provided as selectable text on the support page."
       },
       "link_slug": "support"
+    },
+    {
+      "id": "brigade-appreciation",
+      "title": {
+        "uk": "Подяка 33-ї окремої механізованої бригади парафії святих Кирила і Методія",
+        "en": "Certificate of Appreciation from the 33rd Separate Mechanized Brigade"
+      },
+      "description": {
+        "uk": "Подяка парафіяльній громаді в особі настоятеля о. Анатолія Горзова за активну громадянську позицію та внесок у зміцнення бойової готовності ЗСУ. Підписант: командир 33 ОМБр, полковник Дмитро Паліса.",
+        "en": "A certificate thanking the parish community, represented by its pastor Fr Anatoliy Horzov, for its active civic commitment and contribution to the combat readiness of Ukraine’s Armed Forces. Signed by Colonel Dmytro Palisa, commander of the 33rd Separate Mechanized Brigade."
+      },
+      "category": "other",
+      "photos": [],
+      "date": null,
+      "issued_on": null,
+      "issued_date_status": "not_stated_on_document",
+      "issued_date_reviewed": true,
+      "issued_date_review_note": "Owner-supplied certificate visually checked: no issue date visible. No date inferred.",
+      "issuer": {
+        "uk": "33-тя окрема механізована бригада Збройних сил України",
+        "en": "33rd Separate Mechanized Brigade, Armed Forces of Ukraine"
+      },
+      "source": "Owner-supplied certificate and verified publication/consent instruction in this chat, 2026-11-02",
+      "verified_on": "2026-11-02",
+      "verification_status": "confirmed",
+      "publication_status": "approved",
+      "publication_permission": true,
+      "privacy_reviewed": true,
+      "privacy_reviewed_on": "2026-11-02",
+      "privacy_review_note": "Full image, official signature and seal expressly authorized by owner and community leadership. Contains public organizational names and official signatory; no operational location, delivery route, private contact or beneficiary details. No capture date or delivery association inferred.",
+      "public_file": "documents/brigade-appreciation.pdf",
+      "preview_id": "brigade-appreciation",
+      "preview_width": 1600,
+      "preview_height": 1200,
+      "original_image": "assets/documents/brigade-appreciation-original.jpeg",
+      "language": "uk",
+      "summary_note": {
+        "uk": "Дату видачі не зазначено. PDF містить точне зображення наданого оригіналу; освітлена копія слугує для перегляду.",
+        "en": "No issue date is stated. The PDF contains the exact supplied photograph; a lightly brightened copy is used for viewing."
+      },
+      "link_slug": "social-ministry",
+      "link_anchor": "brigade-appreciation"
     }
   ]
 }

@@ -20,9 +20,9 @@ try{
   const pair=page.locator('[data-hero-buildings]');assert.deepEqual(await pair.locator('[data-photo-id]').evaluateAll(es=>es.map(e=>e.dataset.photoId)),['church-exterior','parish-administrative-building']);
   const geometry=await pair.locator('.photo-visual').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().toJSON()));assert.ok(Math.abs(geometry[0].height-geometry[1].height)<1,'Equal image heights');
   if(width>620){assert.ok(Math.abs(geometry[0].y-geometry[1].y)<1);assert.ok(geometry[1].x>=geometry[0].right);}else assert.ok(geometry[1].y>geometry[0].bottom);
-  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  const cards=await pair.locator('figure').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().height));assert.ok(Math.abs(cards[0]-cards[1])<1,'Equal complete hero card heights');assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   assert.ok(await pair.locator('img').evaluateAll(es=>es.every(i=>getComputedStyle(i).objectFit==='contain'&&i.naturalWidth>0&&i.srcset)));
-  assert.equal(await pair.locator('figcaption strong').first().innerText(),lang==='uk'?'Храм святих Кирила і Методія':'Church of Saints Cyril and Methodius');assert.equal(await pair.locator('figcaption strong').last().innerText(),newPhoto.title[lang]);
+  assert.equal(await pair.locator('figcaption strong').first().innerText(),lang==='uk'?'Наш храм':'Our Church');assert.equal(await pair.locator('figcaption strong').last().innerText(),lang==='uk'?'Парафіяльний дім':'Parish House');
   for(const id of ['church-exterior','parish-administrative-building']){await pair.locator(`[data-photo-id="${id}"]`).click();assert.ok(await page.locator('dialog').isVisible());await page.locator('dialog img').evaluate(i=>i.decode());assert.ok((await page.locator('dialog img').getAttribute('src')).includes(id));await page.keyboard.press('Escape');}
   if([390,768,1440].includes(width)){await page.locator('.hero').screenshot({path:path.join(audit,`hero-buildings-${tag}-${lang}-${width}.png`)});const a=await new AxeBuilder({page}).include('.hero').analyze();assert.deepEqual(a.violations,[]);}
   report.layouts.push({lang,width,status:'PASS'});

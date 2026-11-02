@@ -1,0 +1,97 @@
+{
+  "title": {
+    "uk": "YOUCAT для дітей",
+    "en": "YOUCAT for Kids"
+  },
+  "description": {
+    "uk": "Пізнаваймо християнську віру разом із дітьми через запитання й відповіді, біблійні історії, творчі завдання та ігри. Матеріали допомагають говорити про Бога, молитву, Святі Таїнства й християнське життя зрозумілою для дітей мовою.",
+    "en": "Explore the Christian faith with children through questions and answers, Bible stories, creative activities and games. These materials help families talk about God, prayer, the Holy Mysteries and Christian life in language children can understand."
+  },
+  "url": "https://www.clarastudio.tv/додаткові-матеріали/",
+  "topics": [
+    {
+      "id": "creation",
+      "title": {
+        "uk": "Бог створив світ і людину",
+        "en": "God created the world and humanity"
+      },
+      "description": {
+        "uk": "Відкриваймо красу творіння та гідність кожної людини.",
+        "en": "Discover the beauty of creation and the dignity of every person."
+      },
+      "url": "https://drive.google.com/file/d/1Wfi5MSainVzbRJZYokL8L7TJW64EWto4/view",
+      "source_page": "https://www.clarastudio.tv/додаткові-матеріали/",
+      "verified_on": "2026-11-02"
+    },
+    {
+      "id": "creed",
+      "title": {
+        "uk": "Символ віри",
+        "en": "The Creed"
+      },
+      "description": {
+        "uk": "Розмовляймо про основи віри й шукаймо відповіді разом.",
+        "en": "Explore the foundations of faith through conversation and questions."
+      },
+      "url": "https://drive.google.com/file/d/1vfErjWxUKPQVzc-KoXYr5EWGbZCUvnQ3/view",
+      "source_page": "https://www.clarastudio.tv/додаткові-матеріали/",
+      "verified_on": "2026-11-02"
+    },
+    {
+      "id": "sacraments",
+      "title": {
+        "uk": "Сім Святих Таїнств",
+        "en": "The seven Holy Mysteries"
+      },
+      "description": {
+        "uk": "Пізнаваймо Таїнства за допомогою настільної гри.",
+        "en": "Learn about the Holy Mysteries through a board game."
+      },
+      "url": "https://drive.google.com/file/d/1bOJhDJ4WfzAgNMqurZSAF9D7NqA_294f/view",
+      "source_page": "https://www.clarastudio.tv/додаткові-матеріали/",
+      "verified_on": "2026-11-02"
+    },
+    {
+      "id": "commandments",
+      "title": {
+        "uk": "Десять Божих заповідей",
+        "en": "The Ten Commandments"
+      },
+      "description": {
+        "uk": "Шукаймо добрі рішення у щоденному житті.",
+        "en": "Consider good choices in everyday life."
+      },
+      "url": "https://drive.google.com/file/d/1YD2EiiSDkq-cpok9Qi2D_xNDfQWT41Fx/view",
+      "source_page": "https://www.clarastudio.tv/додаткові-матеріали/",
+      "verified_on": "2026-11-02"
+    },
+    {
+      "id": "prayer",
+      "title": {
+        "uk": "Молитва",
+        "en": "Prayer"
+      },
+      "description": {
+        "uk": "Вчімося розмовляти з Богом і знаходити час для молитви.",
+        "en": "Make space for prayer and learn to speak with God."
+      },
+      "url": "https://drive.google.com/file/d/1vcUL-gyt5lFZdADWk_bAc3Vh43Mquhub/view",
+      "source_page": "https://www.clarastudio.tv/додаткові-матеріали/",
+      "verified_on": "2026-11-02"
+    },
+    {
+      "id": "creative",
+      "title": {
+        "uk": "Творчі завдання та ігри",
+        "en": "Creative activities and games"
+      },
+      "description": {
+        "uk": "Розмальовуймо, поєднуймо й відкриваймо біблійні історії.",
+        "en": "Colour, match and discover biblical stories together."
+      },
+      "url": "https://drive.google.com/file/d/1FOGMxE_t_PR6i7rMX6RT4VCbGvIcm8rv/view",
+      "source_page": "https://www.clarastudio.tv/додаткові-матеріали/",
+      "verified_on": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+/* Final editorial alignment: retain the parish palette and full photographic frames. */
+:root{--card-radius:18px;--card-pad:24px;--card-gap:24px;--card-shadow:0 4px 18px #332b2b06}
+.resource-card,.weekly-card,.prayer-life-card,.home-service-card,.bank-card,.home-bank-card,.map-card,.mission-example-grid>article{border:1px solid var(--line);border-radius:var(--card-radius);box-shadow:var(--card-shadow);padding:var(--card-pad)}
+.resource-grid,.weekly-grid,.prayer-life-grid,.home-service-grid,.mission-example-grid,.gallery-grid,.section-photo-grid{gap:var(--card-gap)}
+.home-service-card h3,.resource-card h3,.weekly-card h3{font-size:26px;line-height:1.25}
+.home-service-card>h3{min-height:2.5em}
+.home-service-card>.text-link,.resource-card>.text-link:last-child{margin-top:auto}
+.text-link,.photo-mission-link{min-height:44px;align-content:center}
+.home-service-card{align-self:stretch}
+.hero-buildings{align-items:stretch;gap:20px}
+.hero-buildings>figure{display:flex;flex-direction:column;align-self:stretch;background:var(--white);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--card-shadow)}
+.hero-buildings .photo-button,.hero-buildings .photo-visual{border-radius:0}
+.hero-buildings figcaption{padding:18px 20px;flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;min-height:96px}
+.hero-buildings figcaption strong{font:25px/1.25 var(--serif)}
+.hero-building-role{display:block;font-size:12px;line-height:1.65;color:var(--muted)}
+.mission-photo-composition{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;min-width:0}
+.mission-photo-composition>.parish-photo{border-radius:var(--card-radius);overflow:hidden;background:var(--white);box-shadow:var(--card-shadow)}
+.mission-photo-composition>.parish-photo:first-child{grid-row:span 2;align-self:center}
+.mission-photo-composition .photo-visual{display:block}
+.mission-photo-composition .photo-visual img{width:100%;height:auto;object-fit:contain}
+.mission-photo-composition figcaption{padding:16px 18px}
+.mission-photo-composition figcaption strong{font:21px/1.3 var(--serif)}
+.mission-photo-composition figcaption p,.mission-photo-composition figcaption>span{display:none}
+.chronicle-slide figcaption{padding:24px}
+.chronicle-slide figcaption strong{font-size:27px;line-height:1.25}
+.chronicle-slide figcaption p{font-size:14px;line-height:1.75}
+.gallery-grid{align-items:stretch}
+.gallery-grid>.parish-photo{display:flex;flex-direction:column;align-self:stretch;border-radius:var(--card-radius);box-shadow:var(--card-shadow)}
+.gallery-grid .photo-visual{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:var(--tint)}
+.gallery-grid .photo-visual img{width:100%;height:100%;object-fit:contain}
+.gallery-grid figcaption{display:flex;flex-direction:column;flex:1;padding:24px}
+.gallery-grid figcaption strong{font:23px/1.3 var(--serif)}
+.gallery-grid figcaption p{font-size:14px;line-height:1.75}
+.gallery-grid .photo-mission-link{margin-top:auto;padding-top:14px}
+.chronicle-group{margin-block:40px}
+.historical-map img{max-width:650px;margin-inline:auto}
+.history-map-feature .historical-map{padding:24px;gap:28px}
+.history-map-feature .historical-map img{max-width:650px}
+.history-teaser .historical-map figcaption p{max-width:52ch;line-height:1.7}
+.building-address{font-size:13px!important;line-height:1.75!important}
+.building-address strong{font-family:var(--sans);font-size:inherit;font-weight:600}
+.map-card .building-address{max-width:60ch}
+.home-map .map-actions{align-self:center}
+.support-help-grid{align-items:stretch}
+.support-help-grid>.resource-card{align-self:stretch}
+.weekly-grid,.prayer-life-grid{align-items:stretch}
+@media(min-width:621px) and (max-width:1100px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.mission-photo-composition{width:100%;max-width:680px;margin-inline:auto}}
+@media(max-width:620px){
+ :root{--card-radius:16px;--card-pad:20px;--card-gap:16px}
+ .hero-with-buildings{gap:22px;padding-bottom:30px}
+ .hero-buildings{gap:16px}
+ .hero-buildings figcaption{padding:18px 20px;min-height:88px}
+ .hero-buildings figcaption strong{font-size:25px}
+ .mission-photo-composition{gap:12px}
+ .mission-photo-composition figcaption{padding:14px}
+ .mission-photo-composition figcaption strong{font-size:18px}
+ .home-service-card>h3{min-height:0}
+ .home-service-card h3,.resource-card h3,.weekly-card h3{font-size:26px}
+ .gallery-grid{grid-template-columns:1fr}
+ .gallery-grid figcaption,.chronicle-slide figcaption{padding:20px}
+ .gallery-grid figcaption strong,.chronicle-slide figcaption strong{font-size:24px}
+ .history-map-feature .historical-map{padding:16px;gap:16px}
+ .chronicle-group{margin-block:32px}
+}

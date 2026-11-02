@@ -215,12 +215,12 @@
   },
   "catechesis": {
     "title": {
-      "uk": "Катехизація та молодь",
-      "en": "Catechesis and young people"
+      "uk": "Катехизм для дітей — пізнаємо Бога разом",
+      "en": "Catechism for children — discovering God together"
     },
     "description": {
-      "uk": "Історія катехитичного центру при парафії святих Кирила і Методія. Поточні групи й час занять уточнюються.",
-      "en": "The catechetical centre at Saints Cyril and Methodius parish: its history and purpose. Current groups and meeting times await confirmation."
+      "uk": "Для дітей, батьків і катехитів: теми віри, творчі завдання та зовнішні матеріали YOUCAT для дітей від Clara Studio.",
+      "en": "For children, parents and catechists: faith topics, creative activities and external YOUCAT for Kids materials from Clara Studio."
     },
     "intro": {
       "uk": "Катехизація допомагає пізнавати християнську віру й ставити важливі запитання. Для дітей та молоді особливо цінні довіра, живе спілкування й підтримка родини.",
@@ -519,6 +519,21 @@
     "intro": {
       "uk": "Реальні приклади служіння, цілі розвитку громади та прозорий підхід до майбутніх партнерств.",
       "en": "Documented examples of service, community development goals and a transparent approach to future partnerships."
+    },
+    "published": true
+  },
+  "divine-liturgy": {
+    "title": {
+      "uk": "Божественна Літургія",
+      "en": "Divine Liturgy"
+    },
+    "description": {
+      "uk": "Божественна Літургія святого Івана Золотоустого: текст українською, навігація, вісім гласів і повсякденні піснеспіви.",
+      "en": "The Divine Liturgy of Saint John Chrysostom: Ukrainian text, reading controls, eight tones and daily hymns."
+    },
+    "intro": {
+      "uk": "Молімося разом: Слово, подяка та Євхаристія.",
+      "en": "Pray together through the Word, thanksgiving and the Eucharist."
     },
     "published": true
   }

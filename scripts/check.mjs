@@ -15,7 +15,7 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
  const verification=JSON.parse(fs.readFileSync(path.join(root,'content/site.json'))).google_site_verification;
  if(verification){assert.deepEqual([...html.matchAll(/<meta name="google-site-verification" content="([^"]+)"/g)].map(m=>m[1]),[verification],`Exact owner verification meta: ${file}`);}
  assert.match(html,/<html lang="(uk|en)">/);assert.match(html,/<title>[^<]+<\/title>/);
- assert.ok(!/isf-center-website|NAU|УГКЦ|ПЦУ|Lorem ipsum|undefined|TODO/i.test(html),`Foreign or placeholder content: ${file}`);
+ assert.ok(!/isf-center-website|NAU|УГКЦ|ПЦУ|Lorem ipsum|undefined|TODO/i.test(html.replace('Літургійні матеріали УГКЦ','')),`Foreign or placeholder content: ${file}`);
  if(!['index.html','404.html'].includes(file)){
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,`One H1 in ${file}`);
   const title=html.match(/<title>(.*?)<\/title>/)[1],description=html.match(/<meta name="description" content="([^"]+)"/)[1];
@@ -24,7 +24,7 @@ for(const file of files.filter(f=>f.endsWith('.html'))){
   const ids=[...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,`Duplicate id ${file}`);
   const schedule=JSON.parse(fs.readFileSync(path.join(root,'content/schedule.json')));
   if(schedule.verification_status!=='confirmed')assert.ok(!/11:00|16:00|17:00|09:00|13:00|14:00/.test(html),`Unconfirmed timetable leaked: ${file}`);
-  assert.ok(!/Центральна,? 94/.test(html),`Unconfirmed legal address leaked: ${file}`);
+  if(/Центральна,? 94/.test(html))assert.equal(JSON.parse(fs.readFileSync(path.join(root,'content/site.json'))).contact.administrative_address_verification_status,'owner_confirmed',`Administrative address requires owner confirmation: ${file}`);
   if(html.includes('26100236'))assert.equal(JSON.parse(fs.readFileSync(path.join(root,'content/parish-identity.json'))).edrpou,'26100236','Owner-confirmed organisation code');
  }
  for(const match of html.matchAll(/(?:href|src|data-full)="([^"<>]+)"/g)){

@@ -1,0 +1,58 @@
+{
+  "source": "Owner-supplied accounts and four photographs, 2026-11-02",
+  "publication_permission": true,
+  "stories": [
+    {
+      "id": "defenders-food",
+      "title": {
+        "uk": "З любов’ю до наших захисників: парафіяльна допомога українським воїнам",
+        "en": "With love for our defenders: parish support for Ukrainian service members"
+      },
+      "photos": [
+        "defenders-food-preparation",
+        "defenders-prepared-food"
+      ],
+      "paragraphs": {
+        "uk": [
+          "Підтримка захисників України — важлива частина соціального служіння нашої парафії святих Кирила і Методія в Порошкові.",
+          "Наші парафіянки об’єднуються, щоб допомагати військовослужбовцям не лише молитвою, а й конкретними добрими справами. Одним із прикладів такої підтримки стало спільне приготування домашніх голубців для українських воїнів.",
+          "За цією працею стоять турбота, жертовність, щирість і бажання передати нашим захисникам частинку домашнього тепла.",
+          "Ми вдячні всім, хто долучається до цього служіння своєю працею, часом і добрим серцем."
+        ],
+        "en": [
+          "Supporting Ukraine’s defenders is an important part of the social ministry of our parish of Saints Cyril and Methodius in Poroshkovo.",
+          "Our parish women come together to support service members through prayer and practical acts of kindness. One example is preparing homemade cabbage rolls together for Ukrainian service members.",
+          "This work expresses care, generosity and a sincere wish to share a little of the warmth of home with our defenders.",
+          "We are grateful to everyone who gives their time, effort and kindness to this ministry."
+        ]
+      }
+    },
+    {
+      "id": "brigade-appreciation",
+      "title": {
+        "uk": "33-тя окрема механізована бригада відзначила служіння нашої парафії",
+        "en": "The 33rd Separate Mechanized Brigade recognises our parish’s service"
+      },
+      "photos": [
+        "brigade-appreciation-presentation",
+        "brigade-appreciation"
+      ],
+      "paragraphs": {
+        "uk": [
+          "Служіння ближнім набуває особливого значення тоді, коли поруч є люди, які захищають Україну.",
+          "Парафіяльна громада святих Кирила і Методія в селі Порошково отримала подяку від особового складу 33-ї окремої механізованої бригади Збройних сил України.",
+          "У подяці відзначено активну громадянську позицію нашої громади та її вагомий внесок у зміцнення бойової готовності Збройних сил України. Документ адресовано колективу парафіяльної громади в особі настоятеля о. Анатолія Горзова.",
+          "Для нас ця подяка — не лише почесне визнання, а передусім нагадування про відповідальність залишатися поруч із захисниками, їхніми родинами та всіма, хто переживає наслідки війни.",
+          "Молитва, людська увага, конкретна допомога й солідарність залишаються важливими напрямами нашого парафіяльного служіння."
+        ],
+        "en": [
+          "Serving our neighbours takes on a special meaning alongside those who defend Ukraine.",
+          "The parish community of Saints Cyril and Methodius in Poroshkovo received a certificate of appreciation from the personnel of the 33rd Separate Mechanized Brigade of Ukraine’s Armed Forces.",
+          "The certificate recognises our community’s active civic commitment and its significant contribution to strengthening the combat readiness of Ukraine’s Armed Forces. It is addressed to the parish community, represented by its pastor, Fr Anatoliy Horzov.",
+          "For us, this recognition is above all a reminder of our responsibility to stand alongside defenders, their families and everyone affected by the war.",
+          "Prayer, personal care, practical help and solidarity remain important directions of our parish ministry."
+        ]
+      }
+    }
+  ]
+}
