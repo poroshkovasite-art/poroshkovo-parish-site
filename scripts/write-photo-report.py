@@ -38,7 +38,7 @@ lines+=['','## Pages and behaviour','',
     '- UA/EN home: approved mission immediately after the hero, four service cards, one stage photo carousel.',
     '- UA/EN community-impact: documented activities, four mission priorities, goals, outcomes awaiting assessment, mission/needs, documents, donor contact and transparency.',
     '- UA/EN social-ministry: documented practical examples alongside the existing prayer ministry; existing draft records remain drafts.',
-    '- UA/EN gallery: four themes, localized captions and alt text, mission links and accessible full-frame viewing.',
+    '- UA/EN gallery: four activity themes plus Our Buildings, localized captions and alt text, mission links and accessible full-frame viewing.',
     '- Central carousel: one foreground card, partially exposed neighbours, circular index positions, 800ms transform/scale/opacity transitions, 5500ms autoplay, arrows, side selection, keyboard, swipe, pause, offscreen/focus/hover suspension and reduced motion.',
     '- Pending images appear only in a noindex, loopback-only editorial build. Public HTML and direct asset URLs exclude them.','',
     '## Checks','']
@@ -60,7 +60,9 @@ lines+=['','## Administrative building','', 'Owner-supplied improved PNG: Исп
     'No private pending photograph was included in the versioned assets or production output.','',
     '## Backup','',
     'The refreshed local archive and folder preserve the previous archive’s original photo/document collections, add all 26 originals and 116 private derivatives, source history, the public build, editorial source files and verification reports. The old Desktop ZIP is retained under a versioned BEFORE name before the current ZIP is replaced. See the adjacent backup verification JSON for actual paths, SHA-256 and restore-build results.','',
-    '## New-photo captions and alt text','']
+    '## Changed files','']
+lines+=['- `'+name+'`' for name in subprocess.check_output(['git','show','--pretty=format:','--name-only',args.commit],cwd=root,text=True).splitlines() if name]
+lines+=['','## New-photo captions and alt text','']
 for p in catalog['photos']:
     lines += [f"### {p['original_file']} — {p['title']['uk']}", '', f"UA: {p['description']['uk']}",f"EN: {p['description']['en']}",f"Alt UA: {p['alt']['uk']}",f"Alt EN: {p['alt']['en']}",f"Status: {p['publication_status']}.",'']
 (root/'PARISH_PHOTO_GALLERY_REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
