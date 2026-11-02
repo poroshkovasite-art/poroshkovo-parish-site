@@ -8,6 +8,7 @@
  document.querySelectorAll('[data-chronicle-carousel]').forEach(root=>{
   const viewport=root.querySelector('.chronicle-viewport'),slides=[...root.querySelectorAll('.chronicle-slide')],controls=root.querySelector('[data-chronicle-controls]'),pause=root.querySelector('[data-chronicle-pause]'),status=root.querySelector('.chronicle-status'),motion=matchMedia('(prefers-reduced-motion:reduce)'),uk=document.documentElement.lang==='uk',total=slides.length;
   let active=0,timer=null,settleTimer=null,busy=false,hover=false,focused=false,visible=false,paused=false,touch=null,suppressClick=false;
+  for(const slide of slides){const img=slide.querySelector('img');if(!img)continue;img.addEventListener('load',()=>{slide.dataset.imageLoaded='true';},{once:true});if(img.complete&&img.naturalWidth)slide.dataset.imageLoaded='true';}
   root.classList.add('is-enhanced');controls.hidden=total<2;
   function render(announce=false){
    slides.forEach((slide,i)=>{
@@ -20,6 +21,14 @@
    });
    root.dataset.active=String(active);
    status.setAttribute('aria-live',announce?'polite':'off');status.textContent=`${active+1} / ${total}`;
+   if(visible)preloadNeighbours();
+  }
+  function preloadNeighbours(){
+   // One step ahead in each direction, so the next transition has a decoded image.
+   for(const offset of [-2,-1,0,1,2]){
+    const img=slides[(active+offset+total)%total]?.querySelector('img');
+    if(img){img.loading='eager';img.decode().catch(()=>{});}
+   }
   }
   function buttonLabel(){
    pause.setAttribute('aria-pressed',String(paused||motion.matches));
@@ -58,7 +67,7 @@
   },{passive:true});
   viewport.addEventListener('touchcancel',()=>{touch=null;},{passive:true});
   viewport.addEventListener('click',e=>{if(suppressClick){e.preventDefault();e.stopImmediatePropagation();}},{capture:true});
-  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;root.dataset.visible=String(visible);schedule();},{threshold:.15}).observe(viewport);
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;root.dataset.visible=String(visible);if(visible)preloadNeighbours();schedule();},{threshold:.15}).observe(viewport);
   motion.addEventListener('change',()=>{busy=false;clearTimeout(settleTimer);schedule();});
   document.addEventListener('visibilitychange',schedule);
   render();schedule();

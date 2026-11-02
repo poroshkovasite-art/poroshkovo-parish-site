@@ -25,10 +25,10 @@ try{
   await page.setViewportSize({width,height:1000});await page.goto(`${base}/${lang}/`);
   await page.evaluate(async()=>{await Promise.all([...document.querySelectorAll('main img:not(.leaflet-tile):not(.leaflet-marker-icon):not(.leaflet-marker-shadow)')].map(i=>{i.loading='eager';return i.decode();}));});
   const order=await page.locator('main>section').evaluateAll(es=>es.map(e=>e.matches('.hero')?'hero':e.hasAttribute('data-community-mission')?'mission':e.querySelector('[data-chronicle-carousel]')?'carousel':e.hasAttribute('data-mission-services')?'services':e.querySelector('.history-teaser')?'history':e.id==='find-church'?'contacts':e.hasAttribute('data-home-support')?'support':'unexpected'));
-  assert.deepEqual(order,['hero','mission','carousel','services','history','contacts','support']);
+  assert.deepEqual(order,['hero','mission','services','history','contacts','support']);
   const photoIds=await page.locator('main img[data-image-id]').evaluateAll(imgs=>imgs.map(i=>i.dataset.imageId));
   assert.equal(new Set(photoIds).size,photoIds.length,'No repeated home photograph');
-  assert.equal(await page.locator('[data-community-mission] [data-photo-id]').count(),3);assert.equal(await page.locator('[data-mission-carousel],[data-mission-step]').count(),0);
+  assert.equal(await page.locator('[data-community-mission] [data-photo-id]').count(),read('home-carousel').entries.length);assert.equal(await page.locator('[data-mission-carousel],[data-mission-step]').count(),0);
   assert.equal(await page.locator('[data-service]').count(),4);assert.equal(await page.locator('[data-ministry-direction]').count(),7);
   assert.equal(await page.locator('#navigation a[href$="/first-visit/"],#navigation a[href$="/support/"],[data-feature-carousel],[data-load-map],.map-consent').count(),0);
   assert.equal(await page.locator('[data-home-support] .home-iban').innerText(),read('support').accounts[0].iban);

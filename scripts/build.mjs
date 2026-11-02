@@ -45,7 +45,7 @@ for(const slug of ['news','gallery','support'])if(pages[slug].published&&(!pages
 validateContent({site,pages,photos:allPhotos,news,schedule});
 const C=createComponents({site,pages,ui,sources,photos:allPhotos,people,schedule,brand,editor});
 const Additions=createOwnerAdditions({C,photos:allPhotos,stories:read('defender-stories'),catechism:read('children-catechism'),liturgy:read('divine-liturgy')});
-const Chronicle=createChronicle({C,photos:allPhotos,mission:read('community-mission'),editor});
+const Chronicle=createChronicle({C,photos:allPhotos,mission:read('community-mission'),carousel:read('home-carousel'),editor});
 C.Gallery=Chronicle.Gallery;
 const Mission=createMission({model:read('community-mission'),C,photos:allPhotos,editor});
 const P=createPortal({C,site,photos,calendar,resources:read('resources'),stories:read('history-stories'),historicalMap:read('historical-map')});
@@ -77,7 +77,7 @@ if(read('divine-liturgy').rights_confirmed&&read('divine-liturgy').pastor_approv
 for(const record of S.models.documents.records)if(approvedDocument(record,root)){fs.mkdirSync(path.join(out,'documents'),{recursive:true});fs.copyFileSync(path.join(root,'approved-documents',path.basename(record.public_file)),path.join(out,record.public_file));}
 const write=(f,s)=>{const dest=path.join(out,f);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,s);};
 function timeline(lang) {const t=ui[lang],cats=lang==='uk'?{all:'Усі теми',village:'Історія села',church:'Історія Церкви',parish:'Історія парафії'}:{all:'All themes',village:'Village history',church:'Church history',parish:'Parish history'};return `<section class="timeline-section"><div class="section-top"><h2>${t.history}</h2><p class="timeline-count" aria-live="polite"><span data-timeline-count>${history.length}</span> ${t.results}</p></div><div class="filters timeline-categories" role="group" aria-label="${lang==='uk'?'Теми історії':'History themes'}">${Object.entries(cats).map(([id,label])=>`<button data-history-category="${id}" aria-pressed="${id==='all'}">${label}</button>`).join('')}</div><div class="filters" role="group" aria-label="${t.timeline}">${[['all',t.all],['roots',t.roots],['renewal',t.renewal],['church',t.church],['home',t.house]].map(([v,label])=>`<button data-era="${v}" aria-pressed="${v==='all'}">${label}</button>`).join('')}</div><ol class="timeline">${history.map(h=>`<li data-timeline-item data-era-item="${h.era}" data-history-topic="${h.category}"><time${h.datetime?` datetime="${h.datetime}"`:''}>${esc(lang==='en'?(h.date_en||h.date):h.date)}</time><div><span class="timeline-category">${cats[h.category]}</span><p>${esc(h[lang])}</p><a class="source-link" href="${esc(h.source_url)}">${t.source} ↗</a></div></li>`).join('')}</ol><p class="source-note">${t.timelineNote}</p>${C.source('eparchy',lang)}</section>`;}
-const HomeLayout=createHomeLayout({C,P,Chronicle,mission:read('community-mission'),photos:allPhotos,support:read('support'),editor});
+const HomeLayout=createHomeLayout({C,P,Chronicle,mission:read('community-mission'),photos:allPhotos,support:read('support'),carousel:read('home-carousel'),editor});
 const home=lang=>HomeLayout.Home(lang);
 function content(lang,slug) {
  if(slug==='home')return home(lang);

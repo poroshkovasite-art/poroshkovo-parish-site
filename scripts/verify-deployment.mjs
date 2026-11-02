@@ -15,6 +15,7 @@ const assets=['/assets/site.css','/assets/app.js','/favicon.ico','/assets/favico
 const report={date:new Date().toISOString().slice(0,10),url:base,status:'RUNNING',http:[],layouts:[],accessibility:[],jsErrors:[],interactions:[]};
 assets.push(...fs.readdirSync(path.join(out,'documents')).map(f=>'/documents/'+f),...fs.readdirSync(path.join(out,'assets/documents')).map(f=>'/assets/documents/'+f));
 assets.push('/assets/hero-buildings.css','/assets/community-mission.css','/assets/chronicle.css','/assets/chronicle.js','/assets/home-features.css','/assets/home-features.js','/assets/portal.css','/assets/calendar.js','/assets/calendar-core.js','/assets/calendar-labels.js');
+assets.push('/assets/liturgy-book.css',...fs.readdirSync(path.join(out,'assets/liturgy-source')).map(f=>'/assets/liturgy-source/'+f));
 assets.push('/assets/owner-additions.css','/assets/liturgy-reader.js','/assets/visual-polish.css','/uk/sitemap.xml','/en/sitemap.xml','/assets/home-layout.css','/assets/parish-map.css','/assets/parish-map.js','/assets/vendor/leaflet/leaflet.css','/assets/vendor/leaflet/leaflet.js',...fs.readdirSync(path.join(out,'assets/vendor/leaflet/images')).map(f=>'/assets/vendor/leaflet/images/'+f));
 const headerBrand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json')));if(headerBrand.symbol)assets.push(headerBrand.symbol.file);
 const historicalMap=JSON.parse(fs.readFileSync(path.join(root,'content/historical-map.json')));

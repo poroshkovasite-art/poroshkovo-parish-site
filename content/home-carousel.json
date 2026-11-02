@@ -1,0 +1,364 @@
+{
+  "title": {
+    "uk": "Змінюємо життя громади разом",
+    "en": "Changing Community Life Together"
+  },
+  "description": {
+    "uk": "Наша парафія — це спільнота віри, молитви й діяльної любові. Через дитячі та молодіжні заходи, підтримку родин, допомогу потребуючим і нашим захисникам ми прагнемо бути поруч із людьми та разом змінювати життя громади на краще.",
+    "en": "Our parish is a community of faith, prayer and love in action. Through activities for children and young people, support for families, and help for people in need and Ukraine’s defenders, we seek to stand alongside people and work together for a better community."
+  },
+  "entries": [
+    {
+      "photo_id": "chronicle-parish-summer-camp",
+      "title": {
+        "uk": "Дружба у літньому таборі",
+        "en": "Friendship at summer camp"
+      },
+      "description": {
+        "uk": "Спільні зустрічі дітей та молоді — частина життя нашої парафії.",
+        "en": "Children and young people come together as part of parish life."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "children-development"
+      }
+    },
+    {
+      "photo_id": "divine-liturgy",
+      "title": {
+        "uk": "Молитва єднає",
+        "en": "United in prayer"
+      },
+      "description": {
+        "uk": "Божественна Літургія — серце духовного життя громади.",
+        "en": "The Divine Liturgy is at the heart of our community’s spiritual life."
+      },
+      "link": {
+        "slug": "divine-liturgy",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "chronicle-youth-bike-ride",
+      "title": {
+        "uk": "Разом на велосипедах",
+        "en": "Cycling together"
+      },
+      "description": {
+        "uk": "Велопрогулянка з молоддю: спілкування, рух і час разом.",
+        "en": "A bicycle outing with young people: conversation, activity and shared time."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "active-youth"
+      }
+    },
+    {
+      "photo_id": "chronicle-elderly-home-visit",
+      "title": {
+        "uk": "Бути поруч",
+        "en": "Being there"
+      },
+      "description": {
+        "uk": "Відвідування літніх людей — увага, присутність і підтримка.",
+        "en": "Visiting older people with care, companionship and support."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "solidarity"
+      }
+    },
+    {
+      "photo_id": "defenders-food-preparation",
+      "title": {
+        "uk": "Тепло спільної праці",
+        "en": "Care through shared work"
+      },
+      "description": {
+        "uk": "Парафіянки готують голубці для українських захисників.",
+        "en": "Parish women prepare cabbage rolls for Ukraine’s defenders."
+      },
+      "link": {
+        "slug": "social-ministry",
+        "anchor": "defenders-food"
+      }
+    },
+    {
+      "photo_id": "chronicle-outdoor-creative-workshop",
+      "title": {
+        "uk": "Творчість просто неба",
+        "en": "Creativity outdoors"
+      },
+      "description": {
+        "uk": "Діти творять і спілкуються під час спільної майстерні.",
+        "en": "Children create and spend time together at an outdoor workshop."
+      },
+      "link": {
+        "slug": "catechesis",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "parish-prayer-on-church-steps",
+      "title": {
+        "uk": "Парафіяльна родина",
+        "en": "Our parish family"
+      },
+      "description": {
+        "uk": "Зустріч біля рідного храму — мить життя спільноти.",
+        "en": "A gathering by our church captures a moment of community life."
+      },
+      "link": {
+        "slug": "community",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "chronicle-families-support",
+      "title": {
+        "uk": "Турбота про родини",
+        "en": "Caring for families"
+      },
+      "description": {
+        "uk": "Підтримка потребуючих родин через увагу та практичну допомогу.",
+        "en": "Supporting families in need through personal care and practical help."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "solidarity"
+      }
+    },
+    {
+      "photo_id": "chronicle-youth-winter-recreation",
+      "title": {
+        "uk": "Зимове дозвілля разом",
+        "en": "Winter recreation together"
+      },
+      "description": {
+        "uk": "Молодіжна зустріч на ковзанці — нагода побути разом.",
+        "en": "A youth gathering at the ice rink offers time together."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "active-youth"
+      }
+    },
+    {
+      "photo_id": "chronicle-summer-camp-masterclass",
+      "title": {
+        "uk": "Навчаємося творити",
+        "en": "Learning through creativity"
+      },
+      "description": {
+        "uk": "Спільний майстер-клас відкриває дітям радість творчої праці.",
+        "en": "A shared workshop introduces children to the joy of making things."
+      },
+      "link": {
+        "slug": "catechesis",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "easter-blessing",
+      "title": {
+        "uk": "Великодня молитва",
+        "en": "Easter prayer"
+      },
+      "description": {
+        "uk": "Святкове благословення поруч із парафіяльним храмом.",
+        "en": "A festive blessing beside our parish church."
+      },
+      "link": {
+        "slug": "spiritual-life",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "chronicle-children-group-picnic",
+      "title": {
+        "uk": "Відпочинок серед природи",
+        "en": "Time together outdoors"
+      },
+      "description": {
+        "uk": "Пікнік із дітьми: спільний відпочинок і живе спілкування.",
+        "en": "A picnic with children: shared recreation and conversation."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "children-development"
+      }
+    },
+    {
+      "photo_id": "chronicle-personal-support-visit",
+      "title": {
+        "uk": "Людська увага і підтримка",
+        "en": "Personal care and support"
+      },
+      "description": {
+        "uk": "Поруч із тими, кому потрібні турбота й товариство.",
+        "en": "Being alongside people who need care and companionship."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "solidarity"
+      }
+    },
+    {
+      "photo_id": "chronicle-summer-camp-crafts",
+      "title": {
+        "uk": "Створено власноруч",
+        "en": "Made by hand"
+      },
+      "description": {
+        "uk": "Дитяча творча робота — маленький плід спільного заняття.",
+        "en": "A child’s creative work is a small result of an activity together."
+      },
+      "link": {
+        "slug": "catechesis",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "pastor-parish-work",
+      "title": {
+        "uk": "Спільна праця для громади",
+        "en": "Working together for the parish"
+      },
+      "description": {
+        "uk": "Турбота про парафіяльний простір об’єднує добрі зусилля.",
+        "en": "Caring for the parish grounds brings people’s efforts together."
+      },
+      "link": {
+        "slug": "community-impact",
+        "anchor": "activity-examples"
+      }
+    },
+    {
+      "photo_id": "parish-community-children",
+      "title": {
+        "uk": "Діти у парафії",
+        "en": "Children in our parish"
+      },
+      "description": {
+        "uk": "Місце для віри, дружби та підтримки родини.",
+        "en": "A place for faith, friendship and family support."
+      },
+      "link": {
+        "slug": "catechesis",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "brigade-appreciation-presentation",
+      "title": {
+        "uk": "Визнання служіння",
+        "en": "Recognition of parish service"
+      },
+      "description": {
+        "uk": "Подяка парафіяльній громаді від 33-ї окремої механізованої бригади.",
+        "en": "Appreciation for the parish from the 33rd Separate Mechanized Brigade."
+      },
+      "link": {
+        "slug": "social-ministry",
+        "anchor": "brigade-appreciation"
+      }
+    },
+    {
+      "photo_id": "chronicle-catechesis-table-tennis",
+      "title": {
+        "uk": "Заняття і дружня гра",
+        "en": "Learning and friendly play"
+      },
+      "description": {
+        "uk": "Катехизація та спілкування дітей за настільним тенісом.",
+        "en": "Catechesis and time together around the table tennis table."
+      },
+      "link": {
+        "slug": "catechesis",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "prayer-at-crucifix",
+      "title": {
+        "uk": "У спільній молитві",
+        "en": "Together in prayer"
+      },
+      "description": {
+        "uk": "Тиха зустріч у храмі перед розп’яттям.",
+        "en": "A quiet gathering in the church before the crucifix."
+      },
+      "link": {
+        "slug": "spiritual-life",
+        "anchor": null
+      }
+    },
+    {
+      "photo_id": "defenders-prepared-food",
+      "title": {
+        "uk": "Домашнє тепло для захисників",
+        "en": "A taste of home for defenders"
+      },
+      "description": {
+        "uk": "Голубці, приготовлені з любов’ю для українських воїнів.",
+        "en": "Cabbage rolls prepared with love for Ukrainian service members."
+      },
+      "link": {
+        "slug": "social-ministry",
+        "anchor": "defenders-food"
+      }
+    },
+    {
+      "photo_id": "iconostasis",
+      "title": {
+        "uk": "Краса храму",
+        "en": "The beauty of our church"
+      },
+      "description": {
+        "uk": "Іконостас і простір молитви нашої парафії.",
+        "en": "The iconostasis and prayerful interior of our parish church."
+      },
+      "link": {
+        "slug": "spiritual-life",
+        "anchor": null
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "ids": [
+        "church-exterior",
+        "parish-administrative-building",
+        "parish-house-today",
+        "bell-tower",
+        "former-worship-building"
+      ],
+      "reason": "Buildings already have their own visual role in the hero and history sections."
+    },
+    {
+      "ids": [
+        "church-altar"
+      ],
+      "reason": "The iconostasis already represents the church interior; avoid a second similar empty interior."
+    },
+    {
+      "ids": [
+        "pastor-anatolii-horzov"
+      ],
+      "reason": "Standalone portrait retained in the pastor profile, rather than presented as an activity."
+    },
+    {
+      "ids": [
+        "brigade-appreciation"
+      ],
+      "reason": "Full certificate remains in the story, documents and gallery; the presentation scene represents this event in the carousel."
+    },
+    {
+      "ids": [
+        "parish-winter-outing"
+      ],
+      "reason": "Archived Ukrainian text is embedded in this photograph; use the clean approved ice-rink scene for both languages."
+    }
+  ],
+  "publication_rule": "Only existing approved photographs with recorded rights and required consents. Owner exclusions 8.jpeg and 20.jpeg always apply."
+}

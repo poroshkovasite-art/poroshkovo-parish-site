@@ -17,7 +17,7 @@ try{
   await page.setViewportSize({width,height:1000});await page.goto(`${base}/${lang}/`);
   const cards=await page.locator('.hero-buildings>figure').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().toJSON()));if(width>620)assert.ok(Math.abs(cards[0].height-cards[1].height)<1);
   assert.equal(await page.locator('.hero-buildings figcaption p').count(),0);
-  const ids=await page.locator('main [data-image-id]').evaluateAll(es=>es.map(e=>e.dataset.imageId));assert.equal(ids.length,new Set(ids).size);assert.equal(await page.locator('[data-mission-composition] [data-photo]').count(),3);assert.equal(await page.locator('[data-chronicle-carousel]').count(),1);assert.equal(await page.locator('[data-mission-carousel]').count(),0);
+  const ids=await page.locator('main [data-image-id]').evaluateAll(es=>es.map(e=>e.dataset.imageId));assert.equal(ids.length,new Set(ids).size);assert.equal(await page.locator('[data-mission-composition] [data-photo]').count(),0);assert.equal(await page.locator('[data-chronicle-carousel]').count(),1);assert.equal(await page.locator('[data-mission-carousel]').count(),0);
   assert.equal(await page.locator('header a[href$="/first-visit/"],footer a[href$="/first-visit/"]').count(),0);
   assert.ok((await page.locator('[data-historical-map]').boundingBox()).width<=650);
   const footer=await page.locator('.footer').evaluate(e=>({bg:getComputedStyle(e).backgroundColor,body:getComputedStyle(document.body).backgroundColor,base:getComputedStyle(e.querySelector('.footer-base')).backgroundColor}));assert.notEqual(footer.bg,footer.body);assert.notEqual(footer.base,footer.bg);

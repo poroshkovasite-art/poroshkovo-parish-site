@@ -5,3 +5,14 @@ if(reader){
  const mode=reader.querySelector('[data-reader-mode]');mode.addEventListener('click',()=>{const on=mode.getAttribute('aria-pressed')!=='true';mode.setAttribute('aria-pressed',String(on));document.body.classList.toggle('reading-mode',on);});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.classList.remove('reading-mode');mode.setAttribute('aria-pressed','false');mode.focus();}});
 }
+
+if(reader){
+ reader.querySelector('[data-reader-print]').addEventListener('click',()=>window.print());
+ const contents=reader.querySelector('[data-reader-contents]');if(matchMedia('(min-width:1001px)').matches)contents.open=true;
+ for(const a of reader.querySelectorAll('a[href="#liturgy-contents"]'))a.addEventListener('click',()=>{contents.open=true;});
+ const load=d=>{const i=d.querySelector('img[data-scan-src]');if(i&&!i.hasAttribute('src'))i.src=i.dataset.scanSrc;};
+ for(const d of reader.querySelectorAll('[data-scan-page]'))d.addEventListener('toggle',()=>{if(d.open)load(d);});
+ const openHash=()=>{const d=document.getElementById(location.hash.slice(1));if(d?.hasAttribute('data-scan-page')){d.open=true;load(d);requestAnimationFrame(()=>d.scrollIntoView({block:'start'}));}};
+ window.addEventListener('hashchange',openHash);openHash();
+ for(const a of reader.querySelectorAll('[data-scan-link]'))a.addEventListener('click',()=>{const d=document.getElementById('scan-'+a.dataset.scanLink);d.open=true;load(d);});
+}
