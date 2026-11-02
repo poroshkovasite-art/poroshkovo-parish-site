@@ -24,9 +24,9 @@ try{
   await page.goto(`${base}/${lang}/`);await ready(page);
   assert.equal(await page.locator('.hero-image img').getAttribute('data-image-id'),expectedHero);
   assert.equal(await page.locator('.hero-image img').getAttribute('data-photo-variant'),'enhanced');
-  assert.deepEqual(await page.locator('main').evaluate(e=>[e.querySelector('.hero'),e.querySelector('.history-teaser'),e.querySelector('[data-home-liturgy]')].map(n=>n.getBoundingClientRect().top)),await page.locator('main').evaluate(e=>[e.querySelector('.hero'),e.querySelector('.history-teaser'),e.querySelector('[data-home-liturgy]')].map(n=>n.getBoundingClientRect().top).sort((a,b)=>a-b)));
+  assert.deepEqual(await page.locator('main').evaluate(e=>[e.querySelector('.hero'),e.querySelector('.history-teaser'),e.querySelector('[data-home-support]')].map(n=>n.getBoundingClientRect().top)),await page.locator('main').evaluate(e=>[e.querySelector('.hero'),e.querySelector('.history-teaser'),e.querySelector('[data-home-support]')].map(n=>n.getBoundingClientRect().top).sort((a,b)=>a-b)));
   assert.equal(await page.locator('.history-teaser [data-historical-map]').count(),1);
-  assert.equal(await page.locator('[data-home-liturgy] img').getAttribute('data-image-id'),'divine-liturgy');
+  assert.equal(await page.locator('[data-chronicle-id="divine-liturgy"]').count(),1);
   assert.equal(await page.locator('.hero-image img').getAttribute('alt'),photos.find(p=>p.id===expectedHero).alt[lang]);
   assert.equal(await page.locator('.hero-image img').getAttribute('title'),photos.find(p=>p.id===expectedHero).title[lang]);
   assert.equal(await page.locator('.brand').getAttribute('href'),`/${lang}/`);
@@ -39,7 +39,7 @@ try{
   const manifestResponse=await fetch(new URL(await page.locator('link[rel="manifest"]').getAttribute('href'),base));assert.equal(manifestResponse.status,200);assert.equal((await manifestResponse.json()).start_url,`/${lang}/`);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   report.headerChecks.push({lang,width,colorScheme,logo,hero:'PASS',faviconVersioning:'PASS'});
-  if([390,1440].includes(width)){await page.locator('.header').screenshot({path:path.join(audit,`media-${tag}-${lang}-header-${width}-${colorScheme}.png`)});if(colorScheme==='light'){await page.locator('.hero').screenshot({path:path.join(audit,`media-${tag}-${lang}-hero-${width}.png`)});await page.locator('.history-teaser').screenshot({path:path.join(audit,`media-${tag}-${lang}-history-map-${width}.png`)});await page.locator('[data-home-liturgy]').screenshot({path:path.join(audit,`media-${tag}-${lang}-liturgy-${width}.png`)});await page.locator('.footer').screenshot({path:path.join(audit,`media-${tag}-${lang}-footer-${width}.png`)});}}
+  if([390,1440].includes(width)){await page.locator('.header').screenshot({path:path.join(audit,`media-${tag}-${lang}-header-${width}-${colorScheme}.png`)});if(colorScheme==='light'){await page.locator('.hero').screenshot({path:path.join(audit,`media-${tag}-${lang}-hero-${width}.png`)});await page.locator('.history-teaser').screenshot({path:path.join(audit,`media-${tag}-${lang}-history-map-${width}.png`)});await page.locator('[data-chronicle-carousel]').screenshot({path:path.join(audit,`media-${tag}-${lang}-liturgy-${width}.png`)});await page.locator('.footer').screenshot({path:path.join(audit,`media-${tag}-${lang}-footer-${width}.png`)});}}
   await context.close();
  }
  const context=await browser.newContext({viewport:{width:1440,height:1000},reducedMotion:'reduce'}),page=await context.newPage();

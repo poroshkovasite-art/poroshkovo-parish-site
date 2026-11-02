@@ -13,8 +13,12 @@ export function photoTheme(p) {
  if(['church','history'].includes(p.category))return 'buildings';
  return 'spiritual-life';
 }
+// Owner excluded these two child-work scenes on 2 November 2026.
+// Keep the original catalogue and permission statuses intact, including in editor preview.
+export const excludedPhotoIds = new Set(['chronicle-young-parish-helpers','chronicle-church-grounds-cleanup']);
+export const photoExcluded = p => excludedPhotoIds.has(p.id);
 export function photoApproved(p) {
- return p.publication_status==='approved' && p.rights_confirmed===true &&
+ return !photoExcluded(p) && p.publication_status==='approved' && p.rights_confirmed===true &&
   (!p.contains_children||p.consents_confirmed===true) &&
   (!p.contains_aid_recipients||p.consents_confirmed===true);
 }

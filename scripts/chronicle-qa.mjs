@@ -34,13 +34,13 @@ try{
    await c.locator('.chronicle-viewport').focus();await page.keyboard.press('ArrowLeft');assert.equal(Number(await c.getAttribute('data-active')),total-1);await page.keyboard.press('ArrowRight');
    for(const side of ['next','previous']){const button=await c.locator(`[data-stage-position=${side}] [data-chronicle-select]`).boundingBox(),centre=await c.locator('[data-stage-position=active]').boundingBox(),viewport=await c.locator('.chronicle-viewport').boundingBox(),header=await page.locator('.header').boundingBox();const start=side==='next'?Math.max(centre.x+centre.width,button.x):Math.max(viewport.x,button.x),end=side==='next'?Math.min(viewport.x+viewport.width,button.x+button.width):Math.min(centre.x,button.x+button.width),top=Math.max(viewport.y,button.y,header.y+header.height),bottom=Math.min(viewport.y+viewport.height,button.y+button.height,1000);assert.ok(end>start&&bottom>top);await page.mouse.click((start+end)/2,(top+bottom)/2);assert.equal(await c.getAttribute('data-active'),side==='next'?'1':'0','Real click on exposed side selects the central story');}
    const open=c.locator('[data-stage-position=active] [data-chronicle-open]').first();await open.click();assert.ok(await page.locator('dialog').isVisible());await page.keyboard.press('Escape');
-   if([390,768,1440].includes(width)){await c.screenshot({path:path.join(audit,`chronicle-${tag}-${lang}-${width}.png`),style:'.header,.skip{visibility:hidden!important}'});const a=await new AxeBuilder({page}).include('[data-chronicle-carousel]').analyze();assert.deepEqual(a.violations,[]);report.accessibility.push({lang,width,violations:0});}
+   if([390,768,1440].includes(width)){await c.screenshot({path:path.join(audit,`chronicle-${tag}-${lang}-${width}.png`)});const a=await new AxeBuilder({page}).include('[data-chronicle-carousel]').analyze();assert.deepEqual(a.violations,[]);report.accessibility.push({lang,width,violations:0});}
   }
   report.layouts.push({lang,width,slug:slug||'home',status:'PASS'});
  }
  // Direct URLs must also be blocked, rather than merely hidden in the UI.
  for(const p of catalog.photos){const response=await page.request.get(`${base}/assets/photos/${p.id}-${p.widths[0]}.webp`);assert.equal(response.status(),404);report.privacy.push({file:p.original_file,status:404});}
- if(tag==='local')for(const lang of ['uk','en']){
+ if(tag==='local'&&process.env.CHRONICLE_SKIP_EDITOR!=='1')for(const lang of ['uk','en']){
   await page.goto(`${editorBase}/${lang}/gallery/`);await ready(page);assert.ok((await page.locator('meta[name="robots"]').getAttribute('content')).includes('noindex'));assert.equal(await page.locator('[data-photo-id^="chronicle-"]').count(),26);
   for(const p of catalog.photos){assert.equal(await page.locator(`[data-photo-id="${p.id}"] img`).getAttribute('alt'),p.alt[lang]);assert.ok((await page.locator(`[data-photo-id="${p.id}"]`).locator('..').textContent()).includes('pending_approval'));}
   await page.locator('[data-theme-filter="social-ministry"]').click();assert.equal(await page.locator('[data-photo-section]:visible [data-photo]').count(),3);

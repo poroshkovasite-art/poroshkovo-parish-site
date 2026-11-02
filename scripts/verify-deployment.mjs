@@ -15,7 +15,7 @@ const assets=['/assets/site.css','/assets/app.js','/favicon.ico','/assets/favico
 const report={date:new Date().toISOString().slice(0,10),url:base,status:'RUNNING',http:[],layouts:[],accessibility:[],jsErrors:[],interactions:[]};
 assets.push(...fs.readdirSync(path.join(out,'documents')).map(f=>'/documents/'+f),...fs.readdirSync(path.join(out,'assets/documents')).map(f=>'/assets/documents/'+f));
 assets.push('/assets/hero-buildings.css','/assets/community-mission.css','/assets/chronicle.css','/assets/chronicle.js','/assets/home-features.css','/assets/home-features.js','/assets/portal.css','/assets/calendar.js','/assets/calendar-core.js','/assets/calendar-labels.js');
-assets.push('/uk/sitemap.xml','/en/sitemap.xml');
+assets.push('/uk/sitemap.xml','/en/sitemap.xml','/assets/home-layout.css','/assets/parish-map.css','/assets/parish-map.js','/assets/vendor/leaflet/leaflet.css','/assets/vendor/leaflet/leaflet.js',...fs.readdirSync(path.join(out,'assets/vendor/leaflet/images')).map(f=>'/assets/vendor/leaflet/images/'+f));
 const headerBrand=JSON.parse(fs.readFileSync(path.join(root,'content/brand.json')));if(headerBrand.symbol)assets.push(headerBrand.symbol.file);
 const historicalMap=JSON.parse(fs.readFileSync(path.join(root,'content/historical-map.json')));
 assets.push(...historicalMap.widths.map(w=>`/assets/history/${historicalMap.id}-${w}.webp`),historicalMap.full_file);
@@ -46,7 +46,7 @@ try{
  }
  for(const lang of ['uk','en']){
   await page.setViewportSize({width:390,height:844});await page.goto(base+`/${lang}/`);await page.locator('.menu-toggle').click();assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'true');await page.keyboard.press('Escape');assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
-  const carousel=page.locator('.carousel');await page.locator('[data-slide="1"]').click();assert.ok(await carousel.evaluate(e=>e.scrollLeft>0));
+  const carousel=page.locator('[data-chronicle-carousel]');await page.locator('[data-chronicle-step="1"]').click();assert.equal(await carousel.getAttribute('data-active'),'1');
   await page.goto(base+`/${lang}/history/`);await page.locator('[data-era="church"]').click();assert.equal(await page.locator('[data-timeline-item]:visible').count(),3);await page.locator('.language').click();assert.ok(page.url().includes(`/${lang==='uk'?'en':'uk'}/history/`));
   report.interactions.push({language:lang,menu:'PASS',carousel:'PASS',timeline:'PASS',languageCounterpart:'PASS'});
  }

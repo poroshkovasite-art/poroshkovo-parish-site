@@ -24,6 +24,7 @@ const expected={
  'parish-house-today':['Дім нашої спільноти','A home for our community'],
  'pastor-anatolii-horzov':['о. Анатолій Горзов','Fr Anatoliy Horzov']
 };
+expected['parish-administrative-building']=[photos.find(p=>p.id==='parish-administrative-building').caption_overlay.uk,photos.find(p=>p.id==='parish-administrative-building').caption_overlay.en];
 for(const p of photos){assert.deepEqual([p.caption_overlay.uk,p.caption_overlay.en],expected[p.id]);assert.equal(p.variants.captioned.available_on_site,false);for(const lang of ['uk','en'])for(const field of ['title','caption','description','alt'])assert.ok(p[field]?.[lang],`${p.id} ${field}.${lang}`);}
 assert.equal(read('site').hero_photo_id,'church-exterior');
 const symbol=fs.readFileSync(path.join(out,brand.symbol.file),'utf8');

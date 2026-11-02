@@ -36,7 +36,8 @@
     "location_verification_status": "owner_confirmed_exact_pin",
     "location_verified_on": "2026-11-01",
     "location_source": "Explicit exact coordinates supplied by the parish website owner on 2026-11-01",
-    "location_note": "Owner-confirmed physical location of the church. These coordinates replace the earlier pin; no legal address or village-centre approximation is used."
+    "location_note": "Owner-confirmed physical location of the church. These coordinates replace the earlier pin; no legal address or village-centre approximation is used.",
+    "map_tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
   },
   "donations": {
     "verification_status": "confirmed",

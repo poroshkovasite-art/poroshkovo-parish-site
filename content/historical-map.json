@@ -1,49 +1,44 @@
 {
-  "id": "zakarpattia-map-1921",
+  "id": "ukraine-beauplan-1648",
   "title": {
-    "uk": "Закарпаття на карті 1921 року",
-    "en": "Zakarpattia on a 1921 map"
+    "uk": "Україна на карті Боплана, 1648",
+    "en": "Ukraine on Beauplan’s Map, 1648"
   },
   "alt": {
-    "uk": "Фрагмент історичної карти 1921 року з Ужгородом, Мукачевом та Підкарпатською Руссю",
-    "en": "Detail of a 1921 historical map showing Uzhhorod, Mukachevo and Subcarpathian Ruthenia"
+    "uk": "Кольорова гравійована карта України Гійома Левассера де Боплана, 1648 рік",
+    "en": "Hand-coloured engraved map of Ukraine by Guillaume Le Vasseur de Beauplan, 1648"
   },
   "caption": {
-    "uk": "Фрагмент карти «Slovensko a Podkarpatská Rus», 1921. Історичні назви та межі збережено.",
-    "en": "Detail of “Slovensko a Podkarpatská Rus”, 1921. Historical names and boundaries are preserved."
+    "uk": "Історична карта України XVII століття — ширший контекст минулого нашого краю. Це не детальний план Порошкова; назви й межі відображають уявлення свого часу.",
+    "en": "A seventeenth-century map of Ukraine, offering a wider historical context for our region. This is not a detailed plan of Poroshkovo; names and boundaries reflect their time."
   },
   "credit": {
-    "uk": "Джерело: Dějiny československé (1921), репринт 1991 · Wikimedia Commons · суспільне надбання.",
-    "en": "Source: Dějiny československé (1921), 1991 reprint · Wikimedia Commons · public domain."
+    "uk": "Гійом Левассер де Боплан · 1648 · Національний архів Швеції / Wikimedia Commons · суспільне надбання.",
+    "en": "Guillaume Le Vasseur de Beauplan · 1648 · National Archives of Sweden / Wikimedia Commons · public domain."
   },
-  "source_url": "https://commons.wikimedia.org/wiki/File:Slovensko_a_Podkarpatsk%C3%A1_Rus.jpg",
-  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Slovensko_a_Podkarpatsk%C3%A1_Rus.jpg",
-  "author": "Unknown; faithful reproduction of the historical map",
-  "year": 1921,
-  "license": "Public Domain Mark 1.0 / PD-Art, as recorded by Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Old_map_of_Ukraine.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Old_map_of_Ukraine.jpg",
+  "author": "Guillaume Le Vasseur de Beauplan",
+  "year": 1648,
+  "license": "Public Domain Mark 1.0; PD-old, as recorded by Wikimedia Commons",
   "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-  "verified_on": "2026-10-29",
+  "verified_on": "2026-11-02",
   "verification_status": "source_date_subject_and_public_domain_notice_checked",
-  "original_file": "slovakia-subcarpathian-ruthenia-1921.jpg",
-  "original_sha256": "281d78eb2ab2e614cee31302f4c29f1d5b9bd852f01f9655a7eca57d177d6545",
+  "original_file": "old-map-of-ukraine-1648.jpg",
+  "original_sha256": "981e7b6479ec328730f49905fd93a5c3b0b2651c6d62ae382ca5e6bc13a69e4f",
   "source_dimensions": {
-    "width": 3008,
-    "height": 1728
+    "width": 6515,
+    "height": 6287
   },
-  "crop_box": [
-    1720,
-    430,
-    3008,
-    1510
-  ],
-  "width": 1288,
-  "height": 1080,
+  "width": 6515,
+  "height": 6287,
   "widths": [
     480,
     768,
     960,
-    1288
+    1280,
+    1920
   ],
-  "full_file": "/assets/history/slovakia-subcarpathian-ruthenia-1921-full.webp",
-  "processing": "Crop to the Zakarpattia region and responsive WebP export only. No invented labels, altered boundaries, AI generation or artificial ageing."
+  "full_file": "/assets/history/ukraine-beauplan-1648-full.jpg",
+  "processing": "Responsive WebP export of the complete map. Full original JPEG preserved. No crop, invented labels, altered boundaries or artificial ageing."
 }

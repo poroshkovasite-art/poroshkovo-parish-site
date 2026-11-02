@@ -97,5 +97,162 @@
       "verification_status": "needs_confirmation",
       "publication_status": "draft"
     }
+  ],
+  "ministry_directions": [
+    {
+      "id": "defenders",
+      "title": {
+        "uk": "Підтримка військовослужбовців та захисників України",
+        "en": "Support for Service Members and Ukraine’s Defenders"
+      },
+      "description": {
+        "uk": "Прагнемо розвивати духовну підтримку, людську увагу та допомогу за погодженими потребами захисників. Це напрям служіння, а не звіт про виконану програму.",
+        "en": "We aim to develop spiritual support, personal care and assistance in response to defenders’ agreed needs. This is a direction of ministry, not a report of a completed programme."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "bereaved-families",
+      "title": {
+        "uk": "Підтримка родин загиблих захисників",
+        "en": "Support for Families of Fallen Defenders"
+      },
+      "description": {
+        "uk": "Прагнемо бути поруч із родинами, які переживають втрату: через молитву, уважне спілкування та підтримку відповідно до їхніх потреб і побажань.",
+        "en": "We seek to stand alongside bereaved families through prayer, attentive companionship and support guided by their needs and wishes."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "displaced-people",
+      "title": {
+        "uk": "Допомога внутрішньо переміщеним особам",
+        "en": "Assistance for Internally Displaced People"
+      },
+      "description": {
+        "uk": "Напрям служіння — підтримка людей, які були змушені залишити домівки, допомога у встановленні зв’язків із громадою та пошук можливостей взаємодопомоги.",
+        "en": "This direction focuses on welcoming people forced to leave their homes, helping them connect with the community and exploring opportunities for mutual support."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "hospital-visits",
+      "title": {
+        "uk": "Відвідування хворих у лікарнях та госпіталях",
+        "en": "Visits to Patients in Hospitals and Military Hospitals"
+      },
+      "description": {
+        "uk": "Мета — розвивати духовну підтримку й відвідування хворих за їхньою згодою та за погодженням із закладами. Конкретні відвідування й партнерства ще не підтверджено для публікації.",
+        "en": "Our aim is to develop pastoral support and visits with patients’ consent and in agreement with the institutions. Specific visits and partnerships have not yet been confirmed for publication."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "home-visits",
+      "title": {
+        "uk": "Відвідування літніх та самотніх людей вдома",
+        "en": "Home Visits to Older People and Those Living Alone"
+      },
+      "description": {
+        "uk": "Особиста присутність, спілкування та увага до потреб людини — важливий напрям нашого служіння. Парафія надала окремі приклади відвідувань; регулярність і масштаби не заявляємо.",
+        "en": "Personal presence, companionship and attention to individual needs are an important part of our ministry. The parish has supplied individual examples of visits; no regularity or scale is claimed."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [
+        "chronicle-personal-support-visit",
+        "chronicle-elderly-home-visit"
+      ],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "families-in-need",
+      "title": {
+        "uk": "Допомога потребуючим родинам",
+        "en": "Assistance for Families in Need"
+      },
+      "description": {
+        "uk": "Прагнемо підтримувати родини у складних обставинах. Надані парафією матеріали містять окремий приклад допомоги продуктами; кількість родин і періодичність допомоги не встановлено.",
+        "en": "We seek to support families facing difficult circumstances. Parish materials include an individual example of food assistance; the number of families and frequency of support have not been established."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [
+        "chronicle-families-support"
+      ],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "children-community",
+      "title": {
+        "uk": "Діти, молодь та розвиток громади",
+        "en": "Children, Young People and Community Development"
+      },
+      "description": {
+        "uk": "Табори, творчі заняття, молодіжні зустрічі та спільні ініціативи — можливості для дружби, навчання й участі в житті громади. Майбутній розвиток цих напрямів є нашою метою.",
+        "en": "Camps, creative activities, youth gatherings and shared initiatives offer opportunities for friendship, learning and participation. Developing these activities further is our goal."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [
+        "chronicle-parish-summer-camp",
+        "chronicle-youth-bike-ride"
+      ],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    }
+  ],
+  "ministry_groups": [
+    {
+      "id": "defenders-families",
+      "title": {
+        "uk": "Захисники та їхні родини",
+        "en": "Defenders and Their Families"
+      },
+      "directions": [
+        "defenders",
+        "bereaved-families"
+      ],
+      "icon": "heart"
+    },
+    {
+      "id": "welcome",
+      "title": {
+        "uk": "Підтримка переміщених людей",
+        "en": "Welcoming Displaced People"
+      },
+      "directions": [
+        "displaced-people"
+      ],
+      "icon": "home"
+    },
+    {
+      "id": "care-presence",
+      "title": {
+        "uk": "Турбота й особиста присутність",
+        "en": "Care and Companionship"
+      },
+      "directions": [
+        "hospital-visits",
+        "home-visits"
+      ],
+      "icon": "care"
+    },
+    {
+      "id": "families-community",
+      "title": {
+        "uk": "Родини, діти та громада",
+        "en": "Families, Children and Community"
+      },
+      "directions": [
+        "families-in-need",
+        "children-community"
+      ],
+      "icon": "people"
+    }
   ]
 }

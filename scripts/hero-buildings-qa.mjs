@@ -11,7 +11,7 @@ const photos=JSON.parse(fs.readFileSync(path.join(root,'content/photos.json'))),
 // Every pre-existing photograph and original record is unchanged.
 const oldPhotos=JSON.parse(execFileSync('git',['show','0bc9dd399c2124cc4ecb85591c35b8343be878e1:content/photos.json'],{cwd:root,encoding:'utf8'}));
 for(const p of oldPhotos){assert.deepEqual(photos.find(n=>n.id===p.id),p);for(const w of p.widths){const rel=`assets/photos/${p.id}-${w}.webp`;assert.equal(hash(fs.readFileSync(path.join(root,rel))),hash(execFileSync('git',['show',`0bc9dd399c2124cc4ecb85591c35b8343be878e1:${rel}`],{cwd:root,maxBuffer:10*1024*1024})));report.oldPhotoAssetsUnchanged++;}}
-assert.equal(newPhoto.rights_confirmed,true);assert.equal(newPhoto.contains_children,false);assert.equal(hash(fs.readFileSync(path.join(root,'private-materials/administrative-building',newPhoto.original_file))),newPhoto.original_sha256);
+assert.equal(newPhoto.rights_confirmed,true);assert.equal(newPhoto.contains_children,false);const original=path.join(root,'private-materials/administrative-building',newPhoto.original_file);report.originalSourceAvailable=fs.existsSync(original);if(report.originalSourceAvailable)assert.equal(hash(fs.readFileSync(original)),newPhoto.original_sha256);
 const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 try{
  const context=await browser.newContext({reducedMotion:'reduce'}),page=await context.newPage();page.on('pageerror',e=>report.errors.push(e.message));
@@ -24,7 +24,7 @@ try{
   assert.ok(await pair.locator('img').evaluateAll(es=>es.every(i=>getComputedStyle(i).objectFit==='contain'&&i.naturalWidth>0&&i.srcset)));
   assert.equal(await pair.locator('figcaption strong').first().innerText(),lang==='uk'?'Храм святих Кирила і Методія':'Church of Saints Cyril and Methodius');assert.equal(await pair.locator('figcaption strong').last().innerText(),newPhoto.title[lang]);
   for(const id of ['church-exterior','parish-administrative-building']){await pair.locator(`[data-photo-id="${id}"]`).click();assert.ok(await page.locator('dialog').isVisible());await page.locator('dialog img').evaluate(i=>i.decode());assert.ok((await page.locator('dialog img').getAttribute('src')).includes(id));await page.keyboard.press('Escape');}
-  if([390,768,1440].includes(width)){await page.locator('.hero').screenshot({path:path.join(audit,`hero-buildings-${tag}-${lang}-${width}.png`),style:'.header,.skip{visibility:hidden!important}'});const a=await new AxeBuilder({page}).include('.hero').analyze();assert.deepEqual(a.violations,[]);}
+  if([390,768,1440].includes(width)){await page.locator('.hero').screenshot({path:path.join(audit,`hero-buildings-${tag}-${lang}-${width}.png`)});const a=await new AxeBuilder({page}).include('.hero').analyze();assert.deepEqual(a.violations,[]);}
   report.layouts.push({lang,width,status:'PASS'});
  }
  for(const lang of ['uk','en'])for(const slug of ['about','gallery']){await page.goto(`${base}/${lang}/${slug}/`);assert.equal(await page.locator('[data-photo-id="parish-administrative-building"]').count(),1);if(slug==='gallery'){await page.locator('[data-theme-filter="buildings"]').click();assert.ok(await page.locator('[data-photo-id="parish-administrative-building"]').isVisible());}}

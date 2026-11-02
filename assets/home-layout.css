@@ -1,0 +1,53 @@
+/* A short home page, with one visual purpose for each photograph. */
+.mission-composition{display:grid;grid-template-columns:.95fr 1.15fr;gap:64px;align-items:center}
+.mission-composition .mission-heading h2{font-size:clamp(34px,3.7vw,52px);max-width:17ch}
+.mission-composition .mission-heading>p:not(.eyebrow){font-size:16px;line-height:1.85}
+.mission-composition .mission-heading .lead{font-size:19px;color:var(--ink)}
+.mission-photo-composition{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.mission-photo-composition .parish-photo{border:0;border-radius:16px;overflow:hidden;background:var(--tint)}
+.mission-photo-composition .parish-photo:first-child{grid-row:span 2;align-self:center}
+.mission-photo-composition .photo-visual{display:block;background:var(--tint)}
+.mission-photo-composition img{width:100%;height:auto;object-fit:contain}
+.mission-photo-composition figcaption{padding:13px 16px}
+.mission-photo-composition figcaption strong{font:18px/1.35 var(--serif)}
+.mission-photo-composition figcaption p,.mission-photo-composition figcaption>span{display:none}
+.home-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.home-service-card{display:flex;flex-direction:column;align-items:start;padding:26px 23px;border:1px solid var(--line);border-radius:16px;background:var(--white);min-width:0}
+.home-service-card .mission-number{margin-bottom:20px}
+.home-service-card h3{font-size:26px;line-height:1.25}
+.home-service-card h3 a{text-decoration:none}
+.home-service-card p{font-size:14px;line-height:1.8}
+.home-service-card>.text-link{margin-top:auto}
+.ministry-section{margin-block:48px}
+.ministry-section .home-service-grid{grid-template-columns:1fr 1fr}
+.ministry-icon{width:40px;height:40px;fill:none;stroke:var(--accent);stroke-width:1.5;margin-bottom:22px;overflow:visible}
+.home-service-card h4{font:600 14px/1.65 var(--sans);margin:8px 0 12px;color:var(--ink)}
+.home-service-card [data-ministry-direction]+[data-ministry-direction]{border-top:1px solid var(--line);padding-top:10px}
+.ministry-scope{font-size:14px!important;line-height:1.8;max-width:78ch}
+.ministry-anchor{scroll-margin-top:130px}
+.home-support{border-top:1px solid var(--line);background:#f0ebe2}
+.home-support-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:76px;align-items:center}
+.home-support h2{font-size:clamp(30px,3vw,42px)}
+.home-support p{font-size:15px;line-height:1.85}
+.home-map .map-actions{align-self:center}
+.home-bank-card{background:var(--paper);border:1px solid #d3c7b6;border-radius:18px;padding:30px 34px;min-width:0}
+.home-bank-card dl{margin:0}
+.home-bank-card dt{font-size:11px;color:var(--muted);margin-bottom:6px}
+.home-bank-card dd{margin:0 0 20px;font-size:15px;line-height:1.6}
+.home-bank-card .home-iban{font-size:clamp(15px,1.6vw,22px);letter-spacing:.025em;overflow-wrap:anywhere;color:var(--ink)}
+.home-bank-meta{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}
+.home-bank-card button{background:none;border:0;padding:8px 0}
+.home-bank-card .copy-status{font-size:12px}
+.history-map-feature{padding-block:52px;border-bottom:1px solid var(--line)}
+.history-map-feature .historical-map{display:grid;grid-template-columns:1.4fr 1fr;gap:38px;align-items:center;padding:26px;background:#eee6d8;border:1px solid #d7c9b4;border-radius:20px}
+.history-map-feature .historical-map img{width:100%;max-height:680px;object-fit:contain;box-shadow:0 10px 32px #513b2520}
+.history-map-feature .historical-map figcaption{padding:12px}
+.history-map-feature .historical-map figcaption strong{font:clamp(28px,3vw,40px)/1.2 var(--serif)}
+.history-map-feature .historical-map figcaption p{font-size:16px;line-height:1.85;margin-top:22px}
+.history-teaser .historical-map{background:#eee6d8;border:1px solid #d7c9b4;border-radius:18px;padding:18px}
+.history-teaser .historical-map img{max-height:470px;object-fit:contain;border-radius:6px}
+.history-teaser .historical-map figcaption{padding:16px 7px 2px}
+.history-teaser .historical-map figcaption p{font-size:12px}
+@media(max-width:1100px){.mission-composition{gap:32px}.home-service-grid{grid-template-columns:1fr 1fr}.home-support-grid{gap:35px}}
+@media(max-width:850px){.mission-composition{grid-template-columns:1fr;gap:30px}.mission-composition .mission-heading{max-width:760px}.mission-composition .mission-heading h2{max-width:23ch}.mission-photo-composition{max-width:680px;width:100%;margin-inline:auto}.home-support-grid{grid-template-columns:1fr}.history-map-feature .historical-map{grid-template-columns:1fr;gap:16px}}
+@media(max-width:620px){.mission-photo-composition{gap:12px}.mission-photo-composition figcaption{padding:11px}.mission-photo-composition figcaption strong{font-size:16px}.home-service-grid,.ministry-section .home-service-grid{grid-template-columns:1fr}.home-service-card{padding:24px}.home-service-card h3{font-size:28px}.home-bank-card{padding:24px 20px}.home-bank-meta{grid-template-columns:1fr;gap:0}.history-map-feature{padding-block:35px}.history-map-feature .historical-map{padding:14px}.history-map-feature .historical-map figcaption{padding:12px 5px}}

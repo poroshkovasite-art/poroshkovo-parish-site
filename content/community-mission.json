@@ -1,31 +1,377 @@
 {
   "source": "Owner-approved mission and file-to-event catalogue supplied in this chat on 2026-11-02",
   "verified_on": "2026-11-02",
-  "title": {"uk":"Змінюємо життя громади разом","en":"Transforming Community Life Together"},
-  "lead": {"uk":"Наша місія — не лише допомагати людям, а й сприяти позитивним змінам у житті суспільства.","en":"Our mission is to help people and contribute to positive change in society."},
+  "title": {
+    "uk": "Змінюємо життя громади разом",
+    "en": "Transforming Community Life Together"
+  },
+  "lead": {
+    "uk": "Наша місія — не лише допомагати людям, а й сприяти позитивним змінам у житті суспільства.",
+    "en": "Our mission is to help people and contribute to positive change in society."
+  },
   "paragraphs": [
-    {"uk":"Парафія святих Кирила і Методія в селі Порошково прагне бути живим осередком духовного, соціального та культурного розвитку не лише нашого села, але й навколишніх населених пунктів Закарпаття.","en":"Saints Cyril and Methodius Parish in Poroshkovo aspires to be a vibrant centre of spiritual, social and cultural development for our village and the surrounding communities of Zakarpattia."},
-    {"uk":"Через служіння дітям і молоді, підтримку літніх та потребуючих людей, організацію літніх таборів, творчих і пізнавальних заходів, спільну працю та волонтерські ініціативи ми допомагаємо людям відкривати нові можливості, долати байдужість і відчувати відповідальність одне за одного.","en":"Through activities for children and young people, support for older people and those in need, summer camps, creative and educational activities, shared work and volunteering, we help people discover new opportunities, overcome indifference and develop a sense of responsibility for one another."},
-    {"uk":"Особливу увагу приділяємо формуванню позитивного світогляду серед молодого покоління. Ми прагнемо показати, що життя може бути наповнене радістю, добром, творчістю, дружбою, духовними цінностями та корисними справами.","en":"We place particular emphasis on nurturing a positive outlook among the younger generation. We want to show that life can be filled with joy, kindness, creativity, friendship, spiritual values and meaningful service."},
-    {"uk":"Наше служіння спрямоване на розвиток культури взаємодопомоги, відкритості, довіри й особистої ініціативи. Ми прагнемо, щоб діти й дорослі не лише отримували підтримку, а й самі ставали активними учасниками добрих змін у своїх родинах і громадах.","en":"Our ministry seeks to build a culture of mutual support, openness, trust and personal initiative. We want children and adults both to receive support and to become active participants in positive change within their families and communities."},
-    {"uk":"Ми віримо, що справжнє преображення суспільства починається з преображення людського серця. А кожна добра справа, кожна усмішка дитини та кожна простягнута рука допомоги наближають нас до суспільства, у якому панують гідність, милосердя, відповідальність і надія.","en":"We believe that lasting transformation in society begins with a transformation of the human heart. Every act of kindness, every child's smile and every helping hand brings us closer to a society shaped by dignity, mercy, responsibility and hope."},
-    {"uk":"Наша мета — щоб цей досвід єдності, радості та діяльної любові поширювався за межі Порошкова, надихаючи мешканців навколишніх сіл творити краще майбутнє разом.","en":"Our goal is for this experience of unity, joy and love in action to reach beyond Poroshkovo, inspiring people in neighbouring villages to build a better future together."}
+    {
+      "uk": "Парафія святих Кирила і Методія в селі Порошково прагне бути живим осередком духовного, соціального та культурного розвитку не лише нашого села, але й навколишніх населених пунктів Закарпаття.",
+      "en": "Saints Cyril and Methodius Parish in Poroshkovo aspires to be a vibrant centre of spiritual, social and cultural development for our village and the surrounding communities of Zakarpattia."
+    },
+    {
+      "uk": "Через служіння дітям і молоді, підтримку літніх та потребуючих людей, організацію літніх таборів, творчих і пізнавальних заходів, спільну працю та волонтерські ініціативи ми допомагаємо людям відкривати нові можливості, долати байдужість і відчувати відповідальність одне за одного.",
+      "en": "Through activities for children and young people, support for older people and those in need, summer camps, creative and educational activities, shared work and volunteering, we help people discover new opportunities, overcome indifference and develop a sense of responsibility for one another."
+    },
+    {
+      "uk": "Особливу увагу приділяємо формуванню позитивного світогляду серед молодого покоління. Ми прагнемо показати, що життя може бути наповнене радістю, добром, творчістю, дружбою, духовними цінностями та корисними справами.",
+      "en": "We place particular emphasis on nurturing a positive outlook among the younger generation. We want to show that life can be filled with joy, kindness, creativity, friendship, spiritual values and meaningful service."
+    },
+    {
+      "uk": "Наше служіння спрямоване на розвиток культури взаємодопомоги, відкритості, довіри й особистої ініціативи. Ми прагнемо, щоб діти й дорослі не лише отримували підтримку, а й самі ставали активними учасниками добрих змін у своїх родинах і громадах.",
+      "en": "Our ministry seeks to build a culture of mutual support, openness, trust and personal initiative. We want children and adults both to receive support and to become active participants in positive change within their families and communities."
+    },
+    {
+      "uk": "Ми віримо, що справжнє преображення суспільства починається з преображення людського серця. А кожна добра справа, кожна усмішка дитини та кожна простягнута рука допомоги наближають нас до суспільства, у якому панують гідність, милосердя, відповідальність і надія.",
+      "en": "We believe that lasting transformation in society begins with a transformation of the human heart. Every act of kindness, every child's smile and every helping hand brings us closer to a society shaped by dignity, mercy, responsibility and hope."
+    },
+    {
+      "uk": "Наша мета — щоб цей досвід єдності, радості та діяльної любові поширювався за межі Порошкова, надихаючи мешканців навколишніх сіл творити краще майбутнє разом.",
+      "en": "Our goal is for this experience of unity, joy and love in action to reach beyond Poroshkovo, inspiring people in neighbouring villages to build a better future together."
+    }
   ],
   "priorities": [
-    {"id":"spiritual-values","title":{"uk":"Духовні цінності","en":"Spiritual Values"},"text":{"uk":"Молитва, гідність кожної людини та любов до ближнього є основою нашого служіння.","en":"Prayer, the dignity of every person and love of neighbour are the foundation of our service."}},
-    {"id":"children-development","title":{"uk":"Радість і розвиток дітей","en":"Children's Joy and Development"},"text":{"uk":"Прагнемо створювати простір для творчості, навчання, дружби та розвитку здібностей.","en":"We seek to create opportunities for creativity, learning, friendship and the development of children's abilities."}},
-    {"id":"active-youth","title":{"uk":"Активна молодь","en":"Youth Empowerment and Active Citizenship"},"text":{"uk":"Заохочуємо молодих людей до особистої ініціативи, відповідальності та участі у житті громади.","en":"We encourage young people to take initiative, act responsibly and participate in community life."}},
-    {"id":"solidarity","title":{"uk":"Соціальна солідарність","en":"Social Inclusion and Solidarity"},"text":{"uk":"Прагнемо зміцнювати довіру, взаємодопомогу та відчуття приналежності до спільноти.","en":"We aim to strengthen trust, mutual support and a sense of belonging as foundations for community well-being."}}
+    {
+      "id": "spiritual-values",
+      "title": {
+        "uk": "Духовні цінності",
+        "en": "Spiritual Values"
+      },
+      "text": {
+        "uk": "Молитва, гідність кожної людини та любов до ближнього є основою нашого служіння.",
+        "en": "Prayer, the dignity of every person and love of neighbour are the foundation of our service."
+      }
+    },
+    {
+      "id": "children-development",
+      "title": {
+        "uk": "Радість і розвиток дітей",
+        "en": "Children's Joy and Development"
+      },
+      "text": {
+        "uk": "Прагнемо створювати простір для творчості, навчання, дружби та розвитку здібностей.",
+        "en": "We seek to create opportunities for creativity, learning, friendship and the development of children's abilities."
+      }
+    },
+    {
+      "id": "active-youth",
+      "title": {
+        "uk": "Активна молодь",
+        "en": "Youth Empowerment and Active Citizenship"
+      },
+      "text": {
+        "uk": "Заохочуємо молодих людей до особистої ініціативи, відповідальності та участі у житті громади.",
+        "en": "We encourage young people to take initiative, act responsibly and participate in community life."
+      }
+    },
+    {
+      "id": "solidarity",
+      "title": {
+        "uk": "Соціальна солідарність",
+        "en": "Social Inclusion and Solidarity"
+      },
+      "text": {
+        "uk": "Прагнемо зміцнювати довіру, взаємодопомогу та відчуття приналежності до спільноти.",
+        "en": "We aim to strengthen trust, mutual support and a sense of belonging as foundations for community well-being."
+      }
+    }
   ],
   "service_cards": [
-    {"id":"care","title":{"uk":"Турбота про літніх і потребуючих","en":"Care for Older People and Those in Need"},"text":{"uk":"Відвідування, увага та практична підтримка людей у складних життєвих обставинах — задокументовані приклади нашого служіння.","en":"Visits, companionship and practical support for people facing difficult circumstances are documented examples of our service."},"photos":["chronicle-families-support","chronicle-personal-support-visit","chronicle-elderly-home-visit"],"link":"social-ministry","mission":["solidarity"]},
-    {"id":"children","title":{"uk":"Діти та молодь — наше майбутнє","en":"Children and Young People — Our Future"},"text":{"uk":"Літні табори, творчі майстерні, навчання й дружні зустрічі відкривають простір для спільного досвіду та розвитку.","en":"Summer camps, creative workshops, learning and time with friends offer opportunities for shared experiences and personal development."},"photos":["chronicle-parish-summer-camp","chronicle-outdoor-creative-workshop","chronicle-summer-camp-masterclass","chronicle-summer-camp-crafts","chronicle-children-group-picnic","chronicle-catechesis-table-tennis","parish-community-children"],"link":"gallery","mission":["children-development","active-youth"]},
-    {"id":"volunteering","title":{"uk":"Спільна праця та волонтерство","en":"Shared Work and Volunteering"},"text":{"uk":"Спільне прибирання та роботи на території храму показують участь громади у турботі про спільний простір.","en":"Cleaning and work on the church grounds show community members caring for a shared space."},"photos":["chronicle-young-parish-helpers","chronicle-entrance-ramp-preparation","chronicle-church-grounds-cleanup","pastor-parish-work"],"link":"gallery","mission":["active-youth","solidarity"]},
-    {"id":"prayer","title":{"uk":"Духовна підтримка та єдність громади","en":"Spiritual Support and Community Unity"},"text":{"uk":"Богослужіння, катехизація та спільна молитва підтримують духовну ідентичність і єдність парафії.","en":"Worship, catechesis and shared prayer sustain the parish's spiritual identity and unity."},"photos":["chronicle-icon-painting-school","divine-liturgy"],"link":"spiritual-life","mission":["spiritual-values"]}
+    {
+      "id": "care",
+      "title": {
+        "uk": "Турбота про літніх і потребуючих",
+        "en": "Care for Older People and Those in Need"
+      },
+      "text": {
+        "uk": "Відвідування, увага та практична підтримка людей у складних життєвих обставинах — задокументовані приклади нашого служіння.",
+        "en": "Visits, companionship and practical support for people facing difficult circumstances are documented examples of our service."
+      },
+      "photos": [
+        "chronicle-families-support",
+        "chronicle-personal-support-visit",
+        "chronicle-elderly-home-visit"
+      ],
+      "link": "social-ministry",
+      "mission": [
+        "solidarity"
+      ]
+    },
+    {
+      "id": "children",
+      "title": {
+        "uk": "Діти та молодь — наше майбутнє",
+        "en": "Children and Young People — Our Future"
+      },
+      "text": {
+        "uk": "Літні табори, творчі майстерні, навчання й дружні зустрічі відкривають простір для спільного досвіду та розвитку.",
+        "en": "Summer camps, creative workshops, learning and time with friends offer opportunities for shared experiences and personal development."
+      },
+      "photos": [
+        "chronicle-parish-summer-camp",
+        "chronicle-outdoor-creative-workshop",
+        "chronicle-summer-camp-masterclass",
+        "chronicle-summer-camp-crafts",
+        "chronicle-children-group-picnic",
+        "chronicle-catechesis-table-tennis",
+        "parish-community-children"
+      ],
+      "link": "gallery",
+      "mission": [
+        "children-development",
+        "active-youth"
+      ]
+    },
+    {
+      "id": "volunteering",
+      "title": {
+        "uk": "Спільна праця та волонтерство",
+        "en": "Shared Work and Volunteering"
+      },
+      "text": {
+        "uk": "Спільне прибирання та роботи на території храму показують участь громади у турботі про спільний простір.",
+        "en": "Cleaning and work on the church grounds show community members caring for a shared space."
+      },
+      "photos": [
+        "chronicle-young-parish-helpers",
+        "chronicle-entrance-ramp-preparation",
+        "chronicle-church-grounds-cleanup",
+        "pastor-parish-work"
+      ],
+      "link": "gallery",
+      "mission": [
+        "active-youth",
+        "solidarity"
+      ]
+    },
+    {
+      "id": "prayer",
+      "title": {
+        "uk": "Духовна підтримка та єдність громади",
+        "en": "Spiritual Support and Community Unity"
+      },
+      "text": {
+        "uk": "Богослужіння, катехизація та спільна молитва підтримують духовну ідентичність і єдність парафії.",
+        "en": "Worship, catechesis and shared prayer sustain the parish's spiritual identity and unity."
+      },
+      "photos": [
+        "chronicle-icon-painting-school",
+        "divine-liturgy"
+      ],
+      "link": "spiritual-life",
+      "mission": [
+        "spiritual-values"
+      ]
+    }
   ],
   "activity_examples": [
-    {"title":{"uk":"Відвідування та практична допомога","en":"Visits and Practical Assistance"},"text":{"uk":"Надані парафією матеріали підтверджують окремі відвідування літніх людей та допомогу продуктами. Ці приклади не визначають регулярності чи кількості отримувачів допомоги.","en":"Materials supplied by the parish document individual visits to older people and assistance with food. These examples do not establish the frequency of support or the number of people reached."},"photos":["chronicle-families-support","chronicle-personal-support-visit","chronicle-elderly-home-visit"]},
-    {"title":{"uk":"Табори, творчість і зустрічі молоді","en":"Camps, Creative Learning and Youth Activities"},"text":{"uk":"Фотоматеріали відображають табірні заняття, творчу працю, настільний теніс і велопрогулянку. Це приклади заходів, а не оцінка змін у поведінці учасників.","en":"Photographs document camp activities, creative work, table tennis and a bicycle outing. They illustrate activities rather than demonstrating measured changes in participants' behaviour."},"photos":["chronicle-parish-summer-camp","chronicle-outdoor-creative-workshop","chronicle-catechesis-table-tennis","chronicle-youth-bike-ride"]},
-    {"title":{"uk":"Турбота про спільний простір","en":"Caring for Shared Spaces"},"text":{"uk":"Прибирання подвір’я та підготовчі роботи біля входу є прикладами спільної праці. Розвиток церковної інфраструктури обліковується окремо від прямої допомоги людям.","en":"Cleaning the grounds and preparatory work near the entrance are examples of shared work. Church infrastructure development is distinguished from direct assistance to people."},"photos":["chronicle-church-grounds-cleanup","chronicle-entrance-ramp-preparation","pastor-parish-work"]}
+    {
+      "title": {
+        "uk": "Відвідування та практична допомога",
+        "en": "Visits and Practical Assistance"
+      },
+      "text": {
+        "uk": "Надані парафією матеріали підтверджують окремі відвідування літніх людей та допомогу продуктами. Ці приклади не визначають регулярності чи кількості отримувачів допомоги.",
+        "en": "Materials supplied by the parish document individual visits to older people and assistance with food. These examples do not establish the frequency of support or the number of people reached."
+      },
+      "photos": [
+        "chronicle-families-support",
+        "chronicle-personal-support-visit",
+        "chronicle-elderly-home-visit"
+      ]
+    },
+    {
+      "title": {
+        "uk": "Табори, творчість і зустрічі молоді",
+        "en": "Camps, Creative Learning and Youth Activities"
+      },
+      "text": {
+        "uk": "Фотоматеріали відображають табірні заняття, творчу працю, настільний теніс і велопрогулянку. Це приклади заходів, а не оцінка змін у поведінці учасників.",
+        "en": "Photographs document camp activities, creative work, table tennis and a bicycle outing. They illustrate activities rather than demonstrating measured changes in participants' behaviour."
+      },
+      "photos": [
+        "chronicle-parish-summer-camp",
+        "chronicle-outdoor-creative-workshop",
+        "chronicle-catechesis-table-tennis",
+        "chronicle-youth-bike-ride"
+      ]
+    },
+    {
+      "title": {
+        "uk": "Турбота про спільний простір",
+        "en": "Caring for Shared Spaces"
+      },
+      "text": {
+        "uk": "Прибирання подвір’я та підготовчі роботи біля входу є прикладами спільної праці. Розвиток церковної інфраструктури обліковується окремо від прямої допомоги людям.",
+        "en": "Cleaning the grounds and preparatory work near the entrance are examples of shared work. Church infrastructure development is distinguished from direct assistance to people."
+      },
+      "photos": [
+        "chronicle-church-grounds-cleanup",
+        "chronicle-entrance-ramp-preparation",
+        "pastor-parish-work"
+      ]
+    }
+  ],
+  "ministry_directions": [
+    {
+      "id": "defenders",
+      "title": {
+        "uk": "Підтримка військовослужбовців та захисників України",
+        "en": "Support for Service Members and Ukraine’s Defenders"
+      },
+      "description": {
+        "uk": "Прагнемо розвивати духовну підтримку, людську увагу та допомогу за погодженими потребами захисників. Це напрям служіння, а не звіт про виконану програму.",
+        "en": "We aim to develop spiritual support, personal care and assistance in response to defenders’ agreed needs. This is a direction of ministry, not a report of a completed programme."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "bereaved-families",
+      "title": {
+        "uk": "Підтримка родин загиблих захисників",
+        "en": "Support for Families of Fallen Defenders"
+      },
+      "description": {
+        "uk": "Прагнемо бути поруч із родинами, які переживають втрату: через молитву, уважне спілкування та підтримку відповідно до їхніх потреб і побажань.",
+        "en": "We seek to stand alongside bereaved families through prayer, attentive companionship and support guided by their needs and wishes."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "displaced-people",
+      "title": {
+        "uk": "Допомога внутрішньо переміщеним особам",
+        "en": "Assistance for Internally Displaced People"
+      },
+      "description": {
+        "uk": "Напрям служіння — підтримка людей, які були змушені залишити домівки, допомога у встановленні зв’язків із громадою та пошук можливостей взаємодопомоги.",
+        "en": "This direction focuses on welcoming people forced to leave their homes, helping them connect with the community and exploring opportunities for mutual support."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "hospital-visits",
+      "title": {
+        "uk": "Відвідування хворих у лікарнях та госпіталях",
+        "en": "Visits to Patients in Hospitals and Military Hospitals"
+      },
+      "description": {
+        "uk": "Мета — розвивати духовну підтримку й відвідування хворих за їхньою згодою та за погодженням із закладами. Конкретні відвідування й партнерства ще не підтверджено для публікації.",
+        "en": "Our aim is to develop pastoral support and visits with patients’ consent and in agreement with the institutions. Specific visits and partnerships have not yet been confirmed for publication."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "home-visits",
+      "title": {
+        "uk": "Відвідування літніх та самотніх людей вдома",
+        "en": "Home Visits to Older People and Those Living Alone"
+      },
+      "description": {
+        "uk": "Особиста присутність, спілкування та увага до потреб людини — важливий напрям нашого служіння. Парафія надала окремі приклади відвідувань; регулярність і масштаби не заявляємо.",
+        "en": "Personal presence, companionship and attention to individual needs are an important part of our ministry. The parish has supplied individual examples of visits; no regularity or scale is claimed."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [
+        "chronicle-personal-support-visit",
+        "chronicle-elderly-home-visit"
+      ],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "families-in-need",
+      "title": {
+        "uk": "Допомога потребуючим родинам",
+        "en": "Assistance for Families in Need"
+      },
+      "description": {
+        "uk": "Прагнемо підтримувати родини у складних обставинах. Надані парафією матеріали містять окремий приклад допомоги продуктами; кількість родин і періодичність допомоги не встановлено.",
+        "en": "We seek to support families facing difficult circumstances. Parish materials include an individual example of food assistance; the number of families and frequency of support have not been established."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [
+        "chronicle-families-support"
+      ],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    },
+    {
+      "id": "children-community",
+      "title": {
+        "uk": "Діти, молодь та розвиток громади",
+        "en": "Children, Young People and Community Development"
+      },
+      "description": {
+        "uk": "Табори, творчі заняття, молодіжні зустрічі та спільні ініціативи — можливості для дружби, навчання й участі в житті громади. Майбутній розвиток цих напрямів є нашою метою.",
+        "en": "Camps, creative activities, youth gatherings and shared initiatives offer opportunities for friendship, learning and participation. Developing these activities further is our goal."
+      },
+      "activity_status": "ministry_direction",
+      "photos": [
+        "chronicle-parish-summer-camp",
+        "chronicle-youth-bike-ride"
+      ],
+      "source": "Owner-confirmed directions in this chat, 2026-11-02; no scale, regularity or programme results confirmed"
+    }
+  ],
+  "ministry_groups": [
+    {
+      "id": "defenders-families",
+      "title": {
+        "uk": "Захисники та їхні родини",
+        "en": "Defenders and Their Families"
+      },
+      "directions": [
+        "defenders",
+        "bereaved-families"
+      ],
+      "icon": "heart"
+    },
+    {
+      "id": "welcome",
+      "title": {
+        "uk": "Підтримка переміщених людей",
+        "en": "Welcoming Displaced People"
+      },
+      "directions": [
+        "displaced-people"
+      ],
+      "icon": "home"
+    },
+    {
+      "id": "care-presence",
+      "title": {
+        "uk": "Турбота й особиста присутність",
+        "en": "Care and Companionship"
+      },
+      "directions": [
+        "hospital-visits",
+        "home-visits"
+      ],
+      "icon": "care"
+    },
+    {
+      "id": "families-community",
+      "title": {
+        "uk": "Родини, діти та громада",
+        "en": "Families, Children and Community"
+      },
+      "directions": [
+        "families-in-need",
+        "children-community"
+      ],
+      "icon": "people"
+    }
   ]
 }
